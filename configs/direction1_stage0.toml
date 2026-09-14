@@ -1,0 +1,56 @@
+[experiment]
+name = "direction1_stage0_thz_physics"
+seed = 20260907
+
+[system]
+carrier_frequency_hz = 3.0e11
+bandwidth_hz = 3.0e10
+num_subcarriers = 128
+
+[atmosphere]
+table_path = "data/atmosphere/data_freq_abscoe.txt"
+interpolation = "linear"
+max_model_frequency_hz = 1.0e12
+legacy_nearest_tolerance_hz = 9.894e8
+
+[[atmosphere.windows]]
+name = "300GHz_window"
+carrier_frequency_hz = 3.0e11
+bandwidth_hz = 3.0e10
+distance_m = 10.0
+
+[[atmosphere.windows]]
+name = "380GHz_absorption_line"
+carrier_frequency_hz = 3.8e11
+bandwidth_hz = 2.0e10
+distance_m = 10.0
+
+[aperture]
+num_elements = 128
+spacing_wavelengths = 0.5
+focus_range_m = 2.0
+focus_angle_deg = 20.0
+range_grid_min_m = 0.8
+range_grid_max_m = 4.0
+range_grid_points = 241
+angle_grid_min_deg = 5.0
+angle_grid_max_deg = 35.0
+angle_grid_points = 181
+
+[dma]
+num_elements = 64
+spacing_wavelengths = 0.2
+quality_factor = 100.0
+tuning_bandwidth_hz = 3.0e10
+waveguide_effective_index = 2.5
+waveguide_end_power_fraction = 0.2
+
+[observability]
+range_m = 2.0
+angle_deg = 20.0
+gain_real = 1.0
+gain_imag = 0.0
+step_gain = 1.0e-5
+step_range_m = 1.0e-5
+step_angle_deg = 1.0e-4
+

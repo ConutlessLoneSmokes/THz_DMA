@@ -1,0 +1,123 @@
+[experiment]
+name = "direction1_stage2a_bounded_65db_diagnostic"
+replicate_seeds = [2026091001, 2026091002, 2026091003, 2026091004, 2026091005]
+samples_per_seed = 1
+bootstrap_seed = 2026093099
+bootstrap_resamples = 200
+randomization_seed = 2026093013
+research_decision_enabled = false
+diagnostic_only = true
+diagnostic_scope = "fixed known arrival sector; not the final Stage 2-A scene"
+estimators = ["oracle_geometry_ls", "grid_omp_3d", "yang_ogols_3d"]
+
+[system]
+carrier_frequency_hz = 3.0e11
+bandwidth_hz = 3.0e10
+num_subcarriers = 128
+nfft = 128
+cyclic_prefix_samples = 32
+
+[channel]
+num_paths = 3
+range_min_m = 1.85
+range_max_m = 2.15
+azimuth_min_deg = 18.0
+azimuth_max_deg = 22.0
+elevation_min_deg = -2.0
+elevation_max_deg = 2.0
+los_complex_gain_magnitude = 1.0
+reflection_excess_range_min_m = 0.08
+reflection_excess_range_max_m = 0.25
+reflection_azimuth_separation_min_deg = 4.0
+reflection_azimuth_separation_max_deg = 7.0
+reflection_elevation_separation_min_deg = 2.0
+reflection_elevation_separation_max_deg = 5.0
+reflection_gain_relative_min_db = -15.0
+reflection_gain_relative_max_db = -6.0
+include_absorption = true
+
+[atmosphere]
+table_path = "data/atmosphere/data_freq_abscoe.txt"
+interpolation = "linear"
+max_model_frequency_hz = 1.0e12
+
+[dma]
+num_microstrips = 8
+elements_per_microstrip = 160
+element_spacing_wavelengths = 0.2
+microstrip_spacing_wavelengths = 0.5
+quality_factor = 100.0
+tuning_bandwidth_hz = 3.0e10
+waveguide_effective_index = 2.5
+waveguide_end_power_fraction = 0.2
+
+[acquisition]
+num_rf_outputs = 8
+total_pilot_resource_elements = 128
+pilot_energy_per_re = 1.0
+switch_guard_symbol_equivalents = 0.25
+
+[[acquisition.schedules]]
+name = "frequency_single_shot_J1_K128"
+family = "frequency_single_shot"
+num_configurations = 1
+pilots_per_configuration = 128
+state_design = "grouped_frequency_sectors"
+num_sectors = 4
+
+[[acquisition.schedules]]
+name = "tensor_structured_J8_K16_RE128"
+family = "tensor_structured"
+num_configurations = 8
+pilots_per_configuration = 16
+state_design = "cyclic_frequency_tiles"
+
+[noise]
+array_reference_snr_db = [65.0]
+rf_noise_variance_fraction_of_element_noise = 0.0
+
+[search]
+range_min_m = 1.80
+range_max_m = 2.45
+range_step_m = 0.01
+azimuth_min_deg = 10.0
+azimuth_max_deg = 30.0
+azimuth_step_deg = 2.0
+elevation_min_deg = -9.0
+elevation_max_deg = 9.0
+elevation_step_deg = 3.0
+dictionary_chunk_size = 32
+dictionary_storage_dtype = "complex64"
+
+[estimator]
+exclusion_range_m = 0.015
+exclusion_azimuth_deg = 1.0
+exclusion_elevation_deg = 1.5
+
+[estimator.yang_ogols_3d]
+refinement_iterations = 2
+derivative_fraction = 0.1
+maximum_update_grid_units = 0.5
+convergence_tolerance = 1.0e-6
+candidate_chunk_size = 256
+
+[evaluation]
+channel_nmse_subcarrier_count = 16
+path_match_range_scale_m = 0.03
+path_match_azimuth_scale_deg = 2.0
+path_match_elevation_scale_deg = 3.0
+path_success_range_tolerance_m = 0.03
+path_success_azimuth_tolerance_deg = 3.0
+path_success_elevation_tolerance_deg = 4.0
+
+[data_evaluation]
+codebook_size = 64
+codebook_seed_start = 2026093000
+coherence_symbols = 100.0
+
+[analysis]
+primary_array_reference_snr_db = 65.0
+reference_estimator = "grid_omp_3d"
+strong_estimator = "yang_ogols_3d"
+oracle_estimator = "oracle_geometry_ls"
+

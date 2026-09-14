@@ -1,0 +1,84 @@
+[experiment]
+name = "direction1_stage2_unified_2d"
+replicate_seeds = [2026090901, 2026090902, 2026090903, 2026090904, 2026090905]
+samples_per_seed = 20
+bootstrap_seed = 2026091999
+bootstrap_resamples = 1000
+randomization_seed = 2026091913
+physics_levels = ["compatibility", "thz_physical"]
+
+[system]
+carrier_frequency_hz = 3.0e11
+bandwidth_hz = 3.0e10
+num_subcarriers = 128
+nfft = 128
+cyclic_prefix_samples = 32
+
+[channel]
+num_paths = 3
+range_min_m = 1.85
+range_max_m = 2.15
+azimuth_min_deg = 15.0
+azimuth_max_deg = 25.0
+elevation_min_deg = -8.0
+elevation_max_deg = 8.0
+los_complex_gain_magnitude = 1.0
+reflection_excess_range_min_m = 0.08
+reflection_excess_range_max_m = 0.25
+reflection_azimuth_separation_min_deg = 4.0
+reflection_azimuth_separation_max_deg = 12.0
+reflection_elevation_separation_min_deg = 2.0
+reflection_elevation_separation_max_deg = 8.0
+reflection_gain_relative_min_db = -15.0
+reflection_gain_relative_max_db = -6.0
+include_absorption = true
+
+[atmosphere]
+table_path = "data/atmosphere/data_freq_abscoe.txt"
+interpolation = "linear"
+max_model_frequency_hz = 1.0e12
+
+[dma]
+num_microstrips = 8
+elements_per_microstrip = 160
+element_spacing_wavelengths = 0.2
+microstrip_spacing_wavelengths = 0.5
+quality_factor = 100.0
+tuning_bandwidth_hz = 3.0e10
+waveguide_effective_index = 2.5
+waveguide_end_power_fraction = 0.2
+
+[acquisition]
+num_rf_outputs = 8
+total_pilot_resource_elements = 128
+pilot_energy_per_re = 1.0
+
+[[acquisition.schedules]]
+name = "frequency_single_shot_J1_K128"
+family = "frequency_single_shot"
+num_configurations = 1
+pilots_per_configuration = 128
+state_design = "grouped_frequency_sectors"
+num_sectors = 4
+
+[[acquisition.schedules]]
+name = "tensor_structured_J8_K16_RE128"
+family = "tensor_structured"
+num_configurations = 8
+pilots_per_configuration = 16
+state_design = "cyclic_frequency_tiles"
+
+[noise]
+array_input_snr_db = 55.0
+element_noise_enabled = true
+rf_noise_variance_fraction_of_element_noise = 0.0
+
+[analysis]
+tensor_rank = 3
+tensor_schedule_family = "tensor_structured"
+compatibility_rank_residual_threshold = 1.0e-8
+
+[data_evaluation]
+codebook_size = 64
+coherence_symbols = [50, 100, 200]
+primary_coherence_symbols = 100

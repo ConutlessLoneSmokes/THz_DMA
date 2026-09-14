@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import importlib
 from typing import Callable
 
 import numpy as np
 
 from thz_dma.channels.atmosphere import C0_M_PER_S
-from thz_dma.channels.planar import direction_unit_vector
 
 
 @dataclass(frozen=True)
@@ -79,9 +79,7 @@ class PlanarDmaTemplateOperator:
         ):
             raise ValueError("candidate coordinates must be finite with positive range")
 
-        directions = np.vstack(
-            [direction_unit_vector(azimuth, elevation) for azimuth, elevation in zip(azimuths, elevations)]
-        )
+        directions = _direction_vectors(azimuths, elevations)
         points = ranges[:, None] * directions
         positions = np.asarray(self.element_positions_m, dtype=float)
         distances = np.linalg.norm(
@@ -143,6 +141,9 @@ class PlanarTemplateDictionary:
     azimuths_rad: np.ndarray
     elevations_rad: np.ndarray
     templates: np.ndarray
+    compute_backend: str = "numpy"
+    compute_device: str = "cpu"
+    compute_precision: str = "complex128 accumulation; configured storage dtype"
 
     def __post_init__(self) -> None:
         ranges = np.asarray(self.ranges_m)
@@ -155,6 +156,8 @@ class PlanarTemplateDictionary:
             raise ValueError("templates must have one row per candidate")
         if ranges.size == 0 or templates.shape[1] == 0:
             raise ValueError("dictionary cannot be empty")
+        if not self.compute_backend or not self.compute_device or not self.compute_precision:
+            raise ValueError("dictionary compute metadata cannot be empty")
 
     @property
     def num_candidates(self) -> int:
@@ -185,34 +188,347 @@ def build_planar_template_dictionary(
     *,
     chunk_size: int = 8,
     storage_dtype: str = "complex64",
+    compute_backend: str = "numpy",
+    compute_device: str = "cuda:0",
     progress: Callable[[str], None] | None = None,
 ) -> PlanarTemplateDictionary:
     """Build a bounded three-dimensional dictionary in candidate chunks."""
 
-    if chunk_size < 1:
-        raise ValueError("chunk_size must be positive")
-    if storage_dtype not in {"complex64", "complex128"}:
-        raise ValueError("storage_dtype must be complex64 or complex128")
-    notify = progress or (lambda _message: None)
     ranges, azimuths, elevations = _candidate_vectors(
         range_grid_m, azimuth_grid_rad, elevation_grid_rad
     )
+    return build_planar_template_dictionary_from_candidates(
+        operator,
+        ranges,
+        azimuths,
+        elevations,
+        chunk_size=chunk_size,
+        storage_dtype=storage_dtype,
+        compute_backend=compute_backend,
+        compute_device=compute_device,
+        progress=progress,
+    )
+
+
+def _resolve_template_compute_backend(requested: str, device: str) -> tuple[str, object | None]:
+    backend = str(requested).strip().lower()
+    if backend not in {"numpy", "torch_cuda", "auto"}:
+        raise ValueError(
+            "dictionary compute backend must be numpy, torch_cuda, or auto"
+        )
+    if backend == "numpy":
+        return "numpy", None
+    try:
+        torch = importlib.import_module("torch")
+    except ModuleNotFoundError:
+        if backend == "auto":
+            return "numpy", None
+        raise RuntimeError(
+            "torch_cuda dictionary construction requires PyTorch"
+        ) from None
+    torch_device = torch.device(device)
+    cuda_available = bool(torch.cuda.is_available())
+    device_index = (
+        int(torch.cuda.current_device())
+        if torch_device.index is None and cuda_available
+        else torch_device.index
+    )
+    usable = (
+        torch_device.type == "cuda"
+        and cuda_available
+        and device_index is not None
+        and 0 <= int(device_index) < int(torch.cuda.device_count())
+    )
+    if usable:
+        return "torch_cuda", torch
+    if backend == "auto":
+        return "numpy", None
+    raise RuntimeError(
+        f"torch_cuda dictionary construction cannot use requested device {device!r}"
+    )
+
+
+def _direction_vectors(azimuths: np.ndarray, elevations: np.ndarray) -> np.ndarray:
+    cos_elevation = np.cos(elevations)
+    return np.column_stack(
+        (
+            cos_elevation * np.cos(azimuths),
+            cos_elevation * np.sin(azimuths),
+            np.sin(elevations),
+        )
+    )
+
+
+class PlanarTemplateBatchEvaluator:
+    """Reusable NumPy or CUDA evaluator for arbitrary geometry candidates."""
+
+    def __init__(
+        self,
+        operator: PlanarDmaTemplateOperator,
+        *,
+        compute_backend: str = "numpy",
+        compute_device: str = "cuda:0",
+    ) -> None:
+        self.operator = operator
+        self.compute_backend, self._torch = _resolve_template_compute_backend(
+            compute_backend, compute_device
+        )
+        if self.compute_backend == "numpy":
+            self.compute_device = "cpu"
+            self.compute_precision = "complex128 accumulation"
+            return
+
+        torch = self._torch
+        torch_device = torch.device(compute_device)
+        if torch_device.index is None:
+            torch_device = torch.device(
+                f"cuda:{int(torch.cuda.current_device())}"
+            )
+        self._torch_device = torch_device
+        self.compute_device = (
+            f"{torch_device} ({torch.cuda.get_device_name(torch_device)})"
+        )
+        self.compute_precision = (
+            "float64 geometry/common phase; float32 aperture-relative phase, "
+            "complex64 accumulation"
+        )
+        with torch.inference_mode(), torch.cuda.device(torch_device):
+            self._positions64 = torch.as_tensor(
+                np.asarray(operator.element_positions_m, dtype=float),
+                dtype=torch.float64,
+                device=torch_device,
+            )
+            self._frequencies64 = torch.as_tensor(
+                np.asarray(operator.frequencies_hz, dtype=float),
+                dtype=torch.float64,
+                device=torch_device,
+            )
+            self._frequencies32 = self._frequencies64.float()
+            self._absorption32 = torch.as_tensor(
+                np.asarray(operator.absorption_coefficient_per_m, dtype=float),
+                dtype=torch.float32,
+                device=torch_device,
+            )
+            self._conjugated_weights = torch.as_tensor(
+                np.ascontiguousarray(
+                    np.conjugate(np.asarray(operator.weights)).astype(np.complex64)
+                ),
+                dtype=torch.complex64,
+                device=torch_device,
+            )
+            self._whitening_scale = torch.as_tensor(
+                np.sqrt(
+                    np.asarray(
+                        operator.relative_output_noise_variance, dtype=float
+                    )
+                ).reshape(-1),
+                dtype=torch.float32,
+                device=torch_device,
+            )
+
+    def evaluate(self, ranges_m, azimuths_rad, elevations_rad) -> np.ndarray:
+        ranges = np.atleast_1d(np.asarray(ranges_m, dtype=float))
+        azimuths = np.atleast_1d(np.asarray(azimuths_rad, dtype=float))
+        elevations = np.atleast_1d(np.asarray(elevations_rad, dtype=float))
+        coordinates = np.column_stack((ranges, azimuths, elevations))
+        if (
+            ranges.ndim != 1
+            or ranges.size == 0
+            or azimuths.shape != ranges.shape
+            or elevations.shape != ranges.shape
+            or np.any(ranges <= 0.0)
+            or not np.all(np.isfinite(coordinates))
+        ):
+            raise ValueError(
+                "candidate coordinates must be finite matching vectors with positive range"
+            )
+        if self.compute_backend == "numpy":
+            return self.operator.evaluate(ranges, azimuths, elevations)
+
+        torch = self._torch
+        try:
+            with torch.inference_mode(), torch.cuda.device(self._torch_device):
+                directions = _direction_vectors(azimuths, elevations)
+                points64 = torch.as_tensor(
+                    ranges[:, None] * directions,
+                    dtype=torch.float64,
+                    device=self._torch_device,
+                )
+                ranges64 = torch.as_tensor(
+                    ranges, dtype=torch.float64, device=self._torch_device
+                )
+                distances64 = torch.linalg.vector_norm(
+                    points64[:, None, None, :]
+                    - self._positions64[None, :, :, :],
+                    dim=-1,
+                )
+                # Preserve the large propagation phase in float64. The
+                # aperture-relative phase is small enough for float32 after
+                # subtracting the candidate range.
+                distance_offsets32 = (
+                    distances64 - ranges64[:, None, None]
+                ).float()
+                distances32 = distances64.float()
+                amplitude = C0_M_PER_S / (
+                    4.0
+                    * np.pi
+                    * self._frequencies32[None, :, None, None]
+                    * distances32[:, None, :, :]
+                )
+                amplitude = amplitude * torch.exp(
+                    -0.5
+                    * self._absorption32[None, :, None, None]
+                    * distances32[:, None, :, :]
+                )
+                two_pi = float(2.0 * np.pi)
+                common_phase32 = torch.remainder(
+                    -two_pi
+                    * self._frequencies64[None, :]
+                    * ranges64[:, None]
+                    / C0_M_PER_S,
+                    two_pi,
+                ).float()
+                relative_phase32 = (
+                    -two_pi
+                    * self._frequencies32[None, :, None, None]
+                    * distance_offsets32[:, None, :, :]
+                    / C0_M_PER_S
+                )
+                channel = torch.polar(
+                    amplitude,
+                    common_phase32[:, :, None, None] + relative_phase32,
+                )
+                combined = torch.einsum(
+                    "jkse,ckse->csjk", self._conjugated_weights, channel
+                )
+                whitened = combined.reshape(ranges.size, -1) / self._whitening_scale[
+                    None, :
+                ]
+                return whitened.cpu().numpy()
+        except torch.OutOfMemoryError as error:
+            raise RuntimeError(
+                "CUDA ran out of memory while evaluating planar templates; "
+                "reduce the candidate batch or dictionary chunk size"
+            ) from error
+
+
+def _build_templates_torch_cuda(
+    operator: PlanarDmaTemplateOperator,
+    ranges: np.ndarray,
+    azimuths: np.ndarray,
+    elevations: np.ndarray,
+    *,
+    chunk_size: int,
+    storage_dtype: str,
+    device: str,
+    notify: Callable[[str], None],
+) -> tuple[np.ndarray, str]:
+    """Build exact-geometry templates on CUDA with phase-stable mixed precision."""
+
+    if storage_dtype != "complex64":
+        raise ValueError(
+            "torch_cuda dictionary construction currently requires complex64 storage"
+        )
+    evaluator = PlanarTemplateBatchEvaluator(
+        operator, compute_backend="torch_cuda", compute_device=device
+    )
     templates = np.empty(
-        (ranges.size, operator.observation_size), dtype=np.dtype(storage_dtype)
+        (ranges.size, operator.observation_size), dtype=np.complex64
     )
     report_stride = max(1.0, ranges.size / 4.0)
     next_report = report_stride
     for start in range(0, ranges.size, chunk_size):
         stop = min(start + chunk_size, ranges.size)
-        templates[start:stop] = operator.evaluate(
+        templates[start:stop] = evaluator.evaluate(
             ranges[start:stop], azimuths[start:stop], elevations[start:stop]
-        ).astype(storage_dtype)
+        )
         if stop >= next_report or stop == ranges.size:
             notify(f"built {stop}/{ranges.size} planar templates")
             next_report += report_stride
+    return templates, evaluator.compute_device
+
+
+def build_planar_template_dictionary_from_candidates(
+    operator: PlanarDmaTemplateOperator,
+    ranges_m,
+    azimuths_rad,
+    elevations_rad,
+    *,
+    chunk_size: int = 8,
+    storage_dtype: str = "complex64",
+    compute_backend: str = "numpy",
+    compute_device: str = "cuda:0",
+    progress: Callable[[str], None] | None = None,
+) -> PlanarTemplateDictionary:
+    """Build a dictionary from matching, possibly non-Cartesian candidates."""
+
+    if chunk_size < 1:
+        raise ValueError("chunk_size must be positive")
+    if storage_dtype not in {"complex64", "complex128"}:
+        raise ValueError("storage_dtype must be complex64 or complex128")
+    resolved_backend, _ = _resolve_template_compute_backend(
+        compute_backend, compute_device
+    )
+    notify = progress or (lambda _message: None)
+    ranges = np.asarray(ranges_m, dtype=float)
+    azimuths = np.asarray(azimuths_rad, dtype=float)
+    elevations = np.asarray(elevations_rad, dtype=float)
+    if (
+        ranges.ndim != 1
+        or ranges.size == 0
+        or azimuths.shape != ranges.shape
+        or elevations.shape != ranges.shape
+    ):
+        raise ValueError("candidate coordinate vectors must be non-empty and match")
+    coordinates = np.column_stack((ranges, azimuths, elevations))
+    if (
+        np.any(ranges <= 0.0)
+        or not np.all(np.isfinite(coordinates))
+        or np.unique(coordinates, axis=0).shape[0] != ranges.size
+    ):
+        raise ValueError("dictionary candidates must be finite, positive-range, and unique")
+    if resolved_backend == "torch_cuda":
+        templates, actual_device = _build_templates_torch_cuda(
+            operator,
+            ranges,
+            azimuths,
+            elevations,
+            chunk_size=chunk_size,
+            storage_dtype=storage_dtype,
+            device=compute_device,
+            notify=notify,
+        )
+        precision = (
+            "float64 geometry/common phase; float32 aperture-relative phase, "
+            "complex64 accumulation and storage"
+        )
+    else:
+        templates = np.empty(
+            (ranges.size, operator.observation_size), dtype=np.dtype(storage_dtype)
+        )
+        report_stride = max(1.0, ranges.size / 4.0)
+        next_report = report_stride
+        for start in range(0, ranges.size, chunk_size):
+            stop = min(start + chunk_size, ranges.size)
+            templates[start:stop] = operator.evaluate(
+                ranges[start:stop], azimuths[start:stop], elevations[start:stop]
+            ).astype(storage_dtype)
+            if stop >= next_report or stop == ranges.size:
+                notify(f"built {stop}/{ranges.size} planar templates")
+                next_report += report_stride
+        actual_device = "cpu"
+        precision = "complex128 accumulation; configured storage dtype"
     if not np.all(np.isfinite(templates)):
         raise ValueError("dictionary contains non-finite values")
-    return PlanarTemplateDictionary(ranges, azimuths, elevations, templates)
+    return PlanarTemplateDictionary(
+        ranges,
+        azimuths,
+        elevations,
+        templates,
+        compute_backend=resolved_backend,
+        compute_device=actual_device,
+        compute_precision=precision,
+    )
 
 
 def _exclusion_mask(

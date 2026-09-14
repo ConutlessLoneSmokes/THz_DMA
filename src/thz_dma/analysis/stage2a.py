@@ -634,6 +634,37 @@ def _write_report(path: Path, compact: dict) -> None:
     for name, passed in gate["checks"].items():
         lines.append(f"- `{name}`：`{passed}`")
     lines.extend(diagnostic_report_lines(compact))
+    adaptive = compact.get("adaptive_search_diagnostics", {})
+    if adaptive.get("status") == "complete":
+        lines.extend(
+            [
+                "## 自适应局部网格诊断",
+                "",
+                "每条路径的随机粗中心在观测前生成；连续真值在对应中心的半功率邻域内随机偏移，没有人为半格放置。该信息条件只用于条件化实现诊断。",
+                f"候选数范围为 {adaptive['candidate_count_min']}–{adaptive['candidate_count_max']}，中位数 {adaptive['candidate_count_median']:.1f}；全部真值位于关联局部窗：`{adaptive['all_truth_paths_inside_associated_windows']}`。",
+                f"局部相关宽度在全局搜索边界截断的半宽数为 {adaptive['truncated_profile_halfwidth_count']}；涉及场景数为 {adaptive['scenes_with_truncated_profiles']}。",
+                "",
+            ]
+        )
+        for schedule, validation in adaptive.get(
+            "dictionary_compute_validation", {}
+        ).items():
+            lines.append(
+                f"- `{schedule}` CUDA—NumPy 模板等价性："
+                f"`{validation['status']}`，相对误差 "
+                f"{validation['relative_frobenius_error']:.3e}，"
+                f"最小 $\\rho^2$={validation['minimum_row_rho2']:.9f}。"
+            )
+        for row in adaptive["condition_records"]:
+            lines.append(
+                f"- {row['schedule']} / {row['array_reference_snr_db']:g} dB / "
+                f"`{row['estimator']}`：全带线性均值转 dB "
+                f"{row['mean_fullband_128_nmse_db']:.3f}，逐样本中位数 "
+                f"{row['median_fullband_128_nmse_db']:.3f}，≤−10 dB 比例 "
+                f"{100.0 * row['fullband_nmse_le_minus10db_rate']:.1f}%，"
+                f"三径成功率 {100.0 * row['all_paths_success_rate']:.1f}%。"
+            )
+        lines.append("")
     lines.extend(["", "## 主 SNR 兼容字段汇总（旧 16 点口径，不用于宽带恢复结论）", ""])
     for block in screen["schedule_rankings"]:
         lines.append(f"### {block['schedule']}")
@@ -654,15 +685,99 @@ def _write_report(path: Path, compact: dict) -> None:
                 f"波束损失 {oracle['median_feasible_beam_loss_db']:.3f} dB。"
             )
         lines.append("")
-    lines.extend(
-        [
-            "## 判读边界",
-            "",
-            "实现门槛只检查代码链路。固定扇区仍需验证基本有效的几何与宽带恢复；不能凭实现门槛通过启动正式比较或新文献方法。",
-            "",
-        ]
+    boundary = (
+        "本轮只检验已知逐径粗中心后的局部候选采样与捕获域。即使条件诊断通过，也不能据此启动正式比较；未知全局几何下的粗获取仍需单独验证。"
+        if adaptive.get("status") == "complete"
+        else "实现门槛只检查代码链路。固定扇区仍需验证基本有效的几何与宽带恢复；不能凭实现门槛通过启动正式比较或新文献方法。"
     )
+    lines.extend(["## 判读边界", "", boundary, ""])
     path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def _adaptive_search_diagnostics(frame: pd.DataFrame, summary: dict) -> dict:
+    search = summary.get("search", {})
+    if search.get("mode") != "beam_center_adaptive":
+        return {"status": "not_applicable"}
+    required = {
+        "adaptive_candidate_count",
+        "adaptive_truth_window_coverage",
+        "adaptive_estimate_outside_local_union",
+        "fullband_128_nmse_linear",
+        "fullband_128_nmse_db",
+    }
+    missing = sorted(required - set(frame.columns))
+    if missing:
+        return {"status": "invalid", "missing_columns": missing}
+    scene_counts = frame.groupby("scene_id", sort=False)[
+        "adaptive_candidate_count"
+    ].nunique()
+    truncated_by_scene = []
+    for scene in search.get("scene_records", []):
+        count = sum(
+            int(flag)
+            for path_profiles in scene.get("schedule_profiles", {}).values()
+            for path_profile in path_profiles
+            for dimension_sides in path_profile.get("crossing_truncated", [])
+            for flag in dimension_sides
+        )
+        truncated_by_scene.append(count)
+    records = []
+    for (schedule, snr, estimator), subset in frame.groupby(
+        ["schedule", "array_reference_snr_db", "estimator"], sort=False
+    ):
+        fullband = subset["fullband_128_nmse_linear"].to_numpy(float)
+        records.append(
+            {
+                "schedule": str(schedule),
+                "array_reference_snr_db": float(snr),
+                "estimator": str(estimator),
+                "scenes": int(len(subset)),
+                "mean_fullband_128_nmse_db": _db(float(np.mean(fullband))),
+                "median_fullband_128_nmse_db": float(
+                    np.median(subset["fullband_128_nmse_db"])
+                ),
+                "fullband_nmse_le_minus10db_rate": float(
+                    np.mean(subset["fullband_128_nmse_db"] <= -10.0)
+                ),
+                "all_paths_success_rate": float(
+                    np.mean(subset["all_paths_success"])
+                ),
+                "estimate_outside_local_union_rate": float(
+                    np.mean(subset["adaptive_estimate_outside_local_union"])
+                ),
+            }
+        )
+    return {
+        "status": "complete",
+        "information_condition": (
+            "one known pre-observation coarse center per path; conditional diagnostic, "
+            "not a deployable coarse-center acquisition result"
+        ),
+        "artificial_half_grid_offset_used": False,
+        "truth_offsets": "continuous random offsets around coarse centers",
+        "all_truth_paths_inside_associated_windows": bool(
+            (frame["adaptive_truth_window_coverage"] == 1).all()
+            and search.get("all_truth_paths_inside_associated_windows", False)
+        ),
+        "candidate_count_constant_within_scene": bool((scene_counts == 1).all()),
+        "candidate_count_min": int(frame["adaptive_candidate_count"].min()),
+        "candidate_count_median": float(
+            frame.groupby("scene_id", sort=False)["adaptive_candidate_count"]
+            .first()
+            .median()
+        ),
+        "candidate_count_max": int(frame["adaptive_candidate_count"].max()),
+        "truncated_profile_halfwidth_count": int(sum(truncated_by_scene)),
+        "scenes_with_truncated_profiles": int(
+            sum(count > 0 for count in truncated_by_scene)
+        ),
+        "dictionary_compute": search.get("dictionary_compute", {}),
+        "dictionary_compute_validation": search.get(
+            "dictionary_compute_validation", {}
+        ),
+        "descriptive_fullband_screen_db": -10.0,
+        "condition_records": records,
+    }
 
 
 def analyze_stage2a(run_dir: str | Path) -> dict:
@@ -693,6 +808,7 @@ def analyze_stage2a(run_dir: str | Path) -> dict:
         "domain_metrics_available": domains_available,
         "domain_summary": domain_summary(frame),
         "bounded_diagnostics": bounded_diagnostics(frame, config, directory, integrity),
+        "adaptive_search_diagnostics": _adaptive_search_diagnostics(frame, summary),
         "raw_metrics_sha256": _sha256(raw_path),
         "data_integrity": integrity,
         "comparison_contract": {

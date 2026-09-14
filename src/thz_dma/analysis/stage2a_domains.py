@@ -83,6 +83,13 @@ def _azimuth_stats(block, config):
 
 
 def bounded_diagnostics(frame, config, directory, integrity):
+    if str(config.get("search", {}).get("mode", "fixed")) == "beam_center_adaptive":
+        return {
+            "status": "adaptive_search_diagnostic; legacy fixed-sector 55-to-65 dB screen not applied",
+            "criteria": {},
+            "F1": [],
+            "F2": [],
+        }
     result = {
         "status": "diagnostic_only; no authorization for formal run",
         "criteria": {
@@ -155,12 +162,20 @@ def bounded_diagnostics(frame, config, directory, integrity):
 
 
 def diagnostic_report_lines(compact):
+    diagnostic = compact["bounded_diagnostics"]
+    if str(diagnostic.get("status", "")).startswith("adaptive_search_diagnostic"):
+        return [
+            "",
+            "## 固定扇区历史诊断",
+            "",
+            "本次为波束中心自适应局部网格运行，不套用旧五场景 55→65 dB 固定扇区判据。",
+            "",
+        ]
     lines = ["", "## 分域 CSI 与 55→65 dB 固定扇区诊断", "",
              "pilot 指导频频点上的阵元 CSI；observation NMSE 是 DMA 合并后的观测误差。旧 channel_nmse 仍为原 16 点口径。F1 未观测域不适用，留空。", ""]
     for row in compact["domain_summary"]:
         values = "，".join(f"{name}={row[f'mean_{name}_db']:.3f} dB" if row[f"mean_{name}_db"] is not None else f"{name}=不适用" for name in DOMAINS)
         lines.append(f"- {row['schedule']} / {row['snr_db']:g} dB / {row['estimator']}：{values}。")
-    diagnostic = compact["bounded_diagnostics"]
     lines += ["", f"诊断状态：`{diagnostic['status']}`。"]
     if "F1_status" in diagnostic:
         lines.append(f"F1：`{diagnostic['F1_status']}`。")

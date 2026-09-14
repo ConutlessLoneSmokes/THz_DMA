@@ -1,0 +1,33 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated and local-only research material
+runs/
+results/
+sources/
+figures/
+ppt_outline/
+research_route/archive/
+data/direction1_stage*/
+
+# Local workflow and retrieval helpers
+ASTRA_INSTRUCTIONS_AUDIT.md
+CODEX_START_PROMPT.md
+MIGRATION_GUIDE.md
+download_*.mjs
+metadata_lookup.mjs
+openalex_batch.mjs
+fulltext_manifest.json
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
