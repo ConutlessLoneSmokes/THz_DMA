@@ -4,19 +4,14 @@ from __future__ import annotations
 
 import argparse
 import csv
-import hashlib
 import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 sys.dont_write_bytecode = True
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
-try:
-    import tomllib
-except ModuleNotFoundError:
-    import tomli as tomllib
+from _run_support import PROJECT_ROOT as ROOT, hash_file, read_toml, write_json
+
 import numpy as np
 
 from thz_dma.channels.planar import PlanarPath
@@ -29,14 +24,6 @@ from thz_dma.stage2a import (
     build_stage2a_estimators,
     channel_domain_metrics,
 )
-
-
-def write_json(path, value):
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False), encoding="utf-8")
-
-
-def sha(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def xyz(paths):
@@ -54,14 +41,14 @@ def main():
     write_json(run_dir / "status.json", {"status": "running"})
     try:
         config_path = ROOT / "configs/direction1_stage2a_bounded_diagnostic.toml"
-        config = tomllib.loads(config_path.read_text(encoding="utf-8"))
+        config = read_toml(config_path)
         protected = [config_path, ROOT / "src/thz_dma/estimators/planar_sparse.py"]
         for run_id in (
             "stage2a_bounded_20260910_v1", "stage2a_bounded_65db_20260910_v1",
             "stage2a_ongrid_noiseless_20260910_v1", "stage2a_offgrid_factorial_20260910_v1",
         ):
             protected.extend(p for p in (ROOT / "runs" / run_id).rglob("*") if p.is_file())
-        before = {str(p.relative_to(ROOT)): sha(p) for p in protected}
+        before = {str(p.relative_to(ROOT)): hash_file(p) for p in protected}
         design = {
             "diagnostic_only": True,
             "truth": "original continuous five seeded scenes, noiseless; each triple and its dependent single paths",
@@ -77,7 +64,7 @@ def main():
         }
         write_json(run_dir / "design_pre_registered.json", design)
         source_paths = [Path(__file__).resolve(), config_path, *sorted((ROOT / "src").rglob("*.py"))]
-        write_json(run_dir / "code_manifest.json", [{"path": str(p.relative_to(ROOT)), "sha256": sha(p)} for p in source_paths])
+        write_json(run_dir / "code_manifest.json", [{"path": str(p.relative_to(ROOT)), "sha256": hash_file(p)} for p in source_paths])
         (run_dir / "environment.txt").write_text(
             f"timestamp_utc: {datetime.now(timezone.utc).isoformat()}\npython: {sys.version}\n"
             f"executable: {sys.executable}\nnumpy: {np.__version__}\ndevice: CPU; no training\n",
@@ -163,7 +150,7 @@ def main():
             print(f"completed seed {seed}", flush=True)
         if len(rows) != design["expected_rows"]:
             raise RuntimeError(f"expected 40 rows, got {len(rows)}")
-        if before != {str(p.relative_to(ROOT)): sha(p) for p in protected}:
+        if before != {str(p.relative_to(ROOT)): hash_file(p) for p in protected}:
             raise RuntimeError("protected input or historical result changed")
         with (run_dir / "metrics_raw.csv").open("w", encoding="utf-8", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=list(rows[0])); writer.writeheader(); writer.writerows(rows)

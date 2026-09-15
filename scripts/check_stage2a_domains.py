@@ -4,19 +4,14 @@ from __future__ import annotations
 
 import ast
 import copy
-import hashlib
 import json
 import sys
 import tempfile
 from pathlib import Path
 
 sys.dont_write_bytecode = True
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
-try:
-    import tomllib
-except ModuleNotFoundError:
-    import tomli as tomllib
+from _run_support import PROJECT_ROOT as ROOT, hash_file, read_toml
+
 import numpy as np
 import pandas as pd
 from thz_dma.stage2a import channel_domain_metrics, _channel_from_estimate, _operator_for_schedule
@@ -31,8 +26,10 @@ def main():
     for path in [ROOT / "src/thz_dma/stage2a.py", *sorted((ROOT / "src/thz_dma/analysis").glob("stage2a*.py")), Path(__file__)]:
         ast.parse(path.read_text(encoding="utf-8"))
     baseline = ROOT / "runs" / BASELINE_ID
-    before = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in baseline.rglob("*") if p.is_file()}
-    config = tomllib.loads((ROOT / "configs/direction1_stage2a_bounded_65db_diagnostic.toml").read_text(encoding="utf-8"))
+    before = {str(p): hash_file(p) for p in baseline.rglob("*") if p.is_file()}
+    config = read_toml(
+        ROOT / "configs/direction1_stage2a_bounded_65db_diagnostic.toml"
+    )
     old_config = json.loads((baseline / "config_resolved.json").read_text(encoding="utf-8"))["config"]
     assert _config_comparable(config, old_config)
     assert config["noise"]["array_reference_snr_db"] == [65.0]
@@ -128,7 +125,7 @@ def main():
         invalid = copy.deepcopy(config)
         invalid["estimator"]["yang_ogols_3d"]["refinement_iterations"] += 1
         assert bounded_diagnostics(frame, invalid, fixture, {"complete": True})["F1_status"].startswith("config_mismatch")
-    assert before == {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in baseline.rglob("*") if p.is_file()}
+    assert before == {str(p): hash_file(p) for p in baseline.rglob("*") if p.is_file()}
     print(json.dumps({"status": "passed", "static_parse": True, "config_only_snr_and_labels_changed": True,
         "five_original_geometries_match": True, "standard_noise_scaling": True, "energy_weighted_domains": True,
         "legacy_and_synthetic_analysis": True, "historical_run_unchanged": True,

@@ -5,7 +5,6 @@ from __future__ import annotations
 import argparse
 import copy
 import csv
-import hashlib
 import json
 import sys
 import time
@@ -13,12 +12,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.dont_write_bytecode = True
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
-try:
-    import tomllib
-except ModuleNotFoundError:
-    import tomli as tomllib
+from _run_support import PROJECT_ROOT as ROOT, hash_file, read_toml, write_json
+
 import numpy as np
 
 from check_stage2a_ongrid_noiseless import traced_estimate
@@ -47,17 +42,6 @@ VARIANTS = [
 METHODS = ("grid_omp_3d", "yang_ogols_3d")
 
 
-def write_json(path: Path, value) -> None:
-    path.write_text(
-        json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False),
-        encoding="utf-8",
-    )
-
-
-def sha(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
-
-
 def xyz(paths) -> np.ndarray:
     return np.array(
         [[p.range_m, p.azimuth_rad, p.elevation_rad] for p in paths], dtype=float
@@ -83,7 +67,7 @@ def main() -> None:
     write_json(run_dir / "status.json", {"status": "running"})
     try:
         config_path = ROOT / "configs/direction1_stage2a_bounded_diagnostic.toml"
-        config = tomllib.loads(config_path.read_text(encoding="utf-8"))
+        config = read_toml(config_path)
         original_config = copy.deepcopy(config)
         protected = [
             config_path,
@@ -99,7 +83,9 @@ def main() -> None:
             protected.extend(
                 path for path in (ROOT / "runs" / run_id).rglob("*") if path.is_file()
             )
-        protected_before = {str(path.relative_to(ROOT)): sha(path) for path in protected}
+        protected_before = {
+            str(path.relative_to(ROOT)): hash_file(path) for path in protected
+        }
         design = {
             "diagnostic_only": True,
             "base_config": config,
@@ -134,7 +120,10 @@ def main() -> None:
         ]
         write_json(
             run_dir / "code_manifest.json",
-            [{"path": str(path.relative_to(ROOT)), "sha256": sha(path)} for path in sources],
+            [
+                {"path": str(path.relative_to(ROOT)), "sha256": hash_file(path)}
+                for path in sources
+            ],
         )
         (run_dir / "environment.txt").write_text(
             f"timestamp_utc: {datetime.now(timezone.utc).isoformat()}\n"
@@ -324,7 +313,9 @@ def main() -> None:
             raise RuntimeError(f"expected 640 rows, got {len(rows)}")
         if config != original_config:
             raise RuntimeError("configuration mutated during diagnostic")
-        protected_after = {str(path.relative_to(ROOT)): sha(path) for path in protected}
+        protected_after = {
+            str(path.relative_to(ROOT)): hash_file(path) for path in protected
+        }
         if protected_before != protected_after:
             raise RuntimeError("a protected input or historical result changed")
         with (run_dir / "metrics_raw.csv").open("w", encoding="utf-8", newline="") as handle:

@@ -5,16 +5,10 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-SRC_ROOT = PROJECT_ROOT / "src"
-if str(SRC_ROOT) not in sys.path:
-    sys.path.insert(0, str(SRC_ROOT))
-
-from thz_dma.analysis.stage2a import analyze_stage2a  # noqa: E402
+import _run_support  # noqa: F401  # Adds the local src tree before package imports.
+from thz_dma.analysis.stage2a import analyze_stage2a
 
 
 def main() -> int:
@@ -32,4 +26,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

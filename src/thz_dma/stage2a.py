@@ -1061,6 +1061,8 @@ def run_stage2a(
             search_metadata,
         ) = build_stage2a_estimators(config, project_root, progress=notify)
     else:
+        # Adaptive candidates depend on each pre-observation beam center, so only
+        # the schedule operators can be reused across scenes.
         _adaptive_settings(config)
         platform, schedule_weights, operators = build_stage2a_operators(
             config, project_root
@@ -1306,6 +1308,8 @@ def run_stage2a(
                     rf_variance = element_variance * float(
                         noise_config["rf_noise_variance_fraction_of_element_noise"]
                     )
+                    # Excluding SNR from this seed keeps the standard noise draw
+                    # paired; only its scale changes across SNR levels.
                     noise_rng = np.random.default_rng(
                         np.random.SeedSequence(
                             [seed, sample_index, schedule_index, 2_026_090_921]
@@ -1613,6 +1617,8 @@ def run_stage2a(
                             }
                         )
                 if search_mode == "beam_center_adaptive":
+                    # Drop each scene dictionary before building the next one to
+                    # bound peak host and device memory.
                     del dictionary
         notify(f"completed Stage 2-A seed {seed_index}/{len(replicate_seeds)}")
 

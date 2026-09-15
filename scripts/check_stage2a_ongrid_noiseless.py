@@ -10,7 +10,6 @@ from __future__ import annotations
 import argparse
 import copy
 import csv
-import hashlib
 import json
 import platform as operating_system
 import sys
@@ -20,12 +19,8 @@ from pathlib import Path
 from unittest.mock import patch
 
 sys.dont_write_bytecode = True
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
-try:
-    import tomllib
-except ModuleNotFoundError:
-    import tomli as tomllib
+from _run_support import PROJECT_ROOT as ROOT, hash_file, read_toml, write_json
+
 import numpy as np
 
 import thz_dma.estimators.planar_sparse as sparse
@@ -36,14 +31,6 @@ from thz_dma.stage2a import (
     build_stage2a_estimators, _channel_from_estimate, _estimate, _match_paths,
     channel_domain_metrics,
 )
-
-
-def write_json(path, value):
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False), encoding="utf-8")
-
-
-def sha(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def coords(paths):
@@ -99,14 +86,14 @@ def main():
     write_json(directory / "status.json", {"status": "running"})
     try:
         config_path = ROOT / "configs/direction1_stage2a_bounded_diagnostic.toml"
-        config = tomllib.loads(config_path.read_text(encoding="utf-8"))
+        config = read_toml(config_path)
         original_config = copy.deepcopy(config)
         immutable = [config_path, ROOT / "configs/direction1_stage2a_bounded_65db_diagnostic.toml",
                      ROOT / "src/thz_dma/estimators/planar_sparse.py",
                      ROOT / "src/thz_dma/surfaces/multistrip.py"]
         for run_id in ("stage2a_bounded_20260910_v1", "stage2a_bounded_65db_20260910_v1"):
             immutable.extend(p for p in (ROOT / "runs" / run_id).rglob("*") if p.is_file())
-        before = {str(p.relative_to(ROOT)): sha(p) for p in immutable}
+        before = {str(p.relative_to(ROOT)): hash_file(p) for p in immutable}
         design = {
             "diagnostic_only": True,
             "base_config": config,
@@ -123,7 +110,13 @@ def main():
         write_json(directory / "config_resolved.json", design)
         sources = [Path(__file__).resolve(), config_path, ROOT / config["atmosphere"]["table_path"],
                    *sorted((ROOT / "src").rglob("*.py"))]
-        write_json(directory / "code_manifest.json", [{"path": str(p.relative_to(ROOT)), "sha256": sha(p)} for p in sources])
+        write_json(
+            directory / "code_manifest.json",
+            [
+                {"path": str(p.relative_to(ROOT)), "sha256": hash_file(p)}
+                for p in sources
+            ],
+        )
         (directory / "environment.txt").write_text(
             f"timestamp_utc: {datetime.now(timezone.utc).isoformat()}\npython: {sys.version}\n"
             f"executable: {sys.executable}\nnumpy: {np.__version__}\nplatform: {operating_system.platform()}\n"
@@ -211,7 +204,9 @@ def main():
             print(f"completed {fixture_id}", flush=True)
         assert len(rows) == 120
         assert config == original_config
-        assert before == {str(p.relative_to(ROOT)): sha(p) for p in immutable}
+        assert before == {
+            str(p.relative_to(ROOT)): hash_file(p) for p in immutable
+        }
         with (directory / "metrics_raw.csv").open("w", encoding="utf-8", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=list(rows[0])); writer.writeheader(); writer.writerows(rows)
         write_json(directory / "selection_traces.json", traces)
