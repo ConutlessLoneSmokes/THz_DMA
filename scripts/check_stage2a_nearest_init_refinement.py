@@ -14,16 +14,16 @@ from _run_support import PROJECT_ROOT as ROOT, hash_file, read_toml, write_json
 
 import numpy as np
 
-from thz_dma.channels.planar import PlanarPath
-from thz_dma.estimators.planar_sparse import _continuous_refinement
-from thz_dma.observations.multistrip import observe_multistrip_schedule
-from thz_dma.stage2 import sample_stage2_paths
-from thz_dma.stage2a import (
-    _channel_from_estimate,
-    _match_paths,
-    build_stage2a_estimators,
-    channel_domain_metrics,
+from thz_dma.channels.planar import (
+    PlanarPath,
+    channel_from_planar_estimate as _channel_from_estimate,
+    sample_stage2_paths,
 )
+from thz_dma.estimators.planar_baselines import build_stage2a_estimators
+from thz_dma.estimators.planar_sparse import _continuous_refinement
+from thz_dma.evaluation.paths import match_planar_paths as _match_paths
+from thz_dma.metrics.diagnostics import channel_domain_metrics
+from thz_dma.observations.multistrip import observe_multistrip_schedule
 
 
 def xyz(paths):

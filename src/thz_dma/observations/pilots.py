@@ -5,6 +5,21 @@ from __future__ import annotations
 import numpy as np
 
 
+def full_band_pilot_indices(num_subcarriers: int, pilot_count: int) -> np.ndarray:
+    """Select deterministic full-band pilots without duplicate indices."""
+
+    if not 1 <= pilot_count <= num_subcarriers:
+        raise ValueError("pilot count must lie in [1, num_subcarriers]")
+    if pilot_count == 1:
+        return np.array([num_subcarriers // 2], dtype=int)
+    indices = np.rint(
+        np.linspace(0, num_subcarriers - 1, pilot_count, dtype=float)
+    ).astype(int)
+    if np.unique(indices).size != pilot_count:
+        raise RuntimeError("pilot selection produced duplicate indices")
+    return indices
+
+
 def complex_standard_normal(rng: np.random.Generator, shape) -> np.ndarray:
     """Return circular complex Gaussian samples with unit variance."""
 
@@ -89,3 +104,34 @@ def effective_output_snr_db(clean_observation, noise_variance: float) -> float:
     if noise_variance <= 0.0 or not np.isfinite(noise_variance):
         raise ValueError("noise_variance must be positive and finite")
     return float(10.0 * np.log10(np.mean(np.abs(signal) ** 2) / noise_variance))
+
+
+def noise_conditions(noise_config: dict) -> list[dict]:
+    conditions = []
+    for value in noise_config.get("input_array_snr_db", []):
+        target = float(value)
+        conditions.append(
+            {
+                "label": f"input_array:{target:g}dB",
+                "mode": "input_array",
+                "target_snr_db": target,
+            }
+        )
+    for value in noise_config.get("matched_output_snr_db", []):
+        target = float(value)
+        conditions.append(
+            {
+                "label": f"matched_output:{target:g}dB",
+                "mode": "matched_output",
+                "target_snr_db": target,
+            }
+        )
+    if bool(noise_config.get("include_noiseless", False)):
+        conditions.append(
+            {"label": "noiseless", "mode": "noiseless", "target_snr_db": None}
+        )
+    if not conditions:
+        raise ValueError("at least one noise condition is required")
+    if len({item["label"] for item in conditions}) != len(conditions):
+        raise ValueError("noise conditions contain duplicates")
+    return conditions

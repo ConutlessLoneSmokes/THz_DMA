@@ -2,10 +2,10 @@
 
 from __future__ import annotations
 
-import hashlib
 import json
 from pathlib import Path
-from typing import Callable
+
+from thz_dma.analysis.io import sha256 as _sha256
 
 import matplotlib
 
@@ -14,6 +14,11 @@ import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
+
+from thz_dma.metrics.statistics import (
+    bootstrap_interval as _bootstrap_interval,
+    power_db as _db,
+)
 
 from thz_dma.analysis.stage2a_domains import (
     DOMAINS, bounded_diagnostics, diagnostic_report_lines, domain_summary, validate_domains,
@@ -33,37 +38,10 @@ SHORT_LABELS = {
 }
 
 
-def _sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for block in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(block)
-    return digest.hexdigest()
 
 
-def _db(value: float) -> float:
-    return float(10.0 * np.log10(max(float(value), np.finfo(float).tiny)))
 
 
-def _bootstrap_interval(
-    values,
-    statistic: Callable[[np.ndarray], float],
-    *,
-    rng: np.random.Generator,
-    resamples: int,
-) -> list[float]:
-    data = np.asarray(values, dtype=float)
-    data = data[np.isfinite(data)]
-    if data.size == 0:
-        raise ValueError("bootstrap input has no finite values")
-    if data.size == 1:
-        value = float(statistic(data))
-        return [value, value]
-    indices = rng.integers(0, data.size, size=(resamples, data.size))
-    estimates = np.asarray(
-        [statistic(data[index]) for index in indices], dtype=float
-    )
-    return np.quantile(estimates, [0.025, 0.975]).astype(float).tolist()
 
 
 def _validate_raw(frame: pd.DataFrame, summary: dict) -> dict:

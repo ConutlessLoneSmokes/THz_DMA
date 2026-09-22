@@ -1,11 +1,69 @@
-"""Feasible planar-DMA data-state selection and link metrics."""
+"""Feasible DMA data-state selection and link metrics."""
 
 from __future__ import annotations
 
 import numpy as np
 
-from thz_dma.surfaces.dma import frequency_tiled_resonances
+from thz_dma.channels.atmosphere import C0_M_PER_S
+from thz_dma.metrics.statistics import power_db
+from thz_dma.surfaces.dma import (
+    dma_weight_matrix,
+    frequency_tiled_resonances,
+    row_normalize,
+)
 from thz_dma.surfaces.multistrip import multistrip_dma_weights
+
+
+def ideal_digital_beam_gain(true_channel, estimated_channel) -> float:
+    """Normalized gain of the combiner implied by an estimated channel."""
+
+    truth = np.asarray(true_channel, dtype=complex).ravel()
+    estimate = np.asarray(estimated_channel, dtype=complex).ravel()
+    truth_energy = float(np.vdot(truth, truth).real)
+    estimate_norm = float(np.linalg.norm(estimate))
+    if truth_energy == 0.0 or estimate_norm == 0.0:
+        return 0.0
+    combiner = estimate / estimate_norm
+    gain = float(abs(np.vdot(combiner, truth)) ** 2 / truth_energy)
+    return float(np.clip(gain, 0.0, 1.0))
+
+
+def feasible_codebook_metrics(
+    true_channel: np.ndarray,
+    estimated_channel: np.ndarray,
+    data_codebook: np.ndarray,
+    input_snr_db: float,
+) -> dict[str, float | int]:
+    """Evaluate state selection against an arbitrary feasible codebook."""
+
+    truth = np.asarray(true_channel, dtype=complex).ravel()
+    estimate = np.asarray(estimated_channel, dtype=complex).ravel()
+    codebook = np.asarray(data_codebook, dtype=complex)
+    predicted_power = np.abs(np.conjugate(codebook) @ estimate) ** 2
+    true_power = np.abs(np.conjugate(codebook) @ truth) ** 2
+    selected_index = int(np.argmax(predicted_power))
+    oracle_index = int(np.argmax(true_power))
+    selected_power = float(true_power[selected_index])
+    oracle_power = float(true_power[oracle_index])
+    digital_power = float(np.vdot(truth, truth).real)
+    if digital_power <= 0.0 or oracle_power <= 0.0:
+        raise ValueError("data channel or feasible codebook has zero gain")
+    input_snr = 10.0 ** (float(input_snr_db) / 10.0)
+    selected_snr = input_snr * selected_power / digital_power
+    oracle_snr = input_snr * oracle_power / digital_power
+    ratio = float(np.clip(selected_power / oracle_power, 0.0, 1.0))
+    return {
+        "selected_data_state_index": selected_index,
+        "oracle_data_state_index": oracle_index,
+        "data_state_selection_correct": int(selected_index == oracle_index),
+        "feasible_beam_gain_ratio_linear": ratio,
+        "feasible_beam_loss_db": -power_db(ratio),
+        "oracle_feasible_fraction_of_digital_linear": float(
+            np.clip(oracle_power / digital_power, 0.0, 1.0)
+        ),
+        "feasible_gross_rate_bps_hz": float(np.log2(1.0 + selected_snr)),
+        "oracle_feasible_gross_rate_bps_hz": float(np.log2(1.0 + oracle_snr)),
+    }
 
 
 def build_planar_data_codebook(
@@ -139,4 +197,49 @@ def feasible_planar_data_metrics(
         "payload_fraction": payload_fraction,
         "net_rate_bps_hz": payload_fraction * gross_rate,
         "oracle_net_rate_bps_hz": payload_fraction * oracle_rate,
+    }
+
+
+def build_linear_data_codebook(
+    config: dict,
+    positions_m: np.ndarray,
+) -> tuple[np.ndarray, dict]:
+    """Build an independent feasible center-frequency DMA data codebook."""
+
+    system = config["system"]
+    hardware = config["dma"]
+    data_config = config["data_evaluation"]
+    carrier_hz = float(system["carrier_frequency_hz"])
+    spacing_m = float(hardware["spacing_wavelengths"]) * C0_M_PER_S / carrier_hz
+    feed_positions = np.arange(positions_m.size, dtype=float) * spacing_m
+    count = int(data_config["codebook_size"])
+    seed_start = int(data_config["codebook_seed_start"])
+    if count < 2:
+        raise ValueError("data codebook must contain at least two states")
+
+    rows = []
+    for offset in range(count):
+        resonances = frequency_tiled_resonances(
+            positions_m.size,
+            carrier_hz,
+            float(hardware["tuning_bandwidth_hz"]),
+            seed=seed_start + offset,
+        )
+        response = dma_weight_matrix(
+            np.array([carrier_hz]),
+            resonances,
+            feed_positions,
+            quality_factor=float(hardware["quality_factor"]),
+            reference_frequency_hz=carrier_hz,
+            waveguide_effective_index=float(hardware["waveguide_effective_index"]),
+            waveguide_end_power_fraction=float(
+                hardware["waveguide_end_power_fraction"]
+            ),
+        )
+        rows.append(row_normalize(response)[0])
+    return np.asarray(rows, dtype=complex), {
+        "type": "independent feasible center-frequency DMA states",
+        "size": count,
+        "seed_start": seed_start,
+        "selection_rule": "maximize predicted center-frequency output power",
     }

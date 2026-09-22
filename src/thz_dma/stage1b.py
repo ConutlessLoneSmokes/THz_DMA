@@ -8,75 +8,36 @@ from typing import Callable
 
 import numpy as np
 
-from thz_dma.channels.atmosphere import AbsorptionTable, C0_M_PER_S
-from thz_dma.channels.geometry import los_element_channel, rayleigh_distance_m
+from thz_dma.channels.atmosphere import C0_M_PER_S
+from thz_dma.channels.geometry import (
+    rayleigh_distance_m,
+    sample_two_path_scenes as _scenario_samples,
+    two_path_channel as _channel_from_paths,
+)
+from thz_dma.estimators.los_grid import (
+    build_los_dictionaries_for_designs as _build_dictionaries,
+    regular_grid as _grid_from_step,
+)
 from thz_dma.estimators.twopath_omp import omp_two_path_estimate
+from thz_dma.evaluation.beamforming import (
+    build_linear_data_codebook as _build_data_codebook,
+    feasible_codebook_metrics as _feasible_data_metrics,
+    ideal_digital_beam_gain as _ideal_digital_beam_gain,
+)
+from thz_dma.evaluation.paths import match_two_paths as _match_two_paths
+from thz_dma.metrics.statistics import power_db as _db
+from thz_dma.observations.frequency_diverse import (
+    MeasurementDesign,
+    build_stage1a2_designs,
+)
 from thz_dma.observations.pilots import (
     combine_pilot_observation,
     complex_standard_normal,
     effective_output_snr_db,
     ideal_array_noise_variance,
     matched_output_noise_variance,
+    noise_conditions as _noise_conditions,
 )
-from thz_dma.stage1a2 import (
-    MeasurementDesign,
-    _build_dictionaries,
-    _db,
-    _grid_from_step,
-    _ideal_digital_beam_gain,
-    _noise_conditions,
-    build_stage1a2_designs,
-)
-from thz_dma.surfaces.dma import (
-    dma_weight_matrix,
-    frequency_tiled_resonances,
-    row_normalize,
-)
-
-
-def _build_data_codebook(
-    config: dict,
-    positions_m: np.ndarray,
-) -> tuple[np.ndarray, dict]:
-    """Build an independent feasible center-frequency DMA data codebook."""
-
-    system = config["system"]
-    hardware = config["dma"]
-    data_config = config["data_evaluation"]
-    carrier_hz = float(system["carrier_frequency_hz"])
-    spacing_m = float(hardware["spacing_wavelengths"]) * C0_M_PER_S / carrier_hz
-    feed_positions = np.arange(positions_m.size, dtype=float) * spacing_m
-    count = int(data_config["codebook_size"])
-    seed_start = int(data_config["codebook_seed_start"])
-    if count < 2:
-        raise ValueError("data codebook must contain at least two states")
-
-    rows = []
-    for offset in range(count):
-        resonances = frequency_tiled_resonances(
-            positions_m.size,
-            carrier_hz,
-            float(hardware["tuning_bandwidth_hz"]),
-            seed=seed_start + offset,
-        )
-        response = dma_weight_matrix(
-            np.array([carrier_hz]),
-            resonances,
-            feed_positions,
-            quality_factor=float(hardware["quality_factor"]),
-            reference_frequency_hz=carrier_hz,
-            waveguide_effective_index=float(hardware["waveguide_effective_index"]),
-            waveguide_end_power_fraction=float(
-                hardware["waveguide_end_power_fraction"]
-            ),
-        )
-        rows.append(row_normalize(response)[0])
-    return np.asarray(rows, dtype=complex), {
-        "type": "independent feasible center-frequency DMA states",
-        "size": count,
-        "seed_start": seed_start,
-        "selection_rule": "maximize predicted center-frequency output power",
-    }
 
 
 def _validate_minimal_design(designs: list[MeasurementDesign]) -> None:
@@ -95,150 +56,6 @@ def _validate_minimal_design(designs: list[MeasurementDesign]) -> None:
     pilot_counts = {design.pilot_resource_elements for design in designs}
     if len(pilot_counts) != 1:
         raise ValueError("all Stage 1-B designs must use the same pilot RE count")
-
-
-def _scenario_samples(
-    rng: np.random.Generator,
-    channel_config: dict,
-    scenario: dict,
-    count: int,
-) -> dict[str, np.ndarray]:
-    los_range = rng.uniform(
-        float(channel_config["range_min_m"]),
-        float(channel_config["range_max_m"]),
-        size=count,
-    )
-    los_angle = rng.uniform(
-        float(channel_config["angle_min_deg"]),
-        float(channel_config["angle_max_deg"]),
-        size=count,
-    )
-    excess_range = rng.uniform(
-        float(scenario["reflection_excess_range_min_m"]),
-        float(scenario["reflection_excess_range_max_m"]),
-        size=count,
-    )
-    angle_separation = rng.uniform(
-        float(scenario["reflection_angle_separation_min_deg"]),
-        float(scenario["reflection_angle_separation_max_deg"]),
-        size=count,
-    )
-    angle_sign = rng.choice(np.array([-1.0, 1.0]), size=count)
-    reflection_angle = los_angle + angle_sign * angle_separation
-    relative_gain_db = rng.uniform(
-        float(scenario["reflection_gain_relative_min_db"]),
-        float(scenario["reflection_gain_relative_max_db"]),
-        size=count,
-    )
-    path_phase = rng.uniform(-np.pi, np.pi, size=(count, 2))
-    los_magnitude = float(channel_config["los_complex_gain_magnitude"])
-    gains = np.empty((count, 2), dtype=complex)
-    gains[:, 0] = los_magnitude * np.exp(1j * path_phase[:, 0])
-    gains[:, 1] = (
-        los_magnitude
-        * 10.0 ** (relative_gain_db / 20.0)
-        * np.exp(1j * path_phase[:, 1])
-    )
-    return {
-        "ranges_m": np.column_stack((los_range, los_range + excess_range)),
-        "angles_deg": np.column_stack((los_angle, reflection_angle)),
-        "gains": gains,
-        "reflection_gain_relative_db": relative_gain_db,
-    }
-
-
-def _match_two_paths(
-    estimated_ranges: np.ndarray,
-    estimated_angles_deg: np.ndarray,
-    estimated_gains: np.ndarray,
-    true_ranges: np.ndarray,
-    true_angles_deg: np.ndarray,
-    *,
-    range_scale_m: float,
-    angle_scale_deg: float,
-) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    if range_scale_m <= 0.0 or angle_scale_deg <= 0.0:
-        raise ValueError("path matching scales must be positive")
-    direct = np.sum(
-        ((estimated_ranges - true_ranges) / range_scale_m) ** 2
-        + ((estimated_angles_deg - true_angles_deg) / angle_scale_deg) ** 2
-    )
-    swapped_ranges = estimated_ranges[::-1]
-    swapped_angles = estimated_angles_deg[::-1]
-    swapped = np.sum(
-        ((swapped_ranges - true_ranges) / range_scale_m) ** 2
-        + ((swapped_angles - true_angles_deg) / angle_scale_deg) ** 2
-    )
-    if swapped < direct:
-        return swapped_ranges, swapped_angles, estimated_gains[::-1]
-    return estimated_ranges, estimated_angles_deg, estimated_gains
-
-
-def _feasible_data_metrics(
-    true_channel: np.ndarray,
-    estimated_channel: np.ndarray,
-    data_codebook: np.ndarray,
-    input_snr_db: float,
-) -> dict[str, float | int]:
-    true_channel = np.asarray(true_channel, dtype=complex).ravel()
-    estimated_channel = np.asarray(estimated_channel, dtype=complex).ravel()
-    predicted_power = np.abs(np.conjugate(data_codebook) @ estimated_channel) ** 2
-    true_power = np.abs(np.conjugate(data_codebook) @ true_channel) ** 2
-    selected_index = int(np.argmax(predicted_power))
-    oracle_index = int(np.argmax(true_power))
-    selected_power = float(true_power[selected_index])
-    oracle_power = float(true_power[oracle_index])
-    digital_power = float(np.vdot(true_channel, true_channel).real)
-    if digital_power <= 0.0 or oracle_power <= 0.0:
-        raise ValueError("data channel or feasible codebook has zero gain")
-    input_snr = 10.0 ** (float(input_snr_db) / 10.0)
-    selected_snr = input_snr * selected_power / digital_power
-    oracle_snr = input_snr * oracle_power / digital_power
-    ratio = float(np.clip(selected_power / oracle_power, 0.0, 1.0))
-    return {
-        "selected_data_state_index": selected_index,
-        "oracle_data_state_index": oracle_index,
-        "data_state_selection_correct": int(selected_index == oracle_index),
-        "feasible_beam_gain_ratio_linear": ratio,
-        "feasible_beam_loss_db": -_db(ratio),
-        "oracle_feasible_fraction_of_digital_linear": float(
-            np.clip(oracle_power / digital_power, 0.0, 1.0)
-        ),
-        "feasible_gross_rate_bps_hz": float(np.log2(1.0 + selected_snr)),
-        "oracle_feasible_gross_rate_bps_hz": float(
-            np.log2(1.0 + oracle_snr)
-        ),
-    }
-
-
-def _channel_from_paths(
-    frequencies_hz: np.ndarray,
-    positions_m: np.ndarray,
-    ranges_m: np.ndarray,
-    angles_deg: np.ndarray,
-    gains: np.ndarray,
-    *,
-    absorption: AbsorptionTable,
-    include_absorption: bool,
-    interpolation: str,
-) -> tuple[np.ndarray, list[np.ndarray]]:
-    path_channels = []
-    total = np.zeros(
-        (frequencies_hz.size, positions_m.size), dtype=complex
-    )
-    for path_index in range(2):
-        channel = los_element_channel(
-            frequencies_hz,
-            positions_m,
-            float(ranges_m[path_index]),
-            float(np.deg2rad(angles_deg[path_index])),
-            absorption_table=absorption,
-            include_absorption=include_absorption,
-            interpolation=interpolation,
-        )
-        path_channels.append(channel)
-        total += complex(gains[path_index]) * channel
-    return total, path_channels
 
 
 def run_stage1b(

@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-import hashlib
 import json
 from pathlib import Path
+
+from thz_dma.analysis.io import sha256 as _sha256
 
 import matplotlib
 
@@ -17,12 +18,6 @@ import pandas as pd  # noqa: E402
 COLORS = {"compatibility": "#4C78A8", "thz_physical": "#E45756"}
 
 
-def _sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for block in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(block)
-    return digest.hexdigest()
 
 
 def _validate_raw(frame: pd.DataFrame, summary: dict) -> dict:

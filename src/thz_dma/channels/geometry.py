@@ -240,3 +240,110 @@ def far_field_los_element_channel(
         / C0_M_PER_S
     )
     return amplitude[:, None] * delay_phase[:, None] * spatial_phase
+
+
+def los_channel_for_model(
+    model: str,
+    frequencies_hz,
+    positions_m,
+    range_m: float,
+    angle_rad: float,
+    *,
+    absorption: AbsorptionTable,
+    include_absorption: bool,
+    interpolation: str,
+) -> np.ndarray:
+    kwargs = {
+        "absorption_table": absorption,
+        "include_absorption": include_absorption,
+        "interpolation": interpolation,
+    }
+    if model == "spherical":
+        return los_element_channel(
+            frequencies_hz, positions_m, range_m, angle_rad, **kwargs
+        )
+    if model == "far_field":
+        return far_field_los_element_channel(
+            frequencies_hz, positions_m, range_m, angle_rad, **kwargs
+        )
+    raise ValueError(f"unsupported propagation model: {model}")
+
+
+def sample_two_path_scenes(
+    rng: np.random.Generator,
+    channel_config: dict,
+    scenario: dict,
+    count: int,
+) -> dict[str, np.ndarray]:
+    los_range = rng.uniform(
+        float(channel_config["range_min_m"]),
+        float(channel_config["range_max_m"]),
+        size=count,
+    )
+    los_angle = rng.uniform(
+        float(channel_config["angle_min_deg"]),
+        float(channel_config["angle_max_deg"]),
+        size=count,
+    )
+    excess_range = rng.uniform(
+        float(scenario["reflection_excess_range_min_m"]),
+        float(scenario["reflection_excess_range_max_m"]),
+        size=count,
+    )
+    angle_separation = rng.uniform(
+        float(scenario["reflection_angle_separation_min_deg"]),
+        float(scenario["reflection_angle_separation_max_deg"]),
+        size=count,
+    )
+    angle_sign = rng.choice(np.array([-1.0, 1.0]), size=count)
+    reflection_angle = los_angle + angle_sign * angle_separation
+    relative_gain_db = rng.uniform(
+        float(scenario["reflection_gain_relative_min_db"]),
+        float(scenario["reflection_gain_relative_max_db"]),
+        size=count,
+    )
+    path_phase = rng.uniform(-np.pi, np.pi, size=(count, 2))
+    los_magnitude = float(channel_config["los_complex_gain_magnitude"])
+    gains = np.empty((count, 2), dtype=complex)
+    gains[:, 0] = los_magnitude * np.exp(1j * path_phase[:, 0])
+    gains[:, 1] = (
+        los_magnitude
+        * 10.0 ** (relative_gain_db / 20.0)
+        * np.exp(1j * path_phase[:, 1])
+    )
+    return {
+        "ranges_m": np.column_stack((los_range, los_range + excess_range)),
+        "angles_deg": np.column_stack((los_angle, reflection_angle)),
+        "gains": gains,
+        "reflection_gain_relative_db": relative_gain_db,
+    }
+
+
+def two_path_channel(
+    frequencies_hz: np.ndarray,
+    positions_m: np.ndarray,
+    ranges_m: np.ndarray,
+    angles_deg: np.ndarray,
+    gains: np.ndarray,
+    *,
+    absorption: AbsorptionTable,
+    include_absorption: bool,
+    interpolation: str,
+) -> tuple[np.ndarray, list[np.ndarray]]:
+    path_channels = []
+    total = np.zeros(
+        (frequencies_hz.size, positions_m.size), dtype=complex
+    )
+    for path_index in range(2):
+        channel = los_element_channel(
+            frequencies_hz,
+            positions_m,
+            float(ranges_m[path_index]),
+            float(np.deg2rad(angles_deg[path_index])),
+            absorption_table=absorption,
+            include_absorption=include_absorption,
+            interpolation=interpolation,
+        )
+        path_channels.append(channel)
+        total += complex(gains[path_index]) * channel
+    return total, path_channels

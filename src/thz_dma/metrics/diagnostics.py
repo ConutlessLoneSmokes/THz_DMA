@@ -94,3 +94,94 @@ def jacobian_diagnostics(jacobian, *, relative_tolerance: float = 1.0e-8) -> dic
         "singular_values": singular_values.tolist(),
     }
 
+
+def tensor_unfolding_rank_residuals(tensor, rank: int) -> dict[str, float]:
+    """SVD tail fractions of every unfolding of an ``S x J x K`` tensor."""
+
+    values = np.asarray(tensor, dtype=complex)
+    if values.ndim != 3 or values.size == 0:
+        raise ValueError("tensor must have three non-empty dimensions")
+    if rank < 1:
+        raise ValueError("rank must be positive")
+    residuals: dict[str, float] = {}
+    for mode in range(3):
+        unfolding = np.moveaxis(values, mode, 0).reshape(values.shape[mode], -1)
+        singular_values = np.linalg.svd(unfolding, compute_uv=False)
+        energy = float(np.sum(singular_values**2))
+        tail = float(np.sum(singular_values[min(rank, singular_values.size) :] ** 2))
+        residuals[f"mode_{mode}_rank_residual_fraction"] = (
+            0.0 if energy == 0.0 else float(np.sqrt(tail / energy))
+        )
+    residuals["max_mode_rank_residual_fraction"] = max(residuals.values())
+    return residuals
+
+
+def stage2_condition_summary(rows: list[dict]) -> list[dict]:
+    grouped: dict[tuple[str, str], list[dict]] = {}
+    for row in rows:
+        grouped.setdefault((row["physics_level"], row["schedule"]), []).append(row)
+    result = []
+    for (level, schedule), subset in grouped.items():
+        result.append(
+            {
+                "physics_level": level,
+                "schedule": schedule,
+                "num_independent_scenes": len(subset),
+                "mean_effective_output_snr_db": float(
+                    np.mean([item["effective_output_snr_db"] for item in subset])
+                ),
+                "mean_max_mode_rank_residual_fraction": float(
+                    np.mean(
+                        [item["max_mode_rank_residual_fraction"] for item in subset]
+                    )
+                ),
+                "max_max_mode_rank_residual_fraction": float(
+                    np.max(
+                        [item["max_mode_rank_residual_fraction"] for item in subset]
+                    )
+                ),
+                "mean_combiner_row_energy": float(
+                    np.mean([item["combiner_row_energy_mean"] for item in subset])
+                ),
+            }
+        )
+    return sorted(result, key=lambda item: (item["physics_level"], item["schedule"]))
+
+
+def channel_domain_metrics(truth, estimate, pilot_indices, legacy_indices) -> dict:
+    """Element-space CSI NMSE, summed over each frequency domain and all elements.
+
+    Pilot frequencies are counted once, regardless of configuration reuse.
+    Empty held-out domains are absent measurements (None), never zero error.
+    """
+    truth, estimate = np.asarray(truth), np.asarray(estimate)
+    if truth.shape != estimate.shape or truth.ndim < 2 or truth.shape[0] != 128:
+        raise ValueError("Stage 2-A domain evaluation requires matching 128-tone CSI")
+    pilots = np.unique(np.asarray(pilot_indices, dtype=int))
+    legacy = np.asarray(legacy_indices, dtype=int)
+    if pilots.size == 0 or any(np.any((x < 0) | (x >= 128)) for x in (pilots, legacy)):
+        raise ValueError("invalid CSI evaluation indices")
+    domains = {
+        "channel_nmse": legacy,
+        "pilot_nmse": pilots,
+        "fullband_128_nmse": np.arange(128),
+        "heldout_112_nmse": np.setdiff1d(np.arange(128), pilots),
+    }
+    if domains["heldout_112_nmse"].size not in (0, 112):
+        raise ValueError("Stage 2-A held-out domain must contain 0 or 112 tones")
+    result = {}
+    for name, indices in domains.items():
+        result[f"{name}_subcarrier_count"] = int(indices.size)
+        value = None
+        if indices.size:
+            energy = float(np.sum(np.abs(truth[indices]) ** 2))
+            if energy <= 0 or not np.isfinite(energy):
+                raise ValueError("CSI truth energy must be positive and finite")
+            value = float(np.sum(np.abs(estimate[indices] - truth[indices]) ** 2) / energy)
+            if not np.isfinite(value):
+                raise ValueError("nonfinite CSI NMSE")
+        result[f"{name}_linear"] = value
+        result[f"{name}_db"] = None if value is None else float(
+            10 * np.log10(max(value, np.finfo(float).tiny))
+        )
+    return result

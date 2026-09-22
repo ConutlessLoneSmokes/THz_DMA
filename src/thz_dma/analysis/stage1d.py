@@ -12,17 +12,19 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 
-from thz_dma.analysis.stage1c import (  # noqa: E402
+from thz_dma.analysis.estimator_comparison import (  # noqa: E402
     COLORS,
-    _aggregate,
-    _bootstrap_interval,
-    _estimator_contrasts,
-    _figure_nmse,
-    _figure_primary_metrics,
-    _figure_runtime_tradeoff,
-    _resource_contrasts,
-    _sha256,
-    _validate_raw,
+    aggregate_estimator_metrics as _aggregate,
+    estimator_contrasts as _estimator_contrasts,
+    figure_nmse as _figure_nmse,
+    figure_primary_metrics as _figure_primary_metrics,
+    figure_runtime_tradeoff as _figure_runtime_tradeoff,
+    resource_contrasts as _resource_contrasts,
+    validate_estimator_rows as _validate_raw,
+)
+from thz_dma.analysis.io import sha256 as _sha256  # noqa: E402
+from thz_dma.metrics.statistics import (  # noqa: E402
+    bootstrap_interval as _bootstrap_interval,
 )
 
 

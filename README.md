@@ -4,7 +4,9 @@ Research code and route documents for low-overhead wideband channel acquisition 
 
 ## Repository layout
 
-- `src/thz_dma/`: channel, DMA, observation, estimator, evaluation, and analysis modules.
+- `src/thz_dma/stage*.py`: experiment orchestration and stable run entry points.
+- `src/thz_dma/`: channel generation, acquisition schedules, estimators, evaluation,
+  metrics, and analysis live in their matching subpackages; stage runners reuse them.
 - `scripts/`: simulation, analysis, and diagnostic entry points; `_run_support.py`
   owns their shared archival and environment-recording logic.
 - `configs/`: reproducible TOML configurations.

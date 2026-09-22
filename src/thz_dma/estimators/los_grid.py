@@ -2,12 +2,27 @@
 
 from __future__ import annotations
 
+import time
 from dataclasses import dataclass
-from typing import Literal
+from typing import Callable, Literal
 
 import numpy as np
 
 from thz_dma.channels.atmosphere import AbsorptionTable, C0_M_PER_S
+from thz_dma.observations.frequency_diverse import MeasurementDesign
+
+
+def regular_grid(lower: float, upper: float, step: float) -> np.ndarray:
+    """Build an inclusive grid whose interval is an integer multiple of step."""
+
+    if not np.isfinite([lower, upper, step]).all() or lower >= upper or step <= 0.0:
+        raise ValueError("grid bounds and step are invalid")
+    intervals = int(round((upper - lower) / step))
+    if intervals < 1 or not np.isclose(
+        lower + intervals * step, upper, rtol=0.0, atol=step * 1.0e-8
+    ):
+        raise ValueError("grid interval must be an integer multiple of step")
+    return np.linspace(lower, upper, intervals + 1)
 
 
 @dataclass(frozen=True)
@@ -220,3 +235,51 @@ def variable_projection_estimate(
     if scalar_input:
         return {key: value[0] for key, value in result.items()}
     return result
+
+
+def build_los_dictionaries_for_designs(
+    designs: list[MeasurementDesign],
+    estimator_models: list[str],
+    positions_m: np.ndarray,
+    ranges_m: np.ndarray,
+    angles_deg: np.ndarray,
+    absorption: AbsorptionTable,
+    *,
+    include_absorption: bool,
+    interpolation: str,
+    chunk_size: int,
+    notify: Callable[[str], None],
+) -> tuple[dict[tuple[str, str], LosTemplateDictionary], dict[str, float]]:
+    grouped: dict[tuple[int, bytes], list[MeasurementDesign]] = {}
+    for design in designs:
+        frequencies = np.ascontiguousarray(design.frequencies_hz, dtype=np.float64)
+        grouped.setdefault((frequencies.size, frequencies.tobytes()), []).append(design)
+
+    dictionaries: dict[tuple[str, str], LosTemplateDictionary] = {}
+    timings: dict[str, float] = {}
+    for model in estimator_models:
+        for group_index, group in enumerate(grouped.values(), start=1):
+            frequencies = np.asarray(group[0].frequencies_hz, dtype=float)
+            weights = {design.name: design.weights for design in group}
+            notify(
+                f"building dictionary {group_index}/{len(grouped)} for {model}: "
+                f"K={frequencies.size}, designs={len(group)}"
+            )
+            started = time.perf_counter()
+            built = build_los_template_dictionaries(
+                frequencies,
+                positions_m,
+                ranges_m,
+                np.deg2rad(angles_deg),
+                weights,
+                absorption_table=absorption,
+                include_absorption=include_absorption,
+                interpolation=interpolation,
+                chunk_size=chunk_size,
+                propagation_model=model,
+            )
+            elapsed = time.perf_counter() - started
+            timings[f"{model}:group{group_index}:K{frequencies.size}"] = float(elapsed)
+            for name, dictionary in built.items():
+                dictionaries[(name, model)] = dictionary
+    return dictionaries, timings

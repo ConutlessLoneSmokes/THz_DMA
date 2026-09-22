@@ -14,8 +14,18 @@ from _run_support import PROJECT_ROOT as ROOT, hash_file, read_toml
 
 import numpy as np
 import pandas as pd
-from thz_dma.stage2a import channel_domain_metrics, _channel_from_estimate, _operator_for_schedule
-from thz_dma.stage2 import build_stage2_platform, sample_stage2_paths, stage2_schedule_weights
+from thz_dma.channels.planar import (
+    channel_from_planar_estimate as _channel_from_estimate,
+    sample_stage2_paths,
+)
+from thz_dma.estimators.planar_baselines import (
+    operator_for_schedule as _operator_for_schedule,
+)
+from thz_dma.metrics.diagnostics import channel_domain_metrics
+from thz_dma.observations.planar import (
+    build_stage2_platform,
+    stage2_schedule_weights,
+)
 from thz_dma.observations.multistrip import array_input_noise_variance, observe_multistrip_schedule
 from thz_dma.estimators.planar_sparse import oracle_geometry_ls_estimate
 from thz_dma.analysis.stage2a import analyze_stage2a

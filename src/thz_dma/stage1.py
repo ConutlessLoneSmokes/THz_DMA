@@ -14,6 +14,16 @@ from thz_dma.estimators.los_grid import (
     build_los_template_dictionaries,
     variable_projection_estimate,
 )
+from thz_dma.estimators.los_grid import regular_grid as _grid_from_step
+from thz_dma.evaluation.beamforming import (
+    ideal_digital_beam_gain as _ideal_digital_beam_gain,
+)
+from thz_dma.metrics.statistics import (
+    bootstrap_interval as _bootstrap_interval,
+    mean as _mean,
+    power_db as _db,
+    rmse as _rmse,
+)
 from thz_dma.observations.pilots import (
     combine_pilot_observation,
     complex_standard_normal,
@@ -33,57 +43,16 @@ FLAT_METHOD = "flat_shared_projection"
 PHYSICAL_METHOD = "physical_frequency_response"
 
 
-def _grid_from_step(lower: float, upper: float, step: float) -> np.ndarray:
-    if not np.isfinite([lower, upper, step]).all() or lower >= upper or step <= 0.0:
-        raise ValueError("grid bounds and step are invalid")
-    intervals = int(round((upper - lower) / step))
-    if intervals < 1 or not np.isclose(
-        lower + intervals * step, upper, rtol=0.0, atol=step * 1.0e-8
-    ):
-        raise ValueError("grid interval must be an integer multiple of step")
-    return np.linspace(lower, upper, intervals + 1)
 
 
-def _bootstrap_interval(
-    values,
-    statistic: Callable[[np.ndarray], float],
-    *,
-    rng: np.random.Generator,
-    resamples: int,
-) -> list[float]:
-    data = np.asarray(values, dtype=float)
-    if data.ndim != 1 or data.size < 2:
-        raise ValueError("bootstrap data must contain at least two values")
-    if resamples < 100:
-        raise ValueError("bootstrap_resamples must be at least 100")
-    indices = rng.integers(0, data.size, size=(resamples, data.size))
-    sampled = data[indices]
-    estimates = np.asarray([statistic(row) for row in sampled], dtype=float)
-    return np.quantile(estimates, [0.025, 0.975]).astype(float).tolist()
 
 
-def _rmse(values: np.ndarray) -> float:
-    return float(np.sqrt(np.mean(np.asarray(values, dtype=float) ** 2)))
 
 
-def _mean(values: np.ndarray) -> float:
-    return float(np.mean(np.asarray(values, dtype=float)))
 
 
-def _db(value: float) -> float:
-    return float(10.0 * np.log10(max(float(value), np.finfo(float).tiny)))
 
 
-def _ideal_digital_beam_gain(true_channel, estimated_channel) -> float:
-    truth = np.asarray(true_channel, dtype=complex).ravel()
-    estimate = np.asarray(estimated_channel, dtype=complex).ravel()
-    estimate_norm = np.linalg.norm(estimate)
-    truth_energy = float(np.vdot(truth, truth).real)
-    if estimate_norm == 0.0 or truth_energy == 0.0:
-        return 0.0
-    combiner = estimate / estimate_norm
-    gain = float(abs(np.vdot(combiner, truth)) ** 2 / truth_energy)
-    return float(np.clip(gain, 0.0, 1.0))
 
 
 def build_stage1_weight_models(config: dict) -> tuple[np.ndarray, np.ndarray, dict]:

@@ -17,17 +17,17 @@ from _run_support import PROJECT_ROOT as ROOT, hash_file, read_toml, write_json
 import numpy as np
 
 from check_stage2a_ongrid_noiseless import traced_estimate
+from thz_dma.channels.planar import (
+    channel_from_planar_estimate as _channel_from_estimate,
+)
+from thz_dma.estimators.adaptive_grid import prepare_adaptive_stage2a_scene
+from thz_dma.estimators.planar_baselines import build_stage2a_operators
 from thz_dma.estimators.planar_sparse import (
     PlanarTemplateBatchEvaluator,
     build_planar_template_dictionary_from_candidates,
 )
-from thz_dma.stage2a import (
-    _channel_from_estimate,
-    _match_paths,
-    build_stage2a_operators,
-    channel_domain_metrics,
-    prepare_adaptive_stage2a_scene,
-)
+from thz_dma.evaluation.paths import match_planar_paths as _match_paths
+from thz_dma.metrics.diagnostics import channel_domain_metrics
 
 
 F1 = "frequency_single_shot_J1_K128"

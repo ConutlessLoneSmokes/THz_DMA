@@ -250,3 +250,97 @@ def multipath_planar_channel(
             raise ValueError(f"unsupported planar channel model: {model}")
         path_channels.append(channel)
     return np.sum(path_channels, axis=0), tuple(path_channels)
+
+
+def sample_stage2_paths(config: dict, rng: np.random.Generator) -> tuple[PlanarPath, ...]:
+    """Draw LoS plus specular reflections as one independent scene unit."""
+
+    channel = config["channel"]
+    paths = int(channel["num_paths"])
+    if paths < 1:
+        raise ValueError("num_paths must be positive")
+    los_range = rng.uniform(float(channel["range_min_m"]), float(channel["range_max_m"]))
+    los_azimuth = np.deg2rad(
+        rng.uniform(float(channel["azimuth_min_deg"]), float(channel["azimuth_max_deg"]))
+    )
+    los_elevation = np.deg2rad(
+        rng.uniform(
+            float(channel["elevation_min_deg"]),
+            float(channel["elevation_max_deg"]),
+        )
+    )
+    los_magnitude = float(channel["los_complex_gain_magnitude"])
+    if los_magnitude <= 0.0:
+        raise ValueError("los_complex_gain_magnitude must be positive")
+    generated = [
+        PlanarPath(
+            range_m=float(los_range),
+            azimuth_rad=float(los_azimuth),
+            elevation_rad=float(los_elevation),
+            complex_gain=los_magnitude * np.exp(1j * rng.uniform(0.0, 2.0 * np.pi)),
+        )
+    ]
+    for _ in range(paths - 1):
+        azimuth_sign = rng.choice(np.array([-1.0, 1.0]))
+        elevation_sign = rng.choice(np.array([-1.0, 1.0]))
+        gain_db = rng.uniform(
+            float(channel["reflection_gain_relative_min_db"]),
+            float(channel["reflection_gain_relative_max_db"]),
+        )
+        generated.append(
+            PlanarPath(
+                range_m=float(
+                    los_range
+                    + rng.uniform(
+                        float(channel["reflection_excess_range_min_m"]),
+                        float(channel["reflection_excess_range_max_m"]),
+                    )
+                ),
+                azimuth_rad=float(
+                    los_azimuth
+                    + azimuth_sign
+                    * np.deg2rad(
+                        rng.uniform(
+                            float(channel["reflection_azimuth_separation_min_deg"]),
+                            float(channel["reflection_azimuth_separation_max_deg"]),
+                        )
+                    )
+                ),
+                elevation_rad=float(
+                    los_elevation
+                    + elevation_sign
+                    * np.deg2rad(
+                        rng.uniform(
+                            float(channel["reflection_elevation_separation_min_deg"]),
+                            float(channel["reflection_elevation_separation_max_deg"]),
+                        )
+                    )
+                ),
+                complex_gain=float(10.0 ** (gain_db / 20.0))
+                * np.exp(1j * rng.uniform(0.0, 2.0 * np.pi)),
+            )
+        )
+    return tuple(generated)
+
+
+def channel_from_planar_estimate(frequencies, platform, coordinates, gains, config):
+    paths = tuple(
+        PlanarPath(
+            range_m=float(coordinates[index, 0]),
+            azimuth_rad=float(coordinates[index, 1]),
+            elevation_rad=float(coordinates[index, 2]),
+            complex_gain=complex(gains[index]),
+        )
+        for index in range(coordinates.shape[0])
+    )
+    channel, _ = multipath_planar_channel(
+        frequencies,
+        platform.element_positions_m,
+        paths,
+        model="spherical_thz",
+        carrier_frequency_hz=float(config["system"]["carrier_frequency_hz"]),
+        absorption_table=platform.absorption_table,
+        include_absorption=bool(config["channel"]["include_absorption"]),
+        interpolation=str(config["atmosphere"]["interpolation"]),
+    )
+    return channel
