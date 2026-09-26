@@ -2,7 +2,7 @@
 
 ## 1. 当前项目状态
 
-截至 2026-09-15，项目已完成：
+截至 2026-09-26，项目已完成：
 
 - AI Edge 在本课题中的操作性定义；
 - 太赫兹 DMA/RHS 的四方向范围性调研；
@@ -21,6 +21,7 @@
 - 后续 65 dB 运行 `stage2a_bounded_65db_20260910_v1` 已完成 30/30 行；分域指标确认 OMP/Yang 的全带 NMSE 均大于 0 dB，F2 导频拟合较好而未观测频点差，三径仍全失败。网格内、离网格 $2^3$ 全因子和 oracle 最近格初始化诊断也已完成：距离/方位离网格会使最近字典原子输给 F2 距离伪峰或 F1 角度旁瓣，是正全带 NMSE 的主因；F1 另有局部条件和多径选径问题。生产字典、状态、导频与估计器均未修改。
 - 300 GHz/30 GHz 随机波束中心自适应局部网格诊断 `stage2a_adaptive_300ghz_20260911_v1` 已完成 1200/1200 行。F2 OMP/Yang 在 55/65 dB 的全带 NMSE≤−10 dB 比例均为 100%，Yang 全带均值为 −23.821/−33.734 dB；F1 Yang 仅为 63%/67%，线性均值转 dB 为 −6.691/−6.754 dB。F1 残余失败主要位于局部窗内，旧宽松几何成功率会掩盖约 1–2°角度峰错误。该结果仍使用每径一个观测前粗中心，只作条件诊断。
 - F1 真值峰—错误峰及单径/三径分解 `stage2a_f1_peak_decomposition_20260915_v1` 已完成。单径 OMP/Yang 均为 260/300 达到全带 NMSE≤−10 dB；40 条失败与 1.773–2.193°错误粗角峰逐条重合。Yang 无噪声三径 72/100 达标，28 个失败中 23 个含单径失败、5 个只在多径叠加后失败。当前主因是单配置状态的角度弱区分性，多径贪婪选径为次因。
+- 2026-09-22 完成 Stage 1/2 运行器的代码整理：阶段入口保留，观测、信道、估计、评价、指标与分析拆入对应子包；历史配置、运行目录和研究结果未改变。2026-09-26 重新运行 4 项轻量检查，全部通过。
 
 总目录为 `research_route/README.md`。原始范围性报告为 `AI_Edge_THz_DMA_RHS_research_status.md`。
 
@@ -41,6 +42,7 @@ Stage 2-A 仍没有训练网络。旧正式字典使用 18,018 点、距离步�
 | 文件 | 用途 |
 |---|---|
 | `AGENTS.md` | 新环境必须遵循的项目规则 |
+| `CODEX_START_PROMPT.md` | 可直接复制到新对话的当前接管提示词与通用模板 |
 | `research_route/README.md` | 文档导航 |
 | `research_route/00_研究路线总纲.md` | 主线、阶段门槛与论文组合 |
 | `research_route/01_AI_Edge与太赫兹DMA_RHS的概念和公共模型.md` | 概念、物理模型和符号 |
@@ -71,7 +73,8 @@ Stage 2-A 仍没有训练网络。旧正式字典使用 18,018 点、距离步�
 - `figures/`：研究路线图。
 - `ppt_outline/`：既有汇报提纲。
 - `data/atmosphere/`：用户给定吸收系数表、单位说明及原 MATLAB 函数。
-- `src/thz_dma/`、`configs/`、`scripts/`：方向一 Stage 0 至 Stage 2-A Python 仿真实现；300 GHz 自适应局部网格运行及 F1 峰谱与单径/三径分解已完成，临时 smoke 配置与结果已清理。
+- `src/thz_dma/`、`configs/`、`scripts/`：方向一 Stage 0 至 Stage 2-A Python 仿真实现。阶段运行器复用 `channels/`、`observations/`、`estimators/`、`evaluation/`、`metrics/` 和 `analysis/` 中的领域实现。
+- `tests/`：运行归档、导频能量、分域指标和路径匹配的 4 项轻量检查。
 - `runs/`、`results/direction1_stage*/`：不可覆盖运行记录、紧凑分析与汇总结果。
 
 Kimaryo 2023 和 Zou 2025 的作者稿已在线核验，但当前本地 `sources/fulltext/` 中没有副本。Ruoyu Zhang 2025 的关键章节与 Fig. 11 已通过作者公开全文在线核对，本地 PDF 下载受限；Wang 2021 与指定版 TS 38.211 已保存 PDF 和抽取文本。方向一新增的 Gavras 2026、Yue 2024、Gavras 2025 和 Gavriilidis 2025 均已保存 PDF 与抽取文本。Stylianopoulos 等 2026 年 TWC 端到端边缘推理论文为后续补入的方向四直接相邻工作，预印本为 `https://arxiv.org/abs/2504.00233`。
