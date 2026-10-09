@@ -1,0 +1,6 @@
+{
+  "status": "interrupted",
+  "timestamp_utc": "2026-10-02T03:14:52.375687+00:00",
+  "run_id": "stage2a_sbl_snr_20261001_v1",
+  "reason": "Previous process ended without final metrics; no scene checkpoint was available."
+}

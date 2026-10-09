@@ -1,0 +1,14 @@
+[experiment]
+name = "direction1_stage2a_p016_config_curve"
+diagnostic_only = true
+source_config = "configs/direction1_stage2a_adaptive_300ghz.toml"
+source_run = "runs/stage2a_adaptive_300ghz_20260911_v1"
+source_peak_run = "runs/stage2a_f1_peak_decomposition_20260915_v1"
+design_seeds = [2026092601, 2026092602]
+design_samples_per_seed = 20
+state_bank_size = 16
+configuration_counts = [1, 2, 4, 8, 16]
+output_snr_p10_max_drop_db = 3.0
+peak_margin_target_db = 0.2
+fullband_nmse_target_db = -10.0
+minimum_passing_scenes = 90

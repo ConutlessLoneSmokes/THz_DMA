@@ -1,0 +1,8 @@
+{
+  "denoising_rows": 144,
+  "transmission_rows": 96,
+  "algebra_checks": 240,
+  "max_identity_relative_error": 0.000986891453572245,
+  "training_model_unchanged": true,
+  "dataset_caches_verified": 2504
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "path": "configs\\direction1_stage2a_adaptive_300ghz.toml",
+    "size_bytes": 3800,
+    "sha256": "da3db2d4d4541ad1a29fcf0fbf6cff522cf0b9c02617681df66028131abd4127"
+  },
+  {
+    "path": "configs\\direction1_stage2a_p016_config_curve.toml",
+    "size_bytes": 522,
+    "sha256": "2bc1f77ac462b51ee2fb1af0ad20413764f774a7cd58ea7137401add3ae2d637"
+  },
+  {
+    "path": "data\\atmosphere\\data_freq_abscoe.txt",
+    "size_bytes": 1242793,
+    "sha256": "3aa52bf00e30831c82b98b06d48ea8fdd8ebe7cc2da6e233ad2ed3238dc4dca8"
+  },
+  {
+    "path": "pyproject.toml",
+    "size_bytes": 535,
+    "sha256": "332760146d7a69101f8d2e8142d7539ee0f57ac3ab1425a2e8c033c7c104168f"
+  },
+  {
+    "path": "scripts\\_run_support.py",
+    "size_bytes": 8226,
+    "sha256": "cc8c6ff7e497a575ae9fee52d1c878574fae7cdaf24b30f64822d07f8e5e77ef"
+  },
+  {
+    "path": "scripts\\check_stage2a_p016_config_curve.py",
+    "size_bytes": 34162,
+    "sha256": "edb697db31eba6e3e315107de4948e306433f51c07a8cdc5402c4e4f417fda83"
+  },
+  {
+    "path": "src\\thz_dma\\__init__.py",
+    "size_bytes": 84,
+    "sha256": "a8461ebb9dbee6411d94d1264641ba5d8d6a4ca8af85f2a0abecfc4748ec56dc"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\__init__.py",
+    "size_bytes": 70,
+    "sha256": "d5cef55942a068fd123d7fc90a168a3adf1a98ea0c03d4f7de5d3c98e3388f9a"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\estimator_comparison.py",
+    "size_bytes": 16959,
+    "sha256": "4b3d9cdf47a3564d47c112523ef4be0cbe1df370a7961b9257796bc6362ce28d"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\io.py",
+    "size_bytes": 354,
+    "sha256": "6f3c1df86bc2210cc49b21712de4658655fac74e11234d07a0fe54d859e26056"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\stage1a2.py",
+    "size_bytes": 14597,
+    "sha256": "aa4d70feffbb97b572051908ad34faa89bdb8e4a034b9ee9e95be2b1d129f9c1"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\stage1b.py",
+    "size_bytes": 31069,
+    "sha256": "b09db741623b45e74a5c070365b765fb337bdaedb0e66a6d2a88ccb6c79dd62b"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\stage1c.py",
+    "size_bytes": 11055,
+    "sha256": "ce8c0310e6b9481167457d3774bce52a9c51085801ad65e18951e038e162499a"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\stage1d.py",
+    "size_bytes": 17168,
+    "sha256": "5dc49db6841bbd8204c9a3aab43e354cee152ac349b0b4f4eeb0d5ed4e5687c2"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\stage2.py",
+    "size_bytes": 12729,
+    "sha256": "f56e739919d69859e1701ead227517fdc382ca1911e9d94eb30b9c5cd34a6649"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\stage2a.py",
+    "size_bytes": 38752,
+    "sha256": "64e050e9effa66399a0ba6834cd05590c4747c4dd9487a6c1d028d0d38a03843"
+  },
+  {
+    "path": "src\\thz_dma\\analysis\\stage2a_domains.py",
+    "size_bytes": 11405,
+    "sha256": "3a50f91237f027e4c5be081a15d3bfa2d71adc97300412359e152fe61894c954"
+  },
+  {
+    "path": "src\\thz_dma\\channels\\__init__.py",
+    "size_bytes": 49,
+    "sha256": "cc0a720e4390421727dba744ed04f914dee44a3158973deacd6bc545718b11b5"
+  },
+  {
+    "path": "src\\thz_dma\\channels\\atmosphere.py",
+    "size_bytes": 7331,
+    "sha256": "45db4c5afbe0fac2bc8e053fed2f3fc8e2c959ede7f338733da4524ffeceecb6"
+  },
+  {
+    "path": "src\\thz_dma\\channels\\geometry.py",
+    "size_bytes": 11893,
+    "sha256": "cec8d1df93525259fb7422f589a86f090be0e66b1695fc2875d990a63baa698f"
+  },
+  {
+    "path": "src\\thz_dma\\channels\\planar.py",
+    "size_bytes": 13044,
+    "sha256": "e08437d5fd84a52f8432949e39fb59164fc214e535865d1204daada236102949"
+  },
+  {
+    "path": "src\\thz_dma\\estimators\\__init__.py",
+    "size_bytes": 61,
+    "sha256": "065e7442831c20fc91308bbb6767c279baca099ac756227b53a155d138b6a8e8"
+  },
+  {
+    "path": "src\\thz_dma\\estimators\\adaptive_grid.py",
+    "size_bytes": 22999,
+    "sha256": "908a89784c54d5afd42f57fb323f7831fe88110d2aa93db29e0c4d0e9f12c913"
+  },
+  {
+    "path": "src\\thz_dma\\estimators\\literature_baselines.py",
+    "size_bytes": 25726,
+    "sha256": "f570ab939fe38db6647869a07783bead0954e9c9d4087837f0958f7e5d82ff21"
+  },
+  {
+    "path": "src\\thz_dma\\estimators\\los_grid.py",
+    "size_bytes": 11091,
+    "sha256": "a8a93ab5d9df0dbb976208088d5c2bea8e7fd5a5cbfc400038685bbde8506635"
+  },
+  {
+    "path": "src\\thz_dma\\estimators\\planar_baselines.py",
+    "size_bytes": 10231,
+    "sha256": "316126a886bd91daa842e0e72d324423260df5bd4e9867fa4f3389bd5aaa40d1"
+  },
+  {
+    "path": "src\\thz_dma\\estimators\\planar_sparse.py",
+    "size_bytes": 40158,
+    "sha256": "375c516a6cd61790f26d99029193294c7209c82c4b6d56079a39a8af53abf24e"
+  },
+  {
+    "path": "src\\thz_dma\\estimators\\stage1_baselines.py",
+    "size_bytes": 8437,
+    "sha256": "d4783826903a2c635ceb313eb910d3a80bfbae3594ec3b2933991985a044c542"
+  },
+  {
+    "path": "src\\thz_dma\\estimators\\tensor_transfer.py",
+    "size_bytes": 14773,
+    "sha256": "8ba4c66a8197790b4b94d7fe1a1880dbf7e0cfd68e5b3fbc0fef4e9dfe9a033b"
+  },
+  {
+    "path": "src\\thz_dma\\estimators\\twopath_omp.py",
+    "size_bytes": 4329,
+    "sha256": "5980aa91f23a41f95079dcb2e44033deeafc147e62b47d7131940ca0ef1861c8"
+  },
+  {
+    "path": "src\\thz_dma\\evaluation\\__init__.py",
+    "size_bytes": 66,
+    "sha256": "1818308cab56c0d33fe1381a86f084e8a57e229b326e690e102d1d000d5d332c"
+  },
+  {
+    "path": "src\\thz_dma\\evaluation\\beamforming.py",
+    "size_bytes": 10380,
+    "sha256": "d6843c2a6dd58613a4e247c30b9d27d8c333213e37e0e154a9202e5c09342006"
+  },
+  {
+    "path": "src\\thz_dma\\evaluation\\paths.py",
+    "size_bytes": 3438,
+    "sha256": "00e477b5d036ec58b922f9677a0e19f7d3b226cce3ae768d4070785df2c6073c"
+  },
+  {
+    "path": "src\\thz_dma\\metrics\\__init__.py",
+    "size_bytes": 46,
+    "sha256": "dfb7b2576d1898822c878abc6a1f7001b053e1044345ac5d9e5a2ad93efd0873"
+  },
+  {
+    "path": "src\\thz_dma\\metrics\\diagnostics.py",
+    "size_bytes": 8516,
+    "sha256": "3e8e2985b87aa1db68d35c5e01ab4153735f8affb3bf8fc5706046f6031623b4"
+  },
+  {
+    "path": "src\\thz_dma\\metrics\\statistics.py",
+    "size_bytes": 1602,
+    "sha256": "a58b0e5aaf05d58036d1b779b93555da805495c367fe338019ee679f065529fb"
+  },
+  {
+    "path": "src\\thz_dma\\observations\\__init__.py",
+    "size_bytes": 66,
+    "sha256": "dcfe7aedb001c0f4c4551fe05f05dc742b0aa29349d9578aa8a6d0b33d2ec0f9"
+  },
+  {
+    "path": "src\\thz_dma\\observations\\frequency_diverse.py",
+    "size_bytes": 16360,
+    "sha256": "e088d7e1f2989c89b7dde4c79be57c9e4a76c151abc9b35cf7650c7a24194ca6"
+  },
+  {
+    "path": "src\\thz_dma\\observations\\multistrip.py",
+    "size_bytes": 4473,
+    "sha256": "d9cab7bf885661a9e9c6527f2378acf033d85ca27ca4fb63590959fddea576c2"
+  },
+  {
+    "path": "src\\thz_dma\\observations\\pilots.py",
+    "size_bytes": 5638,
+    "sha256": "1ff149ed02497ca26d177df58126688f8b1f01e62044c6bb10d3e34822450324"
+  },
+  {
+    "path": "src\\thz_dma\\observations\\planar.py",
+    "size_bytes": 8967,
+    "sha256": "cec02ed887c02fe10e187851df5dd3a3777268c2b27d8eea59f4895db6d9dcb2"
+  },
+  {
+    "path": "src\\thz_dma\\stage0.py",
+    "size_bytes": 16074,
+    "sha256": "7b6f178835518d0a1cdb7f0da02f4c983d881537d267c7762a4b311fdbc1c791"
+  },
+  {
+    "path": "src\\thz_dma\\stage1.py",
+    "size_bytes": 23729,
+    "sha256": "8828f6dacf4f4af53a299722e4b75c39ab7f6f3a4c5af0a45d00a3a70ac5d817"
+  },
+  {
+    "path": "src\\thz_dma\\stage1a2.py",
+    "size_bytes": 16328,
+    "sha256": "744f23eda0c5fdd31a014166997e8c0c75d911d4c78ec392362fd75937b120aa"
+  },
+  {
+    "path": "src\\thz_dma\\stage1b.py",
+    "size_bytes": 26636,
+    "sha256": "a6ab51c373f03f1071702ecdc973e4fa2c61ce2efafa3f993905bd7beb9a38d0"
+  },
+  {
+    "path": "src\\thz_dma\\stage1c.py",
+    "size_bytes": 32584,
+    "sha256": "e44d2b1cddc35d3d3b017372cef5838a0ed3e9e46244cf258c30582ef09446cf"
+  },
+  {
+    "path": "src\\thz_dma\\stage1d.py",
+    "size_bytes": 1893,
+    "sha256": "4771dfc869ae8a28ce5e7419125c0077e909fe7835ce0092a05c600295d8d0c4"
+  },
+  {
+    "path": "src\\thz_dma\\stage2.py",
+    "size_bytes": 15456,
+    "sha256": "dcefcb7f8c7778734f523bfe288013c82cc66ee0c28d0c3db6e54f48697d437b"
+  },
+  {
+    "path": "src\\thz_dma\\stage2a.py",
+    "size_bytes": 44139,
+    "sha256": "4463be093872d2adfc98b90144c61cd9c09315e776d01c6777ad815eace01952"
+  },
+  {
+    "path": "src\\thz_dma\\surfaces\\__init__.py",
+    "size_bytes": 51,
+    "sha256": "7fb4e0517227bd660f9988051a8f42b9af655193c05ae9ae6f341fe1371e1fee"
+  },
+  {
+    "path": "src\\thz_dma\\surfaces\\dma.py",
+    "size_bytes": 4259,
+    "sha256": "a0b88f7ac6ae500fbdc72040cf9f6081bad09eb79ac3274e0a1bb9de69abccc9"
+  },
+  {
+    "path": "src\\thz_dma\\surfaces\\multistrip.py",
+    "size_bytes": 6245,
+    "sha256": "8f0c376aeacb41ffbacac55caf4200b83aa70ac9a0eb1753bc10db8c1a1fd926"
+  },
+  {
+    "path": "tests\\test_run_support.py",
+    "size_bytes": 1742,
+    "sha256": "6b04cefeae65b33d979d7cd9b37e4203129f46960d5adf278c7741ed48200f5b"
+  },
+  {
+    "path": "tests\\test_shared_helpers.py",
+    "size_bytes": 1870,
+    "sha256": "e0324cfe7ec424d13e6dc2d9913d120ffc5a318351785350e01c7b506830fa6c"
+  }
+]

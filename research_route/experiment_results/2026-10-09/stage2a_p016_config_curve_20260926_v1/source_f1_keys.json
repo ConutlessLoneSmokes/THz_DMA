@@ -1,0 +1,3002 @@
+[
+  {
+    "scene_id": "2026091101:0",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:0",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:0",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:0",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:0",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:0",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:1",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:1",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:1",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:1",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:1",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:1",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:2",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:2",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:2",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:2",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:2",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:2",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:3",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:3",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:3",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:3",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:3",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:3",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:4",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:4",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:4",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:4",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:4",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:4",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:5",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:5",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:5",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:5",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:5",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:5",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:6",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:6",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:6",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:6",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:6",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:6",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:7",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:7",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:7",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:7",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:7",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:7",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:8",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:8",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:8",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:8",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:8",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:8",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:9",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:9",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:9",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:9",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:9",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:9",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:10",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:10",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:10",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:10",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:10",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:10",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:11",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:11",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:11",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:11",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:11",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:11",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:12",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:12",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:12",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:12",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:12",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:12",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:13",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:13",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:13",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:13",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:13",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:13",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:14",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:14",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:14",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:14",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:14",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:14",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:15",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:15",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:15",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:15",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:15",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:15",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:16",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:16",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:16",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:16",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:16",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:16",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:17",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:17",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:17",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:17",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:17",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:17",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:18",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:18",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:18",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:18",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:18",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:18",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:19",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:19",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:19",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091101:19",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091101:19",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091101:19",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:0",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:0",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:0",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:0",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:0",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:0",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:1",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:1",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:1",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:1",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:1",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:1",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:2",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:2",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:2",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:2",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:2",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:2",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:3",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:3",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:3",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:3",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:3",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:3",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:4",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:4",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:4",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:4",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:4",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:4",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:5",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:5",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:5",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:5",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:5",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:5",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:6",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:6",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:6",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:6",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:6",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:6",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:7",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:7",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:7",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:7",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:7",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:7",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:8",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:8",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:8",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:8",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:8",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:8",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:9",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:9",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:9",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:9",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:9",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:9",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:10",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:10",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:10",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:10",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:10",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:10",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:11",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:11",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:11",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:11",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:11",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:11",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:12",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:12",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:12",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:12",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:12",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:12",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:13",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:13",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:13",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:13",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:13",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:13",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:14",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:14",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:14",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:14",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:14",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:14",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:15",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:15",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:15",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:15",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:15",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:15",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:16",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:16",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:16",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:16",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:16",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:16",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:17",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:17",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:17",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:17",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:17",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:17",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:18",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:18",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:18",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:18",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:18",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:18",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:19",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:19",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091102:19",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:19",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091102:19",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091102:19",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:0",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:0",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:0",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:0",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:0",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:0",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:1",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:1",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:1",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:1",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:1",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:1",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:2",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:2",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:2",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:2",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:2",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:2",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:3",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:3",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:3",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:3",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:3",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:3",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:4",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:4",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:4",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:4",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:4",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:4",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:5",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:5",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:5",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:5",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:5",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:5",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:6",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:6",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:6",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:6",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:6",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:6",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:7",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:7",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:7",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:7",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:7",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:7",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:8",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:8",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:8",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:8",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:8",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:8",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:9",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:9",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:9",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:9",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:9",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:9",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:10",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:10",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:10",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:10",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:10",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:10",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:11",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:11",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:11",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:11",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:11",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:11",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:12",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:12",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:12",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:12",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:12",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:12",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:13",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:13",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:13",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:13",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:13",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:13",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:14",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:14",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:14",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:14",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:14",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:14",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:15",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:15",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:15",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:15",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:15",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:15",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:16",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:16",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:16",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:16",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:16",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:16",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:17",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:17",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:17",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:17",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:17",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:17",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:18",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:18",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:18",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:18",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:18",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:18",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:19",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091103:19",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:19",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:19",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091103:19",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091103:19",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:0",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:0",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:0",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:0",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:0",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:0",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:1",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:1",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:1",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:1",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:1",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:1",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:2",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:2",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:2",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:2",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:2",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:2",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:3",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:3",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:3",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:3",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:3",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:3",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:4",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:4",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:4",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:4",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:4",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:4",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:5",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:5",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:5",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:5",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:5",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:5",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:6",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:6",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:6",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:6",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:6",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:6",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:7",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:7",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:7",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:7",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:7",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:7",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:8",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:8",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:8",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:8",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:8",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:8",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:9",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:9",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:9",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:9",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:9",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:9",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:10",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:10",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:10",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:10",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:10",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:10",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:11",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:11",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:11",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:11",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:11",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:11",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:12",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:12",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:12",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:12",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:12",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:12",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:13",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:13",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:13",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:13",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:13",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:13",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:14",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:14",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:14",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:14",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:14",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:14",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:15",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:15",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:15",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:15",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:15",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:15",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:16",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:16",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:16",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:16",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:16",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:16",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:17",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:17",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:17",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:17",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:17",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:17",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:18",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:18",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:18",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:18",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:18",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:18",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:19",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091104:19",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:19",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:19",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091104:19",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091104:19",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:0",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:0",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:0",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:0",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:0",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:0",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:1",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:1",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:1",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:1",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:1",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:1",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:2",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:2",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:2",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:2",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:2",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:2",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:3",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:3",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:3",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:3",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:3",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:3",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:4",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:4",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:4",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:4",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:4",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:4",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:5",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:5",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:5",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:5",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:5",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:5",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:6",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:6",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:6",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:6",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:6",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:6",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:7",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:7",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:7",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:7",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:7",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:7",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:8",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:8",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:8",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:8",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:8",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:8",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:9",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:9",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:9",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:9",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:9",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:9",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:10",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:10",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:10",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:10",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:10",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:10",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:11",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:11",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:11",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:11",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:11",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:11",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:12",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:12",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:12",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:12",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:12",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:12",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:13",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:13",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:13",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:13",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:13",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:13",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:14",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:14",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:14",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:14",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:14",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:14",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:15",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:15",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:15",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:15",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:15",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:15",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:16",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:16",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:16",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:16",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:16",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:16",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:17",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:17",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:17",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:17",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:17",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:17",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:18",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:18",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:18",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:18",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:18",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:18",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:19",
+    "snr_db": "55.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:19",
+    "snr_db": "55.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:19",
+    "snr_db": "55.0",
+    "estimator": "oracle_geometry_ls"
+  },
+  {
+    "scene_id": "2026091105:19",
+    "snr_db": "65.0",
+    "estimator": "grid_omp_3d"
+  },
+  {
+    "scene_id": "2026091105:19",
+    "snr_db": "65.0",
+    "estimator": "yang_ogols_3d"
+  },
+  {
+    "scene_id": "2026091105:19",
+    "snr_db": "65.0",
+    "estimator": "oracle_geometry_ls"
+  }
+]

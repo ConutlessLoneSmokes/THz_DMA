@@ -212,14 +212,14 @@ def create_run_archive(
     archive.directory.mkdir(parents=True, exist_ok=False)
     archive.write_status("running", run_id=run_id)
 
-    absorption_path = PROJECT_ROOT / config["atmosphere"]["table_path"]
+    absorption_path = PROJECT_ROOT / config["atmosphere"]["table_path"] if "atmosphere" in config else None
     archive.write_json(
         "config_resolved.json",
         {
             "config": config,
             "config_path": str(config_path),
             "config_sha256": hash_file(config_path),
-            "absorption_table_sha256": hash_file(absorption_path),
+            "absorption_table_sha256": hash_file(absorption_path) if absorption_path is not None else None,
         },
     )
     archive.write_json("seeds.json", seeds)
@@ -236,7 +236,7 @@ def create_run_archive(
     manifest_files = [
         PROJECT_ROOT / "pyproject.toml",
         config_path,
-        absorption_path,
+        *([absorption_path] if absorption_path is not None else []),
         Path(script_path).resolve(),
         Path(__file__).resolve(),
         *extra_manifest_files,

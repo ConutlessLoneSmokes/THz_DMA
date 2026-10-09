@@ -1,0 +1,86 @@
+[
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -9.943725163607278,
+    "large_nmse_db": -9.698569538666275
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -10.606635761252832,
+    "large_nmse_db": -10.475319424069662
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -11.95365277966541,
+    "large_nmse_db": -11.816960114534139
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -14.563993272351182,
+    "large_nmse_db": -14.243666236551427
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -18.21885321391302,
+    "large_nmse_db": -17.736510204184263
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -22.11013724490772,
+    "large_nmse_db": -21.765796460592924
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -10.084001043820166,
+    "large_nmse_db": -10.031716628625807
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -13.147554000973503,
+    "large_nmse_db": -13.027737773363867
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -17.1278144346059,
+    "large_nmse_db": -16.894608123136454
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -21.491638112571234,
+    "large_nmse_db": -21.124269050760518
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -25.585404984842697,
+    "large_nmse_db": -25.267516471217334
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -29.57299734357634,
+    "large_nmse_db": -29.441199345037774
+  }
+]

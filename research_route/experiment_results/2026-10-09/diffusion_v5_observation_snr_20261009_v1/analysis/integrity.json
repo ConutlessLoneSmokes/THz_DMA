@@ -1,0 +1,18 @@
+{
+  "rows": 1728,
+  "scenes": 16,
+  "matched_baseline_rows": 1152,
+  "sbl_converged": 288,
+  "new_snapshot_files": 64,
+  "old_snapshot_files": 64,
+  "dataset_files_verified": 2504,
+  "traces_verified": 576,
+  "same_model_data_calibration_and_seeds": true,
+  "gaussian_max_difference_db": 6.135251910777129e-05,
+  "dependencies": {
+    "model_sha256": "583b4674037cbc7930d3d7aa81dadb3a352b973e49c062b9685c6cffd3c05e6c",
+    "dataset_sha256": "bd4d369b8bd58a6a1465e863692cdad93ce873116cd230d029ac22fd5b88e378"
+  },
+  "source_metrics_sha256": "441ae72722ab18f7ca6ecb3dd66b93e9746655cd0dc759bcd207713dbc75b589",
+  "previous_metrics_sha256": "151bdff7c7e6e2e2e15d4d06ab0a881a88eefcba00c0892fb60c199b90a90274"
+}

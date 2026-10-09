@@ -1,0 +1,1011 @@
+{
+  "scope": {
+    "truth": "three exact spherical THz paths drawn continuously around known pre-observation coarse centers",
+    "comparison_axis": "paired estimator replacement within each native acquisition schedule",
+    "learning_model_used": false,
+    "paper_exact_reproduction": false,
+    "oracle_is_genie_reference_not_competitor": true,
+    "channel_nmse_evaluation_subcarriers": [
+      0,
+      8,
+      17,
+      25,
+      34,
+      42,
+      51,
+      59,
+      68,
+      76,
+      85,
+      93,
+      102,
+      110,
+      119,
+      127
+    ],
+    "csi_metric_version": "frequency-domains-v2",
+    "csi_metric_space": "uncombined element CSI; sum squared error / sum truth energy",
+    "fullband_evaluation_subcarriers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "heldout_empty_domain": "null in JSON / blank in CSV; not zero",
+    "search_mode": "beam_center_adaptive",
+    "artificial_half_grid_offset_used": false,
+    "declared_channel_support_bounds": {
+      "range_m": [
+        1.85,
+        2.4
+      ],
+      "azimuth_deg": [
+        3.0,
+        37.0
+      ],
+      "elevation_deg": [
+        -16.0,
+        16.0
+      ]
+    },
+    "fixed_search_bounds": {
+      "range_m": [
+        1.8,
+        2.45
+      ],
+      "azimuth_deg": [
+        0.0,
+        40.0
+      ],
+      "elevation_deg": [
+        -18.0,
+        18.0
+      ]
+    },
+    "search_contains_declared_channel_support": true
+  },
+  "method_provenance": {
+    "oracle_geometry_ls": {
+      "label": "Oracle geometry + LS gains",
+      "role": "genie-aided geometry benchmark",
+      "source_key": "internal_oracle",
+      "adaptation": "true path geometry; gains fitted to the same noisy observation",
+      "paper_exact_reproduction": false,
+      "uses_extra_information": true
+    },
+    "grid_omp_3d": {
+      "label": "3-D grid OMP",
+      "role": "common low-complexity sparse baseline",
+      "source_key": "internal_stage2a",
+      "adaptation": "three-step range-azimuth-elevation OMP with joint gain refit",
+      "paper_exact_reproduction": false,
+      "uses_extra_information": false
+    },
+    "sbl_jointfreq_3d": {
+      "label": "Joint-frequency SBL posterior mean",
+      "role": "classical sparse Bayesian baseline",
+      "source_key": "tipping2003fastsbl",
+      "adaptation": "complex known-noise sequential evidence maximisation on the full physical dictionary; all active posterior coefficients reconstruct CSI; three peaks for geometry diagnostics only",
+      "paper_exact_reproduction": false,
+      "uses_extra_information": false
+    }
+  },
+  "resource_fairness": {
+    "same_observation_across_estimators_within_schedule_snr_scene": true,
+    "common_standard_noise_across_snr_levels_within_schedule_scene": true,
+    "independent_unit": "one generated multipath scene",
+    "paired_block": "schedule, SNR and estimator within scene",
+    "method_order_randomized": true,
+    "common_pilot_resource_elements": 128,
+    "pilot_energy_per_re": 1.0,
+    "switch_guard_symbol_equivalents_per_switch": 0.25,
+    "combiner_row_normalization": false,
+    "noise_whitening": "known diagonal post-DMA covariance"
+  },
+  "schedules": [
+    {
+      "name": "frequency_single_shot_C2_J1_K128",
+      "family": "frequency_single_shot",
+      "pilot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ],
+      "heldout_indices": [],
+      "training_symbols": 1,
+      "pilot_resource_elements": 128,
+      "num_configurations": 1,
+      "num_switches": 0
+    },
+    {
+      "name": "tensor_structured_J8_K16_RE128",
+      "family": "tensor_structured",
+      "pilot_indices": [
+        0,
+        8,
+        17,
+        25,
+        34,
+        42,
+        51,
+        59,
+        68,
+        76,
+        85,
+        93,
+        102,
+        110,
+        119,
+        127
+      ],
+      "heldout_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "training_symbols": 8,
+      "pilot_resource_elements": 128,
+      "num_configurations": 8,
+      "num_switches": 7
+    }
+  ],
+  "search": {
+    "mode": "beam_center_adaptive",
+    "center_source": "pre-observation random coarse path-beam centers",
+    "per_path_center_count": 3,
+    "truth_offsets": "continuous random draws; no forced grid or half-grid placement",
+    "candidate_union": "three local Cartesian windows on one global anchored lattice; overlaps deduplicated",
+    "candidate_count_min": 19216,
+    "candidate_count_median": 19216.0,
+    "candidate_count_mean": 19216.0,
+    "candidate_count_max": 19216,
+    "grid_step_min_m_deg_deg": [
+      0.001,
+      0.34794921874999996,
+      2.01510254752488
+    ],
+    "grid_step_max_m_deg_deg": [
+      0.001,
+      0.34794921874999996,
+      2.01510254752488
+    ],
+    "maximum_nearest_candidate_error_m_deg_deg": [
+      0.00047767079400085066,
+      0.12601272331374863,
+      0.7957102656502641
+    ],
+    "all_truth_paths_inside_associated_windows": true,
+    "dictionary_build_seconds_total": {
+      "frequency_single_shot_C2_J1_K128": 2.9007603999998537,
+      "tensor_structured_J8_K16_RE128": 0.700187299999925
+    },
+    "dictionary_build_seconds_mean_per_scene": {
+      "frequency_single_shot_C2_J1_K128": 2.9007603999998537,
+      "tensor_structured_J8_K16_RE128": 0.700187299999925
+    },
+    "peak_dictionary_memory_bytes": {
+      "frequency_single_shot_C2_J1_K128": 157417472,
+      "tensor_structured_J8_K16_RE128": 157417472
+    },
+    "dictionary_compute": {
+      "frequency_single_shot_C2_J1_K128": [
+        {
+          "backend": "torch_cuda",
+          "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+          "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+        }
+      ],
+      "tensor_structured_J8_K16_RE128": [
+        {
+          "backend": "torch_cuda",
+          "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+          "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+        }
+      ]
+    },
+    "dictionary_compute_validation": {
+      "frequency_single_shot_C2_J1_K128": {
+        "status": "pass",
+        "sample_count": 16,
+        "relative_frobenius_error": 1.2520388952078679e-05,
+        "minimum_row_rho2": 0.9999999996805031,
+        "maximum_relative_error": 0.0001,
+        "minimum_rho2": 0.99999,
+        "reference_backend": "numpy"
+      },
+      "tensor_structured_J8_K16_RE128": {
+        "status": "pass",
+        "sample_count": 16,
+        "relative_frobenius_error": 1.3310681454780191e-05,
+        "minimum_row_rho2": 0.9999999996818235,
+        "maximum_relative_error": 0.0001,
+        "minimum_rho2": 0.99999,
+        "reference_backend": "numpy"
+      }
+    },
+    "profile_compute": {
+      "frequency_single_shot_C2_J1_K128": {
+        "backend": "torch_cuda",
+        "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+        "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation"
+      },
+      "tensor_structured_J8_K16_RE128": {
+        "backend": "torch_cuda",
+        "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+        "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation"
+      }
+    },
+    "schedules_built_sequentially_per_scene": true,
+    "dictionary_storage_dtype": "complex64",
+    "settings": {
+      "correlation_threshold": 0.5,
+      "window_fullwidth_multiplier": 2.0,
+      "grid_points_per_3db_width": 4.0,
+      "probe_range_step_m": 0.00025,
+      "probe_azimuth_step_deg": 0.05,
+      "probe_elevation_step_deg": 0.1,
+      "bisection_iterations": 10,
+      "probe_batch_size": 32,
+      "truth_offset_halfpower_fraction": 0.9,
+      "truth_offset_cap_range_m": 0.0045,
+      "truth_offset_cap_azimuth_deg": 0.9,
+      "truth_offset_cap_elevation_deg": 1.2,
+      "preserve_channel_relationships": true,
+      "maximum_candidates_per_scene": 50000
+    },
+    "scene_records": [
+      {
+        "scene_id": "2026091101:0",
+        "center_source": "pre-observation random coarse path-beam centers",
+        "centers_m_rad_rad": [
+          [
+            2.0954873157959724,
+            0.398128701763938,
+            0.13508502897960067
+          ],
+          [
+            2.333739587224464,
+            0.28325192267812893,
+            0.09529571283297063
+          ],
+          [
+            2.199859709399896,
+            0.5830045759885567,
+            0.24973786671552883
+          ]
+        ],
+        "truth": {
+          "offsets_m_rad_rad": [
+            [
+              -0.000512399948019846,
+              -0.0032299072424939266,
+              0.001025914687293586
+            ],
+            [
+              -0.0016500397636762191,
+              0.010444670095716056,
+              -0.020094783926246862
+            ],
+            [
+              -0.0003373801938966435,
+              -0.004974732423443783,
+              0.012713419467162316
+            ]
+          ],
+          "negative_offset_limits_m_rad_rad": [
+            [
+              0.0030462890625,
+              0.01133611802247489,
+              0.020943951023931952
+            ],
+            [
+              0.0030188232421875004,
+              0.010957991758261076,
+              0.020943951023931952
+            ],
+            [
+              0.003009814453125,
+              0.012912283282027384,
+              0.020943951023931952
+            ]
+          ],
+          "positive_offset_limits_m_rad_rad": [
+            [
+              0.0030462890625,
+              0.011523263678596938,
+              0.020943951023931952
+            ],
+            [
+              0.0030188232421875004,
+              0.01090430243068508,
+              0.020943951023931952
+            ],
+            [
+              0.003009814453125,
+              0.01286472987760293,
+              0.020943951023931952
+            ]
+          ]
+        },
+        "schedule_profiles": {
+          "frequency_single_shot_C2_J1_K128": [
+            {
+              "negative_halfwidth_rad_units": [
+                0.003913330078125,
+                0.05327515276326832,
+                0.1075030780381234
+              ],
+              "positive_halfwidth_rad_units": [
+                0.003913330078125,
+                0.042069423107763716,
+                0.09930991620771643
+              ],
+              "fullwidth_rad_units": [
+                0.00782666015625,
+                0.09534457587103204,
+                0.20681299424583982
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            },
+            {
+              "negative_halfwidth_rad_units": [
+                0.0043603515625,
+                0.046303210082328086,
+                0.10913932421186809
+              ],
+              "positive_halfwidth_rad_units": [
+                0.004360107421875,
+                0.07976273991230923,
+                0.10687414591509029
+              ],
+              "fullwidth_rad_units": [
+                0.008720458984375,
+                0.12606594999463733,
+                0.21601347012695837
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            },
+            {
+              "negative_halfwidth_rad_units": [
+                0.004766357421875,
+                0.0599829098640727,
+                0.09523123173503828
+              ],
+              "positive_halfwidth_rad_units": [
+                0.00476611328125,
+                0.09388814633408951,
+                0.06442139864345048
+              ],
+              "fullwidth_rad_units": [
+                0.009532470703125,
+                0.15387105619816221,
+                0.15965263037848876
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  true
+                ]
+              ]
+            }
+          ],
+          "tensor_structured_J8_K16_RE128": [
+            {
+              "negative_halfwidth_rad_units": [
+                0.003384765625,
+                0.012595686691638765,
+                0.10872855824533426
+              ],
+              "positive_halfwidth_rad_units": [
+                0.003384765625,
+                0.012803626309552153,
+                0.09570335693308751
+              ],
+              "fullwidth_rad_units": [
+                0.00676953125,
+                0.02539931300119092,
+                0.20443191517842177
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            },
+            {
+              "negative_halfwidth_rad_units": [
+                0.003354248046875,
+                0.012175546398067862,
+                0.11150165462521196
+              ],
+              "positive_halfwidth_rad_units": [
+                0.003354248046875,
+                0.01211589158965009,
+                0.10580206378666798
+              ],
+              "fullwidth_rad_units": [
+                0.00670849609375,
+                0.02429143798771795,
+                0.21730371841187995
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            },
+            {
+              "negative_halfwidth_rad_units": [
+                0.00334423828125,
+                0.01434698142447487,
+                0.07625929823508817
+              ],
+              "positive_halfwidth_rad_units": [
+                0.00334423828125,
+                0.0142941443084477,
+                0.06442139864345048
+              ],
+              "fullwidth_rad_units": [
+                0.0066884765625,
+                0.02864112573292257,
+                0.14068069687853865
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  true
+                ]
+              ]
+            }
+          ]
+        },
+        "grid_steps_m_rad_rad": [
+          0.001,
+          0.006072859496929488,
+          0.03517017421963466
+        ],
+        "combined_fullwidths_m_rad_rad": [
+          [
+            0.00782666015625,
+            0.09534457587103204,
+            0.20681299424583982
+          ],
+          [
+            0.008720458984375,
+            0.12606594999463733,
+            0.21730371841187995
+          ],
+          [
+            0.009532470703125,
+            0.15387105619816221,
+            0.15965263037848876
+          ]
+        ],
+        "windows": [
+          {
+            "path_center_index": 0,
+            "continuous_lower_m_rad_rad": [
+              2.087660655639722,
+              0.30278412589290593,
+              -0.07172796526623915
+            ],
+            "continuous_upper_m_rad_rad": [
+              2.1033139759522226,
+              0.49347327763497006,
+              0.3141592653589793
+            ],
+            "lattice_shape": [
+              16,
+              32,
+              11
+            ],
+            "lattice_candidates_before_union": 5632
+          },
+          {
+            "path_center_index": 1,
+            "continuous_lower_m_rad_rad": [
+              2.3250191282400894,
+              0.1571859726834916,
+              -0.12200800557890933
+            ],
+            "continuous_upper_m_rad_rad": [
+              2.342460046208839,
+              0.40931787267276626,
+              0.31259943124485057
+            ],
+            "lattice_shape": [
+              17,
+              42,
+              12
+            ],
+            "lattice_candidates_before_union": 8568
+          },
+          {
+            "path_center_index": 2,
+            "continuous_lower_m_rad_rad": [
+              2.190327238696771,
+              0.4291335197903945,
+              0.09008523633704008
+            ],
+            "continuous_upper_m_rad_rad": [
+              2.209392180103021,
+              0.6981317007977318,
+              0.3141592653589793
+            ],
+            "lattice_shape": [
+              19,
+              44,
+              6
+            ],
+            "lattice_candidates_before_union": 5016
+          }
+        ],
+        "num_candidates": 19216,
+        "truth_associated_window_coverage": [
+          true,
+          true,
+          true
+        ],
+        "nearest_union_candidate_abs_error_m_rad_rad": [
+          [
+            2.5084152047494257e-05,
+            0.00016292722102734247,
+            0.0069420558293770696
+          ],
+          [
+            8.954746078826403e-05,
+            0.0021993369212295333,
+            0.00248827784972179
+          ],
+          [
+            0.00047767079400085066,
+            0.0011081913568115054,
+            0.013887764027515848
+          ]
+        ],
+        "dictionary_by_schedule": {
+          "frequency_single_shot_C2_J1_K128": {
+            "build_seconds": 2.9007603999998537,
+            "memory_bytes": 157417472,
+            "compute_backend": "torch_cuda",
+            "compute_device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+            "compute_precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+          },
+          "tensor_structured_J8_K16_RE128": {
+            "build_seconds": 0.700187299999925,
+            "memory_bytes": 157417472,
+            "compute_backend": "torch_cuda",
+            "compute_device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+            "compute_precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+          }
+        }
+      }
+    ]
+  },
+  "data_codebook": {
+    "type": "independent feasible center-frequency multi-strip DMA states",
+    "size": 64,
+    "seed_start": 2026093000,
+    "row_normalized": false,
+    "analog_state_selection_rule": "maximize predicted noise-whitened RF-output SNR",
+    "digital_combiner": "estimated effective-channel MVDR with diagonal known noise"
+  }
+}

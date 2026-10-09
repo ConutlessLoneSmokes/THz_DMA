@@ -1,0 +1,170 @@
+[
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "gaussian",
+    "previous_delta_db": -3.552713678800501e-15
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "learned",
+    "previous_delta_db": 1.7763568394002505e-15
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 30.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 30.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 0.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 0.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 15.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 15.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 30.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 30.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 30.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 30.0,
+    "method": "learned",
+    "previous_delta_db": 1.7763568394002505e-15
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 0.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 0.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 15.0,
+    "method": "gaussian",
+    "previous_delta_db": 3.552713678800501e-15
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 15.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 30.0,
+    "method": "gaussian",
+    "previous_delta_db": 0.0
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 30.0,
+    "method": "learned",
+    "previous_delta_db": 0.0
+  }
+]

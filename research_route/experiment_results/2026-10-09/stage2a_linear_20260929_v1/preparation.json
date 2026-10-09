@@ -1,0 +1,702 @@
+[
+  {
+    "scene_id": "2026091101:0",
+    "covariance_basis_seconds": 3.3779442999984894,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3779216000002634,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.22228319999703672
+  },
+  {
+    "scene_id": "2026091101:1",
+    "covariance_basis_seconds": 3.6726777000003494,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3335101999982726,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21578470000167727
+  },
+  {
+    "scene_id": "2026091101:2",
+    "covariance_basis_seconds": 3.4666897999995854,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.37799299999824143,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.22337409999818192
+  },
+  {
+    "scene_id": "2026091101:3",
+    "covariance_basis_seconds": 3.78879919999963,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3725988999976835,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21792869999990216
+  },
+  {
+    "scene_id": "2026091101:4",
+    "covariance_basis_seconds": 3.4414284999984375,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32607070000085514,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21516999999948894
+  },
+  {
+    "scene_id": "2026091101:5",
+    "covariance_basis_seconds": 3.3305682000027446,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3380525000029593,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21431959999972605
+  },
+  {
+    "scene_id": "2026091101:6",
+    "covariance_basis_seconds": 3.3805859000021883,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32039050000093994,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2525089000009757
+  },
+  {
+    "scene_id": "2026091101:7",
+    "covariance_basis_seconds": 3.727366000002803,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32756940000035684,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21720410000125412
+  },
+  {
+    "scene_id": "2026091101:8",
+    "covariance_basis_seconds": 3.340458899998339,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3251324000011664,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2103370000004361
+  },
+  {
+    "scene_id": "2026091101:9",
+    "covariance_basis_seconds": 3.3541602000004787,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3347496999995201,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2105212999995274
+  },
+  {
+    "scene_id": "2026091101:10",
+    "covariance_basis_seconds": 3.3443341000020155,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.331664000001183,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21531440000035218
+  },
+  {
+    "scene_id": "2026091101:11",
+    "covariance_basis_seconds": 3.44107509999958,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3463177000012365,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2195047000022896
+  },
+  {
+    "scene_id": "2026091101:12",
+    "covariance_basis_seconds": 3.4689754999999423,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.34387100000094506,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21566630000234
+  },
+  {
+    "scene_id": "2026091101:13",
+    "covariance_basis_seconds": 3.465285700000095,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3499656000021787,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.22545610000088345
+  },
+  {
+    "scene_id": "2026091101:14",
+    "covariance_basis_seconds": 3.897365199998603,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3328293000013218,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2150696999997308
+  },
+  {
+    "scene_id": "2026091101:15",
+    "covariance_basis_seconds": 3.4629406000021845,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.34950490000119316,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21560610000233282
+  },
+  {
+    "scene_id": "2026091101:16",
+    "covariance_basis_seconds": 3.503714000002219,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32688060000145924,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.22042189999774564
+  },
+  {
+    "scene_id": "2026091101:17",
+    "covariance_basis_seconds": 3.490829600003053,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32694370000172057,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21539780000239261
+  },
+  {
+    "scene_id": "2026091101:18",
+    "covariance_basis_seconds": 3.654819299998053,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.36175250000087544,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20919729999877745
+  },
+  {
+    "scene_id": "2026091101:19",
+    "covariance_basis_seconds": 3.4295956999994814,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32395790000009583,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21270670000012615
+  },
+  {
+    "scene_id": "2026091102:0",
+    "covariance_basis_seconds": 3.4108639000005496,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.34322039999824483,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21998879999955534
+  },
+  {
+    "scene_id": "2026091102:1",
+    "covariance_basis_seconds": 3.3997617999993963,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33277589999852353,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20682970000052592
+  },
+  {
+    "scene_id": "2026091102:2",
+    "covariance_basis_seconds": 3.4624263000005158,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.329536500001268,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2179461000014271
+  },
+  {
+    "scene_id": "2026091102:3",
+    "covariance_basis_seconds": 3.4073991999975988,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33346739999979036,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2480290999992576
+  },
+  {
+    "scene_id": "2026091102:4",
+    "covariance_basis_seconds": 3.781289700000343,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32502739999836194,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2141635000007227
+  },
+  {
+    "scene_id": "2026091102:5",
+    "covariance_basis_seconds": 3.42333669999789,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3425048999997671,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2178913999996439
+  },
+  {
+    "scene_id": "2026091102:6",
+    "covariance_basis_seconds": 3.4341301999993448,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32251240000186954,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21548560000155703
+  },
+  {
+    "scene_id": "2026091102:7",
+    "covariance_basis_seconds": 3.449133400001301,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.36457230000087293,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.23192270000072313
+  },
+  {
+    "scene_id": "2026091102:8",
+    "covariance_basis_seconds": 3.4014970999996876,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3380264999977953,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2107066999997187
+  },
+  {
+    "scene_id": "2026091102:9",
+    "covariance_basis_seconds": 3.324342699997942,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33504510000057053,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2117184000017005
+  },
+  {
+    "scene_id": "2026091102:10",
+    "covariance_basis_seconds": 3.3409630000023753,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.31748500000321656,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21351900000081514
+  },
+  {
+    "scene_id": "2026091102:11",
+    "covariance_basis_seconds": 3.3298273000000336,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32767369999783114,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21209719999751542
+  },
+  {
+    "scene_id": "2026091102:12",
+    "covariance_basis_seconds": 3.46182029999909,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32363919999988866,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21425519999684184
+  },
+  {
+    "scene_id": "2026091102:13",
+    "covariance_basis_seconds": 3.34177720000298,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3319891999999527,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21012880000125733
+  },
+  {
+    "scene_id": "2026091102:14",
+    "covariance_basis_seconds": 3.7611589999978605,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33533230000102776,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20938519999981509
+  },
+  {
+    "scene_id": "2026091102:15",
+    "covariance_basis_seconds": 3.2623057999990124,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33202560000063386,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2108358000004955
+  },
+  {
+    "scene_id": "2026091102:16",
+    "covariance_basis_seconds": 3.223378300001059,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33592870000211406,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21003919999930076
+  },
+  {
+    "scene_id": "2026091102:17",
+    "covariance_basis_seconds": 3.256445100003475,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3316150999999081,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21341799999936484
+  },
+  {
+    "scene_id": "2026091102:18",
+    "covariance_basis_seconds": 3.236267600001156,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3267803999988246,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2112308999967354
+  },
+  {
+    "scene_id": "2026091102:19",
+    "covariance_basis_seconds": 3.2566474999985076,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3243428000023414,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20651919999727397
+  },
+  {
+    "scene_id": "2026091103:0",
+    "covariance_basis_seconds": 3.289674300001934,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32805699999880744,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20972190000247792
+  },
+  {
+    "scene_id": "2026091103:1",
+    "covariance_basis_seconds": 3.325290299999324,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.34767570000258274,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20720719999735593
+  },
+  {
+    "scene_id": "2026091103:2",
+    "covariance_basis_seconds": 3.3404107999995176,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33572909999929834,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20605040000009467
+  },
+  {
+    "scene_id": "2026091103:3",
+    "covariance_basis_seconds": 3.281738999998197,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33582409999871743,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21036499999900116
+  },
+  {
+    "scene_id": "2026091103:4",
+    "covariance_basis_seconds": 3.2261990000006335,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3259808000002522,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21177959999840823
+  },
+  {
+    "scene_id": "2026091103:5",
+    "covariance_basis_seconds": 3.2160833999987517,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33165569999982836,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20727090000218595
+  },
+  {
+    "scene_id": "2026091103:6",
+    "covariance_basis_seconds": 3.2222260999988066,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3287043000018457,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21343749999869033
+  },
+  {
+    "scene_id": "2026091103:7",
+    "covariance_basis_seconds": 3.2517043000007106,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3377306000002136,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20689540000239504
+  },
+  {
+    "scene_id": "2026091103:8",
+    "covariance_basis_seconds": 3.1827026000028127,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3208384000026854,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20780150000064168
+  },
+  {
+    "scene_id": "2026091103:9",
+    "covariance_basis_seconds": 3.244878299999982,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33041469999807305,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20998949999921024
+  },
+  {
+    "scene_id": "2026091103:10",
+    "covariance_basis_seconds": 3.228290200000629,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.326825900003314,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20900370000163093
+  },
+  {
+    "scene_id": "2026091103:11",
+    "covariance_basis_seconds": 3.1955176000010397,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3343347999980324,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20266980000087642
+  },
+  {
+    "scene_id": "2026091103:12",
+    "covariance_basis_seconds": 3.245296799999778,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33510829999795533,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2063220000018191
+  },
+  {
+    "scene_id": "2026091103:13",
+    "covariance_basis_seconds": 3.2615690999991784,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.31485130000146455,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2044826000019384
+  },
+  {
+    "scene_id": "2026091103:14",
+    "covariance_basis_seconds": 3.292781500000274,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33048090000011143,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2072520000001532
+  },
+  {
+    "scene_id": "2026091103:15",
+    "covariance_basis_seconds": 3.258096300000034,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32714790000318317,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2119176999985939
+  },
+  {
+    "scene_id": "2026091103:16",
+    "covariance_basis_seconds": 3.308443599999009,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3417290999968827,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21648799999820767
+  },
+  {
+    "scene_id": "2026091103:17",
+    "covariance_basis_seconds": 3.326372800001991,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3403422999981558,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.217161100001249
+  },
+  {
+    "scene_id": "2026091103:18",
+    "covariance_basis_seconds": 3.343035099998815,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3415462999982992,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21718659999896772
+  },
+  {
+    "scene_id": "2026091103:19",
+    "covariance_basis_seconds": 3.331876199998078,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33392270000331337,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21838199999911012
+  },
+  {
+    "scene_id": "2026091104:0",
+    "covariance_basis_seconds": 3.3019805000003544,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33159320000049775,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.22005109999736305
+  },
+  {
+    "scene_id": "2026091104:1",
+    "covariance_basis_seconds": 3.3484649999991234,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3297908999993524,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21476879999681842
+  },
+  {
+    "scene_id": "2026091104:2",
+    "covariance_basis_seconds": 3.294077599999582,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33622729999842704,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21131230000173673
+  },
+  {
+    "scene_id": "2026091104:3",
+    "covariance_basis_seconds": 3.2986043999990216,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3330587000018568,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21361569999862695
+  },
+  {
+    "scene_id": "2026091104:4",
+    "covariance_basis_seconds": 3.325809099998878,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3403300999998464,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21346430000266992
+  },
+  {
+    "scene_id": "2026091104:5",
+    "covariance_basis_seconds": 3.300153500000306,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.34056580000105896,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21411910000097123
+  },
+  {
+    "scene_id": "2026091104:6",
+    "covariance_basis_seconds": 3.3773627000009583,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.339627900000778,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21224910000091768
+  },
+  {
+    "scene_id": "2026091104:7",
+    "covariance_basis_seconds": 3.301473100000294,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3292753999994602,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20933589999913238
+  },
+  {
+    "scene_id": "2026091104:8",
+    "covariance_basis_seconds": 3.2765045999985887,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3158905999989656,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20815459999721497
+  },
+  {
+    "scene_id": "2026091104:9",
+    "covariance_basis_seconds": 3.3141064000010374,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3262780999975803,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21332129999791505
+  },
+  {
+    "scene_id": "2026091104:10",
+    "covariance_basis_seconds": 3.296466200001305,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33572609999828273,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2095551999991585
+  },
+  {
+    "scene_id": "2026091104:11",
+    "covariance_basis_seconds": 3.304987599996821,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3326476000002003,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20660309999948367
+  },
+  {
+    "scene_id": "2026091104:12",
+    "covariance_basis_seconds": 3.2455130999987887,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.34028140000009444,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20496080000157235
+  },
+  {
+    "scene_id": "2026091104:13",
+    "covariance_basis_seconds": 3.261901099998795,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32978000000002794,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2153775000006135
+  },
+  {
+    "scene_id": "2026091104:14",
+    "covariance_basis_seconds": 3.3144896999983757,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32221389999904204,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20688500000323984
+  },
+  {
+    "scene_id": "2026091104:15",
+    "covariance_basis_seconds": 3.263390199997957,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3338192000010167,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20969939999849885
+  },
+  {
+    "scene_id": "2026091104:16",
+    "covariance_basis_seconds": 3.2225632000008773,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33316220000051544,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20749090000026627
+  },
+  {
+    "scene_id": "2026091104:17",
+    "covariance_basis_seconds": 3.229325299998891,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32881990000169026,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2113878999989538
+  },
+  {
+    "scene_id": "2026091104:18",
+    "covariance_basis_seconds": 3.223524199998792,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33436779999829014,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20640330000242102
+  },
+  {
+    "scene_id": "2026091104:19",
+    "covariance_basis_seconds": 3.2464634999996633,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.32009560000005877,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20566929999768035
+  },
+  {
+    "scene_id": "2026091105:0",
+    "covariance_basis_seconds": 3.2653941999997187,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3364873000027728,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20716989999709767
+  },
+  {
+    "scene_id": "2026091105:1",
+    "covariance_basis_seconds": 3.2605635999971128,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33836320000045816,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21571029999904567
+  },
+  {
+    "scene_id": "2026091105:2",
+    "covariance_basis_seconds": 3.2234370000005583,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3467367000012018,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20859330000166665
+  },
+  {
+    "scene_id": "2026091105:3",
+    "covariance_basis_seconds": 3.2600840000013704,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3183224999993399,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2102469999990717
+  },
+  {
+    "scene_id": "2026091105:4",
+    "covariance_basis_seconds": 3.2493621000030544,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3316039000019373,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20892820000153733
+  },
+  {
+    "scene_id": "2026091105:5",
+    "covariance_basis_seconds": 3.274104100000841,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.31969910000043456,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2138277999983984
+  },
+  {
+    "scene_id": "2026091105:6",
+    "covariance_basis_seconds": 3.246263099998032,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3360805000011169,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21608689999993658
+  },
+  {
+    "scene_id": "2026091105:7",
+    "covariance_basis_seconds": 3.252860199998395,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.342126499999722,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2135266999976011
+  },
+  {
+    "scene_id": "2026091105:8",
+    "covariance_basis_seconds": 3.2519369999972696,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3184103000021423,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21562730000005104
+  },
+  {
+    "scene_id": "2026091105:9",
+    "covariance_basis_seconds": 3.2424757999979192,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3384717000008095,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21646169999803533
+  },
+  {
+    "scene_id": "2026091105:10",
+    "covariance_basis_seconds": 3.2328133000009984,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3337783999995736,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20596690000093076
+  },
+  {
+    "scene_id": "2026091105:11",
+    "covariance_basis_seconds": 3.2835353999980725,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3227967999991961,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2076801000002888
+  },
+  {
+    "scene_id": "2026091105:12",
+    "covariance_basis_seconds": 3.2188041000008525,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.33658680000007735,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2055919000013091
+  },
+  {
+    "scene_id": "2026091105:13",
+    "covariance_basis_seconds": 3.2192407000002277,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3282154000007722,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20759969999926398
+  },
+  {
+    "scene_id": "2026091105:14",
+    "covariance_basis_seconds": 3.2093363999993016,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3158736000004865,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.20380649999788147
+  },
+  {
+    "scene_id": "2026091105:15",
+    "covariance_basis_seconds": 3.2142466999976023,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.34068849999675876,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2150242999996408
+  },
+  {
+    "scene_id": "2026091105:16",
+    "covariance_basis_seconds": 3.2272693999984767,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.34506749999854947,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21303729999999632
+  },
+  {
+    "scene_id": "2026091105:17",
+    "covariance_basis_seconds": 3.242397300000448,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3418659999988449,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2055653000024904
+  },
+  {
+    "scene_id": "2026091105:18",
+    "covariance_basis_seconds": 3.234958299999562,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3399743000009039,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2074782999989111
+  },
+  {
+    "scene_id": "2026091105:19",
+    "covariance_basis_seconds": 3.275040099997568,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.3300791000001482,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.2052597000001697
+  }
+]

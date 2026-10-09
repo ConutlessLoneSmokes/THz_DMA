@@ -1,0 +1,10 @@
+{
+  "training_reference_power": {
+    "frequency_single_shot_C2_J1_K128": 1.4977082353643094e-11,
+    "tensor_structured_J8_K16_RE128": 1.3377052303148677e-11
+  },
+  "training_scenes": 2048,
+  "dataset_sha256": "bd4d369b8bd58a6a1465e863692cdad93ce873116cd230d029ac22fd5b88e378",
+  "definition": "mean whitened clean pilot power over training scenes / complex white noise variance",
+  "matched_observation_snr_diagnostic_only": true
+}

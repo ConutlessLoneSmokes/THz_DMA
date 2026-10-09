@@ -1,0 +1,212 @@
+[
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "gaussian",
+    "previous_delta_db": -9.769901492262534e-07
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -4.130663809220891e-06
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "gaussian",
+    "previous_delta_db": -4.805216313741312e-07
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -1.2710102470947504e-05
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 30.0,
+    "method": "gaussian",
+    "previous_delta_db": -2.3634670956340642e-05
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 30.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -3.6602067119417825e-05
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 0.0,
+    "method": "gaussian",
+    "previous_delta_db": 1.7591189731547274e-06
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 0.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -2.0100137856360334e-05
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 15.0,
+    "method": "gaussian",
+    "previous_delta_db": -5.560714516406051e-06
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 15.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -3.7974739612423036e-05
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 30.0,
+    "method": "gaussian",
+    "previous_delta_db": -8.01247431070351e-06
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 30.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -5.06385805678633e-05
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "gaussian",
+    "previous_delta_db": 4.066418963333263e-06
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -9.549427545607614e-06
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "gaussian",
+    "previous_delta_db": -7.1448209268965e-06
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -7.126970350768147e-06
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 30.0,
+    "method": "gaussian",
+    "previous_delta_db": -1.0503909063430683e-05
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 30.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -9.225257496581207e-06
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 0.0,
+    "method": "gaussian",
+    "previous_delta_db": 1.163353580579951e-06
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 0.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -8.849729695725728e-07
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 15.0,
+    "method": "gaussian",
+    "previous_delta_db": 9.745313391817945e-07
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 15.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": 9.564950357088264e-06
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 30.0,
+    "method": "gaussian",
+    "previous_delta_db": -2.9591174076415427e-05
+  },
+  {
+    "scene_id": "2026100202:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 30.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": 0.0001044192030441593
+  },
+  {
+    "scene_id": "2026100201:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": 7.166378118483863e-06
+  },
+  {
+    "scene_id": "2026100201:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -3.0657262559685705e-06
+  },
+  {
+    "scene_id": "2026100201:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 30.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": -2.1112512985865806e-05
+  },
+  {
+    "scene_id": "2026100201:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 0.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": 7.40333010718075e-06
+  },
+  {
+    "scene_id": "2026100201:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 15.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": 1.1938135553890561e-05
+  },
+  {
+    "scene_id": "2026100201:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 30.0,
+    "method": "learned_moment_conditioning",
+    "previous_delta_db": 5.914640897231038e-05
+  }
+]

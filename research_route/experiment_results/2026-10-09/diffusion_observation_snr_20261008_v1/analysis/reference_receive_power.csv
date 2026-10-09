@@ -1,0 +1,5 @@
+normalization,pilots,training_receive_power,paper_nominal_receive_power,measured_minus_nominal_snr_db
+author_loader,64,59.9929278720704,64.0,-0.2807991638623787
+author_loader,38,67.06888058126215,64.0,0.20341083789030792
+paper_global,64,59.8715312471151,64.0,-0.2895960837756392
+paper_global,38,67.13316950458749,64.0,0.2075717768276189

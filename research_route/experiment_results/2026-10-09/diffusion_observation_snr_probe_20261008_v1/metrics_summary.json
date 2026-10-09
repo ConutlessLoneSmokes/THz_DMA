@@ -1,0 +1,372 @@
+{
+  "rows": 48,
+  "scenes": 2,
+  "split": "validation",
+  "smoke_only": false,
+  "conditional_diagnostic_only": true,
+  "beam_subcarrier_index": 68,
+  "beam_frequency_hz": 301054687500.0,
+  "rate_excludes_estimator_latency": true,
+  "summary": [
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "oracle_geometry_ls",
+      "mean_linear_nmse_db": -13.201563765055731,
+      "median_nmse_db": -13.391783320537561,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 6.8289875719026245,
+      "mean_seconds": 0.09322510000129114,
+      "paired_diffusion_minus_method_db": 6.136198568540692,
+      "paired_ci95": [
+        4.15677906774729,
+        8.115618069334094
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "grid_omp_3d",
+      "mean_linear_nmse_db": -4.973097071321791,
+      "median_nmse_db": -5.023568996516297,
+      "fraction_nmse_below_minus10": 0.0,
+      "mean_pilot_net_rate": 6.6976207422761735,
+      "mean_seconds": 0.5484567499970581,
+      "paired_diffusion_minus_method_db": -2.2320157554805724,
+      "paired_ci95": [
+        -2.253246125957107,
+        -2.210785385004038
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "sbl_jointfreq_3d",
+      "mean_linear_nmse_db": -2.055084508907365,
+      "median_nmse_db": -2.1252910547701425,
+      "fraction_nmse_below_minus10": 0.0,
+      "mean_pilot_net_rate": 5.923640233257681,
+      "mean_seconds": 2.393011950000073,
+      "paired_diffusion_minus_method_db": -5.130293697226727,
+      "paired_ci95": [
+        -6.597926850848026,
+        -3.662660543605428
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "lmmse",
+      "mean_linear_nmse_db": -11.130715172801462,
+      "median_nmse_db": -11.546639602438654,
+      "fraction_nmse_below_minus10": 0.5,
+      "mean_pilot_net_rate": 6.783464667165332,
+      "mean_seconds": 0.162581249998766,
+      "paired_diffusion_minus_method_db": 4.291054850441785,
+      "paired_ci95": [
+        1.675246115943687,
+        6.906863584939883
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "diffusion_mean",
+      "mean_linear_nmse_db": -7.201844147747574,
+      "median_nmse_db": -7.255584751996869,
+      "fraction_nmse_below_minus10": 0.0,
+      "mean_pilot_net_rate": 6.5798888032810865,
+      "mean_seconds": 3.577023050000207,
+      "paired_diffusion_minus_method_db": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "gaussian_diffusion_mean",
+      "mean_linear_nmse_db": -11.130615375562671,
+      "median_nmse_db": -11.546757003858522,
+      "fraction_nmse_below_minus10": 0.5,
+      "mean_pilot_net_rate": 6.783456695495511,
+      "mean_seconds": 1.389701399999467,
+      "paired_diffusion_minus_method_db": 4.291172251861653,
+      "paired_ci95": [
+        1.6748433536752794,
+        6.9075011500480255
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "oracle_geometry_ls",
+      "mean_linear_nmse_db": -43.20156376505538,
+      "median_nmse_db": -43.39178332053736,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 16.8043928476851,
+      "mean_seconds": 0.13280420000046433,
+      "paired_diffusion_minus_method_db": 33.923832800619465,
+      "paired_ci95": [
+        28.968155036272414,
+        38.87951056496652
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "grid_omp_3d",
+      "mean_linear_nmse_db": -12.437006261998976,
+      "median_nmse_db": -13.733185263952247,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 16.744515080121314,
+      "mean_seconds": 0.47365644999990764,
+      "paired_diffusion_minus_method_db": 4.265234744034361,
+      "paired_ci95": [
+        4.128840640987146,
+        4.401628847081574
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "sbl_jointfreq_3d",
+      "mean_linear_nmse_db": -24.349150057757797,
+      "median_nmse_db": -25.066028430005794,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 16.80269597477017,
+      "mean_seconds": 2.614965199998551,
+      "paired_diffusion_minus_method_db": 15.598077910087904,
+      "paired_ci95": [
+        14.501716849103783,
+        16.694438971072024
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "lmmse",
+      "mean_linear_nmse_db": -24.63689598311361,
+      "median_nmse_db": -24.643516470280204,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 16.803314854454563,
+      "mean_seconds": 0.18440704999920854,
+      "paired_diffusion_minus_method_db": 15.175565950362317,
+      "paired_ci95": [
+        11.274818587063514,
+        19.07631331366112
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "diffusion_mean",
+      "mean_linear_nmse_db": -8.079164711171803,
+      "median_nmse_db": -9.467950519917888,
+      "fraction_nmse_below_minus10": 0.5,
+      "mean_pilot_net_rate": 16.439658733329452,
+      "mean_seconds": 3.598934449999433,
+      "paired_diffusion_minus_method_db": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "gaussian_diffusion_mean",
+      "mean_linear_nmse_db": -24.672867293622627,
+      "median_nmse_db": -24.697282965812686,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 16.803359152036926,
+      "mean_seconds": 1.2189363499983301,
+      "paired_diffusion_minus_method_db": 15.229332445894798,
+      "paired_ci95": [
+        11.107503449502847,
+        19.35116144228675
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "oracle_geometry_ls",
+      "mean_linear_nmse_db": -14.30973342064663,
+      "median_nmse_db": -15.520783095547783,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 6.383425623951046,
+      "mean_seconds": 0.07983355000033043,
+      "paired_diffusion_minus_method_db": 7.16165003162953,
+      "paired_ci95": [
+        4.313067664977606,
+        10.010232398281454
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "grid_omp_3d",
+      "mean_linear_nmse_db": -6.84980617533418,
+      "median_nmse_db": -6.967697686375493,
+      "fraction_nmse_below_minus10": 0.0,
+      "mean_pilot_net_rate": 6.032650856130106,
+      "mean_seconds": 0.4869484499995451,
+      "paired_diffusion_minus_method_db": -1.3914353775427601,
+      "paired_ci95": [
+        -2.9552950564268787,
+        0.17242430134135844
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "sbl_jointfreq_3d",
+      "mean_linear_nmse_db": -1.4587686683785361,
+      "median_nmse_db": -1.4652254278794983,
+      "fraction_nmse_below_minus10": 0.0,
+      "mean_pilot_net_rate": 4.822849959236812,
+      "mean_seconds": 6.0390089499996975,
+      "paired_diffusion_minus_method_db": -6.893907636038755,
+      "paired_ci95": [
+        -7.678134281336415,
+        -6.1096809907410945
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "lmmse",
+      "mean_linear_nmse_db": -10.37018321415096,
+      "median_nmse_db": -10.527587314739343,
+      "fraction_nmse_below_minus10": 0.5,
+      "mean_pilot_net_rate": 6.304060313456549,
+      "mean_seconds": 0.19061035000049742,
+      "paired_diffusion_minus_method_db": 2.1684542508210907,
+      "paired_ci95": [
+        1.5394576201260683,
+        2.797450881516113
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "diffusion_mean",
+      "mean_linear_nmse_db": -8.324732172260461,
+      "median_nmse_db": -8.359133063918254,
+      "fraction_nmse_below_minus10": 0.0,
+      "mean_pilot_net_rate": 6.195839892085439,
+      "mean_seconds": 3.8691436000008252,
+      "paired_diffusion_minus_method_db": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "gaussian_diffusion_mean",
+      "mean_linear_nmse_db": -10.370520844357422,
+      "median_nmse_db": -10.528004563502666,
+      "fraction_nmse_below_minus10": 0.5,
+      "mean_pilot_net_rate": 6.304078281905529,
+      "mean_seconds": 1.2569173500014585,
+      "paired_diffusion_minus_method_db": 2.168871499584413,
+      "paired_ci95": [
+        1.5395738088166446,
+        2.7981691903521817
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "oracle_geometry_ls",
+      "mean_linear_nmse_db": -44.30973342064711,
+      "median_nmse_db": -45.520783095548,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 15.466271520781955,
+      "mean_seconds": 0.09679915000015171,
+      "paired_diffusion_minus_method_db": 40.04599551717386,
+      "paired_ci95": [
+        31.79974976646914,
+        48.29224126787857
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "grid_omp_3d",
+      "mean_linear_nmse_db": -15.544239273380743,
+      "median_nmse_db": -16.036533712033858,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 15.411404467242892,
+      "mean_seconds": 0.5191965000012715,
+      "paired_diffusion_minus_method_db": 10.561746133659717,
+      "paired_ci95": [
+        3.604300748906857,
+        17.519191518412576
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "sbl_jointfreq_3d",
+      "mean_linear_nmse_db": -29.713371180202593,
+      "median_nmse_db": -29.827882578144152,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 15.465906955841255,
+      "mean_seconds": 7.6815499999993335,
+      "paired_diffusion_minus_method_db": 24.35309499977001,
+      "paired_ci95": [
+        20.50448323839808,
+        28.201706761141942
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "lmmse",
+      "mean_linear_nmse_db": -31.354148697298797,
+      "median_nmse_db": -31.36332404633071,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 15.465881735239854,
+      "mean_seconds": 0.18965559999924153,
+      "paired_diffusion_minus_method_db": 25.88853646795657,
+      "paired_ci95": [
+        20.755818843905452,
+        31.021254092007684
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "diffusion_mean",
+      "mean_linear_nmse_db": -3.1927626683199244,
+      "median_nmse_db": -5.474787578374139,
+      "fraction_nmse_below_minus10": 0.5,
+      "mean_pilot_net_rate": 13.973043272391564,
+      "mean_seconds": 3.2020471000014368,
+      "paired_diffusion_minus_method_db": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "gaussian_diffusion_mean",
+      "mean_linear_nmse_db": -30.642272375160346,
+      "median_nmse_db": -30.645611775650202,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 15.465771553036017,
+      "mean_seconds": 1.486753850000241,
+      "paired_diffusion_minus_method_db": 25.170824197276062,
+      "paired_ci95": [
+        20.490843230362145,
+        29.850805164189982
+      ]
+    }
+  ]
+}

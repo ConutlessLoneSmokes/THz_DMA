@@ -26,14 +26,18 @@ from thz_dma.analysis.stage2a_domains import (
 
 
 COLORS = {
+    "sbl_jointfreq_3d": "#CC79A7",
     "oracle_geometry_ls": "#009E73",
     "grid_omp_3d": "#0072B2",
+    "grid_somp_3d": "#CC79A7",
     "yang_ogols_3d": "#D55E00",
 }
 
 SHORT_LABELS = {
+    "sbl_jointfreq_3d": "Joint-frequency SBL",
     "oracle_geometry_ls": "Oracle",
     "grid_omp_3d": "3-D OMP",
+    "grid_somp_3d": "3-D SOMP",
     "yang_ogols_3d": "3-D OG-OLS",
 }
 
@@ -432,11 +436,12 @@ def _primary_screen(
         "oracle_geometry_matching_exact": bool(
             len(oracle_rows) > 0 and (oracle_rows["all_paths_success"] == 1).all()
         ),
-        "off_grid_refinement_never_increases_residual": bool(
+    }
+    if strong == "yang_ogols_3d":
+        checks["off_grid_refinement_never_increases_residual"] = bool(
             len(strong_rows) > 0
             and (strong_rows["refinement_nonincreasing"] == 1).all()
-        ),
-    }
+        )
     implementation_ready = all(checks.values())
     if not bool(config["experiment"]["research_decision_enabled"]):
         gate_status = "diagnostic_only" if diagnostic_only else "smoke_only"
@@ -453,7 +458,7 @@ def _primary_screen(
         },
         "performance_screen": {
             "status": performance_status,
-            "scope": "Yang-style OG-OLS versus grid OMP at the primary SNR only",
+            "scope": f"{strong} versus {reference} at the primary SNR only",
             "primary_array_reference_snr_db": primary_snr,
             "reference_estimator": reference,
             "strong_estimator": strong,
@@ -641,6 +646,30 @@ def _write_report(path: Path, compact: dict) -> None:
                 f"{row['median_fullband_128_nmse_db']:.3f}，≤−10 dB 比例 "
                 f"{100.0 * row['fullband_nmse_le_minus10db_rate']:.1f}%，"
                 f"三径成功率 {100.0 * row['all_paths_success_rate']:.1f}%。"
+            )
+        lines.append("")
+    if "grid_somp_3d" in compact["method_provenance"]:
+        lines.extend([
+            "## OMP—SOMP 多信噪比对照",
+            "",
+            "SOMP 用各频点独立系数选共同几何支持，随后用共享复增益重构全带 CSI；两方法复用相同白化观测和字典。下表 NMSE 为逐场景线性值取均值后转 dB；差值及区间为逐场景 dB 配对结果。",
+            "",
+            "| 协议 | 输入参考 SNR/dB | OMP NMSE/dB | SOMP NMSE/dB | SOMP−OMP/dB，95% CI |",
+            "|---|---:|---:|---:|---:|",
+        ])
+        results = {
+            (row["schedule"], row["snr_db"], row["estimator"]): row
+            for row in compact["domain_summary"]
+        }
+        for effect in compact.get("domain_paired_method_effects", []):
+            if effect["domain"] != "fullband_128_nmse" or effect["estimator"] != "grid_somp_3d":
+                continue
+            schedule, snr = effect["schedule"], effect["snr_db"]
+            omp = results[(schedule, snr, "grid_omp_3d")]["mean_fullband_128_nmse_db"]
+            somp = results[(schedule, snr, "grid_somp_3d")]["mean_fullband_128_nmse_db"]
+            lines.append(
+                f"| {schedule} | {snr:g} | {omp:.3f} | {somp:.3f} | "
+                f"{effect['mean']:+.3f} [{effect['ci95'][0]:+.3f}, {effect['ci95'][1]:+.3f}] |"
             )
         lines.append("")
     lines.extend(["", "## 主 SNR 兼容字段汇总（旧 16 点口径，不用于宽带恢复结论）", ""])
@@ -856,6 +885,7 @@ def analyze_stage2a(run_dir: str | Path) -> dict:
     labels = {
         method: summary["method_provenance"][method]["label"]
         for method in config["experiment"]["estimators"]
+        if method != "grid_somp_3d"
     }
     figure_paths = [
         figures / "01_nmse_by_snr_and_schedule.png",
@@ -868,6 +898,7 @@ def analyze_stage2a(run_dir: str | Path) -> dict:
         plot_frame = frame.assign(channel_nmse_linear=frame.fullband_128_nmse_linear, channel_nmse_db=frame.fullband_128_nmse_db)
         plot_aggregate = _aggregate(plot_frame, rng=np.random.default_rng(int(config["experiment"]["bootstrap_seed"])), resamples=resamples)
     metric_label = "fullband 128-tone CSI NMSE" if domains_available else "legacy 16-tone CSI NMSE"
+    plot_aggregate = plot_aggregate[plot_aggregate.estimator.isin(labels)]
     _figure_nmse(plot_aggregate, labels, figure_paths[0], metric_label)
     _figure_primary_metrics(aggregate, config, labels, figure_paths[1])
     _figure_runtime_tradeoff(plot_aggregate, config, labels, figure_paths[2], metric_label)

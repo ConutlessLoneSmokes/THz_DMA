@@ -1,0 +1,30 @@
+{
+  "data_run": "diffusion_data_20261002_v1",
+  "train_run": "diffusion_v4_train_20261004_v1",
+  "reference_run": "diffusion_observation_snr_20261008_v1",
+  "cases": {
+    "validation": [
+      0,
+      7
+    ],
+    "train": [
+      0
+    ]
+  },
+  "snr_db": [
+    0.0,
+    15.0,
+    30.0
+  ],
+  "denoising_sigmas": [
+    0.01,
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0,
+    80.0
+  ],
+  "seed": 2026100901,
+  "frozen_weights": true
+}

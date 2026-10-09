@@ -1,0 +1,12 @@
+[experiment]
+name = "direction1_stage2a_linear"
+source_run = "runs/stage2a_somp_snr_20260929_v1"
+scene_limit = 100
+prior_seed = 2026092901
+prior_draws = 128
+covariance_check_draws = 64
+covariance_check_scenes = 10
+bootstrap_seed = 2026092902
+bootstrap_resamples = 1000
+diagnostic_only = true
+scope = "matched conditional Monte Carlo LMMSE and isotropic channel Tikhonov; known coarse centers and noise covariance"

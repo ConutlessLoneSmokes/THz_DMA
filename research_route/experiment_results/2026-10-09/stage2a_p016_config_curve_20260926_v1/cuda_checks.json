@@ -1,0 +1,47 @@
+{
+  "1": {
+    "status": "pass",
+    "sample_count": 16,
+    "relative_frobenius_error": 1.229446438256315e-05,
+    "minimum_row_rho2": 0.9999999996988835,
+    "maximum_relative_error": 0.0001,
+    "minimum_rho2": 0.99999,
+    "reference_backend": "numpy"
+  },
+  "2": {
+    "status": "pass",
+    "sample_count": 16,
+    "relative_frobenius_error": 1.3034227303281145e-05,
+    "minimum_row_rho2": 0.9999999997476892,
+    "maximum_relative_error": 0.0001,
+    "minimum_rho2": 0.99999,
+    "reference_backend": "numpy"
+  },
+  "4": {
+    "status": "pass",
+    "sample_count": 16,
+    "relative_frobenius_error": 1.3413941134969732e-05,
+    "minimum_row_rho2": 0.9999999997238316,
+    "maximum_relative_error": 0.0001,
+    "minimum_rho2": 0.99999,
+    "reference_backend": "numpy"
+  },
+  "8": {
+    "status": "pass",
+    "sample_count": 16,
+    "relative_frobenius_error": 1.3739174532161901e-05,
+    "minimum_row_rho2": 0.9999999996882657,
+    "maximum_relative_error": 0.0001,
+    "minimum_rho2": 0.99999,
+    "reference_backend": "numpy"
+  },
+  "16": {
+    "status": "pass",
+    "sample_count": 16,
+    "relative_frobenius_error": 1.386364312492502e-05,
+    "minimum_row_rho2": 0.9999999996715564,
+    "maximum_relative_error": 0.0001,
+    "minimum_rho2": 0.99999,
+    "reference_backend": "numpy"
+  }
+}

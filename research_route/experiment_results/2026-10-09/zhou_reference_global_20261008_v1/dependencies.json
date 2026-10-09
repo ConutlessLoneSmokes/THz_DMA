@@ -1,0 +1,14 @@
+{
+  "train": {
+    "path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\sources\\datasets\\zhou2025\\quadriga_Nt64_Nr16_ULA0.50_train.mat",
+    "sha256": "c73526f3f5d7b1b84e7c3dcd88c361753a481f804d657604b4f15bafeb289852"
+  },
+  "valid": {
+    "path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\sources\\datasets\\zhou2025\\quadriga_Nt64_Nr16_ULA0.50_valid.mat",
+    "sha256": "12f393ba59fc952af200e1ccf42065a1e3c8b2c14e9ddebde0ccb3e94a5e8bef"
+  },
+  "test": {
+    "path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\sources\\datasets\\zhou2025\\quadriga_Nt64_Nr16_ULA0.50_test.mat",
+    "sha256": "4f1b93ef21c3a9a975f61cc269f7092df4e2b0e5f86eda60e7d312091415e2b1"
+  }
+}

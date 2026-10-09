@@ -1,0 +1,44 @@
+{
+  "zhou_reference_loader_20261008_v1": {
+    "rows": 3600,
+    "scenes": 100,
+    "source_snapshot_files": 59,
+    "dependencies_verified": true
+  },
+  "zhou_reference_global_20261008_v1": {
+    "rows": 3600,
+    "scenes": 100,
+    "source_snapshot_files": 59,
+    "dependencies_verified": true
+  },
+  "diffusion_observation_snr_20261008_v1": {
+    "rows": 1728,
+    "scenes": 16,
+    "source_snapshot_files": 64,
+    "dependencies_verified": true
+  },
+  "sbl_converged": 288,
+  "lasso_batches_reaching_iteration_limit": [
+    {
+      "run": "zhou_reference_loader_20261008_v1",
+      "pilots": 38,
+      "snr_db": 30.0,
+      "rows": 100,
+      "iterations": 1000
+    },
+    {
+      "run": "zhou_reference_loader_20261008_v1",
+      "pilots": 64,
+      "snr_db": 30.0,
+      "rows": 100,
+      "iterations": 1000
+    },
+    {
+      "run": "zhou_reference_global_20261008_v1",
+      "pilots": 38,
+      "snr_db": 30.0,
+      "rows": 100,
+      "iterations": 1000
+    }
+  ]
+}

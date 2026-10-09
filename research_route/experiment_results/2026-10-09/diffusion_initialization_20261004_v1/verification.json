@@ -1,0 +1,9 @@
+{
+  "common_baseline_rows": 16,
+  "max_absolute_differences": {
+    "fullband_128_nmse_linear": 0.0,
+    "effective_output_snr_db": 0.0,
+    "pilot_net_rate": 0.0
+  },
+  "original_dataset_and_model_hashes_match": true
+}

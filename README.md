@@ -17,6 +17,17 @@ Research code and route documents for low-overhead wideband channel acquisition 
 
 Run artifacts, paper PDFs, extracted full text, and presentation assets remain local because they are large or have separate redistribution terms.
 
+Compact experiment evidence is versioned under `research_route/experiment_results/`.
+The [2026-10-09 snapshot](research_route/experiment_results/2026-10-09/README.md)
+contains 40 run records, available CSV results, configurations, source hashes,
+audit reports, plots, and the current 19-test result. It preserves failed and
+interrupted runs. Large channel caches, model weights, and third-party datasets
+remain local; the snapshot documents what is needed to reproduce the runs.
+
+The latest learned diffusion recovery improves on v4 but remains below conditional
+LMMSE. Read [the diagnosis and proposed next experiment](research_route/19e_方向一学习先验差距与下一改进方案.md)
+before starting a new training run.
+
 ## Setup
 
 ```bash

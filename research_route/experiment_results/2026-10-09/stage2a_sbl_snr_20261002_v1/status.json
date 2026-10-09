@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "timestamp_utc": "2026-10-02T04:04:09.160716+00:00",
+  "run_id": "stage2a_sbl_snr_20261002_v1",
+  "raw_metric_rows": 3600,
+  "baseline_status": "diagnostic_only",
+  "summary_path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\results\\direction1_stage2a\\stage2a_sbl_snr_20261002_v1_summary.json",
+  "compact_analysis_path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\results\\direction1_stage2a\\stage2a_sbl_snr_20261002_v1_analysis_compact.json"
+}

@@ -3,10 +3,16 @@
 
 from __future__ import annotations
 
+import argparse
+import json
+from pathlib import Path
+
 from _run_support import (
     PROJECT_ROOT,
     create_run_archive,
-    parse_run_arguments,
+    RunArchive,
+    hash_file,
+    read_toml,
     require_unit_pilot_energy,
 )
 from thz_dma.analysis.stage2a import analyze_stage2a
@@ -51,10 +57,24 @@ def _compute_environment(config: dict) -> dict[str, str]:
     }
 
 
+def validate_resume(directory: Path, config: dict) -> None:
+    """Never mix results from different code, physics inputs or configurations."""
+    resolved = json.loads((directory / "config_resolved.json").read_text(encoding="utf-8"))
+    if resolved["config"] != config:
+        raise ValueError("resume configuration differs from archived configuration")
+    for record in json.loads((directory / "code_manifest.json").read_text(encoding="utf-8")):
+        if hash_file(PROJECT_ROOT / record["path"]) != record["sha256"]:
+            raise ValueError(f"resume source changed: {record['path']}")
+
+
 def main() -> int:
-    config_path, config, requested_run_id = parse_run_arguments(
-        "direction1_stage2a_classical.toml", __doc__
-    )
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--config", type=Path, default=PROJECT_ROOT / "configs/direction1_stage2a_classical.toml")
+    parser.add_argument("--run-id")
+    parser.add_argument("--resume", action="store_true")
+    args = parser.parse_args()
+    config_path, requested_run_id = args.config.resolve(), args.run_id
+    config = read_toml(config_path)
     require_unit_pilot_energy(
         config["acquisition"]["pilot_energy_per_re"], "Stage 2-A"
     )
@@ -79,24 +99,35 @@ def main() -> int:
                 "artificial_half_grid_offset": False,
             }
         )
-    archive = create_run_archive(
-        "stage2a",
-        requested_run_id,
-        config_path=config_path,
-        config=config,
-        seeds=seeds,
-        script_path=__file__,
-        environment={
-            **_compute_environment(config),
-            "raw_metric_format": (
-                "CSV; one row per scene/schedule/SNR/estimator block"
+    if args.resume:
+        if not requested_run_id:
+            parser.error("--resume requires --run-id")
+        archive = RunArchive(requested_run_id, PROJECT_ROOT / "runs" / requested_run_id)
+        validate_resume(archive.directory, config)
+        if not list((archive.directory / "checkpoint").glob("*.json")):
+            raise ValueError("no saved scenes to resume")
+        if json.loads(archive.status_path.read_text(encoding="utf-8"))["status"] == "complete":
+            raise ValueError("completed runs are immutable")
+        archive.write_status("running", run_id=archive.run_id, resumed=True)
+    else:
+        archive = create_run_archive(
+            "stage2a",
+            requested_run_id,
+            config_path=config_path,
+            config=config,
+            seeds=seeds,
+            script_path=__file__,
+            environment={
+                **_compute_environment(config),
+                "raw_metric_format": (
+                    "CSV; one row per scene/schedule/SNR/estimator block"
+                ),
+            },
+            checkpoint_note="Atomic JSON checkpoints per completed scene; use --resume with identical config and code. No learned model.\n",
+            extra_manifest_files=(
+                PROJECT_ROOT / "scripts" / "analyze_direction1_stage2a.py",
             ),
-        },
-        checkpoint_note="No learned model or checkpoint is used in Stage 2-A.\n",
-        extra_manifest_files=(
-            PROJECT_ROOT / "scripts" / "analyze_direction1_stage2a.py",
-        ),
-    )
+        )
 
     expected_scenes = len(config["experiment"]["replicate_seeds"]) * int(
         config["experiment"]["samples_per_seed"]
@@ -114,7 +145,8 @@ def main() -> int:
         flush=True,
     )
     try:
-        rows, summary = run_stage2a(config, PROJECT_ROOT, progress=print)
+        rows, summary = run_stage2a(config, PROJECT_ROOT, progress=print,
+                                   checkpoint_dir=archive.directory / "checkpoint")
         archive.write_metrics(rows)
         archive.write_json("metrics_summary.json", summary)
         archive.write_json("execution_schedule.json", summary["execution_schedule"])

@@ -1,0 +1,7 @@
+{
+  "rows": 48,
+  "scenes": 2,
+  "training_calibration_scenes": 2048,
+  "independent_dma_test_evaluated": false,
+  "smoke_diagnostic": true
+}

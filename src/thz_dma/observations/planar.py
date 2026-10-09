@@ -105,6 +105,14 @@ def _build_schedule(state: dict, config: dict) -> Stage2Schedule:
         )
     elif design == "cyclic_frequency_tiles":
         resonances = cyclic_frequency_resonance_states(configurations, *common)
+    elif design == "cyclic_frequency_state":
+        if configurations != 1:
+            raise ValueError("cyclic_frequency_state requires one configuration")
+        bank = cyclic_frequency_resonance_states(int(state["bank_size"]), *common)
+        index = int(state["state_index"])
+        if not 0 <= index < len(bank):
+            raise ValueError("state_index is outside the cyclic state bank")
+        resonances = bank[index : index + 1]
     else:
         raise ValueError(f"unsupported Stage 2 state design: {design}")
     return Stage2Schedule(

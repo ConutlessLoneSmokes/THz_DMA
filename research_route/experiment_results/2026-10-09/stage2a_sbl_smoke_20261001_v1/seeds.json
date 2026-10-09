@@ -1,0 +1,11 @@
+{
+  "replicate_seeds": [
+    2026091101
+  ],
+  "randomization_seed": 2026091113,
+  "bootstrap_seed": 2026091199,
+  "noise_seed_contract": "SeedSequence(replicate_seed, sample, schedule_index, 2026090921); the same standard noise draw is rescaled across SNR levels",
+  "coarse_center_seed_contract": "SeedSequence(replicate_seed, sample, 2026091101)",
+  "continuous_truth_offset_seed_contract": "SeedSequence(replicate_seed, sample, 2026091102)",
+  "artificial_half_grid_offset": false
+}

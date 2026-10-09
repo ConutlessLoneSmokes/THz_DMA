@@ -1,0 +1,6 @@
+{
+  "column": "observation_snr_target_db",
+  "definition": "training-reference whitened pilot observation SNR",
+  "protocol_noise_variances_differ": true,
+  "physical_equal_input_noise_comparison": false
+}

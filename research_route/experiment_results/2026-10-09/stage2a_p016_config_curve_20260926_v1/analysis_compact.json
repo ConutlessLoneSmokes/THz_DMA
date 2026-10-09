@@ -1,0 +1,351 @@
+{
+  "state_design": {
+    "anchor_state": 2,
+    "single_state_output_snr_constraint_passed": true,
+    "resonance_state_bank_sha256": "25d9181d8514375f6fd779eaef37de8f8020c06a28e8ba8ea427df04670443d0",
+    "design_scenes": 40,
+    "old_output_snr_p10_db": -0.28238113341247273,
+    "state_scores": [
+      {
+        "state": 0,
+        "margin_p10_db": -0.05242087867370646,
+        "margin_median_db": -0.0040945578328263725,
+        "output_snr_p10_db": -3.143679558460887
+      },
+      {
+        "state": 1,
+        "margin_p10_db": -0.037027635484226,
+        "margin_median_db": 0.036183796056853415,
+        "output_snr_p10_db": 0.46285899654113627
+      },
+      {
+        "state": 2,
+        "margin_p10_db": -0.004001835415442766,
+        "margin_median_db": 0.12878663783821592,
+        "output_snr_p10_db": 1.4253229470551665
+      },
+      {
+        "state": 3,
+        "margin_p10_db": -0.004142778165621594,
+        "margin_median_db": 0.1598040468958457,
+        "output_snr_p10_db": 0.954410051838252
+      },
+      {
+        "state": 4,
+        "margin_p10_db": -0.011155760512391786,
+        "margin_median_db": 0.16293282180924662,
+        "output_snr_p10_db": 1.6436035753281688
+      },
+      {
+        "state": 5,
+        "margin_p10_db": -0.006833735977900139,
+        "margin_median_db": 0.15581826552398087,
+        "output_snr_p10_db": 1.6547507813306592
+      },
+      {
+        "state": 6,
+        "margin_p10_db": -0.013766450441861708,
+        "margin_median_db": 0.16166410435853934,
+        "output_snr_p10_db": 1.5273183601615743
+      },
+      {
+        "state": 7,
+        "margin_p10_db": -0.013079821420112889,
+        "margin_median_db": 0.15736447291880845,
+        "output_snr_p10_db": 1.4560430928020422
+      },
+      {
+        "state": 8,
+        "margin_p10_db": -0.01756309841222088,
+        "margin_median_db": 0.15537360027334762,
+        "output_snr_p10_db": 1.1515137581758752
+      },
+      {
+        "state": 9,
+        "margin_p10_db": -0.017464435979272677,
+        "margin_median_db": 0.1437767274530673,
+        "output_snr_p10_db": 1.249992470436082
+      },
+      {
+        "state": 10,
+        "margin_p10_db": -0.019819312812704225,
+        "margin_median_db": 0.14553472464901612,
+        "output_snr_p10_db": 1.1019267972092932
+      },
+      {
+        "state": 11,
+        "margin_p10_db": -0.02431565850745643,
+        "margin_median_db": 0.13937038205139604,
+        "output_snr_p10_db": 0.9294747727118285
+      },
+      {
+        "state": 12,
+        "margin_p10_db": -0.029266475266015377,
+        "margin_median_db": 0.1298139801747456,
+        "output_snr_p10_db": 0.7360120873338549
+      },
+      {
+        "state": 13,
+        "margin_p10_db": -0.02968219202508152,
+        "margin_median_db": 0.1263088126526779,
+        "output_snr_p10_db": 0.65259999430593
+      },
+      {
+        "state": 14,
+        "margin_p10_db": -0.05593859235462888,
+        "margin_median_db": 0.12838050943157253,
+        "output_snr_p10_db": 0.6577177150331698
+      },
+      {
+        "state": 15,
+        "margin_p10_db": -0.061916817025934386,
+        "margin_median_db": 0.05274442727139771,
+        "output_snr_p10_db": 0.04255693683587826
+      }
+    ],
+    "cuda_validation": {
+      "status": "pass",
+      "sample_count": 16,
+      "relative_frobenius_error": 2.092747096170028e-05,
+      "minimum_row_rho2": 0.9999999993303308,
+      "maximum_relative_error": 0.0001,
+      "minimum_rho2": 0.99999,
+      "reference_backend": "numpy"
+    },
+    "state_mapping": {
+      "1": [
+        2
+      ],
+      "2": [
+        2,
+        10
+      ],
+      "4": [
+        2,
+        6,
+        10,
+        14
+      ],
+      "8": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        0
+      ],
+      "16": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        0,
+        1
+      ]
+    }
+  },
+  "new_curve": [
+    {
+      "configurations": 1,
+      "snr_db": 55.0,
+      "margin_target_scenes": 37,
+      "margin_median_db": 0.14655584871769084,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 93,
+      "noisy_fullband_pass": 92,
+      "fullband_linear_mean_db": -14.916586533627843,
+      "strict_path_success": 79,
+      "beam_loss_p90_db": 0.24471947044301884,
+      "net_rate_mean_bps_hz": 11.487683712293101,
+      "online_compute_median_seconds": 2.1395782499985216,
+      "training_symbols": 1,
+      "switches": 0
+    },
+    {
+      "configurations": 1,
+      "snr_db": 65.0,
+      "margin_target_scenes": 37,
+      "margin_median_db": 0.14655584871769084,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 93,
+      "noisy_fullband_pass": 93,
+      "fullband_linear_mean_db": -16.976629212552375,
+      "strict_path_success": 92,
+      "beam_loss_p90_db": 0.040330562554317516,
+      "net_rate_mean_bps_hz": 14.787550766548932,
+      "online_compute_median_seconds": 2.1463439999988623,
+      "training_symbols": 1,
+      "switches": 0
+    },
+    {
+      "configurations": 2,
+      "snr_db": 55.0,
+      "margin_target_scenes": 42,
+      "margin_median_db": 0.1762374376321651,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 100,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -23.17338917080509,
+      "strict_path_success": 96,
+      "beam_loss_p90_db": 0.01929744648440943,
+      "net_rate_mean_bps_hz": 11.373155690699784,
+      "online_compute_median_seconds": 2.1434746499999164,
+      "training_symbols": 2,
+      "switches": 1
+    },
+    {
+      "configurations": 2,
+      "snr_db": 65.0,
+      "margin_target_scenes": 42,
+      "margin_median_db": 0.1762374376321651,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 100,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -32.66517752182464,
+      "strict_path_success": 100,
+      "beam_loss_p90_db": 0.0013126848109016414,
+      "net_rate_mean_bps_hz": 14.624156016498175,
+      "online_compute_median_seconds": 2.1401943999999276,
+      "training_symbols": 2,
+      "switches": 1
+    },
+    {
+      "configurations": 4,
+      "snr_db": 55.0,
+      "margin_target_scenes": 43,
+      "margin_median_db": 0.17172535234813302,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 100,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -22.98391725438701,
+      "strict_path_success": 93,
+      "beam_loss_p90_db": 0.020186981336403884,
+      "net_rate_mean_bps_hz": 11.08218864233856,
+      "online_compute_median_seconds": 2.1554935000012847,
+      "training_symbols": 4,
+      "switches": 3
+    },
+    {
+      "configurations": 4,
+      "snr_db": 65.0,
+      "margin_target_scenes": 43,
+      "margin_median_db": 0.17172535234813302,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 100,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -33.15485162922318,
+      "strict_path_success": 100,
+      "beam_loss_p90_db": 0.001183295132277279,
+      "net_rate_mean_bps_hz": 14.250247916509968,
+      "online_compute_median_seconds": 2.1439787999988766,
+      "training_symbols": 4,
+      "switches": 3
+    },
+    {
+      "configurations": 8,
+      "snr_db": 55.0,
+      "margin_target_scenes": 43,
+      "margin_median_db": 0.16853367027121197,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 100,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -23.081034309468997,
+      "strict_path_success": 95,
+      "beam_loss_p90_db": 0.032723955034406144,
+      "net_rate_mean_bps_hz": 10.499398866616245,
+      "online_compute_median_seconds": 2.1497851500016623,
+      "training_symbols": 8,
+      "switches": 7
+    },
+    {
+      "configurations": 8,
+      "snr_db": 65.0,
+      "margin_target_scenes": 43,
+      "margin_median_db": 0.16853367027121197,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 100,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -33.15473318746918,
+      "strict_path_success": 100,
+      "beam_loss_p90_db": 0.0013040821290451717,
+      "net_rate_mean_bps_hz": 13.501930545268651,
+      "online_compute_median_seconds": 2.1525819999988016,
+      "training_symbols": 8,
+      "switches": 7
+    },
+    {
+      "configurations": 16,
+      "snr_db": 55.0,
+      "margin_target_scenes": 40,
+      "margin_median_db": 0.1756115545281949,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 100,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -21.907543555510006,
+      "strict_path_success": 94,
+      "beam_loss_p90_db": 0.04730506199050739,
+      "net_rate_mean_bps_hz": 9.33547566369086,
+      "online_compute_median_seconds": 2.1540812500024913,
+      "training_symbols": 16,
+      "switches": 15
+    },
+    {
+      "configurations": 16,
+      "snr_db": 65.0,
+      "margin_target_scenes": 40,
+      "margin_median_db": 0.1756115545281949,
+      "noiseless_single_pass": 300,
+      "noiseless_triple_pass": 100,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -31.868188460750314,
+      "strict_path_success": 100,
+      "beam_loss_p90_db": 0.0016516423425184136,
+      "net_rate_mean_bps_hz": 12.00582841848887,
+      "online_compute_median_seconds": 2.15067794999959,
+      "training_symbols": 16,
+      "switches": 15
+    }
+  ],
+  "archived_context": [
+    {
+      "schedule": "frequency_single_shot_J1_K128",
+      "snr_db": 55.0,
+      "noisy_fullband_pass": 63,
+      "fullband_linear_mean_db": -6.691148822909502,
+      "net_rate_mean_bps_hz": 11.165607220494818
+    },
+    {
+      "schedule": "frequency_single_shot_J1_K128",
+      "snr_db": 65.0,
+      "noisy_fullband_pass": 67,
+      "fullband_linear_mean_db": -6.754413590870854,
+      "net_rate_mean_bps_hz": 14.425579480518234
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -23.82134589004174,
+      "net_rate_mean_bps_hz": 10.50191675324998
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "noisy_fullband_pass": 100,
+      "fullband_linear_mean_db": -33.73449371925566,
+      "net_rate_mean_bps_hz": 13.502322583920275
+    }
+  ]
+}

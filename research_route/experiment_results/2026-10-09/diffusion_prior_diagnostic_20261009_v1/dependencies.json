@@ -1,0 +1,6 @@
+{
+  "model_sha256": "583b4674037cbc7930d3d7aa81dadb3a352b973e49c062b9685c6cffd3c05e6c",
+  "dataset_sha256": "bd4d369b8bd58a6a1465e863692cdad93ce873116cd230d029ac22fd5b88e378",
+  "reference_metrics_sha256": "441ae72722ab18f7ca6ecb3dd66b93e9746655cd0dc759bcd207713dbc75b589",
+  "calibration_sha256": "deca95f6d13e350e21e7891be97526454b15ff3a8ce3f1f785ef55b2bc0f702d"
+}

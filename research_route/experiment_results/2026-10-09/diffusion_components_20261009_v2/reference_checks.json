@@ -1,0 +1,23 @@
+[
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "gaussian",
+    "previous_delta_db": -5.359070911481467e-07
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 0.0,
+    "method": "learned",
+    "previous_delta_db": -1.1111191854595859e-05
+  },
+  {
+    "scene_id": "2026100202:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 15.0,
+    "method": "gaussian",
+    "previous_delta_db": -1.0184888232345202e-05
+  }
+]

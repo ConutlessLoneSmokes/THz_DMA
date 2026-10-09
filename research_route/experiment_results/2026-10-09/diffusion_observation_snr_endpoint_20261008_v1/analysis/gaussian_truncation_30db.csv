@@ -1,0 +1,3 @@
+schedule,target_snr_db,truncated_lmmse_db,gaussian_diffusion_db,difference_db
+frequency_single_shot_C2_J1_K128,30,-25.64694610047603,-25.64696059662358,-1.4496147549891703e-05
+tensor_structured_J8_K16_RE128,30,-34.009674117320856,-34.009769423705826,-9.530638497068367e-05

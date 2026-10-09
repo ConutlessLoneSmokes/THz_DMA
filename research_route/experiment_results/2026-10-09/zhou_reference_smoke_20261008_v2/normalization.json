@@ -1,0 +1,6 @@
+{
+  "training_global_scale": 1.0,
+  "normalization": "author_loader",
+  "mean_training_normalized_entry_power": 0.9999998807907104,
+  "paper_text_vs_author_loader_difference": true
+}

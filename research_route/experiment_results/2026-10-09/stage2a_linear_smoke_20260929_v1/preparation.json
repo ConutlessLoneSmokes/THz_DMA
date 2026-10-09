@@ -1,0 +1,9 @@
+[
+  {
+    "scene_id": "2026091101:0",
+    "covariance_basis_seconds": 3.9494773000005807,
+    "basis_bytes": 503316480,
+    "frequency_single_shot_C2_J1_K128_projection_seconds": 0.39476079999803915,
+    "tensor_structured_J8_K16_RE128_projection_seconds": 0.21091480000177398
+  }
+]

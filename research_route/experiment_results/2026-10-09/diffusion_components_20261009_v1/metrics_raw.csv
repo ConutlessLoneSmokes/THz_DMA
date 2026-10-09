@@ -1,0 +1,2 @@
+split,scene_id,schedule,snr_db,method,seconds,nmse_linear,nmse_db,energy_ratio,correlation
+validation,2026100202:0,frequency_single_shot_C2_J1_K128,0.0,truncated_lmmse,0.0,0.05611100792884827,-12.50951929941965,0.7935362458229065,0.9754128456115723

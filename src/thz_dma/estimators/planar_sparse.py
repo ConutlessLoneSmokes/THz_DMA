@@ -644,6 +644,70 @@ def omp_three_path_estimate(
     )
 
 
+def somp_three_path_estimate(
+    dictionary: PlanarTemplateDictionary,
+    observation,
+    *,
+    observation_shape: tuple[int, int, int],
+    num_paths: int = 3,
+    exclusion_range_m: float = 0.0,
+    exclusion_azimuth_rad: float = 0.0,
+    exclusion_elevation_rad: float = 0.0,
+) -> dict:
+    """Select common geometry by per-tone SOMP; refit shared physical gains."""
+
+    received = np.asarray(observation, dtype=complex).reshape(-1)
+    strips, configurations, tones = observation_shape
+    outputs = strips * configurations
+    if (
+        received.size != dictionary.observation_size
+        or received.size != outputs * tones
+        or num_paths < 1
+        or num_paths > outputs
+    ):
+        raise ValueError("invalid SOMP observation shape or path count")
+    templates = np.asarray(dictionary.templates).reshape(
+        dictionary.num_candidates, outputs, tones
+    )
+    energy = np.sum(np.abs(templates) ** 2, axis=1, dtype=float)
+    if np.any(energy <= 0.0):
+        raise ValueError("dictionary contains a zero-energy tone template")
+    received_tones = received.reshape(outputs, tones)
+    residual = received_tones.copy()
+    support: list[int] = []
+    for _ in range(num_paths):
+        # Independent per-tone gains define the SOMP selection statistic.
+        correlation = np.einsum("cmk,mk->ck", templates, np.conjugate(residual))
+        score = np.sum(np.abs(correlation) ** 2 / energy, axis=1)
+        score[
+            _exclusion_mask(
+                dictionary,
+                support,
+                exclusion_range_m,
+                exclusion_azimuth_rad,
+                exclusion_elevation_rad,
+            )
+        ] = -np.inf
+        selected = int(np.argmax(score))
+        if not np.isfinite(score[selected]):
+            raise RuntimeError("SOMP could not select a distinct candidate")
+        support.append(selected)
+        selected_tones = templates[support].transpose(2, 1, 0)
+        basis, _ = np.linalg.qr(selected_tones, mode="reduced")
+        coefficients = np.einsum(
+            "kmp,km->kp", np.conjugate(basis), received_tones.T
+        )
+        residual = (
+            received_tones.T - np.einsum("kmp,kp->km", basis, coefficients)
+        ).T
+    gains, _, residual_energy, condition = _fit_dictionary_support(
+        np.asarray(dictionary.templates), received, support
+    )
+    return _pack_grid_result(
+        dictionary, received, support, gains, residual_energy, condition
+    )
+
+
 def _select_ols_candidate(
     dictionary: PlanarTemplateDictionary,
     residual: np.ndarray,

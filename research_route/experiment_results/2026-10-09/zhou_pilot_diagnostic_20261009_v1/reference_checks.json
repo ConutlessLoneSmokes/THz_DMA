@@ -1,0 +1,218 @@
+[
+  {
+    "normalization": "author_loader",
+    "pilots": 64,
+    "snr_db": -10.0,
+    "delta_db": -4.440892098500626e-16
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 64,
+    "snr_db": -5.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 64,
+    "snr_db": 0.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 64,
+    "snr_db": 5.0,
+    "delta_db": -1.7763568394002505e-15
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 64,
+    "snr_db": 10.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 64,
+    "snr_db": 15.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 64,
+    "snr_db": 20.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 64,
+    "snr_db": 25.0,
+    "delta_db": 3.552713678800501e-15
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 64,
+    "snr_db": 30.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 38,
+    "snr_db": -10.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 38,
+    "snr_db": -5.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 38,
+    "snr_db": 0.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 38,
+    "snr_db": 5.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 38,
+    "snr_db": 10.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 38,
+    "snr_db": 15.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 38,
+    "snr_db": 20.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 38,
+    "snr_db": 25.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "author_loader",
+    "pilots": 38,
+    "snr_db": 30.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 64,
+    "snr_db": -10.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 64,
+    "snr_db": -5.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 64,
+    "snr_db": 0.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 64,
+    "snr_db": 5.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 64,
+    "snr_db": 10.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 64,
+    "snr_db": 15.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 64,
+    "snr_db": 20.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 64,
+    "snr_db": 25.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 64,
+    "snr_db": 30.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 38,
+    "snr_db": -10.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 38,
+    "snr_db": -5.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 38,
+    "snr_db": 0.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 38,
+    "snr_db": 5.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 38,
+    "snr_db": 10.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 38,
+    "snr_db": 15.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 38,
+    "snr_db": 20.0,
+    "delta_db": 0.0
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 38,
+    "snr_db": 25.0,
+    "delta_db": -1.7763568394002505e-15
+  },
+  {
+    "normalization": "paper_global",
+    "pilots": 38,
+    "snr_db": 30.0,
+    "delta_db": 0.0
+  }
+]

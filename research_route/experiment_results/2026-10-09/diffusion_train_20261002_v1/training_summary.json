@@ -1,0 +1,9 @@
+{
+  "parameters": 304768,
+  "best_validation_noise_mse": 0.2434876556508243,
+  "best_step": 9750,
+  "session_seconds": 595.3973711000003,
+  "dataset_sha256": "bd4d369b8bd58a6a1465e863692cdad93ce873116cd230d029ac22fd5b88e378",
+  "trained_steps": 10000,
+  "not_a_recovery_performance_result": true
+}

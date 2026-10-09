@@ -1,0 +1,33 @@
+{
+  "config": {
+    "author_commit": "2b922440f72ff6943c1cbe5ae85cbd50c421ac83",
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "pilot_counts": [
+      64,
+      38
+    ],
+    "snr_db": [
+      -10.0,
+      -5.0,
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0
+    ],
+    "training_count": 100000,
+    "test_count": 100,
+    "author_test_training_loader_count": 10000,
+    "current_seed": 2026100801,
+    "no_seed_selection": true
+  },
+  "config_path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\scripts\\diagnose_zhou_reference_pilots.py",
+  "config_sha256": "554656fc7b23b1a9e37a3e27f87cd299c44f2b6edf804176c555a27415d9b46b",
+  "absorption_table_sha256": null
+}

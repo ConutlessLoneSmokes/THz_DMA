@@ -1,0 +1,842 @@
+[
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -9.943725163607278,
+    "large_nmse_db": -9.698569538666275
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -10.606635761252832,
+    "large_nmse_db": -10.475319424069662
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -11.95365277966541,
+    "large_nmse_db": -11.816960114534139
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -14.563993272351182,
+    "large_nmse_db": -14.243666236551427
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -18.21885321391302,
+    "large_nmse_db": -17.736510204184263
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -22.11013724490772,
+    "large_nmse_db": -21.765796460592924
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -10.084001043820166,
+    "large_nmse_db": -10.031716628625807
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -13.147554000973503,
+    "large_nmse_db": -13.027737773363867
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -17.1278144346059,
+    "large_nmse_db": -16.894608123136454
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -21.491638112571234,
+    "large_nmse_db": -21.124269050760518
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -25.585404984842697,
+    "large_nmse_db": -25.267516471217334
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -29.57299734357634,
+    "large_nmse_db": -29.441199345037774
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -9.700008567277788,
+    "large_nmse_db": -9.774687443469153
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -11.346646073354417,
+    "large_nmse_db": -11.480816872699442
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -13.43089630040514,
+    "large_nmse_db": -13.646566102335637
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -15.981321055511156,
+    "large_nmse_db": -16.361018788260324
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -18.780010849902517,
+    "large_nmse_db": -19.32572550640017
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -21.684747954930984,
+    "large_nmse_db": -22.046010614068376
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -12.173063766216574,
+    "large_nmse_db": -12.086995940148348
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -15.33045514588058,
+    "large_nmse_db": -15.308483118225304
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -18.4739442952838,
+    "large_nmse_db": -18.63254842192745
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -21.967174571912317,
+    "large_nmse_db": -22.304591328547147
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -25.97442082027113,
+    "large_nmse_db": -26.29340394356285
+  },
+  {
+    "scene_id": "2026091101:1",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -30.059437848294856,
+    "large_nmse_db": -30.25846986860287
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -12.451351373735237,
+    "large_nmse_db": -12.209923647494998
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -13.846887604138713,
+    "large_nmse_db": -13.071379663737915
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -14.619435278776534,
+    "large_nmse_db": -13.71718718893124
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -16.41667488829384,
+    "large_nmse_db": -15.552876966632292
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -19.490775607249617,
+    "large_nmse_db": -18.481049788088093
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -23.004061061070615,
+    "large_nmse_db": -21.975545411986623
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -11.580431154730462,
+    "large_nmse_db": -11.378013583872534
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -15.121542435961588,
+    "large_nmse_db": -14.890771280272599
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -18.933332163342076,
+    "large_nmse_db": -18.601111944250828
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -22.833399336661103,
+    "large_nmse_db": -22.501433864296718
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -26.533122108854904,
+    "large_nmse_db": -26.410131815850562
+  },
+  {
+    "scene_id": "2026091101:2",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -30.206079024893953,
+    "large_nmse_db": -30.18514634226034
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -9.167120602403354,
+    "large_nmse_db": -9.110141549800732
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -12.32223695693091,
+    "large_nmse_db": -12.083585517185401
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -15.79788100139806,
+    "large_nmse_db": -15.302022298435059
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -18.26072529248174,
+    "large_nmse_db": -17.578881444215682
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -20.1614039284488,
+    "large_nmse_db": -19.45188352041559
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -22.554401350132895,
+    "large_nmse_db": -22.077286464569802
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -13.70766231686909,
+    "large_nmse_db": -13.568797171858499
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -16.950252375786366,
+    "large_nmse_db": -16.928690971690543
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -20.42486079098485,
+    "large_nmse_db": -20.36593456073981
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -23.60668589602339,
+    "large_nmse_db": -23.38525048285237
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -26.387931082751955,
+    "large_nmse_db": -26.003101644029595
+  },
+  {
+    "scene_id": "2026091101:3",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -29.495300263887007,
+    "large_nmse_db": -28.96639484168591
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -6.289199064723826,
+    "large_nmse_db": -7.034990244708124
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -7.674622584240787,
+    "large_nmse_db": -8.64040862361604
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -10.168510965061998,
+    "large_nmse_db": -11.404619778351153
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -14.008630077271036,
+    "large_nmse_db": -15.521641146204551
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -18.13985966915766,
+    "large_nmse_db": -19.85812725410802
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -21.65041262500306,
+    "large_nmse_db": -23.657519528873703
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -13.748114844272587,
+    "large_nmse_db": -13.717802914708471
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -16.38606856923648,
+    "large_nmse_db": -16.311167124564786
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -19.456490524478877,
+    "large_nmse_db": -19.473026329110052
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -22.985824965784737,
+    "large_nmse_db": -23.148020939226022
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -27.060954532531582,
+    "large_nmse_db": -27.3722434318326
+  },
+  {
+    "scene_id": "2026091101:4",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -31.279771980811155,
+    "large_nmse_db": -31.750638253424167
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -8.46378688671499,
+    "large_nmse_db": -8.84847833472793
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -10.045247542832541,
+    "large_nmse_db": -10.705022744716853
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -11.365227124537245,
+    "large_nmse_db": -12.184489604449947
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -12.90743758437456,
+    "large_nmse_db": -14.0739500742961
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -14.674788870752387,
+    "large_nmse_db": -16.51987451999741
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -16.585309085157547,
+    "large_nmse_db": -19.2057368092018
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -11.391950425434821,
+    "large_nmse_db": -11.862328889982063
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -14.206482873503068,
+    "large_nmse_db": -14.943937466537584
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -16.576493640574313,
+    "large_nmse_db": -17.668198682807823
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -18.63083215246605,
+    "large_nmse_db": -20.38250833934114
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -20.573061156513432,
+    "large_nmse_db": -23.336126307461367
+  },
+  {
+    "scene_id": "2026091101:5",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -22.768753945198448,
+    "large_nmse_db": -26.93049884685792
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -8.036959285453365,
+    "large_nmse_db": -7.643004382792858
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -9.799923835368316,
+    "large_nmse_db": -9.386590074273423
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -12.109258367533107,
+    "large_nmse_db": -11.699452904318736
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -14.693402799632176,
+    "large_nmse_db": -14.356624362590825
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -17.465692367624502,
+    "large_nmse_db": -17.373702700947252
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -20.739474874471505,
+    "large_nmse_db": -21.050998988612047
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -13.44866409222841,
+    "large_nmse_db": -13.355359467963265
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -15.954007059390573,
+    "large_nmse_db": -15.796832950774593
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -18.633653667079383,
+    "large_nmse_db": -18.562001601987323
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -22.026444924781323,
+    "large_nmse_db": -22.08303578199317
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -25.88062426270816,
+    "large_nmse_db": -25.90020232635726
+  },
+  {
+    "scene_id": "2026091101:6",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -29.567560510332115,
+    "large_nmse_db": -29.488401836016358
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -14.228003831404292,
+    "large_nmse_db": -13.669775821791092
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -16.27828879731397,
+    "large_nmse_db": -15.785325047421852
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -17.696163764378895,
+    "large_nmse_db": -17.481583115662186
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -19.171966644008958,
+    "large_nmse_db": -19.041848814755504
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -21.25158822900889,
+    "large_nmse_db": -21.17276596420128
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -23.76545493617634,
+    "large_nmse_db": -23.79468319639382
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -14.49152374898495,
+    "large_nmse_db": -14.33600975030275
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -18.872899838021418,
+    "large_nmse_db": -18.679915200600465
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -22.622058142743356,
+    "large_nmse_db": -22.455414372334353
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -25.68676621614371,
+    "large_nmse_db": -25.571331179052258
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -28.735341782239686,
+    "large_nmse_db": -28.55381319950443
+  },
+  {
+    "scene_id": "2026091101:7",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -32.424711308063465,
+    "large_nmse_db": -32.080002662701794
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -14.1364333651869,
+    "large_nmse_db": -13.533074069939836
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -15.715152669876735,
+    "large_nmse_db": -15.46954464899332
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -16.825546864675086,
+    "large_nmse_db": -16.62747879355235
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -18.45259619066657,
+    "large_nmse_db": -17.966340462316538
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -19.60524154628709,
+    "large_nmse_db": -19.227976437829902
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -20.428633919591967,
+    "large_nmse_db": -20.449705609681384
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -12.447399134817182,
+    "large_nmse_db": -12.431819077609905
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -16.16718518493062,
+    "large_nmse_db": -15.814831669740839
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -20.214361599132374,
+    "large_nmse_db": -19.82141892941992
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -24.456035907449156,
+    "large_nmse_db": -24.54773250364945
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -28.341469709611967,
+    "large_nmse_db": -28.76494174140678
+  },
+  {
+    "scene_id": "2026091101:8",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -31.375775827665468,
+    "large_nmse_db": -31.709291646771312
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 45.0,
+    "small_nmse_db": -11.035482308565609,
+    "large_nmse_db": -10.670494486298207
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 50.0,
+    "small_nmse_db": -12.752911621300653,
+    "large_nmse_db": -12.256182560326538
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 55.0,
+    "small_nmse_db": -14.798825872237861,
+    "large_nmse_db": -14.515864023270854
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 60.0,
+    "small_nmse_db": -17.206347235195043,
+    "large_nmse_db": -17.27847260414862
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 65.0,
+    "small_nmse_db": -20.54950489620751,
+    "large_nmse_db": -20.714127489608614
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "snr_db": 70.0,
+    "small_nmse_db": -24.56786573248643,
+    "large_nmse_db": -24.498326515701226
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 45.0,
+    "small_nmse_db": -12.815002428692207,
+    "large_nmse_db": -12.75853318686671
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 50.0,
+    "small_nmse_db": -16.132244103258877,
+    "large_nmse_db": -16.159732624856822
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 55.0,
+    "small_nmse_db": -19.457449263971274,
+    "large_nmse_db": -19.494483549718495
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 60.0,
+    "small_nmse_db": -22.706372999263795,
+    "large_nmse_db": -22.844542903387925
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 65.0,
+    "small_nmse_db": -25.767810548436604,
+    "large_nmse_db": -26.259459634396137
+  },
+  {
+    "scene_id": "2026091101:9",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "snr_db": 70.0,
+    "small_nmse_db": -29.076126532828177,
+    "large_nmse_db": -29.971997793720927
+  }
+]

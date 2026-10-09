@@ -1,0 +1,44 @@
+{
+  "config": {
+    "reference": "zhou2025generativechannels",
+    "seed": 2026100801,
+    "Nt": 64,
+    "Nr": 16,
+    "pilot_counts": [
+      64,
+      38
+    ],
+    "snr_db": [
+      -10.0,
+      -5.0,
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0
+    ],
+    "normalization": "author_loader",
+    "counts": {
+      "train": 100000,
+      "valid": 100,
+      "test": 100
+    },
+    "lasso_factors": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0
+    ],
+    "lasso_steps": 1000,
+    "real_covariance_lmmse": true,
+    "smoke_only": false,
+    "author_commit": "2b922440f72ff6943c1cbe5ae85cbd50c421ac83"
+  },
+  "config_path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\scripts\\check_zhou_reference_curves.py",
+  "config_sha256": "49b5d1f59317d319918c180c8992d6843714cba48f0b319ca39fa1f900e48596",
+  "absorption_table_sha256": null
+}

@@ -1,1 +1,9 @@
 * text=auto eol=lf
+
+# Evidence hashes require the original bytes, including CSV line endings.
+research_route/experiment_results/** -text whitespace=cr-at-eol
+
+# Completed-run manifests include these historical configuration bytes.
+configs/direction1_stage2a_sbl_smoke.toml whitespace=-blank-at-eof
+configs/direction1_stage2a_sbl_snr.toml whitespace=-blank-at-eof
+configs/direction1_stage2a_somp_snr.toml whitespace=-blank-at-eof

@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "timestamp_utc": "2026-10-08T09:35:55.585098+00:00",
+  "error": "Archive helper previously required an absorption table for narrowband reference data; corrected before numerical work."
+}

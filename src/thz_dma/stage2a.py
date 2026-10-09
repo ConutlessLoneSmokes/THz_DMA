@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import copy
+import json
 import time
 from pathlib import Path
 from typing import Callable
@@ -45,6 +46,14 @@ from thz_dma.observations.pilots import full_band_pilot_indices as _pilot_indice
 
 
 METHOD_PROVENANCE = {
+    "sbl_jointfreq_3d": {
+        "label": "Joint-frequency SBL posterior mean",
+        "role": "classical sparse Bayesian baseline",
+        "source_key": "tipping2003fastsbl",
+        "adaptation": "complex known-noise sequential evidence maximisation on the full physical dictionary; all active posterior coefficients reconstruct CSI; three peaks for geometry diagnostics only",
+        "paper_exact_reproduction": False,
+        "uses_extra_information": False,
+    },
     "oracle_geometry_ls": {
         "label": "Oracle geometry + LS gains",
         "role": "genie-aided geometry benchmark",
@@ -58,6 +67,17 @@ METHOD_PROVENANCE = {
         "role": "common low-complexity sparse baseline",
         "source_key": "internal_stage2a",
         "adaptation": "three-step range-azimuth-elevation OMP with joint gain refit",
+        "paper_exact_reproduction": False,
+        "uses_extra_information": False,
+    },
+    "grid_somp_3d": {
+        "label": "3-D SOMP support + shared-gain LS",
+        "role": "common-support wideband sparse baseline",
+        "source_key": "internal_stage2a",
+        "adaptation": (
+            "noise-whitened per-tone SOMP support selection with independent "
+            "selection gains; shared physical gain refit for fullband CSI"
+        ),
         "paper_exact_reproduction": False,
         "uses_extra_information": False,
     },
@@ -80,12 +100,13 @@ def _method_names(config: dict) -> list[str]:
     methods = [str(item) for item in config["experiment"]["estimators"]]
     if not methods or len(methods) != len(set(methods)):
         raise ValueError("Stage 2-A estimators must be non-empty and unique")
+    if set(methods) & {"grid_somp_3d", "ridge"}:
+        raise ValueError("SOMP and Tikhonov are retired from new runs; use OMP/Oracle/SBL")
     unknown = sorted(set(methods) - set(METHOD_PROVENANCE))
     if unknown:
         raise ValueError(f"unsupported Stage 2-A estimators: {unknown}")
-    required = {"oracle_geometry_ls", "grid_omp_3d", "yang_ogols_3d"}
-    if set(methods) != required:
-        raise ValueError("Stage 2-A requires Oracle, grid OMP and Yang-style OG-OLS")
+    if not {"oracle_geometry_ls", "grid_omp_3d"} <= set(methods):
+        raise ValueError("Stage 2-A requires Oracle and grid OMP")
     return methods
 
 
@@ -94,11 +115,13 @@ def run_stage2a(
     project_root: str | Path,
     *,
     progress: Callable[[str], None] | None = None,
+    checkpoint_dir: Path | None = None,
 ) -> tuple[list[dict], dict]:
     """Run paired 3-D classical baselines on both native acquisition schedules."""
 
     notify = progress or (lambda _message: None)
     started = time.perf_counter()
+    resumed_seconds = 0.0
     if not np.isclose(float(config["acquisition"]["pilot_energy_per_re"]), 1.0):
         raise ValueError("Stage 2-A currently requires pilot_energy_per_re = 1.0")
     methods = _method_names(config)
@@ -191,6 +214,32 @@ def run_stage2a(
         scene_rng = np.random.default_rng(seed)
         for sample_index in range(samples_per_seed):
             scene_id = f"{seed}:{sample_index}"
+            scene_started = time.perf_counter()
+            row_start, order_start = len(rows), len(execution_schedule)
+            checkpoint = (checkpoint_dir / f"{seed}_{sample_index}.json"
+                          if checkpoint_dir is not None else None)
+            if checkpoint is not None and checkpoint.exists():
+                saved = json.loads(checkpoint.read_text(encoding="utf-8"))
+                expected = len(platform.schedules) * len(snr_values) * len(methods)
+                if len(saved["rows"]) != expected or any(row["scene_id"] != scene_id for row in saved["rows"]):
+                    raise ValueError(f"invalid scene checkpoint: {checkpoint}")
+                rows.extend(saved["rows"])
+                execution_schedule.extend(saved["execution_schedule"])
+                scene_rng.bit_generator.state = saved["scene_rng_state"]
+                resumed_seconds += saved["runtime_seconds"]
+                for row in saved["rows"]:
+                    timings[row["estimator"]] += row["estimator_runtime_seconds"]
+                    calls[row["estimator"]] += 1
+                if search_mode == "beam_center_adaptive":
+                    record = saved["adaptive_record"]
+                    adaptive_scene_search.append(record)
+                    adaptive_compute_validation.update(saved["compute_validation"])
+                    for name, meta in record["dictionary_by_schedule"].items():
+                        adaptive_build_seconds[name].append(meta["build_seconds"])
+                        adaptive_memory_bytes[name].append(meta["memory_bytes"])
+                        adaptive_compute_metadata[name].add((meta["compute_backend"], meta["compute_device"], meta["compute_precision"]))
+                notify(f"restored {scene_id}: {len(rows)} rows")
+                continue
             adaptive_metadata = None
             adaptive_candidates = None
             case_config = config
@@ -407,38 +456,41 @@ def run_stage2a(
                             whitened,
                             paths,
                             case_config,
+                            noise_variance=element_variance,
                         )
                         elapsed = time.perf_counter() - method_started
                         timings[method] += elapsed
                         calls[method] += 1
 
                         matched = _match_paths(estimates, paths, case_config)
+                        reconstruction_started = time.perf_counter()
+                        reconstruction_coordinates = estimates.get("reconstruction_coordinates", matched["coordinates"])
+                        reconstruction_gains = estimates.get("reconstruction_gains", matched["gains"])
                         estimated_full_channel = _channel_from_estimate(
                             platform.frequencies_hz,
                             platform,
-                            matched["coordinates"],
-                            matched["gains"],
+                            reconstruction_coordinates,
+                            reconstruction_gains,
                             config,
                         )
                         estimated_center_channel = _channel_from_estimate(
                             center_frequency,
                             platform,
-                            matched["coordinates"],
-                            matched["gains"],
+                            reconstruction_coordinates,
+                            reconstruction_gains,
                             config,
                         )[0]
                         domain_metrics = channel_domain_metrics(
                             full_channel, estimated_full_channel,
                             schedule.pilot_indices, evaluation_indices,
                         )
-                        estimated_clean = np.asarray(estimates["complex_gain"]) @ (
+                        estimated_clean = np.asarray(reconstruction_gains) @ (
                             operator.evaluate_raw(
-                                estimates["range_m"],
-                                estimates["azimuth_rad"],
-                                estimates["elevation_rad"],
+                                *reconstruction_coordinates.T,
                             )
                         )
                         clean_vector = observation.clean.reshape(-1)
+                        reconstruction_seconds = time.perf_counter() - reconstruction_started
                         observation_nmse = float(
                             np.sum(np.abs(estimated_clean - clean_vector) ** 2)
                             / np.sum(np.abs(clean_vector) ** 2)
@@ -650,10 +702,12 @@ def run_stage2a(
                                 ),
                                 "algorithm_iterations": int(estimates["iterations"]),
                                 "algorithm_converged": int(estimates["converged"]),
+                                "sbl_state_json": estimates.get("sbl_state_json", ""),
                                 "screened_candidate_count": int(
                                     estimates["screened_candidate_count"]
                                 ),
                                 "estimator_runtime_seconds": float(elapsed),
+                                "channel_reconstruction_seconds": float(reconstruction_seconds),
                                 "search_boundary_hit": int(boundary_hit),
                                 "execution_order_index": order_index,
                                 "training_symbols": schedule.training_symbols,
@@ -672,6 +726,19 @@ def run_stage2a(
                     # Drop each scene dictionary before building the next one to
                     # bound peak host and device memory.
                     del dictionary
+            if checkpoint is not None:
+                saved = {
+                    "rows": rows[row_start:],
+                    "execution_schedule": execution_schedule[order_start:],
+                    "scene_rng_state": scene_rng.bit_generator.state,
+                    "adaptive_record": adaptive_record if search_mode == "beam_center_adaptive" else None,
+                    "compute_validation": adaptive_compute_validation,
+                    "runtime_seconds": time.perf_counter() - scene_started,
+                }
+                temporary = checkpoint.with_suffix(".tmp")
+                temporary.write_text(json.dumps(saved, ensure_ascii=False, allow_nan=False), encoding="utf-8")
+                temporary.replace(checkpoint)
+                notify(f"saved {scene_id}: {len(rows)} rows")
         notify(f"completed Stage 2-A seed {seed_index}/{len(replicate_seeds)}")
 
     expected_rows = (
@@ -895,6 +962,6 @@ def run_stage2a(
             for method in methods
         },
         "execution_schedule": execution_schedule,
-        "runtime_seconds": float(time.perf_counter() - started),
+        "runtime_seconds": float(time.perf_counter() - started + resumed_seconds),
     }
     return rows, summary

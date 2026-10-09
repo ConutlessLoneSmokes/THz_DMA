@@ -1,0 +1,18 @@
+{
+  "raw_metrics_sha256": "6738c0094dbcc902af27459a9f222f9d3d34191fbe7d18eb9c3de12cf434a234",
+  "figures": [
+    {
+      "path": "analysis\\figures\\01_nmse_by_snr_and_schedule.png",
+      "sha256": "38098d8a5736daae23dda33efe186df30ad9f59110e1c5593e977461dbb2bdfb"
+    },
+    {
+      "path": "analysis\\figures\\02_primary_communication_metrics.png",
+      "sha256": "0de50e6d20ee2a8eb5dc7c72cfde8108a24aa2e6e177670355488f12052a9f0c"
+    },
+    {
+      "path": "analysis\\figures\\03_nmse_runtime_tradeoff.png",
+      "sha256": "8b899145bf856eee035a4fa79d334901fc239186907db1c2d79b5bf49a10855d"
+    }
+  ],
+  "plot_contract": "fixed Stage 2-A schedule, estimator and primary-SNR definitions"
+}

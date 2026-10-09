@@ -1,0 +1,3875 @@
+{
+  "analysis_version": "stage2a-domains-snr-v2",
+  "domain_metrics_available": true,
+  "domain_summary": [
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 45.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -4.531431373439972,
+      "mean_fullband_128_nmse_db": -4.531431373439972,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 45.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -22.884054696113402,
+      "mean_fullband_128_nmse_db": -22.884054696113402,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 45.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -5.451723239128688,
+      "mean_fullband_128_nmse_db": -5.451723239128688,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 50.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -5.145526326837301,
+      "mean_fullband_128_nmse_db": -5.145526326837301,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 50.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -27.884054696113395,
+      "mean_fullband_128_nmse_db": -27.884054696113395,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 50.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -5.583349506675863,
+      "mean_fullband_128_nmse_db": -5.583349506675863,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -15.537787203999605,
+      "mean_fullband_128_nmse_db": -15.537787203999605,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -9.875011214858366,
+      "mean_fullband_128_nmse_db": -9.875011214858366,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -32.88405469611416,
+      "mean_fullband_128_nmse_db": -32.88405469611416,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 60.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -17.553237272553428,
+      "mean_fullband_128_nmse_db": -17.553237272553428,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 60.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -37.8840546961142,
+      "mean_fullband_128_nmse_db": -37.8840546961142,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 60.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -13.261227795246423,
+      "mean_fullband_128_nmse_db": -13.261227795246423,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 65.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -20.078686255895,
+      "mean_fullband_128_nmse_db": -20.078686255895,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 65.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -42.88405469611359,
+      "mean_fullband_128_nmse_db": -42.88405469611359,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 65.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -19.36768162067414,
+      "mean_fullband_128_nmse_db": -19.36768162067414,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 70.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -20.08777422297851,
+      "mean_fullband_128_nmse_db": -20.08777422297851,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 70.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -26.877540416401864,
+      "mean_fullband_128_nmse_db": -26.877540416401864,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 70.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -47.8840546961128,
+      "mean_fullband_128_nmse_db": -47.8840546961128,
+      "mean_heldout_112_nmse_db": null
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 45.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -11.354239344440181,
+      "mean_fullband_128_nmse_db": -11.347757944146903,
+      "mean_heldout_112_nmse_db": -11.346831908082937
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 45.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -3.910208373197924,
+      "mean_fullband_128_nmse_db": -3.9331279843825486,
+      "mean_heldout_112_nmse_db": -3.9364153459716777
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 45.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -16.507104055287087,
+      "mean_fullband_128_nmse_db": -16.50821820980812,
+      "mean_heldout_112_nmse_db": -16.50837755482675
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 50.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -21.507104055287087,
+      "mean_fullband_128_nmse_db": -21.50821820980813,
+      "mean_heldout_112_nmse_db": -21.50837755482678
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 50.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -17.85795616605664,
+      "mean_fullband_128_nmse_db": -17.87032899689332,
+      "mean_heldout_112_nmse_db": -17.87210116884024
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 50.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -8.427205404131486,
+      "mean_fullband_128_nmse_db": -8.425205415902653,
+      "mean_heldout_112_nmse_db": -8.424919497218639
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -19.64477420793606,
+      "mean_fullband_128_nmse_db": -19.66254623948123,
+      "mean_heldout_112_nmse_db": -19.665093554920407
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -26.50710405528711,
+      "mean_fullband_128_nmse_db": -26.508218209808273,
+      "mean_heldout_112_nmse_db": -26.508377554826886
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -12.708409331691877,
+      "mean_fullband_128_nmse_db": -12.71231218997891,
+      "mean_heldout_112_nmse_db": -12.712870576912543
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 60.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -20.577571497486133,
+      "mean_fullband_128_nmse_db": -20.599145105127363,
+      "mean_heldout_112_nmse_db": -20.602238860494687
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 60.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -31.507104055287392,
+      "mean_fullband_128_nmse_db": -31.5082182098085,
+      "mean_heldout_112_nmse_db": -31.508377554827206
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 60.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -16.873581963069654,
+      "mean_fullband_128_nmse_db": -16.902015492096076,
+      "mean_heldout_112_nmse_db": -16.9060966805497
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -21.026975056995227,
+      "mean_fullband_128_nmse_db": -21.050674804046338,
+      "mean_heldout_112_nmse_db": -21.05407441010453
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -22.321934796312874,
+      "mean_fullband_128_nmse_db": -22.338028460753783,
+      "mean_heldout_112_nmse_db": -22.34033470111699
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -36.507104055288465,
+      "mean_fullband_128_nmse_db": -36.508218209808085,
+      "mean_heldout_112_nmse_db": -36.50837755482766
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 70.0,
+      "estimator": "oracle_geometry_ls",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -41.50710405528721,
+      "mean_fullband_128_nmse_db": -41.50821820980823,
+      "mean_heldout_112_nmse_db": -41.50837755482685
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 70.0,
+      "estimator": "sbl_jointfreq_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -26.527728737357542,
+      "mean_fullband_128_nmse_db": -26.515941019959097,
+      "mean_heldout_112_nmse_db": -26.514258013827956
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 70.0,
+      "estimator": "grid_omp_3d",
+      "scenes": 1,
+      "mean_pilot_nmse_db": -21.24303351962357,
+      "mean_fullband_128_nmse_db": -21.267827931445048,
+      "mean_heldout_112_nmse_db": -21.271385074686556
+    }
+  ],
+  "bounded_diagnostics": {
+    "status": "adaptive_search_diagnostic; legacy fixed-sector 55-to-65 dB screen not applied",
+    "criteria": {},
+    "F1": [],
+    "F2": []
+  },
+  "adaptive_search_diagnostics": {
+    "status": "complete",
+    "information_condition": "one known pre-observation coarse center per path; conditional diagnostic, not a deployable coarse-center acquisition result",
+    "artificial_half_grid_offset_used": false,
+    "truth_offsets": "continuous random offsets around coarse centers",
+    "all_truth_paths_inside_associated_windows": true,
+    "candidate_count_constant_within_scene": true,
+    "candidate_count_min": 19216,
+    "candidate_count_median": 19216.0,
+    "candidate_count_max": 19216,
+    "truncated_profile_halfwidth_count": 2,
+    "scenes_with_truncated_profiles": 1,
+    "dictionary_compute": {
+      "frequency_single_shot_C2_J1_K128": [
+        {
+          "backend": "torch_cuda",
+          "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+          "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+        }
+      ],
+      "tensor_structured_J8_K16_RE128": [
+        {
+          "backend": "torch_cuda",
+          "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+          "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+        }
+      ]
+    },
+    "dictionary_compute_validation": {
+      "frequency_single_shot_C2_J1_K128": {
+        "status": "pass",
+        "sample_count": 16,
+        "relative_frobenius_error": 1.2520388952078679e-05,
+        "minimum_row_rho2": 0.9999999996805031,
+        "maximum_relative_error": 0.0001,
+        "minimum_rho2": 0.99999,
+        "reference_backend": "numpy"
+      },
+      "tensor_structured_J8_K16_RE128": {
+        "status": "pass",
+        "sample_count": 16,
+        "relative_frobenius_error": 1.3310681454780191e-05,
+        "minimum_row_rho2": 0.9999999996818235,
+        "maximum_relative_error": 0.0001,
+        "minimum_rho2": 0.99999,
+        "reference_backend": "numpy"
+      }
+    },
+    "descriptive_fullband_screen_db": -10.0,
+    "condition_records": [
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 45.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -4.531431373439972,
+        "median_fullband_128_nmse_db": -4.531431373439972,
+        "fullband_nmse_le_minus10db_rate": 0.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 45.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -22.884054696113402,
+        "median_fullband_128_nmse_db": -22.884054696113346,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 45.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -5.451723239128688,
+        "median_fullband_128_nmse_db": -5.451723239128688,
+        "fullband_nmse_le_minus10db_rate": 0.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 50.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -5.145526326837301,
+        "median_fullband_128_nmse_db": -5.145526326837301,
+        "fullband_nmse_le_minus10db_rate": 0.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 50.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -27.884054696113395,
+        "median_fullband_128_nmse_db": -27.884054696113285,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 50.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -5.583349506675863,
+        "median_fullband_128_nmse_db": -5.583349506675863,
+        "fullband_nmse_le_minus10db_rate": 0.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 55.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -15.537787203999605,
+        "median_fullband_128_nmse_db": -15.537787203999589,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 55.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -9.875011214858366,
+        "median_fullband_128_nmse_db": -9.875011214858366,
+        "fullband_nmse_le_minus10db_rate": 0.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 55.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -32.88405469611416,
+        "median_fullband_128_nmse_db": -32.884054696113395,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 60.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -17.553237272553428,
+        "median_fullband_128_nmse_db": -17.553237272553407,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 60.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -37.8840546961142,
+        "median_fullband_128_nmse_db": -37.884054696113495,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 60.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -13.261227795246423,
+        "median_fullband_128_nmse_db": -13.261227795246418,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 65.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -20.078686255895,
+        "median_fullband_128_nmse_db": -20.07868625589498,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 65.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -42.88405469611359,
+        "median_fullband_128_nmse_db": -42.88405469611359,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 65.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -19.36768162067414,
+        "median_fullband_128_nmse_db": -19.36768162067412,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 70.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -20.08777422297851,
+        "median_fullband_128_nmse_db": -20.08777422297848,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 70.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -26.877540416401864,
+        "median_fullband_128_nmse_db": -26.877540416401764,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "array_reference_snr_db": 70.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -47.8840546961128,
+        "median_fullband_128_nmse_db": -47.8840546961128,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 45.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -11.347757944146903,
+        "median_fullband_128_nmse_db": -11.3477579441469,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 45.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -3.9331279843825486,
+        "median_fullband_128_nmse_db": -3.933127984382548,
+        "fullband_nmse_le_minus10db_rate": 0.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 45.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -16.50821820980812,
+        "median_fullband_128_nmse_db": -16.508218209808106,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 50.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -21.50821820980813,
+        "median_fullband_128_nmse_db": -21.508218209808096,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 50.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -17.87032899689332,
+        "median_fullband_128_nmse_db": -17.87032899689331,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 50.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -8.425205415902653,
+        "median_fullband_128_nmse_db": -8.425205415902653,
+        "fullband_nmse_le_minus10db_rate": 0.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 55.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -19.66254623948123,
+        "median_fullband_128_nmse_db": -19.66254623948121,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 55.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -26.508218209808273,
+        "median_fullband_128_nmse_db": -26.50821820980809,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 55.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -12.71231218997891,
+        "median_fullband_128_nmse_db": -12.712312189978904,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 60.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -20.599145105127363,
+        "median_fullband_128_nmse_db": -20.599145105127352,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 60.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -31.5082182098085,
+        "median_fullband_128_nmse_db": -31.508218209808053,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 60.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -16.902015492096076,
+        "median_fullband_128_nmse_db": -16.90201549209607,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 65.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -21.050674804046338,
+        "median_fullband_128_nmse_db": -21.050674804046317,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 65.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -22.338028460753783,
+        "median_fullband_128_nmse_db": -22.33802846075378,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 65.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -36.508218209808085,
+        "median_fullband_128_nmse_db": -36.50821820980772,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 70.0,
+        "estimator": "oracle_geometry_ls",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -41.50821820980823,
+        "median_fullband_128_nmse_db": -41.50821820980823,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 70.0,
+        "estimator": "sbl_jointfreq_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -26.515941019959097,
+        "median_fullband_128_nmse_db": -26.515941019959055,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 0.0,
+        "estimate_outside_local_union_rate": 0.0
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "array_reference_snr_db": 70.0,
+        "estimator": "grid_omp_3d",
+        "scenes": 1,
+        "mean_fullband_128_nmse_db": -21.267827931445048,
+        "median_fullband_128_nmse_db": -21.267827931445037,
+        "fullband_nmse_le_minus10db_rate": 1.0,
+        "all_paths_success_rate": 1.0,
+        "estimate_outside_local_union_rate": 0.0
+      }
+    ]
+  },
+  "raw_metrics_sha256": "f5e1e21f39f43fd056521ff3b733ecce746d663528c762d236fc2ff88e7a90a0",
+  "data_integrity": {
+    "complete": true,
+    "expected_rows": 36,
+    "actual_rows": 36,
+    "duplicate_key_rows": 0,
+    "independent_scenes": 1,
+    "all_scenes_fully_paired": true,
+    "same_observation_within_paired_method_block": true,
+    "maximum_methodwise_output_snr_spread_db": 0.0,
+    "nonfinite_required_values": {
+      "effective_output_snr_db": 0,
+      "channel_nmse_linear": 0,
+      "channel_nmse_db": 0,
+      "all_paths_success": 0,
+      "feasible_beam_loss_db": 0,
+      "net_rate_bps_hz": 0,
+      "estimator_runtime_seconds": 0,
+      "support_condition_number": 0
+    },
+    "independent_unit": "one generated three-path scene",
+    "pairing_key": [
+      "scene_id"
+    ]
+  },
+  "comparison_contract": {
+    "truth": "physical spherical THz three-path channel only",
+    "primary_axis": "estimator under identical schedule observations",
+    "schedules_compared_separately": true,
+    "primary_metric": "fullband_128_nmse; pilot and heldout domains reported separately",
+    "legacy_sections": "primary_screen, all_method_contrasts and original summary columns retain legacy channel_nmse semantics; not broadband conclusions",
+    "secondary_metrics": [
+      "three-path localization success",
+      "feasible DMA codebook beam loss",
+      "net spectral efficiency with schedule overhead",
+      "batch-1 CPU runtime"
+    ],
+    "oracle_is_genie_reference_not_competitor": true,
+    "paper_exact_reproduction": false
+  },
+  "method_provenance": {
+    "oracle_geometry_ls": {
+      "label": "Oracle geometry + LS gains",
+      "role": "genie-aided geometry benchmark",
+      "source_key": "internal_oracle",
+      "adaptation": "true path geometry; gains fitted to the same noisy observation",
+      "paper_exact_reproduction": false,
+      "uses_extra_information": true
+    },
+    "grid_omp_3d": {
+      "label": "3-D grid OMP",
+      "role": "common low-complexity sparse baseline",
+      "source_key": "internal_stage2a",
+      "adaptation": "three-step range-azimuth-elevation OMP with joint gain refit",
+      "paper_exact_reproduction": false,
+      "uses_extra_information": false
+    },
+    "sbl_jointfreq_3d": {
+      "label": "Joint-frequency SBL posterior mean",
+      "role": "classical sparse Bayesian baseline",
+      "source_key": "tipping2003fastsbl",
+      "adaptation": "complex known-noise sequential evidence maximisation on the full physical dictionary; all active posterior coefficients reconstruct CSI; three peaks for geometry diagnostics only",
+      "paper_exact_reproduction": false,
+      "uses_extra_information": false
+    }
+  },
+  "primary_screen": {
+    "baseline_gate": {
+      "status": "diagnostic_only",
+      "implementation_ready": true,
+      "checks": {
+        "raw_data_complete_and_paired": true,
+        "same_observation_across_estimators": true,
+        "physical_truth_only": true,
+        "equal_128_pilot_re_across_schedules": true,
+        "oracle_geometry_matching_exact": true
+      },
+      "performance_is_not_a_gate": true
+    },
+    "performance_screen": {
+      "status": "not_interpreted_diagnostic",
+      "scope": "sbl_jointfreq_3d versus grid_omp_3d at the primary SNR only",
+      "primary_array_reference_snr_db": 55.0,
+      "reference_estimator": "grid_omp_3d",
+      "strong_estimator": "sbl_jointfreq_3d",
+      "paired_effects": [
+        {
+          "schedule": "frequency_single_shot_C2_J1_K128",
+          "schedule_family": "frequency_single_shot",
+          "array_reference_snr_db": 55.0,
+          "estimator": "sbl_jointfreq_3d",
+          "reference_estimator": "grid_omp_3d",
+          "comparison_role": "peer_estimator",
+          "nmse_delta_db": {
+            "num_paired_scenes": 1,
+            "mean": 5.660155799942087,
+            "ci95": [
+              5.660155799942087,
+              5.660155799942087
+            ],
+            "median": 5.660155799942087,
+            "fraction_below_zero": 0.0
+          },
+          "beam_loss_delta_db": {
+            "num_paired_scenes": 1,
+            "mean": 0.1411523156113772,
+            "ci95": [
+              0.1411523156113772,
+              0.1411523156113772
+            ],
+            "median": 0.1411523156113772,
+            "fraction_below_zero": 0.0
+          },
+          "net_rate_delta_bps_hz": {
+            "num_paired_scenes": 1,
+            "mean": -0.04640353869609193,
+            "ci95": [
+              -0.04640353869609193,
+              -0.04640353869609193
+            ],
+            "median": -0.04640353869609193,
+            "fraction_below_zero": 1.0
+          },
+          "all_paths_success_delta": {
+            "num_paired_scenes": 1,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "median": 0.0,
+            "fraction_below_zero": 0.0
+          },
+          "runtime_log10_ratio": {
+            "num_paired_scenes": 1,
+            "mean": 0.6529529746747671,
+            "ci95": [
+              0.6529529746747671,
+              0.6529529746747671
+            ],
+            "median": 0.6529529746747671,
+            "fraction_below_zero": 0.0
+          },
+          "median_runtime_ratio": 4.497311554513962
+        },
+        {
+          "schedule": "tensor_structured_J8_K16_RE128",
+          "schedule_family": "tensor_structured",
+          "array_reference_snr_db": 55.0,
+          "estimator": "sbl_jointfreq_3d",
+          "reference_estimator": "grid_omp_3d",
+          "comparison_role": "peer_estimator",
+          "nmse_delta_db": {
+            "num_paired_scenes": 1,
+            "mean": 6.936364876244172,
+            "ci95": [
+              6.936364876244172,
+              6.936364876244172
+            ],
+            "median": 6.936364876244172,
+            "fraction_below_zero": 0.0
+          },
+          "beam_loss_delta_db": {
+            "num_paired_scenes": 1,
+            "mean": 0.0829108825770451,
+            "ci95": [
+              0.0829108825770451,
+              0.0829108825770451
+            ],
+            "median": 0.0829108825770451,
+            "fraction_below_zero": 0.0
+          },
+          "net_rate_delta_bps_hz": {
+            "num_paired_scenes": 1,
+            "mean": -0.024847831279810606,
+            "ci95": [
+              -0.024847831279810606,
+              -0.024847831279810606
+            ],
+            "median": -0.024847831279810606,
+            "fraction_below_zero": 1.0
+          },
+          "all_paths_success_delta": {
+            "num_paired_scenes": 1,
+            "mean": -1.0,
+            "ci95": [
+              -1.0,
+              -1.0
+            ],
+            "median": -1.0,
+            "fraction_below_zero": 1.0
+          },
+          "runtime_log10_ratio": {
+            "num_paired_scenes": 1,
+            "mean": 0.890633670397392,
+            "ci95": [
+              0.890633670397392,
+              0.890633670397392
+            ],
+            "median": 0.890633670397392,
+            "fraction_below_zero": 0.0
+          },
+          "median_runtime_ratio": 7.773805499639682
+        }
+      ]
+    },
+    "schedule_rankings": [
+      {
+        "schedule": "frequency_single_shot_C2_J1_K128",
+        "regular_estimators_by_mean_linear_nmse": [
+          {
+            "estimator": "grid_omp_3d",
+            "mean_channel_nmse_db": -15.532664416943122,
+            "all_paths_success_rate": 1.0,
+            "median_feasible_beam_loss_db": 0.0363679745160366,
+            "mean_net_rate_bps_hz": 11.295216351108907,
+            "median_runtime_seconds": 0.3637418000000707
+          },
+          {
+            "estimator": "sbl_jointfreq_3d",
+            "mean_channel_nmse_db": -9.872508617001024,
+            "all_paths_success_rate": 1.0,
+            "median_feasible_beam_loss_db": 0.1775202901274138,
+            "mean_net_rate_bps_hz": 11.248812812412815,
+            "median_runtime_seconds": 1.6358602000000246
+          }
+        ],
+        "oracle_reference": {
+          "mean_channel_nmse_db": -32.882311149807826,
+          "median_feasible_beam_loss_db": 0.0005450109750043
+        }
+      },
+      {
+        "schedule": "tensor_structured_J8_K16_RE128",
+        "regular_estimators_by_mean_linear_nmse": [
+          {
+            "estimator": "grid_omp_3d",
+            "mean_channel_nmse_db": -19.64477420793606,
+            "all_paths_success_rate": 1.0,
+            "median_feasible_beam_loss_db": 0.0160496812417751,
+            "mean_net_rate_bps_hz": 10.302991046011725,
+            "median_runtime_seconds": 0.283702299999959
+          },
+          {
+            "estimator": "sbl_jointfreq_3d",
+            "mean_channel_nmse_db": -12.708409331691877,
+            "all_paths_success_rate": 0.0,
+            "median_feasible_beam_loss_db": 0.0989605638188202,
+            "mean_net_rate_bps_hz": 10.278143214731914,
+            "median_runtime_seconds": 2.205446500000108
+          }
+        ],
+        "oracle_reference": {
+          "mean_channel_nmse_db": -26.50710405528711,
+          "median_feasible_beam_loss_db": 0.0023296173359867
+        }
+      }
+    ]
+  },
+  "all_method_contrasts": [
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 45.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -17.4316003990266,
+        "ci95": [
+          -17.4316003990266,
+          -17.4316003990266
+        ],
+        "median": -17.4316003990266,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -1.3713786887786705,
+        "ci95": [
+          -1.3713786887786705,
+          -1.3713786887786705
+        ],
+        "median": -1.3713786887786705,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.4490779435851078,
+        "ci95": [
+          0.4490779435851078,
+          0.4490779435851078
+        ],
+        "median": 0.4490779435851078,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "median": 1.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.137416295924551,
+        "ci95": [
+          -1.137416295924551,
+          -1.137416295924551
+        ],
+        "median": -1.137416295924551,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.07287586188220693
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 45.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.932102312320966,
+        "ci95": [
+          0.932102312320966,
+          0.932102312320966
+        ],
+        "median": 0.932102312320966,
+        "fraction_below_zero": 0.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.28315814252931815,
+        "ci95": [
+          0.28315814252931815,
+          0.28315814252931815
+        ],
+        "median": 0.28315814252931815,
+        "fraction_below_zero": 0.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": -0.09264301834654631,
+        "ci95": [
+          -0.09264301834654631,
+          -0.09264301834654631
+        ],
+        "median": -0.09264301834654631,
+        "fraction_below_zero": 1.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.6452480123326014,
+        "ci95": [
+          0.6452480123326014,
+          0.6452480123326014
+        ],
+        "median": 0.6452480123326014,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 4.4182268678413275
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 50.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -22.298608067573905,
+        "ci95": [
+          -22.298608067573905,
+          -22.298608067573905
+        ],
+        "median": -22.298608067573905,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -1.3531694328694102,
+        "ci95": [
+          -1.3531694328694102,
+          -1.3531694328694102
+        ],
+        "median": -1.3531694328694102,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.444416360308896,
+        "ci95": [
+          0.444416360308896,
+          0.444416360308896
+        ],
+        "median": 0.444416360308896,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "median": 1.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.1782707565766688,
+        "ci95": [
+          -1.1782707565766688,
+          -1.1782707565766688
+        ],
+        "median": -1.1782707565766688,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.06633293953482848
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 50.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.4378952015602451,
+        "ci95": [
+          0.4378952015602451,
+          0.4378952015602451
+        ],
+        "median": 0.4378952015602451,
+        "fraction_below_zero": 0.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.5113536491776787,
+        "ci95": [
+          0.5113536491776787,
+          0.5113536491776787
+        ],
+        "median": 0.5113536491776787,
+        "fraction_below_zero": 0.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": -0.1678885812703772,
+        "ci95": [
+          -0.1678885812703772,
+          -0.1678885812703772
+        ],
+        "median": -0.1678885812703772,
+        "fraction_below_zero": 1.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "median": 1.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.6620549241930861,
+        "ci95": [
+          0.6620549241930861,
+          0.6620549241930861
+        ],
+        "median": 0.6620549241930861,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 4.592560901928221
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -17.34964673286401,
+        "ci95": [
+          -17.34964673286401,
+          -17.34964673286401
+        ],
+        "median": -17.34964673286401,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.0358229635410323,
+        "ci95": [
+          -0.0358229635410323,
+          -0.0358229635410323
+        ],
+        "median": -0.0358229635410323,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.011776815860498502,
+        "ci95": [
+          0.011776815860498502,
+          0.011776815860498502
+        ],
+        "median": 0.011776815860498502,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.0679699870828858,
+        "ci95": [
+          -1.0679699870828858,
+          -1.0679699870828858
+        ],
+        "median": -1.0679699870828858,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.08551258062745895
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 5.660155799942087,
+        "ci95": [
+          5.660155799942087,
+          5.660155799942087
+        ],
+        "median": 5.660155799942087,
+        "fraction_below_zero": 0.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.1411523156113772,
+        "ci95": [
+          0.1411523156113772,
+          0.1411523156113772
+        ],
+        "median": 0.1411523156113772,
+        "fraction_below_zero": 0.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": -0.04640353869609193,
+        "ci95": [
+          -0.04640353869609193,
+          -0.04640353869609193
+        ],
+        "median": -0.04640353869609193,
+        "fraction_below_zero": 1.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.6529529746747671,
+        "ci95": [
+          0.6529529746747671,
+          0.6529529746747671
+        ],
+        "median": 0.6529529746747671,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 4.497311554513962
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 60.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -20.327089616206816,
+        "ci95": [
+          -20.327089616206816,
+          -20.327089616206816
+        ],
+        "median": -20.327089616206816,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.0192073432163225,
+        "ci95": [
+          -0.0192073432163225,
+          -0.0192073432163225
+        ],
+        "median": -0.0192073432163225,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.006316005765137689,
+        "ci95": [
+          0.006316005765137689,
+          0.006316005765137689
+        ],
+        "median": 0.006316005765137689,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.049597069442528,
+        "ci95": [
+          -1.049597069442528,
+          -1.049597069442528
+        ],
+        "median": -1.049597069442528,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.08920782083219886
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 60.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 4.303577171149467,
+        "ci95": [
+          4.303577171149467,
+          4.303577171149467
+        ],
+        "median": 4.303577171149467,
+        "fraction_below_zero": 0.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.16568825378489188,
+        "ci95": [
+          0.16568825378489188,
+          0.16568825378489188
+        ],
+        "median": 0.16568825378489188,
+        "fraction_below_zero": 0.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": -0.05448360788347806,
+        "ci95": [
+          -0.05448360788347806,
+          -0.05448360788347806
+        ],
+        "median": -0.05448360788347806,
+        "fraction_below_zero": 1.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.7628233998443504,
+        "ci95": [
+          0.7628233998443504,
+          0.7628233998443504
+        ],
+        "median": 0.7628233998443504,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 5.791931272450171
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 65.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -22.812207950486872,
+        "ci95": [
+          -22.812207950486872,
+          -22.812207950486872
+        ],
+        "median": -22.812207950486872,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.12583412099404123,
+        "ci95": [
+          -0.12583412099404123,
+          -0.12583412099404123
+        ],
+        "median": -0.12583412099404123,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.04138164684580836,
+        "ci95": [
+          0.04138164684580836,
+          0.04138164684580836
+        ],
+        "median": 0.04138164684580836,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.0814186901325895,
+        "ci95": [
+          -1.0814186901325895,
+          -1.0814186901325895
+        ],
+        "median": -1.0814186901325895,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.08290511190892165
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 65.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.6806372585102736,
+        "ci95": [
+          0.6806372585102736,
+          0.6806372585102736
+        ],
+        "median": 0.6806372585102736,
+        "fraction_below_zero": 0.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.03710497317895371,
+        "ci95": [
+          -0.03710497317895371,
+          -0.03710497317895371
+        ],
+        "median": -0.03710497317895371,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.01220228903409648,
+        "ci95": [
+          0.01220228903409648,
+          0.01220228903409648
+        ],
+        "median": 0.01220228903409648,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ],
+        "median": -1.0,
+        "fraction_below_zero": 1.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.6477078993216867,
+        "ci95": [
+          0.6477078993216867,
+          0.6477078993216867
+        ],
+        "median": 0.6477078993216867,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 4.443323149536465
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 70.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -27.80291489136984,
+        "ci95": [
+          -27.80291489136984,
+          -27.80291489136984
+        ],
+        "median": -27.80291489136984,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.12628077243749256,
+        "ci95": [
+          -0.12628077243749256,
+          -0.12628077243749256
+        ],
+        "median": -0.12628077243749256,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.04152958290008257,
+        "ci95": [
+          0.04152958290008257,
+          0.04152958290008257
+        ],
+        "median": 0.04152958290008257,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -0.9898543765202565,
+        "ci95": [
+          -0.9898543765202565,
+          -0.9898543765202565
+        ],
+        "median": -0.9898543765202565,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.10236361706506418
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "schedule_family": "frequency_single_shot",
+      "array_reference_snr_db": 70.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -6.792238582570388,
+        "ci95": [
+          -6.792238582570388,
+          -6.792238582570388
+        ],
+        "median": -6.792238582570388,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.0456037911369184,
+        "ci95": [
+          -0.0456037911369184,
+          -0.0456037911369184
+        ],
+        "median": -0.0456037911369184,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.014997581831945439,
+        "ci95": [
+          0.014997581831945439,
+          0.014997581831945439
+        ],
+        "median": 0.014997581831945439,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ],
+        "median": -1.0,
+        "fraction_below_zero": 1.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.7723720106057238,
+        "ci95": [
+          0.7723720106057238,
+          0.7723720106057238
+        ],
+        "median": 0.7723720106057238,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 5.920685747220263
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 45.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -5.152864710846908,
+        "ci95": [
+          -5.152864710846908,
+          -5.152864710846908
+        ],
+        "median": -5.152864710846908,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.17430419229682131,
+        "ci95": [
+          -0.17430419229682131,
+          -0.17430419229682131
+        ],
+        "median": -0.17430419229682131,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.05206235072801757,
+        "ci95": [
+          0.05206235072801757,
+          0.05206235072801757
+        ],
+        "median": 0.05206235072801757,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -2.006489946240187,
+        "ci95": [
+          -2.006489946240187,
+          -2.006489946240187
+        ],
+        "median": -2.006489946240187,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.009851674488093501
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 45.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 7.444030971242255,
+        "ci95": [
+          7.444030971242255,
+          7.444030971242255
+        ],
+        "median": 7.444030971242255,
+        "fraction_below_zero": 0.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.5852436890043368,
+        "ci95": [
+          0.5852436890043368,
+          0.5852436890043368
+        ],
+        "median": 0.5852436890043368,
+        "fraction_below_zero": 0.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": -0.17474453223166808,
+        "ci95": [
+          -0.17474453223166808,
+          -0.17474453223166808
+        ],
+        "median": -0.17474453223166808,
+        "fraction_below_zero": 1.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ],
+        "median": -1.0,
+        "fraction_below_zero": 1.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.7927881841607776,
+        "ci95": [
+          0.7927881841607776,
+          0.7927881841607776
+        ],
+        "median": 0.7927881841607776,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 6.205662953375408
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 50.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -3.6491478892304485,
+        "ci95": [
+          -3.6491478892304485,
+          -3.6491478892304485
+        ],
+        "median": -3.6491478892304485,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.0142124429057392,
+        "ci95": [
+          -0.0142124429057392,
+          -0.0142124429057392
+        ],
+        "median": -0.0142124429057392,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.004256022249368385,
+        "ci95": [
+          0.004256022249368385,
+          0.004256022249368385
+        ],
+        "median": 0.004256022249368385,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.7971867553756549,
+        "ci95": [
+          -1.7971867553756549,
+          -1.7971867553756549
+        ],
+        "median": -1.7971867553756549,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.01595193034587703
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 50.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 9.430750761925147,
+        "ci95": [
+          9.430750761925147,
+          9.430750761925147
+        ],
+        "median": 9.430750761925147,
+        "fraction_below_zero": 0.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.8286518325151054,
+        "ci95": [
+          0.8286518325151054,
+          0.8286518325151054
+        ],
+        "median": 0.8286518325151054,
+        "fraction_below_zero": 0.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": -0.24811628135371322,
+        "ci95": [
+          -0.24811628135371322,
+          -0.24811628135371322
+        ],
+        "median": -0.24811628135371322,
+        "fraction_below_zero": 1.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ],
+        "median": -1.0,
+        "fraction_below_zero": 1.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.9422801524950497,
+        "ci95": [
+          0.9422801524950497,
+          0.9422801524950497
+        ],
+        "median": 0.9422801524950497,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 8.755483874392706
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -6.862329847351024,
+        "ci95": [
+          -6.862329847351024,
+          -6.862329847351024
+        ],
+        "median": -6.862329847351024,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.0137200639057884,
+        "ci95": [
+          -0.0137200639057884,
+          -0.0137200639057884
+        ],
+        "median": -0.0137200639057884,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.004111827275631086,
+        "ci95": [
+          0.004111827275631086,
+          0.004111827275631086
+        ],
+        "median": 0.004111827275631086,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.8408953930393928,
+        "ci95": [
+          -1.8408953930393928,
+          -1.8408953930393928
+        ],
+        "median": -1.8408953930393928,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.01442462750535224
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 6.936364876244172,
+        "ci95": [
+          6.936364876244172,
+          6.936364876244172
+        ],
+        "median": 6.936364876244172,
+        "fraction_below_zero": 0.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.0829108825770451,
+        "ci95": [
+          0.0829108825770451,
+          0.0829108825770451
+        ],
+        "median": 0.0829108825770451,
+        "fraction_below_zero": 0.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": -0.024847831279810606,
+        "ci95": [
+          -0.024847831279810606,
+          -0.024847831279810606
+        ],
+        "median": -0.024847831279810606,
+        "fraction_below_zero": 1.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ],
+        "median": -1.0,
+        "fraction_below_zero": 1.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.890633670397392,
+        "ci95": [
+          0.890633670397392,
+          0.890633670397392
+        ],
+        "median": 0.890633670397392,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 7.773805499639682
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 60.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -10.929532557800943,
+        "ci95": [
+          -10.929532557800943,
+          -10.929532557800943
+        ],
+        "median": -10.929532557800943,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.013390659255926,
+        "ci95": [
+          -0.013390659255926,
+          -0.013390659255926
+        ],
+        "median": -0.013390659255926,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.004014109569279611,
+        "ci95": [
+          0.004014109569279611,
+          0.004014109569279611
+        ],
+        "median": 0.004014109569279611,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.9293322190887947,
+        "ci95": [
+          -1.9293322190887947,
+          -1.9293322190887947
+        ],
+        "median": -1.9293322190887947,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.011767054933112942
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 60.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 3.7039895344164364,
+        "ci95": [
+          3.7039895344164364,
+          3.7039895344164364
+        ],
+        "median": 3.7039895344164364,
+        "fraction_below_zero": 0.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": 0.023863385450676795,
+        "ci95": [
+          0.023863385450676795,
+          0.023863385450676795
+        ],
+        "median": 0.023863385450676795,
+        "fraction_below_zero": 0.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": -0.007153508612830706,
+        "ci95": [
+          -0.007153508612830706,
+          -0.007153508612830706
+        ],
+        "median": -0.007153508612830706,
+        "fraction_below_zero": 1.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ],
+        "median": -1.0,
+        "fraction_below_zero": 1.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.9463410083846685,
+        "ci95": [
+          0.9463410083846685,
+          0.9463410083846685
+        ],
+        "median": 0.9463410083846685,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 8.837735677817081
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 65.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -15.480128998291523,
+        "ci95": [
+          -15.480128998291523,
+          -15.480128998291523
+        ],
+        "median": -15.480128998291523,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.0131867463350711,
+        "ci95": [
+          -0.0131867463350711,
+          -0.0131867463350711
+        ],
+        "median": -0.0131867463350711,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.003953295019689662,
+        "ci95": [
+          0.003953295019689662,
+          0.003953295019689662
+        ],
+        "median": 0.003953295019689662,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.8374899569708214,
+        "ci95": [
+          -1.8374899569708214,
+          -1.8374899569708214
+        ],
+        "median": -1.8374899569708214,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.014538180046574778
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 65.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -1.2949597393176866,
+        "ci95": [
+          -1.2949597393176866,
+          -1.2949597393176866
+        ],
+        "median": -1.2949597393176866,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.001444769582753901,
+        "ci95": [
+          -0.001444769582753901,
+          -0.001444769582753901
+        ],
+        "median": -0.001444769582753901,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.0004331318711106036,
+        "ci95": [
+          0.0004331318711106036,
+          0.0004331318711106036
+        ],
+        "median": 0.0004331318711106036,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ],
+        "median": -1.0,
+        "fraction_below_zero": 1.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 0.9173007254711667,
+        "ci95": [
+          0.9173007254711667,
+          0.9173007254711667
+        ],
+        "median": 0.9173007254711667,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 8.266101343211188
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 70.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "genie_reference",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -20.26407053566367,
+        "ci95": [
+          -20.26407053566367,
+          -20.26407053566367
+        ],
+        "median": -20.26407053566367,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.013065836426224562,
+        "ci95": [
+          -0.013065836426224562,
+          -0.013065836426224562
+        ],
+        "median": -0.013065836426224562,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.003917144912936266,
+        "ci95": [
+          0.003917144912936266,
+          0.003917144912936266
+        ],
+        "median": 0.003917144912936266,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "median": 0.0,
+        "fraction_below_zero": 0.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": -1.9133618645537984,
+        "ci95": [
+          -1.9133618645537984,
+          -1.9133618645537984
+        ],
+        "median": -1.9133618645537984,
+        "fraction_below_zero": 1.0
+      },
+      "median_runtime_ratio": 0.012207820514605398
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "schedule_family": "tensor_structured",
+      "array_reference_snr_db": 70.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "comparison_role": "peer_estimator",
+      "nmse_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -5.2846952177338515,
+        "ci95": [
+          -5.2846952177338515,
+          -5.2846952177338515
+        ],
+        "median": -5.2846952177338515,
+        "fraction_below_zero": 1.0
+      },
+      "beam_loss_delta_db": {
+        "num_paired_scenes": 1,
+        "mean": -0.008144767134506,
+        "ci95": [
+          -0.008144767134506,
+          -0.008144767134506
+        ],
+        "median": -0.008144767134506,
+        "fraction_below_zero": 1.0
+      },
+      "net_rate_delta_bps_hz": {
+        "num_paired_scenes": 1,
+        "mean": 0.0024418056294628343,
+        "ci95": [
+          0.0024418056294628343,
+          0.0024418056294628343
+        ],
+        "median": 0.0024418056294628343,
+        "fraction_below_zero": 0.0
+      },
+      "all_paths_success_delta": {
+        "num_paired_scenes": 1,
+        "mean": -1.0,
+        "ci95": [
+          -1.0,
+          -1.0
+        ],
+        "median": -1.0,
+        "fraction_below_zero": 1.0
+      },
+      "runtime_log10_ratio": {
+        "num_paired_scenes": 1,
+        "mean": 1.113615964387428,
+        "ci95": [
+          1.113615964387428,
+          1.113615964387428
+        ],
+        "median": 1.113615964387428,
+        "fraction_below_zero": 0.0
+      },
+      "median_runtime_ratio": 12.99020379178643
+    }
+  ],
+  "bootstrap": {
+    "seed": 2026091199,
+    "resamples": 1000,
+    "interval": "percentile 95%",
+    "resampling_unit": "independent scene within schedule/SNR block"
+  },
+  "search": {
+    "mode": "beam_center_adaptive",
+    "center_source": "pre-observation random coarse path-beam centers",
+    "per_path_center_count": 3,
+    "truth_offsets": "continuous random draws; no forced grid or half-grid placement",
+    "candidate_union": "three local Cartesian windows on one global anchored lattice; overlaps deduplicated",
+    "candidate_count_min": 19216,
+    "candidate_count_median": 19216.0,
+    "candidate_count_mean": 19216.0,
+    "candidate_count_max": 19216,
+    "grid_step_min_m_deg_deg": [
+      0.001,
+      0.34794921874999996,
+      2.01510254752488
+    ],
+    "grid_step_max_m_deg_deg": [
+      0.001,
+      0.34794921874999996,
+      2.01510254752488
+    ],
+    "maximum_nearest_candidate_error_m_deg_deg": [
+      0.00047767079400085066,
+      0.12601272331374863,
+      0.7957102656502641
+    ],
+    "all_truth_paths_inside_associated_windows": true,
+    "dictionary_build_seconds_total": {
+      "frequency_single_shot_C2_J1_K128": 2.9007603999998537,
+      "tensor_structured_J8_K16_RE128": 0.700187299999925
+    },
+    "dictionary_build_seconds_mean_per_scene": {
+      "frequency_single_shot_C2_J1_K128": 2.9007603999998537,
+      "tensor_structured_J8_K16_RE128": 0.700187299999925
+    },
+    "peak_dictionary_memory_bytes": {
+      "frequency_single_shot_C2_J1_K128": 157417472,
+      "tensor_structured_J8_K16_RE128": 157417472
+    },
+    "dictionary_compute": {
+      "frequency_single_shot_C2_J1_K128": [
+        {
+          "backend": "torch_cuda",
+          "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+          "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+        }
+      ],
+      "tensor_structured_J8_K16_RE128": [
+        {
+          "backend": "torch_cuda",
+          "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+          "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+        }
+      ]
+    },
+    "dictionary_compute_validation": {
+      "frequency_single_shot_C2_J1_K128": {
+        "status": "pass",
+        "sample_count": 16,
+        "relative_frobenius_error": 1.2520388952078679e-05,
+        "minimum_row_rho2": 0.9999999996805031,
+        "maximum_relative_error": 0.0001,
+        "minimum_rho2": 0.99999,
+        "reference_backend": "numpy"
+      },
+      "tensor_structured_J8_K16_RE128": {
+        "status": "pass",
+        "sample_count": 16,
+        "relative_frobenius_error": 1.3310681454780191e-05,
+        "minimum_row_rho2": 0.9999999996818235,
+        "maximum_relative_error": 0.0001,
+        "minimum_rho2": 0.99999,
+        "reference_backend": "numpy"
+      }
+    },
+    "profile_compute": {
+      "frequency_single_shot_C2_J1_K128": {
+        "backend": "torch_cuda",
+        "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+        "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation"
+      },
+      "tensor_structured_J8_K16_RE128": {
+        "backend": "torch_cuda",
+        "device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+        "precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation"
+      }
+    },
+    "schedules_built_sequentially_per_scene": true,
+    "dictionary_storage_dtype": "complex64",
+    "settings": {
+      "correlation_threshold": 0.5,
+      "window_fullwidth_multiplier": 2.0,
+      "grid_points_per_3db_width": 4.0,
+      "probe_range_step_m": 0.00025,
+      "probe_azimuth_step_deg": 0.05,
+      "probe_elevation_step_deg": 0.1,
+      "bisection_iterations": 10,
+      "probe_batch_size": 32,
+      "truth_offset_halfpower_fraction": 0.9,
+      "truth_offset_cap_range_m": 0.0045,
+      "truth_offset_cap_azimuth_deg": 0.9,
+      "truth_offset_cap_elevation_deg": 1.2,
+      "preserve_channel_relationships": true,
+      "maximum_candidates_per_scene": 50000
+    },
+    "scene_records": [
+      {
+        "scene_id": "2026091101:0",
+        "center_source": "pre-observation random coarse path-beam centers",
+        "centers_m_rad_rad": [
+          [
+            2.0954873157959724,
+            0.398128701763938,
+            0.13508502897960067
+          ],
+          [
+            2.333739587224464,
+            0.28325192267812893,
+            0.09529571283297063
+          ],
+          [
+            2.199859709399896,
+            0.5830045759885567,
+            0.24973786671552883
+          ]
+        ],
+        "truth": {
+          "offsets_m_rad_rad": [
+            [
+              -0.000512399948019846,
+              -0.0032299072424939266,
+              0.001025914687293586
+            ],
+            [
+              -0.0016500397636762191,
+              0.010444670095716056,
+              -0.020094783926246862
+            ],
+            [
+              -0.0003373801938966435,
+              -0.004974732423443783,
+              0.012713419467162316
+            ]
+          ],
+          "negative_offset_limits_m_rad_rad": [
+            [
+              0.0030462890625,
+              0.01133611802247489,
+              0.020943951023931952
+            ],
+            [
+              0.0030188232421875004,
+              0.010957991758261076,
+              0.020943951023931952
+            ],
+            [
+              0.003009814453125,
+              0.012912283282027384,
+              0.020943951023931952
+            ]
+          ],
+          "positive_offset_limits_m_rad_rad": [
+            [
+              0.0030462890625,
+              0.011523263678596938,
+              0.020943951023931952
+            ],
+            [
+              0.0030188232421875004,
+              0.01090430243068508,
+              0.020943951023931952
+            ],
+            [
+              0.003009814453125,
+              0.01286472987760293,
+              0.020943951023931952
+            ]
+          ]
+        },
+        "schedule_profiles": {
+          "frequency_single_shot_C2_J1_K128": [
+            {
+              "negative_halfwidth_rad_units": [
+                0.003913330078125,
+                0.05327515276326832,
+                0.1075030780381234
+              ],
+              "positive_halfwidth_rad_units": [
+                0.003913330078125,
+                0.042069423107763716,
+                0.09930991620771643
+              ],
+              "fullwidth_rad_units": [
+                0.00782666015625,
+                0.09534457587103204,
+                0.20681299424583982
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            },
+            {
+              "negative_halfwidth_rad_units": [
+                0.0043603515625,
+                0.046303210082328086,
+                0.10913932421186809
+              ],
+              "positive_halfwidth_rad_units": [
+                0.004360107421875,
+                0.07976273991230923,
+                0.10687414591509029
+              ],
+              "fullwidth_rad_units": [
+                0.008720458984375,
+                0.12606594999463733,
+                0.21601347012695837
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            },
+            {
+              "negative_halfwidth_rad_units": [
+                0.004766357421875,
+                0.0599829098640727,
+                0.09523123173503828
+              ],
+              "positive_halfwidth_rad_units": [
+                0.00476611328125,
+                0.09388814633408951,
+                0.06442139864345048
+              ],
+              "fullwidth_rad_units": [
+                0.009532470703125,
+                0.15387105619816221,
+                0.15965263037848876
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  true
+                ]
+              ]
+            }
+          ],
+          "tensor_structured_J8_K16_RE128": [
+            {
+              "negative_halfwidth_rad_units": [
+                0.003384765625,
+                0.012595686691638765,
+                0.10872855824533426
+              ],
+              "positive_halfwidth_rad_units": [
+                0.003384765625,
+                0.012803626309552153,
+                0.09570335693308751
+              ],
+              "fullwidth_rad_units": [
+                0.00676953125,
+                0.02539931300119092,
+                0.20443191517842177
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            },
+            {
+              "negative_halfwidth_rad_units": [
+                0.003354248046875,
+                0.012175546398067862,
+                0.11150165462521196
+              ],
+              "positive_halfwidth_rad_units": [
+                0.003354248046875,
+                0.01211589158965009,
+                0.10580206378666798
+              ],
+              "fullwidth_rad_units": [
+                0.00670849609375,
+                0.02429143798771795,
+                0.21730371841187995
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ]
+              ]
+            },
+            {
+              "negative_halfwidth_rad_units": [
+                0.00334423828125,
+                0.01434698142447487,
+                0.07625929823508817
+              ],
+              "positive_halfwidth_rad_units": [
+                0.00334423828125,
+                0.0142941443084477,
+                0.06442139864345048
+              ],
+              "fullwidth_rad_units": [
+                0.0066884765625,
+                0.02864112573292257,
+                0.14068069687853865
+              ],
+              "crossing_truncated": [
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  false
+                ],
+                [
+                  false,
+                  true
+                ]
+              ]
+            }
+          ]
+        },
+        "grid_steps_m_rad_rad": [
+          0.001,
+          0.006072859496929488,
+          0.03517017421963466
+        ],
+        "combined_fullwidths_m_rad_rad": [
+          [
+            0.00782666015625,
+            0.09534457587103204,
+            0.20681299424583982
+          ],
+          [
+            0.008720458984375,
+            0.12606594999463733,
+            0.21730371841187995
+          ],
+          [
+            0.009532470703125,
+            0.15387105619816221,
+            0.15965263037848876
+          ]
+        ],
+        "windows": [
+          {
+            "path_center_index": 0,
+            "continuous_lower_m_rad_rad": [
+              2.087660655639722,
+              0.30278412589290593,
+              -0.07172796526623915
+            ],
+            "continuous_upper_m_rad_rad": [
+              2.1033139759522226,
+              0.49347327763497006,
+              0.3141592653589793
+            ],
+            "lattice_shape": [
+              16,
+              32,
+              11
+            ],
+            "lattice_candidates_before_union": 5632
+          },
+          {
+            "path_center_index": 1,
+            "continuous_lower_m_rad_rad": [
+              2.3250191282400894,
+              0.1571859726834916,
+              -0.12200800557890933
+            ],
+            "continuous_upper_m_rad_rad": [
+              2.342460046208839,
+              0.40931787267276626,
+              0.31259943124485057
+            ],
+            "lattice_shape": [
+              17,
+              42,
+              12
+            ],
+            "lattice_candidates_before_union": 8568
+          },
+          {
+            "path_center_index": 2,
+            "continuous_lower_m_rad_rad": [
+              2.190327238696771,
+              0.4291335197903945,
+              0.09008523633704008
+            ],
+            "continuous_upper_m_rad_rad": [
+              2.209392180103021,
+              0.6981317007977318,
+              0.3141592653589793
+            ],
+            "lattice_shape": [
+              19,
+              44,
+              6
+            ],
+            "lattice_candidates_before_union": 5016
+          }
+        ],
+        "num_candidates": 19216,
+        "truth_associated_window_coverage": [
+          true,
+          true,
+          true
+        ],
+        "nearest_union_candidate_abs_error_m_rad_rad": [
+          [
+            2.5084152047494257e-05,
+            0.00016292722102734247,
+            0.0069420558293770696
+          ],
+          [
+            8.954746078826403e-05,
+            0.0021993369212295333,
+            0.00248827784972179
+          ],
+          [
+            0.00047767079400085066,
+            0.0011081913568115054,
+            0.013887764027515848
+          ]
+        ],
+        "dictionary_by_schedule": {
+          "frequency_single_shot_C2_J1_K128": {
+            "build_seconds": 2.9007603999998537,
+            "memory_bytes": 157417472,
+            "compute_backend": "torch_cuda",
+            "compute_device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+            "compute_precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+          },
+          "tensor_structured_J8_K16_RE128": {
+            "build_seconds": 0.700187299999925,
+            "memory_bytes": 157417472,
+            "compute_backend": "torch_cuda",
+            "compute_device": "cuda:0 (NVIDIA GeForce RTX 4050 Laptop GPU)",
+            "compute_precision": "float64 geometry/common phase; float32 aperture-relative phase, complex64 accumulation and storage"
+          }
+        }
+      }
+    ]
+  },
+  "resource_fairness": {
+    "same_observation_across_estimators_within_schedule_snr_scene": true,
+    "common_standard_noise_across_snr_levels_within_schedule_scene": true,
+    "independent_unit": "one generated multipath scene",
+    "paired_block": "schedule, SNR and estimator within scene",
+    "method_order_randomized": true,
+    "common_pilot_resource_elements": 128,
+    "pilot_energy_per_re": 1.0,
+    "switch_guard_symbol_equivalents_per_switch": 0.25,
+    "combiner_row_normalization": false,
+    "noise_whitening": "known diagonal post-DMA covariance"
+  },
+  "domain_paired_method_effects": [
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 45.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -17.432331456984656,
+      "ci95": [
+        -17.432331456984656,
+        -17.432331456984656
+      ],
+      "median": -17.432331456984656,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 45.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 0.920291865688716,
+      "ci95": [
+        0.920291865688716,
+        0.920291865688716
+      ],
+      "median": 0.920291865688716,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 50.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -22.300705189437423,
+      "ci95": [
+        -22.300705189437423,
+        -22.300705189437423
+      ],
+      "median": -22.300705189437423,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 50.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 0.43782317983856256,
+      "ci95": [
+        0.43782317983856256,
+        0.43782317983856256
+      ],
+      "median": 0.43782317983856256,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -17.346267492113807,
+      "ci95": [
+        -17.346267492113807,
+        -17.346267492113807
+      ],
+      "median": -17.346267492113807,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 5.662775989141222,
+      "ci95": [
+        5.662775989141222,
+        5.662775989141222
+      ],
+      "median": 5.662775989141222,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 60.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -20.330817423560088,
+      "ci95": [
+        -20.330817423560088,
+        -20.330817423560088
+      ],
+      "median": -20.330817423560088,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 60.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 4.292009477306989,
+      "ci95": [
+        4.292009477306989,
+        4.292009477306989
+      ],
+      "median": 4.292009477306989,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 65.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -22.805368440218608,
+      "ci95": [
+        -22.805368440218608,
+        -22.805368440218608
+      ],
+      "median": -22.805368440218608,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 65.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 0.7110046352208599,
+      "ci95": [
+        0.7110046352208599,
+        0.7110046352208599
+      ],
+      "median": 0.7110046352208599,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 70.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -27.796280473134317,
+      "ci95": [
+        -27.796280473134317,
+        -27.796280473134317
+      ],
+      "median": -27.796280473134317,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 70.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -6.789766193423283,
+      "ci95": [
+        -6.789766193423283,
+        -6.789766193423283
+      ],
+      "median": -6.789766193423283,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 45.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -5.152864710846908,
+      "ci95": [
+        -5.152864710846908,
+        -5.152864710846908
+      ],
+      "median": -5.152864710846908,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 45.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 7.444030971242255,
+      "ci95": [
+        7.444030971242255,
+        7.444030971242255
+      ],
+      "median": 7.444030971242255,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 50.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -3.6491478892304485,
+      "ci95": [
+        -3.6491478892304485,
+        -3.6491478892304485
+      ],
+      "median": -3.6491478892304485,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 50.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 9.430750761925147,
+      "ci95": [
+        9.430750761925147,
+        9.430750761925147
+      ],
+      "median": 9.430750761925147,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -6.862329847351024,
+      "ci95": [
+        -6.862329847351024,
+        -6.862329847351024
+      ],
+      "median": -6.862329847351024,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 6.936364876244172,
+      "ci95": [
+        6.936364876244172,
+        6.936364876244172
+      ],
+      "median": 6.936364876244172,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 60.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -10.929532557800943,
+      "ci95": [
+        -10.929532557800943,
+        -10.929532557800943
+      ],
+      "median": -10.929532557800943,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 60.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 3.7039895344164364,
+      "ci95": [
+        3.7039895344164364,
+        3.7039895344164364
+      ],
+      "median": 3.7039895344164364,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -15.480128998291523,
+      "ci95": [
+        -15.480128998291523,
+        -15.480128998291523
+      ],
+      "median": -15.480128998291523,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -1.2949597393176866,
+      "ci95": [
+        -1.2949597393176866,
+        -1.2949597393176866
+      ],
+      "median": -1.2949597393176866,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 70.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -20.26407053566367,
+      "ci95": [
+        -20.26407053566367,
+        -20.26407053566367
+      ],
+      "median": -20.26407053566367,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "pilot_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 70.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -5.2846952177338515,
+      "ci95": [
+        -5.2846952177338515,
+        -5.2846952177338515
+      ],
+      "median": -5.2846952177338515,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 45.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -17.432331456984656,
+      "ci95": [
+        -17.432331456984656,
+        -17.432331456984656
+      ],
+      "median": -17.432331456984656,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 45.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 0.920291865688716,
+      "ci95": [
+        0.920291865688716,
+        0.920291865688716
+      ],
+      "median": 0.920291865688716,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 50.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -22.300705189437423,
+      "ci95": [
+        -22.300705189437423,
+        -22.300705189437423
+      ],
+      "median": -22.300705189437423,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 50.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 0.43782317983856256,
+      "ci95": [
+        0.43782317983856256,
+        0.43782317983856256
+      ],
+      "median": 0.43782317983856256,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -17.346267492113807,
+      "ci95": [
+        -17.346267492113807,
+        -17.346267492113807
+      ],
+      "median": -17.346267492113807,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 5.662775989141222,
+      "ci95": [
+        5.662775989141222,
+        5.662775989141222
+      ],
+      "median": 5.662775989141222,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 60.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -20.330817423560088,
+      "ci95": [
+        -20.330817423560088,
+        -20.330817423560088
+      ],
+      "median": -20.330817423560088,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 60.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 4.292009477306989,
+      "ci95": [
+        4.292009477306989,
+        4.292009477306989
+      ],
+      "median": 4.292009477306989,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 65.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -22.805368440218608,
+      "ci95": [
+        -22.805368440218608,
+        -22.805368440218608
+      ],
+      "median": -22.805368440218608,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 65.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 0.7110046352208599,
+      "ci95": [
+        0.7110046352208599,
+        0.7110046352208599
+      ],
+      "median": 0.7110046352208599,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 70.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -27.796280473134317,
+      "ci95": [
+        -27.796280473134317,
+        -27.796280473134317
+      ],
+      "median": -27.796280473134317,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 70.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -6.789766193423283,
+      "ci95": [
+        -6.789766193423283,
+        -6.789766193423283
+      ],
+      "median": -6.789766193423283,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 45.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -5.1604602656612055,
+      "ci95": [
+        -5.1604602656612055,
+        -5.1604602656612055
+      ],
+      "median": -5.1604602656612055,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 45.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 7.414629959764353,
+      "ci95": [
+        7.414629959764353,
+        7.414629959764353
+      ],
+      "median": 7.414629959764353,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 50.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -3.6378892129147857,
+      "ci95": [
+        -3.6378892129147857,
+        -3.6378892129147857
+      ],
+      "median": -3.6378892129147857,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 50.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 9.445123580990657,
+      "ci95": [
+        9.445123580990657,
+        9.445123580990657
+      ],
+      "median": 9.445123580990657,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -6.84567197032688,
+      "ci95": [
+        -6.84567197032688,
+        -6.84567197032688
+      ],
+      "median": -6.84567197032688,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 6.9502340495023045,
+      "ci95": [
+        6.9502340495023045,
+        6.9502340495023045
+      ],
+      "median": 6.9502340495023045,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 60.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -10.9090731046807,
+      "ci95": [
+        -10.9090731046807,
+        -10.9090731046807
+      ],
+      "median": -10.9090731046807,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 60.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 3.697129613031283,
+      "ci95": [
+        3.697129613031283,
+        3.697129613031283
+      ],
+      "median": 3.697129613031283,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -15.457543405761406,
+      "ci95": [
+        -15.457543405761406,
+        -15.457543405761406
+      ],
+      "median": -15.457543405761406,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -1.287353656707463,
+      "ci95": [
+        -1.287353656707463,
+        -1.287353656707463
+      ],
+      "median": -1.287353656707463,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 70.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -20.24039027836319,
+      "ci95": [
+        -20.24039027836319,
+        -20.24039027836319
+      ],
+      "median": -20.24039027836319,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "fullband_128_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 70.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -5.2481130885140175,
+      "ci95": [
+        -5.2481130885140175,
+        -5.2481130885140175
+      ],
+      "median": -5.2481130885140175,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 45.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -5.1615456467438,
+      "ci95": [
+        -5.1615456467438,
+        -5.1615456467438
+      ],
+      "median": -5.1615456467438,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 45.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 7.4104165621112585,
+      "ci95": [
+        7.4104165621112585,
+        7.4104165621112585
+      ],
+      "median": 7.4104165621112585,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 50.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -3.636276385986516,
+      "ci95": [
+        -3.636276385986516,
+        -3.636276385986516
+      ],
+      "median": -3.636276385986516,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 50.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 9.447181671621577,
+      "ci95": [
+        9.447181671621577,
+        9.447181671621577
+      ],
+      "median": 9.447181671621577,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -6.843283999906323,
+      "ci95": [
+        -6.843283999906323,
+        -6.843283999906323
+      ],
+      "median": -6.843283999906323,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 6.952222978007862,
+      "ci95": [
+        6.952222978007862,
+        6.952222978007862
+      ],
+      "median": 6.952222978007862,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 60.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -10.906138694332043,
+      "ci95": [
+        -10.906138694332043,
+        -10.906138694332043
+      ],
+      "median": -10.906138694332043,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 60.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": 3.6961421799449496,
+      "ci95": [
+        3.6961421799449496,
+        3.6961421799449496
+      ],
+      "median": 3.6961421799449496,
+      "fraction_below_zero": 0.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -15.454303144721834,
+      "ci95": [
+        -15.454303144721834,
+        -15.454303144721834
+      ],
+      "median": -15.454303144721834,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 65.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -1.2862602910124608,
+      "ci95": [
+        -1.2862602910124608,
+        -1.2862602910124608
+      ],
+      "median": -1.2862602910124608,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 70.0,
+      "estimator": "oracle_geometry_ls",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -20.236992480140305,
+      "ci95": [
+        -20.236992480140305,
+        -20.236992480140305
+      ],
+      "median": -20.236992480140305,
+      "fraction_below_zero": 1.0
+    },
+    {
+      "domain": "heldout_112_nmse",
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 70.0,
+      "estimator": "sbl_jointfreq_3d",
+      "reference_estimator": "grid_omp_3d",
+      "num_paired_scenes": 1,
+      "mean": -5.242872939141371,
+      "ci95": [
+        -5.242872939141371,
+        -5.242872939141371
+      ],
+      "median": -5.242872939141371,
+      "fraction_below_zero": 1.0
+    }
+  ],
+  "nmse_figure_domain": "fullband_128_nmse"
+}

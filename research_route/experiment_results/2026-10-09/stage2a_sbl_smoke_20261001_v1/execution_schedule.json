@@ -1,0 +1,122 @@
+[
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "array_reference_snr_db": 45.0,
+    "method_order": [
+      "sbl_jointfreq_3d",
+      "oracle_geometry_ls",
+      "grid_omp_3d"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "array_reference_snr_db": 50.0,
+    "method_order": [
+      "sbl_jointfreq_3d",
+      "oracle_geometry_ls",
+      "grid_omp_3d"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "array_reference_snr_db": 55.0,
+    "method_order": [
+      "grid_omp_3d",
+      "sbl_jointfreq_3d",
+      "oracle_geometry_ls"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "array_reference_snr_db": 60.0,
+    "method_order": [
+      "grid_omp_3d",
+      "oracle_geometry_ls",
+      "sbl_jointfreq_3d"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "array_reference_snr_db": 65.0,
+    "method_order": [
+      "grid_omp_3d",
+      "oracle_geometry_ls",
+      "sbl_jointfreq_3d"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "frequency_single_shot_C2_J1_K128",
+    "array_reference_snr_db": 70.0,
+    "method_order": [
+      "grid_omp_3d",
+      "sbl_jointfreq_3d",
+      "oracle_geometry_ls"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "array_reference_snr_db": 45.0,
+    "method_order": [
+      "grid_omp_3d",
+      "sbl_jointfreq_3d",
+      "oracle_geometry_ls"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "array_reference_snr_db": 50.0,
+    "method_order": [
+      "oracle_geometry_ls",
+      "grid_omp_3d",
+      "sbl_jointfreq_3d"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "array_reference_snr_db": 55.0,
+    "method_order": [
+      "grid_omp_3d",
+      "oracle_geometry_ls",
+      "sbl_jointfreq_3d"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "array_reference_snr_db": 60.0,
+    "method_order": [
+      "grid_omp_3d",
+      "oracle_geometry_ls",
+      "sbl_jointfreq_3d"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "array_reference_snr_db": 65.0,
+    "method_order": [
+      "grid_omp_3d",
+      "sbl_jointfreq_3d",
+      "oracle_geometry_ls"
+    ]
+  },
+  {
+    "scene_id": "2026091101:0",
+    "schedule": "tensor_structured_J8_K16_RE128",
+    "array_reference_snr_db": 70.0,
+    "method_order": [
+      "oracle_geometry_ls",
+      "sbl_jointfreq_3d",
+      "grid_omp_3d"
+    ]
+  }
+]

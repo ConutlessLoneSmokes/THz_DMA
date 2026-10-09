@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "timestamp_utc": "2026-10-09T02:22:59.394975+00:00",
+  "error": "('2026100202:0', 'frequency_single_shot_C2_J1_K128', 15.0, 'learned', 0.0022481476073856754)"
+}

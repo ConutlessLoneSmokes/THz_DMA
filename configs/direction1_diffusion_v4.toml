@@ -1,0 +1,41 @@
+base_config = "configs/direction1_stage2a_sbl_snr.toml"
+history_run = "stage2a_sbl_snr_20261002_v1"
+device = "cuda:0"
+
+[data]
+train_count = 2048
+validation_count = 256
+test_count = 100
+train_seed = 2026100201
+validation_seed = 2026100202
+test_seed = 2026100203
+
+[network]
+kind = "edm_fourier"
+width = 24
+
+[training]
+seed = 2026100291
+batch_size = 4
+steps = 10000
+learning_rate = 0.0002
+validation_every = 250
+validation_scenes = 32
+gradient_clip_norm = 1.0
+
+[posterior]
+initialization = "conditional_gaussian"
+antithetic = true
+covariance = "mc_subspace"
+covariance_relative_cutoff = 0.00001
+seed = 2026100292
+sigma_min = 0.01
+sigma_max = 80.0
+sampler = "guided_heun"
+levels = 64
+steps_per_level = 5
+step_scale = 0.05
+samples = 4
+validation_scenes = 16
+prior_draws = 128
+prior_seed = 2026092901

@@ -1,0 +1,10 @@
+{
+  "parameters": 304768,
+  "best_validation_loss": 0.5849186230450869,
+  "validation_loss_type": "weighted_edm",
+  "best_step": 10000,
+  "session_seconds": 846.6733109000015,
+  "dataset_sha256": "bd4d369b8bd58a6a1465e863692cdad93ce873116cd230d029ac22fd5b88e378",
+  "trained_steps": 10000,
+  "not_a_recovery_performance_result": true
+}

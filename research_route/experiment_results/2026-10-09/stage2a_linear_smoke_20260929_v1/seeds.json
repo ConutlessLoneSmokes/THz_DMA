@@ -1,0 +1,15 @@
+{
+  "prior": 2026092901,
+  "evaluation": [
+    2026091101,
+    2026091102,
+    2026091103,
+    2026091104,
+    2026091105
+  ],
+  "source_hashes": {
+    "metrics_raw.csv": "f721b68963996e5cdc8b4259c54184f3f8844f2ac88144af716d1db39a6ae8df",
+    "metrics_summary.json": "6c801797674f5cb26df93b2de25de51d19cfd18b810a0ddb1e1ee5b77bb6239f",
+    "config_resolved.json": "b5144ff091fb84e27f7a88f0b8ad7d282467e05078e44fd084a631f94f78efd9"
+  }
+}

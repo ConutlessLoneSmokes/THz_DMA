@@ -1,0 +1,35 @@
+{
+  "index": {
+    "train": [
+      "train_00000.npz",
+      "train_00001.npz",
+      "train_00002.npz",
+      "train_00003.npz"
+    ],
+    "validation": [
+      "validation_00000.npz",
+      "validation_00001.npz"
+    ],
+    "test": [
+      "test_00000.npz",
+      "test_00001.npz"
+    ],
+    "history": [
+      "history_00000.npz"
+    ]
+  },
+  "file_sha256": {
+    "train_00000.npz": "1b69e65b6a324aaaaf4dbae9d7df5c7e262b2b978cc20538ee12b1cde8b7e6f3",
+    "train_00001.npz": "e4538ab4fdf485a1ad2beb70aaa56ca84cbea05253fa1af6e0d9f44b6c53919d",
+    "train_00002.npz": "a418928c69ae13c622bc0853e21621819479ba1ae050bbe9a3d2902980d64e0e",
+    "train_00003.npz": "f3743bf34fa741dfdb68847a74eb1eb74b6aa244b974bc39075b6173d7bc5ae3",
+    "validation_00000.npz": "82fc93b2dd7b580309c5970a38f0539e2db3021f83b0025330974f7f159fa6f3",
+    "validation_00001.npz": "5d78a825f621b5b5b53aa126adcc8bc9964242785efc43e63e1ea4f7d81d3e19",
+    "test_00000.npz": "a114e009a64ea5ced75addf655b1b307d9fd71bc7c704d35620b9f18f91c3918",
+    "test_00001.npz": "f51bf9ae958efc8e5dd4c262c015e2901e16fc2e5741f29b790dd3f26e04d969",
+    "history_00000.npz": "f5663ab25070c300f0ccfa8d71d5c6b86071add799ff1fcb894b4d4136b3ca32"
+  },
+  "real_component_scale": 3.065233665035335e-05,
+  "normalization_source": "training channels only; global real-component RMS; no per-test normalization",
+  "history_metrics_sha256": "2a76caf0c532659b180ddcbe7b70ae4ec92737af5fe8c14982fbfd27967fa841"
+}

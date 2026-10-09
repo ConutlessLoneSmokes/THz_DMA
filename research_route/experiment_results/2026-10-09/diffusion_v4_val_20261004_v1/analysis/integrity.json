@@ -1,0 +1,16 @@
+{
+  "diffusion_v4_val_20261004_v1_snapshot_files": 63,
+  "diffusion_v4_train_20261004_v1_snapshot_files": 63,
+  "diffusion_data_20261002_v1_snapshot_files": 63,
+  "dataset_file_hashes_verified": 2504,
+  "rows": 1152,
+  "common_baseline_rows": 768,
+  "baseline_max_differences": {
+    "fullband_128_nmse_linear": 0.0,
+    "effective_output_snr_db": 0.0,
+    "pilot_net_rate": 0.0
+  },
+  "sbl_converged": 192,
+  "best_step": 10000,
+  "best_weighted_edm_loss": 0.5849186230450869
+}

@@ -1,0 +1,7 @@
+{
+  "target_snr_db": 20,
+  "amplitude_factor": 10.0,
+  "power_factor": 100.0,
+  "observation_max_difference": 1.9860273225978185e-15,
+  "lmmse_max_difference": 3.376611507232129e-16
+}

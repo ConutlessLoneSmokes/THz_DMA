@@ -1,0 +1,192 @@
+{
+  "rows": 12,
+  "scenes": 1,
+  "split": "validation",
+  "smoke_only": false,
+  "conditional_diagnostic_only": true,
+  "beam_subcarrier_index": 68,
+  "beam_frequency_hz": 301054687500.0,
+  "rate_excludes_estimator_latency": true,
+  "summary": [
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "oracle_geometry_ls",
+      "mean_linear_nmse_db": -52.096990360123094,
+      "median_nmse_db": -52.096990360123094,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 20.041893787083637,
+      "mean_seconds": 0.11852960000032908,
+      "paired_diffusion_minus_method_db": 46.51595587717986,
+      "paired_ci95": [
+        46.51595587717986,
+        46.51595587717986
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "grid_omp_3d",
+      "mean_linear_nmse_db": -17.36080254385696,
+      "median_nmse_db": -17.36080254385696,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 20.037131304174828,
+      "mean_seconds": 0.7317364000009547,
+      "paired_diffusion_minus_method_db": 11.779768060913725,
+      "paired_ci95": [
+        11.779768060913725,
+        11.779768060913725
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "sbl_jointfreq_3d",
+      "mean_linear_nmse_db": -33.148295268615165,
+      "median_nmse_db": -33.148295268615165,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 20.041659094038163,
+      "mean_seconds": 3.533963899997616,
+      "paired_diffusion_minus_method_db": 27.56726078567193,
+      "paired_ci95": [
+        27.56726078567193,
+        27.56726078567193
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "lmmse",
+      "mean_linear_nmse_db": -29.950571740071048,
+      "median_nmse_db": -29.950571740071048,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 20.04173697586841,
+      "mean_seconds": 0.16905939999924158,
+      "paired_diffusion_minus_method_db": 24.369537257127813,
+      "paired_ci95": [
+        24.369537257127813,
+        24.369537257127813
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "diffusion_mean",
+      "mean_linear_nmse_db": -5.581034482943234,
+      "median_nmse_db": -5.581034482943234,
+      "fraction_nmse_below_minus10": 0.0,
+      "mean_pilot_net_rate": 19.976853250638257,
+      "mean_seconds": 3.8728735000004235,
+      "paired_diffusion_minus_method_db": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "gaussian_diffusion_mean",
+      "mean_linear_nmse_db": -25.64696059662358,
+      "median_nmse_db": -25.64696059662358,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 20.04132195690212,
+      "mean_seconds": 1.3122007000019948,
+      "paired_diffusion_minus_method_db": 20.065926113680344,
+      "paired_ci95": [
+        20.065926113680344,
+        20.065926113680344
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "oracle_geometry_ls",
+      "mean_linear_nmse_db": -58.91671555923405,
+      "median_nmse_db": -58.91671555923405,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 18.41762037889107,
+      "mean_seconds": 0.07223230000090552,
+      "paired_diffusion_minus_method_db": 46.333508381195855,
+      "paired_ci95": [
+        46.333508381195855,
+        46.333508381195855
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "grid_omp_3d",
+      "mean_linear_nmse_db": -18.17385229549061,
+      "median_nmse_db": -18.17385229549061,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 18.37968187219326,
+      "mean_seconds": 0.556395399999019,
+      "paired_diffusion_minus_method_db": 5.59064511745242,
+      "paired_ci95": [
+        5.59064511745242,
+        5.59064511745242
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "sbl_jointfreq_3d",
+      "mean_linear_nmse_db": -38.371985144256975,
+      "median_nmse_db": -38.371985144256975,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 18.41755172764312,
+      "mean_seconds": 13.620980800002144,
+      "paired_diffusion_minus_method_db": 25.78877796621878,
+      "paired_ci95": [
+        25.78877796621878,
+        25.78877796621878
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "lmmse",
+      "mean_linear_nmse_db": -39.50320623429722,
+      "median_nmse_db": -39.50320623429722,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 18.417574722406666,
+      "mean_seconds": 0.19208310000249185,
+      "paired_diffusion_minus_method_db": 26.919999056259023,
+      "paired_ci95": [
+        26.919999056259023,
+        26.919999056259023
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "diffusion_mean",
+      "mean_linear_nmse_db": -12.583207178038192,
+      "median_nmse_db": -12.583207178038192,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 18.403869193120116,
+      "mean_seconds": 3.6138215999999375,
+      "paired_diffusion_minus_method_db": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "gaussian_diffusion_mean",
+      "mean_linear_nmse_db": -34.009769423705826,
+      "median_nmse_db": -34.009769423705826,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 18.417303256460038,
+      "mean_seconds": 1.515741799998068,
+      "paired_diffusion_minus_method_db": 21.426562245667633,
+      "paired_ci95": [
+        21.426562245667633,
+        21.426562245667633
+      ]
+    }
+  ]
+}

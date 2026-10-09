@@ -1,0 +1,13 @@
+{
+  "original_metrics_sha256": "010c1997a667243298cb4dcd7aefc8e1be99037209236ca6f96d54ceb1a59c98",
+  "new_simulation": false,
+  "x_axis": "mean actual RF output SNR",
+  "sweep_original_array_reference_db": [
+    45,
+    50,
+    55,
+    60,
+    65,
+    70
+  ]
+}

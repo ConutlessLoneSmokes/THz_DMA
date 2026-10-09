@@ -1,0 +1,12 @@
+[
+  {
+    "step": 1,
+    "training_loss": 1.0024255514144897,
+    "validation_noise_mse": 0.999017310142517
+  },
+  {
+    "step": 2,
+    "training_loss": 0.9978346228599548,
+    "validation_noise_mse": 0.9990012168884277
+  }
+]

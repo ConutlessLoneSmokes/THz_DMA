@@ -1,0 +1,42 @@
+{
+  "source_sha256": {
+    "runs\\stage2a_sbl_snr_20261002_v1\\metrics_raw.csv": "2a76caf0c532659b180ddcbe7b70ae4ec92737af5fe8c14982fbfd27967fa841",
+    "runs\\stage2a_somp_snr_20260929_v1\\metrics_raw.csv": "f721b68963996e5cdc8b4259c54184f3f8844f2ac88144af716d1db39a6ae8df",
+    "runs\\stage2a_linear_20260929_v1\\metrics_raw.csv": "c0e80318956530c4a970d94d6661fe69b183188892af7a50593e03043745e7ee"
+  },
+  "analysis_script_sha256": "676474c8eda4738155a1c3836d8da37a7bddd31c5bacc17dcc85c48ee2741aca",
+  "rows": 3600,
+  "independent_scenes": 100,
+  "checkpoint_rows_equal": true,
+  "physical_config_sections_equal": [
+    "system",
+    "channel",
+    "atmosphere",
+    "dma",
+    "acquisition",
+    "noise",
+    "search",
+    "adaptive_search",
+    "evaluation",
+    "data_evaluation"
+  ],
+  "old_baseline_max_abs_delta": {
+    "fullband_128_nmse_db": 0.0,
+    "effective_output_snr_db": 0.0,
+    "net_rate_bps_hz": 0.0,
+    "adaptive_candidate_count": 0.0
+  },
+  "linear_archive_baseline_max_abs_nmse_delta_db": 7.165015674459596e-05,
+  "sbl_converged": 1200,
+  "sbl_iterations_range": [
+    26,
+    1695
+  ],
+  "objective_increases_above_1e_minus6": 0,
+  "figure_statistic": "10*log10(mean(linear NMSE)); 1000 scene bootstrap draws; no smoothing or exclusions",
+  "bootstrap_seed": 2026091199,
+  "figure_sha256": {
+    ".png": "b953d477f6e8ea578710a8ac44bbb003c08bf33210e9501b9d8daf96dd24c3e9",
+    ".pdf": "55c1abcebc7da3292158af32c446057d84bf7e9b6746ff0e958535ba6378b466"
+  }
+}

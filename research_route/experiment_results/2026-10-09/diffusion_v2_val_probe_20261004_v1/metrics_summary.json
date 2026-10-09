@@ -1,0 +1,162 @@
+{
+  "rows": 20,
+  "scenes": 2,
+  "split": "validation",
+  "smoke_only": false,
+  "conditional_diagnostic_only": true,
+  "beam_subcarrier_index": 68,
+  "beam_frequency_hz": 301054687500.0,
+  "rate_excludes_estimator_latency": true,
+  "summary": [
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "mean_linear_nmse_db": -26.442677815536285,
+      "median_nmse_db": -26.608398604487377,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 11.28435772920515,
+      "mean_seconds": 0.06879685000058089,
+      "paired_diffusion_minus_method_db": 28.18093147504733,
+      "paired_ci95": [
+        26.984956157177,
+        29.376906792917662
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "grid_omp_3d",
+      "mean_linear_nmse_db": -8.95398472606664,
+      "median_nmse_db": -10.652382900580083,
+      "fraction_nmse_below_minus10": 0.5,
+      "mean_pilot_net_rate": 11.1679942388982,
+      "mean_seconds": 0.3999148500015508,
+      "paired_diffusion_minus_method_db": 12.224915771140036,
+      "paired_ci95": [
+        8.118095434901774,
+        16.331736107378298
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "mean_linear_nmse_db": -8.870136587762161,
+      "median_nmse_db": -9.414634254117516,
+      "fraction_nmse_below_minus10": 0.5,
+      "mean_pilot_net_rate": 11.231550739575194,
+      "mean_seconds": 1.6793979499998386,
+      "paired_diffusion_minus_method_db": 10.98716712467747,
+      "paired_ci95": [
+        8.755290367747152,
+        13.219043881607785
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "lmmse",
+      "mean_linear_nmse_db": -15.340394752794513,
+      "median_nmse_db": -15.662687796606043,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 11.260557197044669,
+      "mean_seconds": 0.11802554999940185,
+      "paired_diffusion_minus_method_db": 17.235220667165997,
+      "paired_ci95": [
+        15.552743228303925,
+        18.917698106028066
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 55.0,
+      "estimator": "diffusion_mean",
+      "mean_linear_nmse_db": 1.5725479188918339,
+      "median_nmse_db": 1.5725328705599524,
+      "fraction_nmse_below_minus10": 0.0,
+      "mean_pilot_net_rate": 7.696824319357432,
+      "mean_seconds": 2.9984745000001567,
+      "paired_diffusion_minus_method_db": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "oracle_geometry_ls",
+      "mean_linear_nmse_db": -26.97804786901584,
+      "median_nmse_db": -28.2467304524962,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 10.287514859650258,
+      "mean_seconds": 0.03758254999956989,
+      "paired_diffusion_minus_method_db": 29.82914206053336,
+      "paired_ci95": [
+        26.352923624456842,
+        33.30536049660988
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "grid_omp_3d",
+      "mean_linear_nmse_db": -15.331199283771879,
+      "median_nmse_db": -15.933250866001966,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 10.231532749111468,
+      "mean_seconds": 0.2937291500002175,
+      "paired_diffusion_minus_method_db": 17.515662474039125,
+      "paired_ci95": [
+        15.182800364002361,
+        19.848524584075886
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "sbl_jointfreq_3d",
+      "mean_linear_nmse_db": -13.735721577166725,
+      "median_nmse_db": -13.763671369541175,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 10.229910772870484,
+      "mean_seconds": 3.572206000000733,
+      "paired_diffusion_minus_method_db": 15.346082977578332,
+      "paired_ci95": [
+        14.84573966588261,
+        15.846426289274055
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "lmmse",
+      "mean_linear_nmse_db": -19.09161143019318,
+      "median_nmse_db": -19.402646455832425,
+      "fraction_nmse_below_minus10": 1.0,
+      "mean_pilot_net_rate": 10.284610913474795,
+      "mean_seconds": 0.11770114999853831,
+      "paired_diffusion_minus_method_db": 20.98505806386958,
+      "paired_ci95": [
+        19.32880981411778,
+        22.641306313621385
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 55.0,
+      "estimator": "diffusion_mean",
+      "mean_linear_nmse_db": 1.5824174098972925,
+      "median_nmse_db": 1.582411608037157,
+      "fraction_nmse_below_minus10": 0.0,
+      "mean_pilot_net_rate": 6.314551952508801,
+      "mean_seconds": 1.6242992500001492,
+      "paired_diffusion_minus_method_db": 0.0,
+      "paired_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

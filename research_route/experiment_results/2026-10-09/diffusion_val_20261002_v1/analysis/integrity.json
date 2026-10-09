@@ -1,0 +1,16 @@
+{
+  "diffusion_val_20261002_v1_manifest_files": 63,
+  "diffusion_data_20261002_v1_manifest_files": 63,
+  "diffusion_train_20261002_v1_manifest_files": 63,
+  "split_counts": {
+    "train": 2048,
+    "validation": 256,
+    "test": 100,
+    "history": 100
+  },
+  "train_only_scale": 3.069044173901537e-05,
+  "rows": 960,
+  "sbl_converged": 192,
+  "best_step": 9750,
+  "best_noise_mse": 0.2434876556508243
+}

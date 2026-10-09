@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import time
+import json
 from pathlib import Path
 
 import numpy as np
@@ -13,6 +14,8 @@ from thz_dma.estimators.planar_sparse import (
     build_planar_template_dictionary,
     omp_three_path_estimate,
     oracle_geometry_ls_estimate,
+    _exclusion_mask,
+    _pack_grid_result,
     yang_style_ogols_3d_estimate,
 )
 from thz_dma.observations.planar import (
@@ -20,6 +23,7 @@ from thz_dma.observations.planar import (
     stage2_schedule_weights,
 )
 from thz_dma.surfaces.multistrip import combiner_row_energy
+from thz_dma.estimators.sbl import sparse_bayesian_estimate
 
 
 def operator_for_schedule(platform, schedule, weights, config) -> PlanarDmaTemplateOperator:
@@ -205,7 +209,7 @@ def build_stage2a_estimators(config: dict, project_root: str | Path, *, progress
 
 
 def estimate_planar_baseline(
-    method: str, dictionary, operator, observation, paths, config
+    method: str, dictionary, operator, observation, paths, config, *, noise_variance=None
 ) -> dict:
     estimator = config["estimator"]
     search = config["search"]
@@ -221,6 +225,40 @@ def estimate_planar_baseline(
     }
     if method == "grid_omp_3d":
         return omp_three_path_estimate(dictionary, observation, **common)
+    if method == "sbl_jointfreq_3d":
+        if noise_variance is None:
+            raise ValueError("SBL requires the known whitened noise variance")
+        fit = sparse_bayesian_estimate(dictionary.templates, observation, noise_variance,
+                                      **estimator["sbl_jointfreq_3d"])
+        indices, gains = fit["indices"], fit["mean"]
+        coordinates = np.column_stack((dictionary.ranges_m, dictionary.azimuths_rad,
+                                       dictionary.elevations_rad))
+        all_gains = np.zeros(dictionary.num_candidates, dtype=complex)
+        all_gains[indices] = gains
+        # Three separated posterior peaks are diagnostic only; CSI uses all active atoms.
+        score = np.abs(all_gains)**2 * np.sum(np.abs(dictionary.templates)**2, axis=1)
+        support = []
+        for _ in range(common["num_paths"]):
+            score[_exclusion_mask(dictionary, support, common["exclusion_range_m"],
+                                  common["exclusion_azimuth_rad"], common["exclusion_elevation_rad"])] = -np.inf
+            selected = int(np.argmax(score))
+            if not np.isfinite(score[selected]):
+                raise ValueError("SBL dictionary has too few separated diagnostic peaks")
+            support.append(selected)
+        residual = np.asarray(observation) - gains @ dictionary.templates[indices]
+        result = _pack_grid_result(dictionary, observation, support, all_gains[support],
+                                  float(np.vdot(residual, residual).real),
+                                  float(np.linalg.cond(dictionary.templates[support].T)))
+        # The channel constructor requires at least one path, including for a zero estimate.
+        result.update(reconstruction_coordinates=coordinates[indices] if len(indices) else coordinates[:1],
+                      reconstruction_gains=gains if len(indices) else np.zeros(1, complex),
+                      iterations=fit["iterations"], converged=int(fit["converged"]))
+        result["sbl_state_json"] = json.dumps({
+            "indices": indices.tolist(), "gain_real": gains.real.tolist(), "gain_imag": gains.imag.tolist(),
+            "gamma": fit["gamma"].tolist(), "posterior_variance": fit["variance"].tolist(),
+            "objective_history": fit["objective_history"].tolist(),
+            "max_evidence_improvement": fit["max_evidence_improvement"]}, separators=(",", ":"))
+        return result
     if method == "yang_ogols_3d":
         settings = estimator["yang_ogols_3d"]
         return yang_style_ogols_3d_estimate(

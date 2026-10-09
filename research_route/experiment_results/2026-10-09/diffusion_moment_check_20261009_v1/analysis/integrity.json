@@ -1,0 +1,26 @@
+{
+  "component_rows": 90,
+  "moment_rows": 54,
+  "pilot_summary_rows": 144,
+  "denoising_rows": 63,
+  "score_rows": 108,
+  "v4_reference_max_difference_db": 3.552713678800501e-15,
+  "moment_equivalence_max_difference_db": 0.0001044192030441593,
+  "pilot_reference_max_difference_db": 3.552713678800501e-15,
+  "model_sha256": "583b4674037cbc7930d3d7aa81dadb3a352b973e49c062b9685c6cffd3c05e6c",
+  "inputs": {
+    "components": "77c840383359ee9c43ff7fd0c65eba4262c4fe8e1d54b0af83320ab74eb8329b",
+    "moments": "017c6782e61c645abf12d4916d7e0fc9e1fc9862df339b17e5c2cebc8476ae88",
+    "pilots": "dc57e2184f1d087c51b023dee18f4ef0d7668014fa69a69e97bf603a28162060"
+  },
+  "integration_rows": 24,
+  "integration_sbl_converged": 4,
+  "integration_baseline_max_difference_db": 4.705219734901789e-05,
+  "integration_metrics_sha256": "260367237e6cf33aced547cedebf6910876e18f553dcfaf04fe40a89924ee314",
+  "verified_snapshot_files": {
+    "components": 62,
+    "moments": 62,
+    "pilots": 60,
+    "integration": 64
+  }
+}

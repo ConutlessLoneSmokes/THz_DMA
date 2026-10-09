@@ -1,0 +1,12 @@
+{
+  "script_sha256": "7e80adaf1df3ca233aff052977a65ffc4566c379d765e1e25a0bdd10ddd95e92",
+  "dependencies": {
+    "model_sha256": "afa7fc3e6fe969bec4e2b3b1449811042828912a1de44730749b24af32d3e4b1",
+    "dataset_sha256": "bd4d369b8bd58a6a1465e863692cdad93ce873116cd230d029ac22fd5b88e378"
+  },
+  "metric_sha256": "af5094b5b1b2c666e0d90089aa50ffd7f1d570886d5072c7a5aaf5aa9db53396",
+  "diagnostic_only": true,
+  "denoising_scenes_per_split": 4,
+  "posterior_validation_scenes": 2,
+  "condition_control": "negative normalized centers; diagnostic perturbation, not a physical paired population"
+}

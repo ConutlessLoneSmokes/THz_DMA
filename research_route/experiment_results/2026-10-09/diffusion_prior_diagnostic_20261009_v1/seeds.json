@@ -1,0 +1,29 @@
+{
+  "cases": {
+    "train": [
+      0
+    ],
+    "validation": [
+      0,
+      7,
+      14
+    ]
+  },
+  "sigmas": [
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0,
+    80.0
+  ],
+  "snr_db": [
+    0.0,
+    30.0
+  ],
+  "seed": 2026100903,
+  "frozen_weights": true,
+  "natural_noisy_csi_only": true,
+  "wrong_center_rule": "next case in the same split; keep x and projection fixed",
+  "local_fusion_is_not_an_estimator_benchmark": true
+}
