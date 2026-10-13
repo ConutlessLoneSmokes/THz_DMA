@@ -1,0 +1,55 @@
+scenario = "dma"
+base_config = "configs/direction1_stage2a_sbl_snr.toml"
+device = "cuda:0"
+cpu_threads = 4
+
+[data]
+source_run_id = "diffusion_data_20261002_v1"
+train_count = 2048
+validation_count = 256
+test_count = 100
+train_seed = 2026100201
+validation_seed = 2026100202
+test_seed = 2026100203
+noise_seed = 2026100904
+batch_size = 4
+
+[network]
+width = 64
+time_dim = 16
+
+[diffusion]
+steps = 100
+beta_start = 0.0001
+beta_end = 0.1
+
+[training]
+seed = 2026100911
+validation_seed = 2026100912
+batch_size = 4
+epochs = 500
+learning_rate = 0.0001
+validation_every = 250
+validation_scenes = 32
+
+[sure]
+epochs = 100
+epsilon = 0.00001
+precision = "float64"
+
+[evaluation_run]
+scene_limit = 100
+validation_scenes = 32
+baseline_count = 2048
+pilot_seed = 2026100921
+noise_seed = 2026100922
+posterior_seed = 2026100923
+bootstrap_seed = 2026100924
+snr_db = [-10.0, -5.0, 0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0]
+guidance = [0.5, 1.0, 2.0, 4.0]
+refinement = 1
+lasso_factors = [0.01, 0.03, 0.1, 0.3, 1.0, 3.0]
+lasso_steps = 1000
+conditional_references = ["oracle_geometry_ls", "grid_omp_3d", "sbl_jointfreq_3d", "conditional_lmmse"]
+conditional_prior_draws = 128
+conditional_prior_seed = 2026092901

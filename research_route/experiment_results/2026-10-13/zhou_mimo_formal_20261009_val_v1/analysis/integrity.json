@@ -1,0 +1,21 @@
+{
+  "stage_runs": 20,
+  "source_members": 1420,
+  "current_source_members": 1420,
+  "dataset_files": 300,
+  "training_models": 11,
+  "evaluation_hashes": {
+    "zhou_mimo_formal_20261009_clean_val_v1": "23198da05ae21c6772ac4cb5b51d1316c6ee7feacde516880f68195009bcaf07",
+    "zhou_mimo_formal_20261009_val_v1": "d49daea869ad243e86bb9df21030d1fbdc124fc9479a2b233b15ef7576bafc20"
+  },
+  "identical_common_rows": 7200,
+  "evaluation_rows": {
+    "zhou_mimo_formal_20261009_clean_val_v1": 7200,
+    "zhou_mimo_formal_20261009_val_v1": 21600
+  },
+  "paired_training_noise_relative_error": 8.198222190003435e-08,
+  "original_lasso_nonconverged": 209,
+  "frozen_recovery_rechecks": 24,
+  "max_recovery_difference_db": 3.552713678800501e-15,
+  "extended_lasso_converged": 209
+}

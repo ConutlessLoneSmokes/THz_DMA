@@ -1,0 +1,30 @@
+replayed zhou_mimo_extended_20261011 QPSK_Np64
+replayed zhou_mimo_extended_20261011 QPSK_Np38
+replayed zhou_carrier_40ghz_noabs_20261011 QPSK_Np64
+replayed zhou_carrier_40ghz_noabs_20261011 QPSK_Np38
+replayed zhou_carrier_300ghz_noabs_20261011 QPSK_Np64
+replayed zhou_carrier_300ghz_noabs_20261011 QPSK_Np38
+replayed zhou_carrier_300ghz_abs_20261011 QPSK_Np64
+replayed zhou_carrier_300ghz_abs_20261011 QPSK_Np38
+replayed zhou_wideband_formal_20261011_digital digital_frequency_single_shot_C2_J1_K128
+replayed zhou_wideband_formal_20261011_digital digital_tensor_structured_J8_K16_RE128
+replayed zhou_wideband_formal_20261011_dma frequency_single_shot_C2_J1_K128
+replayed zhou_wideband_formal_20261011_dma tensor_structured_J8_K16_RE128
+{"frozen_replays": 64, "max_difference_db": 4.672237388092526e-07, "diagnostic_cases": [0, 99], "diagnostic_snr_db": [20, 30], "test_tuning_performed": false, "new_training_performed": false}
+frontend      scene_id                                 schedule  snr_db    nmse_db  prediction_energy_fraction  truth_prediction_correlation_squared  noisy_observation_residual_ratio  clean_observation_error_ratio  final_state_real_rms  true_rowspace_energy_fraction
+ digital  2026100203:0 digital_frequency_single_shot_C2_J1_K128    20.0 -26.419173                    0.997738                              0.997719                          0.003690                       0.002281              0.696832                            NaN
+ digital  2026100203:0 digital_frequency_single_shot_C2_J1_K128    30.0 -32.538461                    0.999186                              0.999443                          0.000143                       0.000557              0.697338                            NaN
+ digital 2026100203:99 digital_frequency_single_shot_C2_J1_K128    20.0 -23.691984                    0.979186                              0.995796                          0.005711                       0.004274              0.648049                            NaN
+ digital 2026100203:99 digital_frequency_single_shot_C2_J1_K128    30.0 -30.459584                    0.992513                              0.999111                          0.000419                       0.000900              0.652444                            NaN
+ digital  2026100203:0   digital_tensor_structured_J8_K16_RE128    20.0  -1.617595                    0.194120                              0.328571                          0.009039                       0.001115              0.307366                            NaN
+ digital  2026100203:0   digital_tensor_structured_J8_K16_RE128    30.0  -1.618608                    0.194968                              0.328450                          0.000936                       0.000127              0.308036                            NaN
+ digital 2026100203:99   digital_tensor_structured_J8_K16_RE128    20.0  -1.476926                    0.188689                              0.301440                          0.010286                       0.001340              0.284478                            NaN
+ digital 2026100203:99   digital_tensor_structured_J8_K16_RE128    30.0  -1.478212                    0.189873                              0.301314                          0.001067                       0.000155              0.285369                            NaN
+     dma  2026100203:0         frequency_single_shot_C2_J1_K128    20.0   0.000050                    0.000232                              0.000090                          0.157164                       0.738394              0.010626                       0.000032
+     dma  2026100203:0         frequency_single_shot_C2_J1_K128    30.0  -0.000048                    0.000226                              0.000102                          0.005062                       0.171080              0.010487                       0.000032
+     dma 2026100203:99         frequency_single_shot_C2_J1_K128    20.0   0.000212                    0.000283                              0.000051                          0.166871                       0.870721              0.011010                       0.000031
+     dma 2026100203:99         frequency_single_shot_C2_J1_K128    30.0   0.000097                    0.000274                              0.000061                          0.005833                       0.204136              0.010849                       0.000031
+     dma  2026100203:0           tensor_structured_J8_K16_RE128    20.0   0.000557                    0.000236                              0.000073                          0.210567                       0.555426              0.010725                       0.000047
+     dma  2026100203:0           tensor_structured_J8_K16_RE128    30.0   0.000407                    0.000243                              0.000082                          0.009211                       0.124311              0.010870                       0.000047
+     dma 2026100203:99           tensor_structured_J8_K16_RE128    20.0   0.000901                    0.000290                              0.000015                          0.224678                       0.606040              0.011144                       0.000043
+     dma 2026100203:99           tensor_structured_J8_K16_RE128    30.0   0.000754                    0.000291                              0.000021                          0.010198                       0.142103              0.011176                       0.000043

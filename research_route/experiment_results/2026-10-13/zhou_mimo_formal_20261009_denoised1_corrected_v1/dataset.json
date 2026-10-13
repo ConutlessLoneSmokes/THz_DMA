@@ -1,0 +1,75 @@
+{
+  "scenario": "mimo",
+  "counts": {
+    "train": 4096,
+    "validation": 256,
+    "test": 100
+  },
+  "split_seeds": {
+    "train": 2026100901,
+    "validation": 2026100902,
+    "test": 2026100903
+  },
+  "channel_shape": [
+    16,
+    64
+  ],
+  "physics": {
+    "system": {
+      "carrier_frequency_hz": 300000000000.0
+    },
+    "channel": {
+      "num_paths": 3,
+      "range_min_m": 1.85,
+      "range_max_m": 2.15,
+      "azimuth_min_deg": 15.0,
+      "azimuth_max_deg": 25.0,
+      "elevation_min_deg": -8.0,
+      "elevation_max_deg": 8.0,
+      "los_complex_gain_magnitude": 1.0,
+      "reflection_excess_range_min_m": 0.08,
+      "reflection_excess_range_max_m": 0.25,
+      "reflection_azimuth_separation_min_deg": 4.0,
+      "reflection_azimuth_separation_max_deg": 12.0,
+      "reflection_elevation_separation_min_deg": 2.0,
+      "reflection_elevation_separation_max_deg": 8.0,
+      "reflection_gain_relative_min_db": -15.0,
+      "reflection_gain_relative_max_db": -6.0,
+      "include_absorption": true
+    },
+    "atmosphere": {
+      "table_path": "data/atmosphere/data_freq_abscoe.txt",
+      "interpolation": "linear",
+      "max_model_frequency_hz": 1000000000000.0
+    },
+    "mimo": {
+      "receive_antennas": 16,
+      "transmit_antennas": 64,
+      "spacing_wavelengths": 0.5,
+      "departure_min_deg": -60.0,
+      "departure_max_deg": 60.0
+    }
+  },
+  "kind": "denoised",
+  "storage": "npy",
+  "parent_run_id": "zhou_mimo_formal_20261009_noisy1_v1",
+  "parent_dataset_sha256": "ffa64c3879e02b0f5a6e5e02b7c6d49a80e3d6a9472efac69ba252ca60fb3ead",
+  "files": {
+    "train": "channels_train.npy",
+    "validation": "channels_validation.npy",
+    "test": "channels_test.npy"
+  },
+  "complex_scale": 4.327985643841728e-05,
+  "normalization_source": "inherited noise-corrected training scale; denoised outputs not renormalized",
+  "denoised_training_complex_rms": 4.4331418357700655e-05,
+  "sure_variant": "corrected",
+  "sure_train_run_id": "zhou_mimo_formal_20261009_sure1_corrected_v1",
+  "sure_checkpoint_sha256": "c54a366d90cd811e9ea30c450be3a532f21d972129f932f3b1b8f333b90319e0",
+  "known_noise_real_variance_phys": 0.0,
+  "schema_version": 1,
+  "file_sha256": {
+    "channels_train.npy": "b25240978dda5fce2e77a94edd9616e74e1bd961e5a502068e2c621da63f31dc",
+    "channels_validation.npy": "997efeac582f39a5eb030e32ed9cbc6893c503cdf33e747f5617770028d3fe4a",
+    "channels_test.npy": "cd232237a74854df18e368b75675ec310f9eba09b0ba7d2e0feb95a7851098c7"
+  }
+}

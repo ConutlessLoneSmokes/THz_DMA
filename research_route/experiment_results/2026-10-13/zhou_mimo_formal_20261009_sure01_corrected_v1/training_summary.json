@@ -1,0 +1,17 @@
+{
+  "kind": "sure",
+  "data_kind": "noisy",
+  "trained_steps": 3200,
+  "epochs": 100,
+  "parameters": 55025,
+  "best_step": 3200,
+  "best_validation_loss": 0.02052724673848045,
+  "session_seconds": 1847.9516102999996,
+  "precision": "float64",
+  "dataset_sha256": "dc566f7604e78174c0620e68a7c89631f233474bca1487458b7f073689512a27",
+  "noise_variance_per_real_component": 0.09998560983253962,
+  "target_alpha_bar": 0.9091028019468717,
+  "discrete_noise_schedule_delta": 0.001492742028166405,
+  "no_recovery_performance_claim": true,
+  "validation_uses_clean_labels": false
+}

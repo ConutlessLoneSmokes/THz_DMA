@@ -1,0 +1,89 @@
+scenario = "mimo"
+device = "cuda:0"
+cpu_threads = 4
+
+[system]
+carrier_frequency_hz = 3.0e11
+
+[mimo]
+receive_antennas = 16
+transmit_antennas = 64
+spacing_wavelengths = 0.5
+departure_min_deg = -60.0
+departure_max_deg = 60.0
+
+[channel]
+num_paths = 3
+range_min_m = 1.85
+range_max_m = 2.15
+azimuth_min_deg = 15.0
+azimuth_max_deg = 25.0
+elevation_min_deg = -8.0
+elevation_max_deg = 8.0
+los_complex_gain_magnitude = 1.0
+reflection_excess_range_min_m = 0.08
+reflection_excess_range_max_m = 0.25
+reflection_azimuth_separation_min_deg = 4.0
+reflection_azimuth_separation_max_deg = 12.0
+reflection_elevation_separation_min_deg = 2.0
+reflection_elevation_separation_max_deg = 8.0
+reflection_gain_relative_min_db = -15.0
+reflection_gain_relative_max_db = -6.0
+include_absorption = true
+
+[atmosphere]
+table_path = "data/atmosphere/data_freq_abscoe.txt"
+interpolation = "linear"
+max_model_frequency_hz = 1.0e12
+
+[data]
+train_count = 4096
+validation_count = 256
+test_count = 100
+train_seed = 2026100901
+validation_seed = 2026100902
+test_seed = 2026100903
+noise_seed = 2026100904
+batch_size = 16
+
+[network]
+width = 64
+time_dim = 16
+
+[diffusion]
+steps = 100
+beta_start = 0.0001
+beta_end = 0.1
+
+[training]
+seed = 2026100911
+validation_seed = 2026100912
+batch_size = 128
+epochs = 500
+learning_rate = 0.0001
+validation_every = 250
+validation_scenes = 64
+
+[sure]
+epochs = 100
+epsilon = 0.00001
+precision = "float64"
+
+[evaluation_run]
+scene_limit = 100
+validation_scenes = 100
+baseline_count = 4096
+pilot_counts = [64, 38]
+pilot_seed = 2026100921
+noise_seed = 2026100922
+posterior_seed = 2026100923
+bootstrap_seed = 2026100924
+snr_db = [-10.0, -5.0, 0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0]
+guidance = [0.5, 1.0, 2.0, 4.0]
+refinement = 1
+lasso_factors = [0.01, 0.03, 0.1, 0.3, 1.0, 3.0]
+lasso_steps = 1000
+
+mimo_references = ["angular_omp", "oracle_geometry_ls"]
+omp_max_atoms = 3
+

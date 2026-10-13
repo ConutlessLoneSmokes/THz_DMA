@@ -7,3 +7,9 @@ research_route/experiment_results/** -text whitespace=cr-at-eol
 configs/direction1_stage2a_sbl_smoke.toml whitespace=-blank-at-eof
 configs/direction1_stage2a_sbl_snr.toml whitespace=-blank-at-eof
 configs/direction1_stage2a_somp_snr.toml whitespace=-blank-at-eof
+
+# Formal Zhou configurations retain the bytes used by their original runs.
+configs/zhou2025_*.toml whitespace=-blank-at-eof
+
+# Recorded patch context uses a trailing space for an empty context line.
+research_route/experiment_results/**/code_diff.patch whitespace=-blank-at-eol,cr-at-eol

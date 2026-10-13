@@ -1,0 +1,17 @@
+{
+  "target": {
+    "run_id": "zhou_carrier_300ghz_abs_20261011_data_v1",
+    "dataset_sha256": "a8ac4e2c4e7dab7b622a73df89e5e3cc36249bea9912902a469bc9fa9ba478f3"
+  },
+  "models": {
+    "zhou_carrier_300ghz_abs_20261011_clean_v1": "c10ca393dba6e916368fbdb92daafcdf05fac7635d3587fdb3ec1368b6479ff5"
+  },
+  "covariance_data": {
+    "zhou_carrier_300ghz_abs_20261011_data_v1": "a8ac4e2c4e7dab7b622a73df89e5e3cc36249bea9912902a469bc9fa9ba478f3"
+  },
+  "noise_scale_reference": {
+    "run_id": "zhou_mimo_formal_20261009_data_v1",
+    "dataset_sha256": "84498b2d107ea504d68b36c76fe89f5f33d8abee9a3d84e77742d597aefe30f5",
+    "complex_scale": 4.324493061311514e-05
+  }
+}

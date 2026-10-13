@@ -1,60 +1,74 @@
 # AI Edge–Enabled THz DMA/RHS Research
 
-Research code and route documents for low-overhead wideband channel acquisition with terahertz dynamic metasurface antennas (DMA). The current implementation covers Direction 1 simulations from Stage 0 through the Stage 2-A diagnostics.
+Reproducible simulations for low-overhead wideband channel acquisition with
+terahertz dynamic metasurface antennas. The repository contains the existing
+Stage 0–2-A experiments and the local Zhou DDPM/SURE-DM reproduction.
 
-## Repository layout
+## Current results
 
-- `src/thz_dma/stage*.py`: experiment orchestration and stable run entry points.
-- `src/thz_dma/`: channel generation, acquisition schedules, estimators, evaluation,
-  metrics, and analysis live in their matching subpackages; stage runners reuse them.
-- `scripts/`: simulation, analysis, and diagnostic entry points; `_run_support.py`
-  owns their shared archival and environment-recording logic.
-- `configs/`: reproducible TOML configurations.
-- `data/atmosphere/`: the absorption-coefficient table used by the simulations and its provenance notes.
-- `research_route/`: research route, model, literature evidence, experiment records, and decision log.
-- `tests/`: small standard-library checks for shared infrastructure.
-- `START_HERE.md`: current project state and the next research task.
+The completed D-039 migration has 20 formal stages and 144000 validation/test
+rows. Original 300 GHz parametric MIMO gains persist. Full-tone digital DDPM
+reaches −32.29 dB NMSE at declared 30 dB, compared with −29.90 dB direct LS.
+Sparse-tone digital recovery remains at −1.48 dB, and full-CSI DMA recovery is
+approximately 0 dB. The 40 GHz LMMSE baseline is stronger than DDPM.
 
-Run artifacts, paper PDFs, extracted full text, and presentation assets remain local because they are large or have separate redistribution terms.
+These are matched local simulations with one training seed. The original
+QuaDRiGa distribution, hardware measurements and multi-seed results are not
+reproduced. Conditional DMA baselines have extra path-center information.
+New carrier LASSO curves retain their iteration-budget limitation.
 
-Compact experiment evidence is versioned under `research_route/experiment_results/`.
-The [2026-10-09 snapshot](research_route/experiment_results/2026-10-09/README.md)
-contains 40 run records, available CSV results, configurations, source hashes,
-audit reports, plots, and the current 19-test result. It preserves failed and
-interrupted runs. Large channel caches, model weights, and third-party datasets
-remain local; the snapshot documents what is needed to reproduce the runs.
+Read [START_HERE.md](START_HERE.md) for the current task and
+[19i](research_route/19i_方向一传统参照与分步场景迁移.md) for the results,
+digital/DMA observation difference and purposes of the proposed diagnostics.
+The proposals have not been adopted or run.
 
-The latest learned diffusion recovery improves on v4 but remains below conditional
-LMMSE. Read [the diagnosis and proposed next experiment](research_route/19e_方向一学习先验差距与下一改进方案.md)
-before starting a new training run.
+## Layout
 
-## Setup
+| Path | Role |
+|---|---|
+| src/thz_dma/ | Shared physical channels, surfaces, observations, estimators and metrics; existing stage runners |
+| src/zhou2025_repro/ | DDPM/SURE-DM, MIMO and wideband digital/DMA adapters; reuses shared physics |
+| scripts/ | Prepare, train, evaluate, audit and diagnose; _run_support.py owns shared archival |
+| configs/ | Original and diagnostic TOML configurations |
+| data/atmosphere/ | Versioned physical table and provenance |
+| tests/ | Operators, scaling, SURE, frozen evaluation, resume and portable manifest checks |
+| research_route/ | Models, literature evidence, decisions and preserved research history |
+| docs/LINUX_RUN.md | Linux environment, CPU smoke check, GPU placement and artifact transfer |
 
-```bash
-python -m venv .venv
-python -m pip install -e .
-```
+## Linux
 
-Install the optional CUDA backend when needed:
+Use Python 3.10 and the pinned direct dependencies in requirements-linux.txt.
+Install the desired PyTorch wheel before the remaining project dependencies:
 
-```bash
-python -m pip install -e ".[cuda]"
-```
+    python -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+    python -m pip install -r requirements-linux.txt -e .
+    MPLBACKEND=Agg python -m unittest discover -s tests -v
 
-Run the lightweight checks with:
+The [Linux guide](docs/LINUX_RUN.md) provides environment creation and four
+self-contained CPU smoke commands, including a frozen independent test.
+The [Linux checks workflow](.github/workflows/linux-checks.yml) performs those
+checks on Ubuntu 26.04. Its status is visible in
+[GitHub Actions](https://github.com/ConutlessLoneSmokes/THz_DMA/actions).
 
-```bash
-python -m unittest discover -s tests -v
-```
+Each CUDA process uses one GPU. CUDA_VISIBLE_DEVICES=0 or =1 keeps its configured
+device cuda:0; there is no DDP or automatic pooling of GPU memory.
+The existing FP32 DDPM and FP64 SURE settings are preserved.
 
-## Run
+## Evidence and large artifacts
 
-Every run writes a new immutable directory under `runs/`. For example:
+The [2026-10-13 snapshot](research_route/experiment_results/2026-10-13/README.md)
+contains D-037–D-039 formal records, raw metrics, frozen choices, audits,
+figures and original source snapshots. Byte hashes accompany the copied files.
+The earlier [40-run snapshot](research_route/experiment_results/2026-10-09/README.md)
+preserves VE/EDM diagnostics, including failed and interrupted runs.
 
-```bash
-python scripts/run_direction1_stage2a.py \
-  --config configs/direction1_stage2a_adaptive_300ghz.toml \
-  --run-id stage2a_adaptive_example
-```
+Large CSI caches, model checkpoints, third-party datasets, PDFs and author
+code remain local. large_artifacts.json in the new snapshot lists the inputs
+to transfer separately into runs/, with their original paths and hashes.
+The portable loader accepts Windows manifest paths while retaining the hash
+checks. Completed inputs can feed a new evaluation ID; historical jobs cannot
+resume across changed source versions. The Linux guide explains the transfer.
 
-Read `START_HERE.md` and `research_route/README.md` before extending the model or changing a research decision.
+Every experiment creates a new immutable runs/ directory. Read
+[AGENTS.md](AGENTS.md) and [the document map](research_route/README.md) before
+changing a physical model, research boundary or experiment decision.

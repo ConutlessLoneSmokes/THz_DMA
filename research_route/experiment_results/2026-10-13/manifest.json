@@ -1,0 +1,3373 @@
+{
+  "created_utc": "2026-10-13T03:08:32.394466+00:00",
+  "original_bytes_preserved": true,
+  "original_source_members_checked": 3221,
+  "files": [
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/code_manifest.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/code_manifest.json",
+      "size_bytes": 12822,
+      "sha256": "59f7a8592e88871ac8c812bb1b1d508f63963066c04bd477a75b1f14b1bfce94"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/config_resolved.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/config_resolved.json",
+      "size_bytes": 3843,
+      "sha256": "f3819b4a55fb68be9e9090def580aad2adaf6c653b15c585180051d0040ffde8"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/denoising_profile.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/denoising_profile.json",
+      "size_bytes": 1099,
+      "sha256": "57ddb6190e549d9ad9eb0ff4064745dcb64e053d6ebcb1a2aab9b269b45840b5"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/environment.txt",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "390aaae745990fac181dadddd0a136e2b4b20408a919fdb7519d143e8e1cfe2b"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/git_commit.txt",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/seeds.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/source_snapshot.zip",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/source_snapshot.zip",
+      "size_bytes": 496181,
+      "sha256": "6997a9b25119fdce6914906a39ec31ab8387d7873ce88ac046f5a66e6fda16b6"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/status.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "340bf03f2305a4ee64ad128a6b2f743365b3e367abc1dca8e02989ca46dbd7eb"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/training_history.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/training_history.json",
+      "size_bytes": 11443,
+      "sha256": "e5b898c26ed757efb21ac810b1ba3ba0898661b235a8b4e6671d32e3daa1240e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_clean_v1/training_summary.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_clean_v1/training_summary.json",
+      "size_bytes": 541,
+      "sha256": "514f4b08f577fe4b5d4f9582371db287035419910c74b924d70b583b446dd64e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_data_v1/code_manifest.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_data_v1/code_manifest.json",
+      "size_bytes": 12822,
+      "sha256": "59f7a8592e88871ac8c812bb1b1d508f63963066c04bd477a75b1f14b1bfce94"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_data_v1/config_resolved.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_data_v1/config_resolved.json",
+      "size_bytes": 3806,
+      "sha256": "266ae5874cdf1390094933e6dd4fb917de9f2b85b88a47488534bbad106545fc"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_data_v1/dataset.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_data_v1/dataset.json",
+      "size_bytes": 31742,
+      "sha256": "a8ac4e2c4e7dab7b622a73df89e5e3cc36249bea9912902a469bc9fa9ba478f3"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_data_v1/environment.txt",
+      "path": "zhou_carrier_300ghz_abs_20261011_data_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "b4bd8eb113716db7b7d45f3db588a652deaf448598e6ff7591d34b90dc8b6d10"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_data_v1/git_commit.txt",
+      "path": "zhou_carrier_300ghz_abs_20261011_data_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_data_v1/seeds.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_data_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_data_v1/source_snapshot.zip",
+      "path": "zhou_carrier_300ghz_abs_20261011_data_v1/source_snapshot.zip",
+      "size_bytes": 496181,
+      "sha256": "6997a9b25119fdce6914906a39ec31ab8387d7873ce88ac046f5a66e6fda16b6"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_data_v1/status.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_data_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "3918ebdfaa466afe9620f37ba0681a0890e74e545501389fc97f372503f565cb"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/code_manifest.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/code_manifest.json",
+      "size_bytes": 12822,
+      "sha256": "59f7a8592e88871ac8c812bb1b1d508f63963066c04bd477a75b1f14b1bfce94"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/comparison.csv",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/comparison.csv",
+      "size_bytes": 8848,
+      "sha256": "9140a806f1cd69ac742502ce53d67203758fb7a6332d0a6e0396d96c0c77b31a"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/comparison.png",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/comparison.png",
+      "size_bytes": 152314,
+      "sha256": "8eeea56b31e5e4eac17070ff5fc0abfd21df8ead61871dd82cf5120445d70ae1"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/config_resolved.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/config_resolved.json",
+      "size_bytes": 3937,
+      "sha256": "442a2ee3d35705271d7aaf937b5dd0e0ef8bddad50d45e78161571b3adfe1ae7"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/dependencies.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/dependencies.json",
+      "size_bytes": 680,
+      "sha256": "037bac994ae3b67696fdb52632a7e0ba5b2ea3b286908808bc92a6ebaee0d045"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/environment.txt",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "3b398ff9cc5699a930e496b077aac55027226fc057dc559c90639f2c78858722"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/git_commit.txt",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/metrics_raw.csv",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/metrics_raw.csv",
+      "size_bytes": 2582731,
+      "sha256": "ab484689a59f1108d1b66acceef9ddb4b14f5d01bdd1f7e11618d03598bf0e37"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/metrics_summary.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/metrics_summary.json",
+      "size_bytes": 29286,
+      "sha256": "2bef17f1ee7c8d3ff5499db93afece06baf25ee06f46240d2c2d60f584011147"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/observation_reference.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/observation_reference.json",
+      "size_bytes": 548,
+      "sha256": "7e0796891740a24a008da873aeec4863fa4b7c9174597438ae4d049058179a02"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/seeds.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/source_snapshot.zip",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/source_snapshot.zip",
+      "size_bytes": 496181,
+      "sha256": "6997a9b25119fdce6914906a39ec31ab8387d7873ce88ac046f5a66e6fda16b6"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/status.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "039c3d3c624a17e2cd5f9ca7b03dc7a0c8f066700bc8dd9b6abf33e4c28eda16"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/tuning.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/tuning.json",
+      "size_bytes": 13830,
+      "sha256": "f95dc456bfac67845d41276a375b33c94c28ec0a0ecfe71c01f92678a43d342d"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_test_v1/tuning_source.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_test_v1/tuning_source.json",
+      "size_bytes": 140,
+      "sha256": "f9171f5de045af04ba08de00f42e01367bce9c212d86b28e36374a1c2b53a6f7"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/code_manifest.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/code_manifest.json",
+      "size_bytes": 12822,
+      "sha256": "59f7a8592e88871ac8c812bb1b1d508f63963066c04bd477a75b1f14b1bfce94"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/comparison.csv",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/comparison.csv",
+      "size_bytes": 8835,
+      "sha256": "b3d671483bdbd6f5b6d6694a1e04985c9b263f286da6cec486b8bd682858e1b9"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/comparison.png",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/comparison.png",
+      "size_bytes": 151918,
+      "sha256": "8808fb09f39988189dd60e32b18f460612e5f7e71bc9e258625fc39d97467957"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/config_resolved.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/config_resolved.json",
+      "size_bytes": 3905,
+      "sha256": "6b2579f87290799827c9453d8a5e4329a81c90fc055d26fa919eed63db77f5b7"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/dependencies.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/dependencies.json",
+      "size_bytes": 680,
+      "sha256": "037bac994ae3b67696fdb52632a7e0ba5b2ea3b286908808bc92a6ebaee0d045"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/environment.txt",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "36eb322d58e65dedc1237e369a56229866605c24ea3bce78ed513eda77220602"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/git_commit.txt",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/metrics_raw.csv",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/metrics_raw.csv",
+      "size_bytes": 2646867,
+      "sha256": "24df035d8f6f7d9c728b2b7715fe2c626c0393715df80db858b847c4a1b5dfa6"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/metrics_summary.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/metrics_summary.json",
+      "size_bytes": 29285,
+      "sha256": "4332c779a9bf6ecad5056b091ce8d1b224dc50c2271c02a99eadba2b05b2d325"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/observation_reference.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/observation_reference.json",
+      "size_bytes": 548,
+      "sha256": "7e0796891740a24a008da873aeec4863fa4b7c9174597438ae4d049058179a02"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/seeds.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/source_snapshot.zip",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/source_snapshot.zip",
+      "size_bytes": 496181,
+      "sha256": "6997a9b25119fdce6914906a39ec31ab8387d7873ce88ac046f5a66e6fda16b6"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/status.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "54dd7fd0cbbb671af484ec31036a35ff6062b42e49fb36755348cdf16949cac5"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_abs_20261011_val_v1/tuning.json",
+      "path": "zhou_carrier_300ghz_abs_20261011_val_v1/tuning.json",
+      "size_bytes": 13830,
+      "sha256": "f95dc456bfac67845d41276a375b33c94c28ec0a0ecfe71c01f92678a43d342d"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/code_manifest.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/code_manifest.json",
+      "size_bytes": 12824,
+      "sha256": "48032020d2fa349fef26d0c3381cd556a4963dc46f6efb9b63bfebfbbe26f9d9"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/config_resolved.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/config_resolved.json",
+      "size_bytes": 3852,
+      "sha256": "1d01db3e5a7cf68993c49e2780ee10dac4d6701fe2b4f89d6271834810720c46"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/denoising_profile.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/denoising_profile.json",
+      "size_bytes": 1096,
+      "sha256": "13587254790a088ecb89bdfdc8ba92ae0e837aa402988c1e5645b6f4a0c2e62c"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/environment.txt",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "7d64ae1cbe26b7f4a41e4872b8a967212bd2c61739c2ae09828cb3cf2d707d19"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/git_commit.txt",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/seeds.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/source_snapshot.zip",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/source_snapshot.zip",
+      "size_bytes": 496186,
+      "sha256": "a6c2764defa4b04033d3b09acf1905a00ecce87963d30ce87d1efc9bbde90975"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/status.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "f5e4b67d383955daf57c7a040fb1692e485f7835a6f2b827eb400bd5bd225479"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/training_history.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/training_history.json",
+      "size_bytes": 11441,
+      "sha256": "42413110e706b1365cc75d8eb5e8cce7d181b7ff3e47cba277bd02fdfdce894b"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_clean_v1/training_summary.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_clean_v1/training_summary.json",
+      "size_bytes": 541,
+      "sha256": "c57b4f5ca6db94be18168b5f052b0b49c1d8dab381841f34ab7a7b53b4706eb3"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_data_v1/code_manifest.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_data_v1/code_manifest.json",
+      "size_bytes": 12824,
+      "sha256": "48032020d2fa349fef26d0c3381cd556a4963dc46f6efb9b63bfebfbbe26f9d9"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_data_v1/config_resolved.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_data_v1/config_resolved.json",
+      "size_bytes": 3813,
+      "sha256": "3802922cfb58382dc2c1f2b1fb8174a34b7463880f4b5aad6d116bcb3f0142f5"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_data_v1/dataset.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_data_v1/dataset.json",
+      "size_bytes": 31743,
+      "sha256": "1a66e2f264f020b1c4b93d44acf6e4e282ba0a2ef4989cdd3b46cc3a2b37f61c"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_data_v1/environment.txt",
+      "path": "zhou_carrier_300ghz_noabs_20261011_data_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "cd0f1ca20087d7f6819e52927b6f551baec8d415217fa273b02b906f26a684c2"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_data_v1/git_commit.txt",
+      "path": "zhou_carrier_300ghz_noabs_20261011_data_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_data_v1/seeds.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_data_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_data_v1/source_snapshot.zip",
+      "path": "zhou_carrier_300ghz_noabs_20261011_data_v1/source_snapshot.zip",
+      "size_bytes": 496186,
+      "sha256": "a6c2764defa4b04033d3b09acf1905a00ecce87963d30ce87d1efc9bbde90975"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_data_v1/status.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_data_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "29a2270433277a13547215a2ba09c5dc5665fb158daf4bbd67238fa4ec40049a"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/code_manifest.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/code_manifest.json",
+      "size_bytes": 12824,
+      "sha256": "48032020d2fa349fef26d0c3381cd556a4963dc46f6efb9b63bfebfbbe26f9d9"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/comparison.csv",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/comparison.csv",
+      "size_bytes": 8906,
+      "sha256": "11a3e1e95518224c6fa74b3066e954949aa7c55f7ad3b1b1de7870b406d46a89"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/comparison.png",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/comparison.png",
+      "size_bytes": 153218,
+      "sha256": "f3760e99173c7b56606fd9ddde40faad11328c25960574ab2d412e47af58784e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/config_resolved.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/config_resolved.json",
+      "size_bytes": 3950,
+      "sha256": "74039ca5053c529b6d52f42020d7ce41ee9f5cda43a4eff643fb07b230b3afcb"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/dependencies.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/dependencies.json",
+      "size_bytes": 686,
+      "sha256": "fbf1276ccc7ba210ffbe5acaa49cf57c3ef937319d1c0d1355448a1148df7500"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/environment.txt",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "a6096c220500d5db2646da2107129a9bcd4dd09a1c516174be2bf2fd12aa1a34"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/git_commit.txt",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/metrics_raw.csv",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/metrics_raw.csv",
+      "size_bytes": 2591388,
+      "sha256": "4996e387eca51f5189cffd5fb30936f273850a67e26cbff74d0368aefc3dc0a1"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/metrics_summary.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/metrics_summary.json",
+      "size_bytes": 29387,
+      "sha256": "161eb6a031b7f482961d51f9f370c9ae9270ea612c868e17e967081d25463d97"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/observation_reference.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/observation_reference.json",
+      "size_bytes": 548,
+      "sha256": "1530f500a84da6723f20b183ddb482ba70bfa3636c3ecb477d38a95ec464b7ba"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/seeds.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/source_snapshot.zip",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/source_snapshot.zip",
+      "size_bytes": 496186,
+      "sha256": "a6c2764defa4b04033d3b09acf1905a00ecce87963d30ce87d1efc9bbde90975"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/status.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "396a1a1642eb564df445e09c434fab70fc74d001b700c630849be405fd425ab2"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/tuning.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/tuning.json",
+      "size_bytes": 13826,
+      "sha256": "cb8d63f8db3920494dab37e2fe3fd4aa784c02c4ae7ccc65324e6fb127a70cb7"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_test_v1/tuning_source.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_test_v1/tuning_source.json",
+      "size_bytes": 142,
+      "sha256": "9197ffb77dfb21b09be73034e831fdd436a3b1a42622d4a3b48eced646934182"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/code_manifest.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/code_manifest.json",
+      "size_bytes": 12824,
+      "sha256": "48032020d2fa349fef26d0c3381cd556a4963dc46f6efb9b63bfebfbbe26f9d9"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/comparison.csv",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/comparison.csv",
+      "size_bytes": 8910,
+      "sha256": "2b0f3af39156141dd74f54340e91ca1b291423538851eb2539cbaadd947f7b0b"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/comparison.png",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/comparison.png",
+      "size_bytes": 152466,
+      "sha256": "a4fe7251686b72e4e1f703eb3ea2a2e104e11d2c423dc0240ab3b05c412576f6"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/config_resolved.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/config_resolved.json",
+      "size_bytes": 3916,
+      "sha256": "5ee615055abb69a26c4c4dfce5c53cecf02a61d13a3f735ba974b37d7db1c5d8"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/dependencies.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/dependencies.json",
+      "size_bytes": 686,
+      "sha256": "fbf1276ccc7ba210ffbe5acaa49cf57c3ef937319d1c0d1355448a1148df7500"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/environment.txt",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "3fcbb346e74f1ce55750870d9c9841c3aa026c52520984e2d625d44e39fbe7dc"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/git_commit.txt",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/metrics_raw.csv",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/metrics_raw.csv",
+      "size_bytes": 2655418,
+      "sha256": "be3781e5f48e449e782716367573686974139ac9dfe6903e44851fce24fecaab"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/metrics_summary.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/metrics_summary.json",
+      "size_bytes": 29395,
+      "sha256": "513749aa0644c1aa35b9fdada130ebf758698b770bedaf04942126dd67d0f9cf"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/observation_reference.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/observation_reference.json",
+      "size_bytes": 548,
+      "sha256": "1530f500a84da6723f20b183ddb482ba70bfa3636c3ecb477d38a95ec464b7ba"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/seeds.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/source_snapshot.zip",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/source_snapshot.zip",
+      "size_bytes": 496186,
+      "sha256": "a6c2764defa4b04033d3b09acf1905a00ecce87963d30ce87d1efc9bbde90975"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/status.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "2c2a9f2dc4d2c64f8149b0557f257a6fb2a64bc558a5f16f8896614fbc75bd0f"
+    },
+    {
+      "source": "runs/zhou_carrier_300ghz_noabs_20261011_val_v1/tuning.json",
+      "path": "zhou_carrier_300ghz_noabs_20261011_val_v1/tuning.json",
+      "size_bytes": 13826,
+      "sha256": "cb8d63f8db3920494dab37e2fe3fd4aa784c02c4ae7ccc65324e6fb127a70cb7"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/code_manifest.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/code_manifest.json",
+      "size_bytes": 12823,
+      "sha256": "fe6e3814a42b850ebf983715e4efbd61fb9333be5e1b7c80ae90fd73fb35fa43"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/config_resolved.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/config_resolved.json",
+      "size_bytes": 3847,
+      "sha256": "0676c6467beedeb545cb9c0801a0ee3e79ca6f9bb6f4ea9d2c88cd4b4fe62e04"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/denoising_profile.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/denoising_profile.json",
+      "size_bytes": 1098,
+      "sha256": "8a333c9b95be0b302fbb893d372657cd3e4ee9643d90906d4ae42db04a742343"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/environment.txt",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "3e4d09a40a9e7ab7ca54559b09a2c5be25ea49c8dbd07482e7cd7556b613f890"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/git_commit.txt",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/seeds.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/source_snapshot.zip",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/source_snapshot.zip",
+      "size_bytes": 496183,
+      "sha256": "7ad10471483cc07a261373736bf1beaaca600ea9c4b0d59b25e37a5bf9e37eb4"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/status.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "489374790d845c37b9707b665f2b3f9bea58b6451caaad407766d814b783a13a"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/training_history.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/training_history.json",
+      "size_bytes": 11442,
+      "sha256": "5ab3c508ec16dda0f275faeb8b9acda0d01afe691274b2b08ba1b9ffc5aafbf6"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_clean_v1/training_summary.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_clean_v1/training_summary.json",
+      "size_bytes": 541,
+      "sha256": "390c9181c4219355af9ed8db3a664126ec5d230c218acecf32bfe7531087eace"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_data_v1/code_manifest.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_data_v1/code_manifest.json",
+      "size_bytes": 12823,
+      "sha256": "fe6e3814a42b850ebf983715e4efbd61fb9333be5e1b7c80ae90fd73fb35fa43"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_data_v1/config_resolved.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_data_v1/config_resolved.json",
+      "size_bytes": 3809,
+      "sha256": "1a93c80f48150383addc71432dcfda55754de23d21943999bd297a455e219a5f"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_data_v1/dataset.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_data_v1/dataset.json",
+      "size_bytes": 31743,
+      "sha256": "de353daa7185a2cc1eac957e6e1a35f247c50c940a44142f544ca9ac1a3a03b1"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_data_v1/environment.txt",
+      "path": "zhou_carrier_40ghz_noabs_20261011_data_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "602b5cc4769346318e6d0dd6b73a25399897f8e9899189f822518425eeb17ebb"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_data_v1/git_commit.txt",
+      "path": "zhou_carrier_40ghz_noabs_20261011_data_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_data_v1/seeds.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_data_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_data_v1/source_snapshot.zip",
+      "path": "zhou_carrier_40ghz_noabs_20261011_data_v1/source_snapshot.zip",
+      "size_bytes": 496183,
+      "sha256": "7ad10471483cc07a261373736bf1beaaca600ea9c4b0d59b25e37a5bf9e37eb4"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_data_v1/status.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_data_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "837dad81ca6cea16d1a210697c8250ecde3bfecc9b2858cbbae3d3398f1e86ca"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/code_manifest.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/code_manifest.json",
+      "size_bytes": 12823,
+      "sha256": "fe6e3814a42b850ebf983715e4efbd61fb9333be5e1b7c80ae90fd73fb35fa43"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/comparison.csv",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/comparison.csv",
+      "size_bytes": 8825,
+      "sha256": "10fe6dd2358cf942bef8f5d613492b4f868a8c46ab6dc5ab87831f00faed6035"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/comparison.png",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/comparison.png",
+      "size_bytes": 160804,
+      "sha256": "6b802b76a0642f2404f7f7042dde69ed092a4ac9792bf8bc672b6ca602fb8cc0"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/config_resolved.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/config_resolved.json",
+      "size_bytes": 3943,
+      "sha256": "f0d108240a93af7a6ab7530810ebf0584b7f960452e96b1a74640ae6c5589fa6"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/dependencies.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/dependencies.json",
+      "size_bytes": 683,
+      "sha256": "ff7d40746d95f17ba713557586ae52e8092c9b6c7cc966cc5e1ae4b7c2ec1a12"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/environment.txt",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "baf5d347ee74162e0aa5ec81703a79528745b407849eaa43b30d1ff0c769b40a"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/git_commit.txt",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/metrics_raw.csv",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/metrics_raw.csv",
+      "size_bytes": 2590152,
+      "sha256": "e25461cfee19ba6450d1aeafcae0e6b87b7acbb17b65c6c9212a9cb9f1581417"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/metrics_summary.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/metrics_summary.json",
+      "size_bytes": 29248,
+      "sha256": "571c5c3efd392c8169cf404ccb689d352791f7a394e65465273660334f1d5006"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/observation_reference.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/observation_reference.json",
+      "size_bytes": 547,
+      "sha256": "1cab1e9db3f08659732349d8caf271fc39d10803657bf3b6505da06a6bb5bb40"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/seeds.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/source_snapshot.zip",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/source_snapshot.zip",
+      "size_bytes": 496183,
+      "sha256": "7ad10471483cc07a261373736bf1beaaca600ea9c4b0d59b25e37a5bf9e37eb4"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/status.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "000becb7311491dd6ad01333ca0e6610bb94e326131e63c90d0dcc38c2f5f2fa"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/tuning.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/tuning.json",
+      "size_bytes": 14029,
+      "sha256": "d37c919dfc17354f77edda3e7279d157dde939391f0ade36aa4bd0bdf806cc27"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_test_v1/tuning_source.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_test_v1/tuning_source.json",
+      "size_bytes": 141,
+      "sha256": "a7b16f54ec68f130994d931922958d8cd292d48e944347f37d8500f09b487964"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/code_manifest.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/code_manifest.json",
+      "size_bytes": 12823,
+      "sha256": "fe6e3814a42b850ebf983715e4efbd61fb9333be5e1b7c80ae90fd73fb35fa43"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/comparison.csv",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/comparison.csv",
+      "size_bytes": 8865,
+      "sha256": "ef42795808760e4682db602c0932c1ec87e866ef74ebf7fad4014bc2bbedc2f4"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/comparison.png",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/comparison.png",
+      "size_bytes": 160172,
+      "sha256": "d45d929a0b4ee3562595872094115d63d4beeeb882cce1b8a342febdc1826c2b"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/config_resolved.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/config_resolved.json",
+      "size_bytes": 3910,
+      "sha256": "6d06f9a86c31858f66c976c2746b96aff2da08f0fe82eb3fb04c0183980b63d8"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/dependencies.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/dependencies.json",
+      "size_bytes": 683,
+      "sha256": "ff7d40746d95f17ba713557586ae52e8092c9b6c7cc966cc5e1ae4b7c2ec1a12"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/environment.txt",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "863cb6d80c56bd214dbd021098dfe0052f3de13ccf67392e0400aa6aa4480554"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/git_commit.txt",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/metrics_raw.csv",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/metrics_raw.csv",
+      "size_bytes": 2659445,
+      "sha256": "e968c82ab7ae1d7bf0f69d42bb00d4a224bdb7e28a9fa47b7104a69150490428"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/metrics_summary.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/metrics_summary.json",
+      "size_bytes": 29284,
+      "sha256": "8f9d7b6835a5e66312d91725a3d2897aae2b4688e74435af48317ad0900dcbee"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/observation_reference.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/observation_reference.json",
+      "size_bytes": 547,
+      "sha256": "1cab1e9db3f08659732349d8caf271fc39d10803657bf3b6505da06a6bb5bb40"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/seeds.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/source_snapshot.zip",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/source_snapshot.zip",
+      "size_bytes": 496183,
+      "sha256": "7ad10471483cc07a261373736bf1beaaca600ea9c4b0d59b25e37a5bf9e37eb4"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/status.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "2e35f893566cf2679439ba02a100dd349cfe4fe87474df0c814c188734a9a6d5"
+    },
+    {
+      "source": "runs/zhou_carrier_40ghz_noabs_20261011_val_v1/tuning.json",
+      "path": "zhou_carrier_40ghz_noabs_20261011_val_v1/tuning.json",
+      "size_bytes": 14029,
+      "sha256": "d37c919dfc17354f77edda3e7279d157dde939391f0ade36aa4bd0bdf806cc27"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/code_manifest.json",
+      "path": "zhou_mimo_extended_20261011_test_v1/code_manifest.json",
+      "size_bytes": 12817,
+      "sha256": "420ee0cff469639dd334b7973e3e0d68f80e69da227325d07d83e429f8a7ec90"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/comparison.csv",
+      "path": "zhou_mimo_extended_20261011_test_v1/comparison.csv",
+      "size_bytes": 23218,
+      "sha256": "e89709c70ab831907befbe15b830dc5b9b06c6f8ec0a746b5dda50b2592d946a"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/comparison.png",
+      "path": "zhou_mimo_extended_20261011_test_v1/comparison.png",
+      "size_bytes": 226298,
+      "sha256": "72ed138a258f639a86f9fc8fa2a37420b9aaf3b320f9ed87752bfdd0bf6d8d29"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/config_resolved.json",
+      "path": "zhou_mimo_extended_20261011_test_v1/config_resolved.json",
+      "size_bytes": 4156,
+      "sha256": "781c902aecbd32bb6e12cef7bb9f356bf13e380dbeaf9132d3f506a28d7f1193"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/dependencies.json",
+      "path": "zhou_mimo_extended_20261011_test_v1/dependencies.json",
+      "size_bytes": 1372,
+      "sha256": "060488c52839d226fbda4660dc9bc5bfa65b4ba4a1d9abadabfc5cb9ba1caba2"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/environment.txt",
+      "path": "zhou_mimo_extended_20261011_test_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "2da99c70419134cbe211d17b5cf4198470f76d4f5f63ed29d90531ab7e162f7b"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/git_commit.txt",
+      "path": "zhou_mimo_extended_20261011_test_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/metrics_raw.csv",
+      "path": "zhou_mimo_extended_20261011_test_v1/metrics_raw.csv",
+      "size_bytes": 6538612,
+      "sha256": "2a21ec7ca54dba790d59929885c2d7c4aca569fa1b20a6bb640b51bb567885e7"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/metrics_summary.json",
+      "path": "zhou_mimo_extended_20261011_test_v1/metrics_summary.json",
+      "size_bytes": 92772,
+      "sha256": "0b144b0fea59b1a0204f39c3b8f2c167d6f69aa61f309a5f4f257650ae919a35"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/observation_reference.json",
+      "path": "zhou_mimo_extended_20261011_test_v1/observation_reference.json",
+      "size_bytes": 323,
+      "sha256": "228b0570dc31dfc5eaab03c91e3a1f5d358cb1d1d0cdea7f04ca9503bc598322"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/seeds.json",
+      "path": "zhou_mimo_extended_20261011_test_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/source_snapshot.zip",
+      "path": "zhou_mimo_extended_20261011_test_v1/source_snapshot.zip",
+      "size_bytes": 496135,
+      "sha256": "4f5f0c4f06a839816849d43f54b3d56ef5bec1de54cfcc6f6a502bb347e0583c"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/status.json",
+      "path": "zhou_mimo_extended_20261011_test_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "296d8aef126b706e91b25d979400f10a1bba45395cd46bd96a0cb9a0195fcadb"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/tuning.json",
+      "path": "zhou_mimo_extended_20261011_test_v1/tuning.json",
+      "size_bytes": 47209,
+      "sha256": "51b09c7d4e66ba8c0020ce9b8a538a9469b9b9a8abd9beb33759eafb0d76bbe0"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_test_v1/tuning_source.json",
+      "path": "zhou_mimo_extended_20261011_test_v1/tuning_source.json",
+      "size_bytes": 135,
+      "sha256": "d3d8a4f7348a27c004c9441254b25b0d442f6501ea3f9e2784d0566e13bbbdb8"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/code_manifest.json",
+      "path": "zhou_mimo_extended_20261011_val_v1/code_manifest.json",
+      "size_bytes": 12817,
+      "sha256": "420ee0cff469639dd334b7973e3e0d68f80e69da227325d07d83e429f8a7ec90"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/comparison.csv",
+      "path": "zhou_mimo_extended_20261011_val_v1/comparison.csv",
+      "size_bytes": 23194,
+      "sha256": "2097fbba9c29cb8f39ddf7e6517a92092e3e08feb7b3e761c6a314e59c786d7b"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/comparison.png",
+      "path": "zhou_mimo_extended_20261011_val_v1/comparison.png",
+      "size_bytes": 226996,
+      "sha256": "8773bc5796cced8dcbdfa261b49bd1a19283dab1018c9144ddb62d2eb68ba09d"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/config_resolved.json",
+      "path": "zhou_mimo_extended_20261011_val_v1/config_resolved.json",
+      "size_bytes": 4129,
+      "sha256": "9747f72624fec27722c1dd38ccbb4e5afd39e2a07bd1355b4ae2d1a653c8baf0"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/dependencies.json",
+      "path": "zhou_mimo_extended_20261011_val_v1/dependencies.json",
+      "size_bytes": 1372,
+      "sha256": "060488c52839d226fbda4660dc9bc5bfa65b4ba4a1d9abadabfc5cb9ba1caba2"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/environment.txt",
+      "path": "zhou_mimo_extended_20261011_val_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "853ce3eb3c8941eb184b0806a51bfd838fbec96c45f491df0770c9c9826434f9"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/git_commit.txt",
+      "path": "zhou_mimo_extended_20261011_val_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/metrics_raw.csv",
+      "path": "zhou_mimo_extended_20261011_val_v1/metrics_raw.csv",
+      "size_bytes": 6688633,
+      "sha256": "9566477316d1ea7b19bfa5b8a97d9c7c756fdd4f2c4fdf41b28016686b712b1d"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/metrics_summary.json",
+      "path": "zhou_mimo_extended_20261011_val_v1/metrics_summary.json",
+      "size_bytes": 92770,
+      "sha256": "a8433c07006dde68873a6bb2cbd7f7611800207df4f59a72e3c8401bedb0ba4f"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/observation_reference.json",
+      "path": "zhou_mimo_extended_20261011_val_v1/observation_reference.json",
+      "size_bytes": 323,
+      "sha256": "228b0570dc31dfc5eaab03c91e3a1f5d358cb1d1d0cdea7f04ca9503bc598322"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/seeds.json",
+      "path": "zhou_mimo_extended_20261011_val_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/source_snapshot.zip",
+      "path": "zhou_mimo_extended_20261011_val_v1/source_snapshot.zip",
+      "size_bytes": 496135,
+      "sha256": "4f5f0c4f06a839816849d43f54b3d56ef5bec1de54cfcc6f6a502bb347e0583c"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/status.json",
+      "path": "zhou_mimo_extended_20261011_val_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "8ae15951b14ba2e0c2f4c1e87fd69640d5c82dad2a993e6d19bf421247e987a6"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_20261011_val_v1/tuning.json",
+      "path": "zhou_mimo_extended_20261011_val_v1/tuning.json",
+      "size_bytes": 47209,
+      "sha256": "51b09c7d4e66ba8c0020ce9b8a538a9469b9b9a8abd9beb33759eafb0d76bbe0"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_clean_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_clean_v1/config_resolved.json",
+      "size_bytes": 3630,
+      "sha256": "e35a61e116db92ca1503b3b680e4ac1db29dc170dea46a844daa0c4322deb2e2"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/denoising_profile.json",
+      "path": "zhou_mimo_formal_20261009_clean_v1/denoising_profile.json",
+      "size_bytes": 1093,
+      "sha256": "d5c89db21d0d5afba278a5a4e5557eea559d581f7194f396c2f8f94f144a7bae"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_clean_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "84aed89b56535d1ae7aaf14ce3459dca0d43c307dacd1d906a92cb77fa44d28e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_clean_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_clean_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_clean_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_clean_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "db7c43a956617cd8eb374936ec3764f04be0b1fff5bf3934342918a7b46d7630"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_clean_v1/training_history.json",
+      "size_bytes": 11429,
+      "sha256": "54be338907cb8b32a8598207a68c8621fbbd26791cf1786cbfa70dbae0513577"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_clean_v1/training_summary.json",
+      "size_bytes": 542,
+      "sha256": "c38791636761a766ca1feac69579ae334253623ec342101ce542075f1a1f51c7"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/comparison.csv",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/comparison.csv",
+      "size_bytes": 5865,
+      "sha256": "c7dfcba862d8dcd6af7dd4a2b4e45e88c1fe1d4833298a65e2ddcfeeec1c629e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/comparison.png",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/comparison.png",
+      "size_bytes": 131093,
+      "sha256": "bb66aba44501e3e4986c66f740a53f6b72ddd2d6f3ea5c016d866524c6427597"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/config_resolved.json",
+      "size_bytes": 3691,
+      "sha256": "27ed30222b9db4d41ce6b78d9d47ddc7532b21ab49433b036c8c64515bc4fecd"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/dependencies.json",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/dependencies.json",
+      "size_bytes": 436,
+      "sha256": "7b6324daffe2d6111e53793387016d2059fc54d0db19fb52c0ecdb4ad7c4d889"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "22c67d0d3aed43e553ef1f5d4066d70c2184644c40bf3ae1e3071c5941d674e2"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/metrics_raw.csv",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/metrics_raw.csv",
+      "size_bytes": 1732277,
+      "sha256": "23198da05ae21c6772ac4cb5b51d1316c6ee7feacde516880f68195009bcaf07"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/metrics_summary.json",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/metrics_summary.json",
+      "size_bytes": 21001,
+      "sha256": "b614c144a24664633d59dc820dea12d5e3825bbef9fbe64c75ee7c7f0770b66d"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/observation_reference.json",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/observation_reference.json",
+      "size_bytes": 250,
+      "sha256": "b00162d4f3c094f8c261631bdc63fa7cdf7f17e339264bbd0fe69488df6565dd"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "005d7d4fa0001e26b1783b5856b8932302a4d78effe07c18b66fefda9ecfa7e5"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_clean_val_v1/tuning.json",
+      "path": "zhou_mimo_formal_20261009_clean_val_v1/tuning.json",
+      "size_bytes": 13691,
+      "sha256": "094e77927ddfa0d29c87d0de9cd8353f9b702119f6df6d0c3424dbcad1ca802f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_data_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_data_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_data_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_data_v1/config_resolved.json",
+      "size_bytes": 3600,
+      "sha256": "7b9de7c7e54691f27abf913711f7025e22e326edfac3de370ab29bc275a65847"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_data_v1/dataset.json",
+      "path": "zhou_mimo_formal_20261009_data_v1/dataset.json",
+      "size_bytes": 31734,
+      "sha256": "84498b2d107ea504d68b36c76fe89f5f33d8abee9a3d84e77742d597aefe30f5"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_data_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_data_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "a4579504ae2686f7ecc777552425374cf8b5cfa12499743d0e2307c2f9395155"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_data_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_data_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_data_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_data_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_data_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_data_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_data_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_data_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "4dc9c3b09efe33a9700a1e99b50f5adecb83c7efc46924dbfa7c8b97a4583869"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_corrected_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_corrected_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_corrected_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_corrected_v1/config_resolved.json",
+      "size_bytes": 3715,
+      "sha256": "69a885b71d31166d45b2e823a7811ced509aaf8db74fb0e61744c9d7d3c44c4a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_corrected_v1/dataset.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_corrected_v1/dataset.json",
+      "size_bytes": 2557,
+      "sha256": "1cda0a8fd2a446323e0add3b1f61a82a22a552b6c0646c806c783732c9a9c8b2"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_corrected_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_denoised01_corrected_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "5468c4b7619e30da59b77490f8896a0c1b562fbb98d45a0728921c992ed552b7"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_corrected_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_denoised01_corrected_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_corrected_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_corrected_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_corrected_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_denoised01_corrected_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_corrected_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_corrected_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "ca1cb28704112670278d8a85e3fbe184384605703069233aefb853bc33f99041"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_paper_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_paper_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_paper_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_paper_v1/config_resolved.json",
+      "size_bytes": 3707,
+      "sha256": "ec7bf5a61e7a5a58281cd423be10093df7567c5fac77e3f9b369c944eb08ed55"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_paper_v1/dataset.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_paper_v1/dataset.json",
+      "size_bytes": 2548,
+      "sha256": "4d080f4f7eb64df538deb8e597f5f4152d5ff783c005d56fc84b83a97386fdaf"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_paper_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_denoised01_paper_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "17e8da34673cf16538acea84b85701f02709cc44efe5fb15b6736d1a99eb5173"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_paper_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_denoised01_paper_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_paper_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_paper_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_paper_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_denoised01_paper_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised01_paper_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_denoised01_paper_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "ca965a168855bce89fb705824e9e000a9b99d9ceb310d6e9c9c992eb3d712a0c"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_corrected_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_corrected_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_corrected_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_corrected_v1/config_resolved.json",
+      "size_bytes": 3712,
+      "sha256": "30a341d80ad04a9966d2db6a0dc83bbfdd3314e4e6400180c030ffc356831409"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_corrected_v1/dataset.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_corrected_v1/dataset.json",
+      "size_bytes": 2556,
+      "sha256": "75b0c9d236f39ae53e69169d305dc7217a6406d525641fe5b34dd138465664fa"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_corrected_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_denoised1_corrected_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "dab0ed13483cfed93aaddb82e5593afe1d8c427689f76a82c3ba6ab190599250"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_corrected_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_denoised1_corrected_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_corrected_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_corrected_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_corrected_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_denoised1_corrected_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_corrected_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_corrected_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "f7b8dfeacce4877e0b82f2213327544e3bfd0503dd50061ef4e1d3e84ebbe0f3"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_paper_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_paper_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_paper_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_paper_v1/config_resolved.json",
+      "size_bytes": 3704,
+      "sha256": "8a4d9471c7dceac3bf1d4d3ad94a414eb685a2aa725950178350feb012ddc90c"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_paper_v1/dataset.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_paper_v1/dataset.json",
+      "size_bytes": 2547,
+      "sha256": "5b94da1e83b2e818471f5bae6007224aae4aa5f6772d603003044b7fee14ac51"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_paper_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_denoised1_paper_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "735679c90fd77a4dc1b83874a86404410440f991da17ecb02e194c16519686b1"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_paper_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_denoised1_paper_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_paper_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_paper_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_paper_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_denoised1_paper_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_denoised1_paper_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_denoised1_paper_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "6c74ed034cd50659dae8af2af6ba6000523f42509ab97c49cdaacbff96e8a235"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/config_resolved.json",
+      "size_bytes": 3635,
+      "sha256": "a1d24f5a0e590a2d35eee01b3eb87c134ecc3de0ba1c97c41c9545d81da53a8f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/denoising_profile.json",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/denoising_profile.json",
+      "size_bytes": 1096,
+      "sha256": "57c0b5ffb562a7255df6315a8791221db7a5ef1f0e86fb310a1adafa3ffcb702"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "e313339393bba6d91e3a9b66f13075c4c9d2be1bf3324c9e9b8130e911bd4d4c"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "9091c79b544be8e8eefd09495363953ff87a073e08fa4209408ad33d9f437de5"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/training_history.json",
+      "size_bytes": 11362,
+      "sha256": "d2ba98002b35272d53db99a97b49df7718cd8aa0a8019e06dc590c58f008a7e9"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive01_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_naive01_v1/training_summary.json",
+      "size_bytes": 559,
+      "sha256": "3e135c0b9b6c33886e7391f26151fb23c40e7ec462fbbcd03ac0a1f9a38f2484"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/config_resolved.json",
+      "size_bytes": 3633,
+      "sha256": "dd3c29b19c2cc040d9b6e3730871cd21a42a630834ed932d4001d1999b46911e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/denoising_profile.json",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/denoising_profile.json",
+      "size_bytes": 1091,
+      "sha256": "ef6c6884c08ca09a7d8c0242aac0bd03441078614c4d8a93d8dcf8d266579eea"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "e17a33de37afc166456778516079615b0d54fee224183fc365d77e95af8ca1f5"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "49e2d3e0ebfa19e175eb97865dc5113c42f701a0f5a0a9443b3c1ff6b01d31cf"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/training_history.json",
+      "size_bytes": 11334,
+      "sha256": "85cd97c8327676a33f57122166585b415c65767a43ab02f0fa88c55b4c881a43"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_naive1_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_naive1_v1/training_summary.json",
+      "size_bytes": 555,
+      "sha256": "7be993b163cea06ed4bc1505dfda7783fb6444c40e3eb2c57bcd9867fc925fce"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy01_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_noisy01_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy01_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_noisy01_v1/config_resolved.json",
+      "size_bytes": 3633,
+      "sha256": "94fec3ef5aaf9ef0e167cb152de8f4fd1e7287b041f2973e82bec5f1ed8ff992"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy01_v1/dataset.json",
+      "path": "zhou_mimo_formal_20261009_noisy01_v1/dataset.json",
+      "size_bytes": 2414,
+      "sha256": "dc566f7604e78174c0620e68a7c89631f233474bca1487458b7f073689512a27"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy01_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_noisy01_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "8b5ebf5b96233087d1665d25dab5da820699bdb140ad093cafff5337dc214059"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy01_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_noisy01_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy01_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_noisy01_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy01_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_noisy01_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy01_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_noisy01_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "48538d84155a3ab68314a874eea2ddbd76dd9ed29795b662040fe467d2bea53d"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy1_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_noisy1_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy1_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_noisy1_v1/config_resolved.json",
+      "size_bytes": 3632,
+      "sha256": "9017d90304be73ccab9e883985daad231f4d291b26f251138539e5141e86368f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy1_v1/dataset.json",
+      "path": "zhou_mimo_formal_20261009_noisy1_v1/dataset.json",
+      "size_bytes": 2414,
+      "sha256": "ffa64c3879e02b0f5a6e5e02b7c6d49a80e3d6a9472efac69ba252ca60fb3ead"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy1_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_noisy1_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "6b59cd5966eed762a7c5ff5cc9a64f7a7464c26cbaa9589573fbe41f34549fd7"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy1_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_noisy1_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy1_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_noisy1_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy1_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_noisy1_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_noisy1_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_noisy1_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "60e694f58fad6bd8b5b356687babfb7a97003fa669ea38ee71c2cd3db9e44014"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_corrected_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_sure01_corrected_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_corrected_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_sure01_corrected_v1/config_resolved.json",
+      "size_bytes": 3649,
+      "sha256": "425f20867732803d613d4bf083fc0f869178a90fd8467acac21d6b8a7710661b"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_corrected_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_sure01_corrected_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "cdd00d3e58c2d120614ede42cc667f4679ce4192f651c1eac6fd25612467d0dc"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_corrected_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_sure01_corrected_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_corrected_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_sure01_corrected_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_corrected_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_sure01_corrected_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_corrected_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_sure01_corrected_v1/status.json",
+      "size_bytes": 136,
+      "sha256": "7315c2f03ad787fe31f48237cae13646da844113db60a0e7a9586d9e396f0b1a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_corrected_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_sure01_corrected_v1/training_history.json",
+      "size_bytes": 2324,
+      "sha256": "bd0d4ae68b736ea85fd4850f7b6ca48dbd2bbcfab6e0e265e3ee9fa2221facb3"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_corrected_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_sure01_corrected_v1/training_summary.json",
+      "size_bytes": 589,
+      "sha256": "1eabc6a6e000849dba478dc6a4c8cb30b228bc72919a59faf07a2e44c05c4047"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_paper_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_sure01_paper_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_paper_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_sure01_paper_v1/config_resolved.json",
+      "size_bytes": 3641,
+      "sha256": "38a6ec19846cb0c1d13ed20d7a7a1dddad579d4871483f1e8f5cc022ac1ca295"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_paper_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_sure01_paper_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "e701fa8426e315ab08bd32e16fc7fad7cc0afec310d51daf86cdbbb2a06513d6"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_paper_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_sure01_paper_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_paper_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_sure01_paper_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_paper_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_sure01_paper_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_paper_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_sure01_paper_v1/status.json",
+      "size_bytes": 136,
+      "sha256": "939d2fae79c6023f4184a08572f0c06ae92e14373d1097a38d671d36a2f215a2"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_paper_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_sure01_paper_v1/training_history.json",
+      "size_bytes": 2318,
+      "sha256": "84a1be9a1ff90faab09ad5dac47926e98ad58901fb43905b635a5aaef5e44f9f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure01_paper_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_sure01_paper_v1/training_summary.json",
+      "size_bytes": 584,
+      "sha256": "d10c4b131e1bcabb255e2b054c31de64122df22585c5df97a30a0f1d091b39a0"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_corrected_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_sure1_corrected_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_corrected_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_sure1_corrected_v1/config_resolved.json",
+      "size_bytes": 3647,
+      "sha256": "4a319fd7a85ce4d4f2b4d3f53093219f3887b594c5652b78e427bd80e7e82502"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_corrected_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_sure1_corrected_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "58b2ee25667f6ee79736533a08ae995246ddee15193b74a96d82402aa69469b8"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_corrected_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_sure1_corrected_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_corrected_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_sure1_corrected_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_corrected_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_sure1_corrected_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_corrected_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_sure1_corrected_v1/status.json",
+      "size_bytes": 136,
+      "sha256": "c410552b1d279add99d4bb2e6cca730eb76443283f73e5be4ddcbffb975c01dc"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_corrected_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_sure1_corrected_v1/training_history.json",
+      "size_bytes": 2279,
+      "sha256": "140d75ecd680911b3461f3cf1a9e6a09d276ff713573129a668d09f8623ecfa0"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_corrected_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_sure1_corrected_v1/training_summary.json",
+      "size_bytes": 588,
+      "sha256": "b294553b7b7e945a68c711d6f1c3a7ea27b6b0fd8097bbe746feffc4d2c4b031"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_paper_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_sure1_paper_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_paper_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_sure1_paper_v1/config_resolved.json",
+      "size_bytes": 3639,
+      "sha256": "3591ff8e9f249eb16fb6ace9348cfc52ce9cc7554d7621b2a02d98b49fe6508c"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_paper_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_sure1_paper_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "124d9edacbf9c7e69de53db0bbec79545c232975cf70667b0e32ab893a169044"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_paper_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_sure1_paper_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_paper_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_sure1_paper_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_paper_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_sure1_paper_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_paper_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_sure1_paper_v1/status.json",
+      "size_bytes": 136,
+      "sha256": "1d1ddb0a24d74ac9b4d9fe7c2be41f4e760a4448ae485f1161d53ff58b001b22"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_paper_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_sure1_paper_v1/training_history.json",
+      "size_bytes": 2287,
+      "sha256": "410c4210f309905990837bf1b037e6561a2aba5e8e078f2a219328e850061b32"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_sure1_paper_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_sure1_paper_v1/training_summary.json",
+      "size_bytes": 582,
+      "sha256": "4dc4cc13af0471e678894539913edac1ab801269745d8c418f407b22b5eee3b3"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/config_resolved.json",
+      "size_bytes": 3659,
+      "sha256": "d89c34d9bfaa636debc8584819238d1bd16c2a62e653ca4c87a383fb7040263c"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/denoising_profile.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/denoising_profile.json",
+      "size_bytes": 1112,
+      "sha256": "5cc05f9d2cac83fad646608fdcb1b5a8335320f7911cb83e969c408081740480"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "cec42d0c7ad157696e448722d0a59afdc9ac9b5157a82b86eb03b92bee08f466"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "8c75542cb5e357f794951e18a201906a614069746effd81cb07fd422febaefaa"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/training_history.json",
+      "size_bytes": 11411,
+      "sha256": "a774c6327082d5a18375543b9bbb3b33671c6d680f444c049aebc57389140474"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_corrected_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_corrected_v1/training_summary.json",
+      "size_bytes": 546,
+      "sha256": "1b1efe1c648d6f556b9171fed0934ac689b4ef479b6f17108a904eaf28b3e85f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/config_resolved.json",
+      "size_bytes": 3651,
+      "sha256": "af2dc61bff5d19acbd870f5ce4680b0516b033551f9bdf9cf92645eb36ec9648"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/denoising_profile.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/denoising_profile.json",
+      "size_bytes": 1109,
+      "sha256": "3d72555946ae3907b0f90fb16be19a3c11053bf41ca9d3a8f1853ae309585f3e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "f4672f9c6b289ffbc3375782595adf71b8bf6cbbf171384a4850e6cd1abedf03"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "4907c66e70051492d0fbb8673090784089f5646ccba909b2794f5525b4ead76f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/training_history.json",
+      "size_bytes": 11421,
+      "sha256": "d73d71ee09ed9b64e7848ac726d4fd543c471e1f42b8de2bf27f817e44ae90bb"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm01_paper_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_suredm01_paper_v1/training_summary.json",
+      "size_bytes": 546,
+      "sha256": "891e66d7efa3fe39110f39b1f2e9dd75210b257f8a345b4457f528bb82241d27"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/config_resolved.json",
+      "size_bytes": 3657,
+      "sha256": "0e0a78d835c120090d0375024d72e4f37ba6fe46101e53e10c654f30882b1f61"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/denoising_profile.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/denoising_profile.json",
+      "size_bytes": 1112,
+      "sha256": "2a1e79798e5d2c80bdd2952c34bfd0c047fe76f72ee5c46e29c1f6f585982cc5"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "95a916e7af9dc42766aa99c3c32034ff1ea9a2ba7b2940472c7b63bf34a7b3b7"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "6ea2fe1957cf584b4ac646dd49c4c1dbab14c88a913b5fe024dc4ad856a4500c"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/training_history.json",
+      "size_bytes": 11388,
+      "sha256": "6915d48faddc8ef39e3e8716f3bda3c2215bb1365794f01d4671b5b7510e6a13"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_corrected_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_corrected_v1/training_summary.json",
+      "size_bytes": 545,
+      "sha256": "df77fcb7c7438d86524bbd833e2a15a7e0d7a10c227ac03e9df6360366e03125"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/config_resolved.json",
+      "size_bytes": 3649,
+      "sha256": "fd9665dadaa6b38dce3d9222cdccbe689617613031fc381267270d7c104d476d"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/denoising_profile.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/denoising_profile.json",
+      "size_bytes": 1105,
+      "sha256": "5d0ecef3029122b5fad3c76ed186fd2c0f92d333d4922fee2523048755a476e0"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "1eca47e9a4009c560d9ff0cd605c4b4d2cb583af217b8f1ec5d912992e569149"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "edad07d285c3ae478cf6116b1dcc9de3dcc4ae52708d989bfbf7a95b8d2a54b7"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/training_history.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/training_history.json",
+      "size_bytes": 11360,
+      "sha256": "5154970836b890675507a642f8cbbbc65e4efbe5bccf4e7a095d0c9708ad886b"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_suredm1_paper_v1/training_summary.json",
+      "path": "zhou_mimo_formal_20261009_suredm1_paper_v1/training_summary.json",
+      "size_bytes": 545,
+      "sha256": "63f8253591ae2c0038143a44a258daff436c483608541a70d861219e8e382b38"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/audit_report.md",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/audit_report.md",
+      "size_bytes": 7235,
+      "sha256": "eec3432d3d4a2f2aadc9f973362293c5bd4c2597bdebc809cfdaa0b74e8d568a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/audit_zhou2025_mimo.py",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/audit_zhou2025_mimo.py",
+      "size_bytes": 16532,
+      "sha256": "2ee5f3f5fce692deb203164a1ecaa31ab2c6a34f69802a02522d486d907bf604"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/curves.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/curves.csv",
+      "size_bytes": 19601,
+      "sha256": "1d001588d35e438b8304e12e45481f1f517a63f46631ca6bc558a612fe4030a0"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/denoising_profiles.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/denoising_profiles.csv",
+      "size_bytes": 4057,
+      "sha256": "96cc31af84feaf8d21004623c0e522fb198eeec35430dcd03a431730088ecff2"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/high_snr_tails.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/high_snr_tails.csv",
+      "size_bytes": 526,
+      "sha256": "b8ecc5c0a3a18af3a8f7729b477bb981e5e7840ff36ef5d6b52ec9af908d8015"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/independent_test_preflight.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/independent_test_preflight.json",
+      "size_bytes": 4814,
+      "sha256": "08ddedb8d961d94d9d82ddb0d71776d24ce3a9461836668409da0d7526a2db10"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/independent_test_preflight.py",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/independent_test_preflight.py",
+      "size_bytes": 6498,
+      "sha256": "1e1dfa60b2ec7768021d325b2cfe32fbab53f6267195010a49f579b0d0673ea4"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/integrity.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/integrity.json",
+      "size_bytes": 788,
+      "sha256": "11a656daf83fa99b464ec608ad474ed4c959d4be7cd5144e4b63a09ffcabbeb7"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/lasso_curve_sensitivity.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/lasso_curve_sensitivity.csv",
+      "size_bytes": 1924,
+      "sha256": "4ee11e9ba1f7c3e96f2d1d3c546526873d0ca9901892ceedd6b16dc36d3f2424"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/lasso_extended.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/lasso_extended.csv",
+      "size_bytes": 32549,
+      "sha256": "a2c3595a8613db10e6c7ba0362284f71d21271f78c0c10e3c6b763f957c7555f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/make_report.py",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/make_report.py",
+      "size_bytes": 12140,
+      "sha256": "5da3c5e219ad30e189a3617727fa10f292fb75ca5edfeb1a62dc1fdf61f4be5b"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/mimo_validation_curves.pdf",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/mimo_validation_curves.pdf",
+      "size_bytes": 31944,
+      "sha256": "8f3989186fac685e3b7b5f5d2f72e2f69c788aa9aca2f97c12ef28050a0bdb3f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/mimo_validation_curves.png",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/mimo_validation_curves.png",
+      "size_bytes": 364082,
+      "sha256": "fe744992c10986b8b67aaef70472adef302775c3304efb8b02ad90f63b591c63"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/paired_comparisons.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/paired_comparisons.csv",
+      "size_bytes": 23213,
+      "sha256": "5fc070527fc499b9c6848dcb54a9cd906e968b50ce47caa6a098e253b4186826"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/paired_per_scene.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/paired_per_scene.csv",
+      "size_bytes": 1837397,
+      "sha256": "d99aa8a475af98f9b4b085baf41e396d40cf997f32915d8f393036354cd67597"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/per_scene_snr_steps.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/per_scene_snr_steps.csv",
+      "size_bytes": 1071348,
+      "sha256": "862963b0db1646768b315101809f8d14e2bde65d16045bee8d3b06c2f9314a17"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/run_inventory.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/run_inventory.csv",
+      "size_bytes": 1862,
+      "sha256": "7990bb448855a58d44fc71f5489ee90208244f26d90a34dbb99b66af3b3fa75d"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/sure_denoising.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/sure_denoising.csv",
+      "size_bytes": 383,
+      "sha256": "6f7e57afbd0a048ccc07a7d92b16cf2293b281b402ca52ffd900dc5a9966086a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/analysis/training_history.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/analysis/training_history.csv",
+      "size_bytes": 55264,
+      "sha256": "e3ca4c3f5ac6cac89192ea221de179945aa3e19936d50def1852de5cdf827d4c"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/code_manifest.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "7cef8b34e05cd5b3804be51b917b663dadf6c85414e926aa79507eee318ced96"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/comparison.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/comparison.csv",
+      "size_bytes": 20460,
+      "sha256": "31eeb91c83e931162a06c0b12d84312c3e14c7f8c8f6a49f84c412c73f01de01"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/comparison.png",
+      "path": "zhou_mimo_formal_20261009_val_v1/comparison.png",
+      "size_bytes": 226911,
+      "sha256": "0c6c505373cb33ff92a8cebbffba4629ff53f709f6241a5c9d899f2f93bc86a6"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/config_resolved.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/config_resolved.json",
+      "size_bytes": 4012,
+      "sha256": "b123535ef6116ef2eec116df69f6d8ddceb500228fc1993c1aeb8c9e13382cc0"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/dependencies.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/dependencies.json",
+      "size_bytes": 1372,
+      "sha256": "060488c52839d226fbda4660dc9bc5bfa65b4ba4a1d9abadabfc5cb9ba1caba2"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/environment.txt",
+      "path": "zhou_mimo_formal_20261009_val_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "4b78e2d785a362cfd8bb550879efd659dd19e6db1c344b766382a25d92d3cc5a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/git_commit.txt",
+      "path": "zhou_mimo_formal_20261009_val_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/metrics_raw.csv",
+      "path": "zhou_mimo_formal_20261009_val_v1/metrics_raw.csv",
+      "size_bytes": 5786084,
+      "sha256": "d49daea869ad243e86bb9df21030d1fbdc124fc9479a2b233b15ef7576bafc20"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/metrics_summary.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/metrics_summary.json",
+      "size_bytes": 84852,
+      "sha256": "6e12ed017de48c2295e0e3a27c3c311ee9c177c46cc71a4fa8fabd1a80f328cf"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/observation_reference.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/observation_reference.json",
+      "size_bytes": 250,
+      "sha256": "b00162d4f3c094f8c261631bdc63fa7cdf7f17e339264bbd0fe69488df6565dd"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/seeds.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/source_snapshot.zip",
+      "path": "zhou_mimo_formal_20261009_val_v1/source_snapshot.zip",
+      "size_bytes": 483877,
+      "sha256": "408b5a7b6fd17549fd79910e0f7d818e2025fe6abcdc37e2b2d2283c0c7f463a"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/status.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "d844532077375dce0108407c5677a36cd81586bb0d22fdd86c9146d9eeb3eaea"
+    },
+    {
+      "source": "runs/zhou_mimo_formal_20261009_val_v1/tuning.json",
+      "path": "zhou_mimo_formal_20261009_val_v1/tuning.json",
+      "size_bytes": 47209,
+      "sha256": "51b09c7d4e66ba8c0020ce9b8a538a9469b9b9a8abd9beb33759eafb0d76bbe0"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/audit_report.md",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/audit_report.md",
+      "size_bytes": 8268,
+      "sha256": "68f2008f777dd578e20fd839ca901b1b3937958f0bad0af858aa6333382e0902"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/audit_zhou2025_mimo.py",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/audit_zhou2025_mimo.py",
+      "size_bytes": 16542,
+      "sha256": "e80ccc0915501fd25915710cd1a7c9eab281b4fbfd20d1a4fa33b06484ac0cd3"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/audit_zhou2025_mimo_test.py",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/audit_zhou2025_mimo_test.py",
+      "size_bytes": 12325,
+      "sha256": "d86bd75ebbfec8c8b01aee40b961d4a5fed43c229fd6d62cf8a91af10882e918"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/curves.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/curves.csv",
+      "size_bytes": 19575,
+      "sha256": "22df21d217688ad2d66c0e4c964b4949e152cb2ea9b34e67f94452e37292eb70"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/high_snr_tails.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/high_snr_tails.csv",
+      "size_bytes": 527,
+      "sha256": "fe5234fc3caff85c5af5b4b9e84cafb024b3c551579526b33e53957bc8942eaa"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/integrity.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/integrity.json",
+      "size_bytes": 1002,
+      "sha256": "06e905d78b8e39fbe8f948a9f37472f45631ed1dfa05044bee0f624aa100e13d"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/lasso_curve_sensitivity.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/lasso_curve_sensitivity.csv",
+      "size_bytes": 1928,
+      "sha256": "8b334e2213b50cd96540fdfed7003dec8c6b305df386f02e0048e51a6e1f8ee6"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/lasso_extended.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/lasso_extended.csv",
+      "size_bytes": 35303,
+      "sha256": "78c1630eb848d568292c61ca54dd9b2f514bf3d0113f0b2f658030965a4e4f12"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/make_report.py",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/make_report.py",
+      "size_bytes": 13552,
+      "sha256": "0f1a21cbdf04a7e1fbd11de74f1873bbca65620cb2d71b07680d4c3b3457c1ba"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/mimo_independent_test_curves.pdf",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/mimo_independent_test_curves.pdf",
+      "size_bytes": 31834,
+      "sha256": "e6e27966c312efab9b97c281c82eea03998bd9968f836e614730f62e0a7fb8d6"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/mimo_independent_test_curves.png",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/mimo_independent_test_curves.png",
+      "size_bytes": 362345,
+      "sha256": "a187e0861bda2f212a1994d69a011f3be5de4a79eb35b822e0394f39a7186cec"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/paired_comparisons.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/paired_comparisons.csv",
+      "size_bytes": 23233,
+      "sha256": "13f5ca4607447c7bc55c217a2d4d1162a466a82302e5854aa700e7bc2cec14d2"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/paired_per_scene.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/paired_per_scene.csv",
+      "size_bytes": 1837375,
+      "sha256": "1fab083352f5f4d3b2ae5e2cf9bf96216f2672532242f9a27890bac1c7f7eeae"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/per_scene_snr_steps.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/per_scene_snr_steps.csv",
+      "size_bytes": 1071282,
+      "sha256": "e4d0b3d0cdf8648da63777170dc8d4e8f6bafeadf873e5e30f2578de5b954646"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/validation_test_curves.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/validation_test_curves.csv",
+      "size_bytes": 32488,
+      "sha256": "a669a3be55632c8fab339454f14ca353228bca65fdc94e5384179adf1b0b4981"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/analysis/verification.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/analysis/verification.json",
+      "size_bytes": 206,
+      "sha256": "d5bef7f26d91b78a7a1d85caf84fb613e2b2f502bac6cda10d1fabd2f6b9fd69"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/code_manifest.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/code_manifest.json",
+      "size_bytes": 11957,
+      "sha256": "a0ae26f851c5dd94b44dfdb50d5d8b0faba1618dc40b24541a1496166e7c4caf"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/comparison.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/comparison.csv",
+      "size_bytes": 20487,
+      "sha256": "3f5dbd1fdd598ab4c115dca7bcce02e866634b3a6d779e4224c0d139091e1956"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/comparison.png",
+      "path": "zhou_mimo_independent_test_20261010_v1/comparison.png",
+      "size_bytes": 224772,
+      "sha256": "be2b1ddaccf166144bec11a170c573907acb326c787d91c0b3119092581693a8"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/config_resolved.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/config_resolved.json",
+      "size_bytes": 4042,
+      "sha256": "027f5c96339c45613b0e6f6b3da73f7f77c7e7f8daf5304b57e6161f834d88de"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/dependencies.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/dependencies.json",
+      "size_bytes": 1372,
+      "sha256": "060488c52839d226fbda4660dc9bc5bfa65b4ba4a1d9abadabfc5cb9ba1caba2"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/environment.txt",
+      "path": "zhou_mimo_independent_test_20261010_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "0e77d1779ab5b6ec9217a7394b55d95b519f393b73d625d77ce1625454a08897"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/git_commit.txt",
+      "path": "zhou_mimo_independent_test_20261010_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/metrics_raw.csv",
+      "path": "zhou_mimo_independent_test_20261010_v1/metrics_raw.csv",
+      "size_bytes": 5655805,
+      "sha256": "f6f4f04faab7b6a8230d55a685d18aab5111d864d903197c874a69e20fe5ed13"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/metrics_summary.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/metrics_summary.json",
+      "size_bytes": 84857,
+      "sha256": "570a7f8015fadf709db1a1d0520efa0dd66463c1bb7e69bf219a91dc1172af5f"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/observation_reference.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/observation_reference.json",
+      "size_bytes": 250,
+      "sha256": "b00162d4f3c094f8c261631bdc63fa7cdf7f17e339264bbd0fe69488df6565dd"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/seeds.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/seeds.json",
+      "size_bytes": 331,
+      "sha256": "afbf45a5bcf14d3e9d3fb1866bd86bb60e8d94ee1d56e1f40f75413509d77c1f"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/source_snapshot.zip",
+      "path": "zhou_mimo_independent_test_20261010_v1/source_snapshot.zip",
+      "size_bytes": 484181,
+      "sha256": "522a3c010ccff58ded984020f0c873402ae183b7a6f4437433191bcb6b14c334"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/status.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "1d8607cad4f4057e1a1e29d398646fc9c16a237a835fa53670b3bd3554df9494"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/tuning.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/tuning.json",
+      "size_bytes": 47209,
+      "sha256": "51b09c7d4e66ba8c0020ce9b8a538a9469b9b9a8abd9beb33759eafb0d76bbe0"
+    },
+    {
+      "source": "runs/zhou_mimo_independent_test_20261010_v1/tuning_source.json",
+      "path": "zhou_mimo_independent_test_20261010_v1/tuning_source.json",
+      "size_bytes": 133,
+      "sha256": "da4145f2b776d9840bdb7538383d7516d55ed993d11129152aa4892cdf1c2c35"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/code_manifest.json",
+      "path": "zhou_wideband_formal_20261011_clean_v1/code_manifest.json",
+      "size_bytes": 12820,
+      "sha256": "3397a0f4c4912dccc44bc7a3af4e21aeae1d6f88eb296ac82f75fb37ee73a736"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/config_resolved.json",
+      "path": "zhou_wideband_formal_20261011_clean_v1/config_resolved.json",
+      "size_bytes": 7127,
+      "sha256": "aac382ffcccd60f25cce16563d2cbd267048a3e7941cc48ccaf33beb6cfcfe70"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/denoising_profile.json",
+      "path": "zhou_wideband_formal_20261011_clean_v1/denoising_profile.json",
+      "size_bytes": 1098,
+      "sha256": "ae76d52f1f0785c7ececa0a5a366ee71421586080b57e381d616d7d5858cd8a2"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/environment.txt",
+      "path": "zhou_wideband_formal_20261011_clean_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "c5922130ad1235dfa688c18f734161317452ee488d3e8c0cf626bde1260fc80b"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/git_commit.txt",
+      "path": "zhou_wideband_formal_20261011_clean_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/seeds.json",
+      "path": "zhou_wideband_formal_20261011_clean_v1/seeds.json",
+      "size_bytes": 382,
+      "sha256": "f7cacd8c1fd532da2eadb2b046e41f1ac9a25d5b697ee5afb2ff760fbf397d5c"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/source_snapshot.zip",
+      "path": "zhou_wideband_formal_20261011_clean_v1/source_snapshot.zip",
+      "size_bytes": 495873,
+      "sha256": "1d8aa786ad85b58b839094133fc6edb1ecd84ab76d1e36d3c0fc287cdb11eea3"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/status.json",
+      "path": "zhou_wideband_formal_20261011_clean_v1/status.json",
+      "size_bytes": 131,
+      "sha256": "d1f5e684411f8dcc51c03ffe711c35a2a160e650198f72fccb55a7953dd083d6"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/training_history.json",
+      "path": "zhou_wideband_formal_20261011_clean_v1/training_history.json",
+      "size_bytes": 184257,
+      "sha256": "6853d40bc26da463c0c4555042e7d94ce113c7911e87e78304ecbcf51f0973a7"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_clean_v1/training_summary.json",
+      "path": "zhou_wideband_formal_20261011_clean_v1/training_summary.json",
+      "size_bytes": 544,
+      "sha256": "d619c069c7c2e747f3f2414d0f049eceb2536633d96ac8fca4c2e47941a7fb5d"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_data_v1/code_manifest.json",
+      "path": "zhou_wideband_formal_20261011_data_v1/code_manifest.json",
+      "size_bytes": 12820,
+      "sha256": "3397a0f4c4912dccc44bc7a3af4e21aeae1d6f88eb296ac82f75fb37ee73a736"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_data_v1/config_resolved.json",
+      "path": "zhou_wideband_formal_20261011_data_v1/config_resolved.json",
+      "size_bytes": 7093,
+      "sha256": "d4affe7d043328e4c848e51fcfa3bd3019662bdcfb86ae1b3d52c6b55a793f47"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_data_v1/dataset.json",
+      "path": "zhou_wideband_formal_20261011_data_v1/dataset.json",
+      "size_bytes": 301251,
+      "sha256": "f00dc95f37b4fdf5776b67959ce36a764465dacb14d1dbcc53efe95ec6fc4424"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_data_v1/environment.txt",
+      "path": "zhou_wideband_formal_20261011_data_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "bdc0b75cde3014c130e30795ac9d80077bb699ad61bccdb71dc8983076603864"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_data_v1/git_commit.txt",
+      "path": "zhou_wideband_formal_20261011_data_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_data_v1/seeds.json",
+      "path": "zhou_wideband_formal_20261011_data_v1/seeds.json",
+      "size_bytes": 382,
+      "sha256": "f7cacd8c1fd532da2eadb2b046e41f1ac9a25d5b697ee5afb2ff760fbf397d5c"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_data_v1/source_snapshot.zip",
+      "path": "zhou_wideband_formal_20261011_data_v1/source_snapshot.zip",
+      "size_bytes": 495873,
+      "sha256": "1d8aa786ad85b58b839094133fc6edb1ecd84ab76d1e36d3c0fc287cdb11eea3"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_data_v1/status.json",
+      "path": "zhou_wideband_formal_20261011_data_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "9777e5fc7bf13f8b3fef16a73c7008b3b208cf5803e0f7520b75e09789a2bdb9"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/code_manifest.json",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/code_manifest.json",
+      "size_bytes": 12820,
+      "sha256": "3397a0f4c4912dccc44bc7a3af4e21aeae1d6f88eb296ac82f75fb37ee73a736"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/comparison.csv",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/comparison.csv",
+      "size_bytes": 4752,
+      "sha256": "0b1834eb6765c0dbe0794d9f19ab53a71a846d5f7744e890fc4175cdb67b65d7"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/comparison.png",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/comparison.png",
+      "size_bytes": 83664,
+      "sha256": "5f5350e7b45bda3bcb755302f6eea2d6c19b4fb6e4829dcb7a3846fd3ae307c6"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/config_resolved.json",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/config_resolved.json",
+      "size_bytes": 7231,
+      "sha256": "84f2ebcc627beca97dddefa8f013f9e3d0133739cf89d78e5944c1302b0ad95d"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/dependencies.json",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/dependencies.json",
+      "size_bytes": 448,
+      "sha256": "e23f9f8e5c9690850eeccfb4db8588fca95aca635d481614f1a1eec778e62950"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/environment.txt",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "cdd393113a31001bfef5d11bdb21401d47c52080b530fd135fc3848f5e861ac6"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/git_commit.txt",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/metrics_raw.csv",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/metrics_raw.csv",
+      "size_bytes": 1741048,
+      "sha256": "121a6c79662eb14f5d8a47e73c2c42f3af8df8918c3613a9a5d9bced6d254669"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/metrics_summary.json",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/metrics_summary.json",
+      "size_bytes": 15337,
+      "sha256": "ffdc6b49125b50b447955b527e1f482295a7d23c65e8285a8c51fed674f1e2a0"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/observation_reference.json",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/observation_reference.json",
+      "size_bytes": 423,
+      "sha256": "a0338fc10379d7a74ddd7fd8f22d665a1a30adc003451362e1d257b53e7884c9"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/seeds.json",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/seeds.json",
+      "size_bytes": 382,
+      "sha256": "f7cacd8c1fd532da2eadb2b046e41f1ac9a25d5b697ee5afb2ff760fbf397d5c"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/source_snapshot.zip",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/source_snapshot.zip",
+      "size_bytes": 495873,
+      "sha256": "1d8aa786ad85b58b839094133fc6edb1ecd84ab76d1e36d3c0fc287cdb11eea3"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/status.json",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "00e8e2a046e33cfe4f3ebc3f0f967982e4da0b8f7b9daeac7e446a25fadae124"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/tuning.json",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/tuning.json",
+      "size_bytes": 6077,
+      "sha256": "b3a42f3e2c9a0ba0be6771dfc2a2845bec224215bc4d9e2352393fc96f8bb283"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_test_v1/tuning_source.json",
+      "path": "zhou_wideband_formal_20261011_digital_test_v1/tuning_source.json",
+      "size_bytes": 145,
+      "sha256": "4003595cb356257e2725440ad3ca00dcfb0bb7a6090ef307d364e576ebb0e5f7"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/code_manifest.json",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/code_manifest.json",
+      "size_bytes": 12820,
+      "sha256": "3397a0f4c4912dccc44bc7a3af4e21aeae1d6f88eb296ac82f75fb37ee73a736"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/comparison.csv",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/comparison.csv",
+      "size_bytes": 4753,
+      "sha256": "a60ff6678463d9f0b387221ca6e2f292519ec38a26a4e4574e4477bf3601c88e"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/comparison.png",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/comparison.png",
+      "size_bytes": 84179,
+      "sha256": "85c5b833097f6dc2bfde0ee74fdd07a68148f35f765b49d98ee032bce15635e9"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/config_resolved.json",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/config_resolved.json",
+      "size_bytes": 7194,
+      "sha256": "2ad844264095617df2861450ac500338e8dbb929ecd1df9a83649d9a499ebc42"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/dependencies.json",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/dependencies.json",
+      "size_bytes": 448,
+      "sha256": "e23f9f8e5c9690850eeccfb4db8588fca95aca635d481614f1a1eec778e62950"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/environment.txt",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "bf8cd19a4eff7490c25b7ab81086467f67090eb9f69eef47b7218969e6373c17"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/git_commit.txt",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/metrics_raw.csv",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/metrics_raw.csv",
+      "size_bytes": 1762620,
+      "sha256": "3c59fe85f42d9f1da7f2176628beb0660198d8097770068554db933171329d37"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/metrics_summary.json",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/metrics_summary.json",
+      "size_bytes": 15341,
+      "sha256": "e369edbe5ec2ae53be455782bc51eb3bbe818bcb484b89d93e4d6ec87678b201"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/observation_reference.json",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/observation_reference.json",
+      "size_bytes": 423,
+      "sha256": "a0338fc10379d7a74ddd7fd8f22d665a1a30adc003451362e1d257b53e7884c9"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/seeds.json",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/seeds.json",
+      "size_bytes": 382,
+      "sha256": "f7cacd8c1fd532da2eadb2b046e41f1ac9a25d5b697ee5afb2ff760fbf397d5c"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/source_snapshot.zip",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/source_snapshot.zip",
+      "size_bytes": 495873,
+      "sha256": "1d8aa786ad85b58b839094133fc6edb1ecd84ab76d1e36d3c0fc287cdb11eea3"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/status.json",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "5375b3a72304a409a1b5379e098b2bc76f4d4c1ab16e495aaaca450010b69aa5"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_digital_val_v1/tuning.json",
+      "path": "zhou_wideband_formal_20261011_digital_val_v1/tuning.json",
+      "size_bytes": 6077,
+      "sha256": "b3a42f3e2c9a0ba0be6771dfc2a2845bec224215bc4d9e2352393fc96f8bb283"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/audit_console.txt",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/audit_console.txt",
+      "size_bytes": 37724,
+      "sha256": "0270d57c0cebbf0473c386164e6bea4169c24bc31ebc1ff3c325db71666cede4"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/audit_report.md",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/audit_report.md",
+      "size_bytes": 8342,
+      "sha256": "2aa811509e2bcb9bbfc71ff5ab8b42f485ef9792fcb35aee37fc458de8195337"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/covariance_span_projection.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/covariance_span_projection.csv",
+      "size_bytes": 3421,
+      "sha256": "ad527b64dd3f31db3a7f1f36cc078b71289c9fb5ea33bba31d371c4a43e94569"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/curves.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/curves.csv",
+      "size_bytes": 199575,
+      "sha256": "978ba1fcd8fb78c6821c9505f823eaa4dd25310fbed852b997f589418407a7cc"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_control_console.txt",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_control_console.txt",
+      "size_bytes": 1808,
+      "sha256": "0c9e490692323dd973279df2870948484e9da0ae61c9f302acb0d6197f16f961"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_control_integrity.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_control_integrity.json",
+      "size_bytes": 311,
+      "sha256": "b45bc7b69bc6ea4b1939ef7d491628a9a10ac17969c51f0c33ac2765237359ed"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_controls.py",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_controls.py",
+      "size_bytes": 3695,
+      "sha256": "5b412fd9e77eb2ba9ebca82949aa75e7bebdd42d3dd2f911d01866df57d8aa20"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_ddpm_vs_ls_paired.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_ddpm_vs_ls_paired.csv",
+      "size_bytes": 3542,
+      "sha256": "af9f1b99957691f456024f675c29163c803b3d8d7e34dc920e5079a87978ef0a"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_ls_curves.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_ls_curves.csv",
+      "size_bytes": 1568,
+      "sha256": "4b0a8ea8712370555e7078a40bd7f06b3d33b195013fd98720a74b9a779038d1"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_ls_per_scene.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/digital_ls_per_scene.csv",
+      "size_bytes": 489836,
+      "sha256": "1c8b3c61f9b895de68eec778e7dba00a25741fbfb02139150ef109a2caa8b9f5"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/final_checks.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/final_checks.json",
+      "size_bytes": 214,
+      "sha256": "8f31ff12625ae7088948853edded3ed7c735fb0005e33ded8480b2b1efa372f7"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/fixed_weight_diagnostics.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/fixed_weight_diagnostics.csv",
+      "size_bytes": 3370,
+      "sha256": "b1610172bee175ff55141c3867ef96d6ce8f37cc21e82a1928eaa17ed5301390"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/high_snr_steps.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/high_snr_steps.csv",
+      "size_bytes": 351445,
+      "sha256": "fd3acaaacb3a84cfb1f806ebd2e912a5623883638baceda159a327a36ac6948c"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/integrity.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/integrity.json",
+      "size_bytes": 3383,
+      "sha256": "93aabb6772e1fb2f979d2c9477e122e249b2a14415359feece7fa30336a2e262"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/make_report.py",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/make_report.py",
+      "size_bytes": 14227,
+      "sha256": "85ed8acd6b31e481ce12ad10fe642f465a87fac3c2a0cb2719fad66c720586bc"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/migration_test_curves.pdf",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/migration_test_curves.pdf",
+      "size_bytes": 43234,
+      "sha256": "2102443816e3d95389f405f0e5dc617e9fdcdcadaa27c7a7fb0f8f6918735fe5"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/migration_test_curves.png",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/migration_test_curves.png",
+      "size_bytes": 533408,
+      "sha256": "5db48454be9c912b6d2e7f4abdcf2241cec43a3296623e201585f02ce5b6c983"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/paired_comparisons.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/paired_comparisons.csv",
+      "size_bytes": 71504,
+      "sha256": "b7706896df5562dc3c87ba4123e67ddf67be176f4a6874470c162b6688307bf7"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/recovery_rechecks.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/recovery_rechecks.csv",
+      "size_bytes": 9315,
+      "sha256": "49d48e2132f9d1e6ed8b2ad56506ee0a390dedecdc2c48f33d4718c0c0d499d5"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/replay_console.txt",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/replay_console.txt",
+      "size_bytes": 5497,
+      "sha256": "1509fe6f1ffe242122cbd81a895aa2ef98a57f75030bd2e8e87dcaeab65bc2c5"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/replay_integrity.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/replay_integrity.json",
+      "size_bytes": 244,
+      "sha256": "b152f96f432a6f21f9f5dd63a707b2a620e12e549504776a495a2e3ee0209a89"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/run_inventory.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/run_inventory.csv",
+      "size_bytes": 1117,
+      "sha256": "bf2ba48ac9bc63dbafb1757fce78709921a1e3ce6da88d7707f78cd0275aa4de"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/solver_convergence.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/solver_convergence.csv",
+      "size_bytes": 639,
+      "sha256": "6cd7bf939cb864f63709cd2aef43c95ffa32901197166236b5a0c011b0594e4f"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/analysis/training_inventory.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/analysis/training_inventory.csv",
+      "size_bytes": 1074,
+      "sha256": "7eda9e5cc3f539621deb78410515363b89b7e7bf123d68f8b3b6ba698a61716f"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/code_manifest.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/code_manifest.json",
+      "size_bytes": 12819,
+      "sha256": "3266e06cc637560d407ca0a2708332ba5f27dfe077948fa52d86ccc5ea5ce093"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/comparison.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/comparison.csv",
+      "size_bytes": 12348,
+      "sha256": "73e455e4ef060079b63683b55d86d4feb0c2cbe3a6a669299fc213c8fdecd956"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/comparison.png",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/comparison.png",
+      "size_bytes": 164842,
+      "sha256": "5f48c115d4dbc91526704eaa04a988aae57b6658fd987f184425234cd115716e"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/config_resolved.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/config_resolved.json",
+      "size_bytes": 7338,
+      "sha256": "c523d0fa8087aa1a69056cffa8a272e80e6861bb9d72ee305ff2e621afdfd7b0"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/dependencies.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/dependencies.json",
+      "size_bytes": 448,
+      "sha256": "e23f9f8e5c9690850eeccfb4db8588fca95aca635d481614f1a1eec778e62950"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/environment.txt",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "9cca6c9d0818112cf8fb7d5248acf9eb7c8dfc4ccfdd10994904388af594fd36"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/git_commit.txt",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/metrics_raw.csv",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/metrics_raw.csv",
+      "size_bytes": 7062906,
+      "sha256": "82cb6c14e06cabf8cd2f2bd32c3c0da127afe8db8a0496bd373899aff5fe7308"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/metrics_summary.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/metrics_summary.json",
+      "size_bytes": 33192,
+      "sha256": "05593a8d2d230b997fced4398f954f28953d7906ceecc6b306c90b7c32fac173"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/observation_reference.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/observation_reference.json",
+      "size_bytes": 412,
+      "sha256": "58fb543987432bda86ee60dddb0b5009a08f0a5317521992abfc3047b08e0959"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/seeds.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/seeds.json",
+      "size_bytes": 382,
+      "sha256": "f7cacd8c1fd532da2eadb2b046e41f1ac9a25d5b697ee5afb2ff760fbf397d5c"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/source_snapshot.zip",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/source_snapshot.zip",
+      "size_bytes": 495909,
+      "sha256": "b014494eda860fb55ca9bd1bfff9dffc083350b199d81bb4c70f3bdc32b0b60f"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/status.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "94145d8b08ff929ea9e88c11d10e0671b46baf6dfd61c5381adf86e8825ec118"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/tuning.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/tuning.json",
+      "size_bytes": 5855,
+      "sha256": "d969c1369828b074a738ee92e3ee70c6050f26cf7f6908298981a46ade98ede2"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_test_v1/tuning_source.json",
+      "path": "zhou_wideband_formal_20261011_dma_test_v1/tuning_source.json",
+      "size_bytes": 141,
+      "sha256": "833d464fa635f70c5f66ae7069e1f2a7373ba2718f0105e16bb658f3afa5ad2e"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/code_manifest.json",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/code_manifest.json",
+      "size_bytes": 12819,
+      "sha256": "3266e06cc637560d407ca0a2708332ba5f27dfe077948fa52d86ccc5ea5ce093"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/comparison.csv",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/comparison.csv",
+      "size_bytes": 12345,
+      "sha256": "14ad27d05a9839255c856f64ce1739c223999e9de08f4f11297229c10b581f68"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/comparison.png",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/comparison.png",
+      "size_bytes": 166016,
+      "sha256": "4909a387181bfdc99594592d9ca9102d82c0c6def094d915c7a4b75a02de66b6"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/config_resolved.json",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/config_resolved.json",
+      "size_bytes": 7305,
+      "sha256": "19b5d3f9c9f8ba8670c7f97cd4a5ed432d08ccafd6b6247543cd14f633affb0f"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/dependencies.json",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/dependencies.json",
+      "size_bytes": 448,
+      "sha256": "e23f9f8e5c9690850eeccfb4db8588fca95aca635d481614f1a1eec778e62950"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/environment.txt",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "492311224beecaed75d3d12292916dbcd7d92458290e052a5a12affd5bb5b5a1"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/git_commit.txt",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/metrics_raw.csv",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/metrics_raw.csv",
+      "size_bytes": 7130019,
+      "sha256": "a005001e23f3b752bd56d09eee4edd76a43db36d0f2c5541aa845d009d19fb5a"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/metrics_summary.json",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/metrics_summary.json",
+      "size_bytes": 33189,
+      "sha256": "a35d788cac788046c3772d9a7ee0d1daf50f5c9275d5b83bdf5a967441979285"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/observation_reference.json",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/observation_reference.json",
+      "size_bytes": 412,
+      "sha256": "58fb543987432bda86ee60dddb0b5009a08f0a5317521992abfc3047b08e0959"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/seeds.json",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/seeds.json",
+      "size_bytes": 382,
+      "sha256": "f7cacd8c1fd532da2eadb2b046e41f1ac9a25d5b697ee5afb2ff760fbf397d5c"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/source_snapshot.zip",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/source_snapshot.zip",
+      "size_bytes": 495909,
+      "sha256": "b014494eda860fb55ca9bd1bfff9dffc083350b199d81bb4c70f3bdc32b0b60f"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/status.json",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "6606e900ed7567546806dbbe4cceac9a4a790ca707a8fe71351ce7c82074d947"
+    },
+    {
+      "source": "runs/zhou_wideband_formal_20261011_dma_val_v1/tuning.json",
+      "path": "zhou_wideband_formal_20261011_dma_val_v1/tuning.json",
+      "size_bytes": 5855,
+      "sha256": "d969c1369828b074a738ee92e3ee70c6050f26cf7f6908298981a46ade98ede2"
+    },
+    {
+      "source": "runs/diffusion_data_20261002_v1/code_diff.patch",
+      "path": "diffusion_data_20261002_v1/code_diff.patch",
+      "size_bytes": 141025,
+      "sha256": "402b3c492a23cfc47871026b2e19d6d968c7e2de140f24000f060458b7be44d8"
+    },
+    {
+      "source": "runs/diffusion_data_20261002_v1/code_manifest.json",
+      "path": "diffusion_data_20261002_v1/code_manifest.json",
+      "size_bytes": 10660,
+      "sha256": "a4da41c8c0e888ca31465cf5af52cdc1e132eea0feaaed889033580cc667b861"
+    },
+    {
+      "source": "runs/diffusion_data_20261002_v1/config_resolved.json",
+      "path": "diffusion_data_20261002_v1/config_resolved.json",
+      "size_bytes": 6728,
+      "sha256": "0132760f9c444d7a097e4b8ba9d2fce3f4ed2eb9efd47b0bce1b852b8dbeee42"
+    },
+    {
+      "source": "runs/diffusion_data_20261002_v1/dataset.json",
+      "path": "diffusion_data_20261002_v1/dataset.json",
+      "size_bytes": 298631,
+      "sha256": "bd4d369b8bd58a6a1465e863692cdad93ce873116cd230d029ac22fd5b88e378"
+    },
+    {
+      "source": "runs/diffusion_data_20261002_v1/environment.txt",
+      "path": "diffusion_data_20261002_v1/environment.txt",
+      "size_bytes": 620,
+      "sha256": "7efacc600a84ad4cd6cf56b9aa7cdfb8da6437af0ca0d452df11e787ed475c31"
+    },
+    {
+      "source": "runs/diffusion_data_20261002_v1/git_commit.txt",
+      "path": "diffusion_data_20261002_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "4a7f90ea8d04b9c4ef2bd95b64e5b6f53a28b49bb234603369cf1948eb7e802d"
+    },
+    {
+      "source": "runs/diffusion_data_20261002_v1/seeds.json",
+      "path": "diffusion_data_20261002_v1/seeds.json",
+      "size_bytes": 253,
+      "sha256": "dd32a9ee8bc87fed7ba0d4bd245cf26fc803c5f406b887e99fd889d537b2cec3"
+    },
+    {
+      "source": "runs/diffusion_data_20261002_v1/source_snapshot.zip",
+      "path": "diffusion_data_20261002_v1/source_snapshot.zip",
+      "size_bytes": 455252,
+      "sha256": "c48ac10f86fe8fd12efe2937078edc69491d81179d197aa2ca5558151f17b966"
+    },
+    {
+      "source": "runs/diffusion_data_20261002_v1/status.json",
+      "path": "diffusion_data_20261002_v1/status.json",
+      "size_bytes": 151,
+      "sha256": "9e1995091bf9476abf7831ce294c8e99e07c439314e689de68d661c89c7eda06"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/analysis/denoising_profiles.csv",
+      "path": "zhou_mimo_probe_eval_20261009_v1/analysis/denoising_profiles.csv",
+      "size_bytes": 3993,
+      "sha256": "f585466c0bded42834bd87e6d846797747b693ab7b47f2ced886b284a53ccf6b"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/analysis/integrity.json",
+      "path": "zhou_mimo_probe_eval_20261009_v1/analysis/integrity.json",
+      "size_bytes": 883,
+      "sha256": "3721d70bab22e8a3638cb71f95dd2397dce2108b676a7c607f6c83b5a3d7eb1b"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/analysis/README.md",
+      "path": "zhou_mimo_probe_eval_20261009_v1/analysis/README.md",
+      "size_bytes": 1394,
+      "sha256": "484797e00e19ba41e62c57234519899ae31c022a6947c81695bb299e3d280230"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/analysis/run_inventory.csv",
+      "path": "zhou_mimo_probe_eval_20261009_v1/analysis/run_inventory.csv",
+      "size_bytes": 2021,
+      "sha256": "d92c6c002511bc92fc6a8df7ff71e3ea8b32826a15f543d14bc021b2d848c8f6"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/analysis/sure_denoising.csv",
+      "path": "zhou_mimo_probe_eval_20261009_v1/analysis/sure_denoising.csv",
+      "size_bytes": 801,
+      "sha256": "9dfef1620adda10a31e4f7079f348076b631502bf7e273123ba91f81f2d100c0"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/analysis/verify_and_profile.py",
+      "path": "zhou_mimo_probe_eval_20261009_v1/analysis/verify_and_profile.py",
+      "size_bytes": 8106,
+      "sha256": "33ce79223697c9e1162921885e0e2275c16219f87ac3e9c51a9bf6d4dda1a0e5"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/code_manifest.json",
+      "path": "zhou_mimo_probe_eval_20261009_v1/code_manifest.json",
+      "size_bytes": 11963,
+      "sha256": "aebf23a0a26ca9ca4473a020f6a85464bb589e669fb8a15943a730c5bbaaf5a9"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/comparison.csv",
+      "path": "zhou_mimo_probe_eval_20261009_v1/comparison.csv",
+      "size_bytes": 4456,
+      "sha256": "76f1a7ffa13b9706d699c3ca8995edf4a6dd9f97f79efdaadba86ef01b6dbd90"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/comparison.png",
+      "path": "zhou_mimo_probe_eval_20261009_v1/comparison.png",
+      "size_bytes": 213391,
+      "sha256": "71c354d544ded629f4ebf9695e23f174a0c826ff36928c2bd4c9d113bc9912b7"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/config_resolved.json",
+      "path": "zhou_mimo_probe_eval_20261009_v1/config_resolved.json",
+      "size_bytes": 3812,
+      "sha256": "34234e55c9b96a3e8d62530795a0088e5009d1feea93b6018ed0392b5496df75"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/dependencies.json",
+      "path": "zhou_mimo_probe_eval_20261009_v1/dependencies.json",
+      "size_bytes": 1361,
+      "sha256": "91ee4914cc9df6a0eef5a5668832d8e958af1931208464148dff22189be640c9"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/environment.txt",
+      "path": "zhou_mimo_probe_eval_20261009_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "e0fc4f3cd2d5496b7d8b98a7bac7aa6b2082be8294621d088949b0ccfc4c0eb7"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/git_commit.txt",
+      "path": "zhou_mimo_probe_eval_20261009_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/metrics_raw.csv",
+      "path": "zhou_mimo_probe_eval_20261009_v1/metrics_raw.csv",
+      "size_bytes": 51144,
+      "sha256": "5054c266c49db2f21eadb999f0b887fe7c54cd2a5ff42558781d694edcce6bd8"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/metrics_summary.json",
+      "path": "zhou_mimo_probe_eval_20261009_v1/metrics_summary.json",
+      "size_bytes": 18821,
+      "sha256": "562b65929895effe51343fd482060a04de788b9044ceb38eb709b569cdd58d90"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/observation_reference.json",
+      "path": "zhou_mimo_probe_eval_20261009_v1/observation_reference.json",
+      "size_bytes": 250,
+      "sha256": "bc5818ed533480d3bf391d42cff321104a6e6931de8d0610ca7b85d982c31b19"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/seeds.json",
+      "path": "zhou_mimo_probe_eval_20261009_v1/seeds.json",
+      "size_bytes": 327,
+      "sha256": "e12c21f01be274648d8f6bbccaa7a35e9a97d111a527637f86db676493f6c012"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/source_snapshot.zip",
+      "path": "zhou_mimo_probe_eval_20261009_v1/source_snapshot.zip",
+      "size_bytes": 481874,
+      "sha256": "73201be7577d3b6795ac3e766a1e778d00629abaad27e50b0279e5c0e89c036a"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/status.json",
+      "path": "zhou_mimo_probe_eval_20261009_v1/status.json",
+      "size_bytes": 134,
+      "sha256": "41fb8d19ad8c5f2d735eed3b3ee8fa8d4b16a47e56d40c8c1e167ac2f7b41b0a"
+    },
+    {
+      "source": "runs/zhou_mimo_probe_eval_20261009_v1/tuning.json",
+      "path": "zhou_mimo_probe_eval_20261009_v1/tuning.json",
+      "size_bytes": 7297,
+      "sha256": "3c1a4b4271c39367ca38c6e724c69e67dafd404887f0ab5cc4730bca192c5c71"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/analysis/check_handoff.py",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/analysis/check_handoff.py",
+      "size_bytes": 3197,
+      "sha256": "56e8dfc5629aa74d47096dff4a4110471985d527b868dd8803b5c94ff2df6867"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/analysis/command_stub.py",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/analysis/command_stub.py",
+      "size_bytes": 262,
+      "sha256": "f9112f95bbbc0810fb25ba17fd86b3afff0fe4c060d8768ded7e7b2d6885ca34"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/analysis/handoff_checks.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/analysis/handoff_checks.json",
+      "size_bytes": 275,
+      "sha256": "0c75f701714efab1b1c55fa3333a03bbd02ef83951608c30778b4b48e47adda6"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/analysis/powershell_syntax.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/analysis/powershell_syntax.json",
+      "size_bytes": 145,
+      "sha256": "538b58cd019387167245911c2f48e27a27812d5a4871a425536d2afe2e9a05d2"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/analysis/run_inventory.csv",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/analysis/run_inventory.csv",
+      "size_bytes": 855,
+      "sha256": "775ee01a3db150adc3d7796f1e5770a1fa55f3d4ac890f4a899cc53161bc621c"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/analysis/smoke_metrics.csv",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/analysis/smoke_metrics.csv",
+      "size_bytes": 86780,
+      "sha256": "19c565504099c2920bccba52ade2524eb400ef29fa836625828c4ea630e19a4f"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/analysis/verification.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/analysis/verification.json",
+      "size_bytes": 2970,
+      "sha256": "82c63898d58eecacc8e911d8abbd6b549f2386ddf7ab53f3291e817a9d1436d9"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/analysis/verify_extensions.py",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/analysis/verify_extensions.py",
+      "size_bytes": 8798,
+      "sha256": "a8dd4d1d42044bfffcfd3b20e5985247a2889ed970b07e7c88b391d3adf1696f"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/code_manifest.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/code_manifest.json",
+      "size_bytes": 12816,
+      "sha256": "bb60802d88925494c10cc2afae936e0c5e7a10946fcbbf9c77255c5dcd6774fa"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/comparison.csv",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/comparison.csv",
+      "size_bytes": 1535,
+      "sha256": "05e17222bd6718f9fd32701b087fb28ed4d63172fa78cfe5a2f2ad496a1dd448"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/comparison.png",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/comparison.png",
+      "size_bytes": 107925,
+      "sha256": "54cb786b0c1213e8a1a1f38e05d7349db1c30d7b23f4d3eab888670d59dc245f"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/config_resolved.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/config_resolved.json",
+      "size_bytes": 3536,
+      "sha256": "e142563edb222185840a1d6e6f4955a4a4085f9db8988964c26d7593216ba8cf"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/dependencies.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/dependencies.json",
+      "size_bytes": 322,
+      "sha256": "669521604f771e88d1c139313ec514af0b0006489146e2007af77d56435ab856"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/environment.txt",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/environment.txt",
+      "size_bytes": 607,
+      "sha256": "1447e51d4d5dbb6516514af96ae90cae01fbf5c3a69c90cfb135b609d310f90e"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/git_commit.txt",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/git_commit.txt",
+      "size_bytes": 63,
+      "sha256": "fa20f9a1f12e6c99cfcb477b72657d18ed357300f3b5a86e01622c41f2f17f9e"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/metrics_raw.csv",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/metrics_raw.csv",
+      "size_bytes": 9687,
+      "sha256": "c32771cca081ee3387c06284227d3a7127b593c53fd7c293d92407e5e2b4360f"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/metrics_summary.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/metrics_summary.json",
+      "size_bytes": 4563,
+      "sha256": "61eadff5827dcbbaef6a82ce3c477db1b414ec569bdbe52f511cda118342c909"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/observation_reference.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/observation_reference.json",
+      "size_bytes": 322,
+      "sha256": "9695372af21d521dd1bf81fe4526b1f2fdf7c04262105103108ade5a930332fa"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/seeds.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/seeds.json",
+      "size_bytes": 324,
+      "sha256": "d5d754b5b73c8a300105350235fb4a337cc38d2869506c3c075ebfc5c3b42378"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/source_snapshot.zip",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/source_snapshot.zip",
+      "size_bytes": 495874,
+      "sha256": "de4345b1debea7329cbe53bbf7f041dc7c2e8510ba6374d3c49169b567142e6a"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/status.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/status.json",
+      "size_bytes": 133,
+      "sha256": "7d668ec75a8eb733287254aa5174554b63d818aeb96f4e04a54fe74c712de137"
+    },
+    {
+      "source": "runs/zhou_mimo_extended_smoke_20261011_v1/tuning.json",
+      "path": "zhou_mimo_extended_smoke_20261011_v1/tuning.json",
+      "size_bytes": 947,
+      "sha256": "89a4faec6b684847c6ead1acc3e27d51df2a221be86f50ef71dd50395928b201"
+    }
+  ]
+}

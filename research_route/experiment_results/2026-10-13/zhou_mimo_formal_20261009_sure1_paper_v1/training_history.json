@@ -1,0 +1,93 @@
+[
+  {
+    "step": 250,
+    "epoch": 8,
+    "training_loss": 0.9963182657860382,
+    "validation_loss": 1.0064195133856135,
+    "gradient_norm": 10.021639219684506
+  },
+  {
+    "step": 500,
+    "epoch": 16,
+    "training_loss": 0.3540199581863735,
+    "validation_loss": 0.36621763975411464,
+    "gradient_norm": 11.083009649289114
+  },
+  {
+    "step": 750,
+    "epoch": 24,
+    "training_loss": 0.22697825622527273,
+    "validation_loss": 0.22728668986735223,
+    "gradient_norm": 20.631241510441143
+  },
+  {
+    "step": 1000,
+    "epoch": 32,
+    "training_loss": 0.19012192161061808,
+    "validation_loss": 0.1854120307624968,
+    "gradient_norm": 31.462427976117198
+  },
+  {
+    "step": 1250,
+    "epoch": 40,
+    "training_loss": 0.17698887503758742,
+    "validation_loss": 0.17236628367011952,
+    "gradient_norm": 15.461396211724939
+  },
+  {
+    "step": 1500,
+    "epoch": 47,
+    "training_loss": 0.1527447861737601,
+    "validation_loss": 0.1532698079358955,
+    "gradient_norm": 12.73119813807677
+  },
+  {
+    "step": 1750,
+    "epoch": 55,
+    "training_loss": 0.12797782062337945,
+    "validation_loss": 0.13709155525806305,
+    "gradient_norm": 11.270073462559047
+  },
+  {
+    "step": 2000,
+    "epoch": 63,
+    "training_loss": 0.12985480386586173,
+    "validation_loss": 0.1318471885389896,
+    "gradient_norm": 16.447544229477902
+  },
+  {
+    "step": 2250,
+    "epoch": 71,
+    "training_loss": 0.11402941579207246,
+    "validation_loss": 0.12073421842742901,
+    "gradient_norm": 43.89306910538772
+  },
+  {
+    "step": 2500,
+    "epoch": 79,
+    "training_loss": 0.10904530410914728,
+    "validation_loss": 0.1138529945810905,
+    "gradient_norm": 10.576835709598992
+  },
+  {
+    "step": 2750,
+    "epoch": 86,
+    "training_loss": 0.11406367576354828,
+    "validation_loss": 0.11221536058066901,
+    "gradient_norm": 15.833351747530353
+  },
+  {
+    "step": 3000,
+    "epoch": 94,
+    "training_loss": 0.1152250677717259,
+    "validation_loss": 0.11558449708134508,
+    "gradient_norm": 12.23143364839181
+  },
+  {
+    "step": 3200,
+    "epoch": 100,
+    "training_loss": 0.1112915975533749,
+    "validation_loss": 0.1126378533607871,
+    "gradient_norm": 11.101504185248254
+  }
+]

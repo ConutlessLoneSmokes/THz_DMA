@@ -1,0 +1,16 @@
+{
+  "data": {
+    "source_run_id": "diffusion_data_20261002_v1",
+    "train_count": 2048,
+    "validation_count": 256,
+    "test_count": 100,
+    "train_seed": 2026100201,
+    "validation_seed": 2026100202,
+    "test_seed": 2026100203,
+    "noise_seed": 2026100904,
+    "batch_size": 4
+  },
+  "training": 2026100911,
+  "noise": 2026100922,
+  "posterior": 2026100923
+}

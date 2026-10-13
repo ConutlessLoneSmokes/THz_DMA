@@ -1,0 +1,17 @@
+{
+  "kind": "dm",
+  "data_kind": "noisy",
+  "trained_steps": 16000,
+  "epochs": 500,
+  "parameters": 55025,
+  "best_step": 15750,
+  "best_validation_loss": 0.497367262840271,
+  "session_seconds": 315.6688861999992,
+  "precision": "float32",
+  "dataset_sha256": "ffa64c3879e02b0f5a6e5e02b7c6d49a80e3d6a9472efac69ba252ca60fb3ead",
+  "noise_variance_per_real_component": 0.9983866982926622,
+  "target_alpha_bar": null,
+  "discrete_noise_schedule_delta": null,
+  "no_recovery_performance_claim": true,
+  "validation_uses_clean_labels": false
+}

@@ -1,0 +1,10 @@
+{
+  "supplemental_ls_rows": 1800,
+  "noiseless_ls_identity_check_passed": true,
+  "covariance_draws": 256,
+  "test_scenes": 100,
+  "noiseless_projection_variance": 1e-08,
+  "noiseless_projection_nmse_db": -1.418309524815489,
+  "test_tuning_performed": false,
+  "original_metrics_overwritten": false
+}

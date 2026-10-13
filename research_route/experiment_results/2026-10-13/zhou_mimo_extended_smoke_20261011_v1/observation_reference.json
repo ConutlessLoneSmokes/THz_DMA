@@ -1,0 +1,11 @@
+{
+  "training_power": {
+    "QPSK_Np64": 61.9965883050355,
+    "QPSK_Np38": 64.82819414928935
+  },
+  "scale_source": "clean training complex RMS",
+  "nominal_snr": "Nt/complex variance",
+  "snr_reference": "operator_output",
+  "noise_scale_reference": null,
+  "matched_protocol_noise_is_diagnostic_only": false
+}

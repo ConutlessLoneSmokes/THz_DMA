@@ -1,0 +1,21 @@
+{
+  "evaluation_rows": 21600,
+  "test_scenes": 100,
+  "frozen_tuning_entries": 144,
+  "observations_match_across_methods": true,
+  "tuning_matches_validation": true,
+  "original_sha256": {
+    "runs\\zhou_mimo_independent_test_20261010_v1\\metrics_raw.csv": "f6f4f04faab7b6a8230d55a685d18aab5111d864d903197c874a69e20fe5ed13",
+    "runs\\zhou_mimo_independent_test_20261010_v1\\tuning.json": "51b09c7d4e66ba8c0020ce9b8a538a9469b9b9a8abd9beb33759eafb0d76bbe0",
+    "runs\\zhou_mimo_formal_20261009_val_v1\\metrics_raw.csv": "d49daea869ad243e86bb9df21030d1fbdc124fc9479a2b233b15ef7576bafc20",
+    "runs\\zhou_mimo_formal_20261009_val_v1\\tuning.json": "51b09c7d4e66ba8c0020ce9b8a538a9469b9b9a8abd9beb33759eafb0d76bbe0"
+  },
+  "source_members": 71,
+  "dataset_files": 300,
+  "ddpm_models": 7,
+  "sure_data_dependencies": 4,
+  "frozen_recovery_rechecks": 24,
+  "max_recovery_difference_db": 3.552713678800501e-15,
+  "original_lasso_nonconverged": 227,
+  "extended_lasso_converged": 227
+}

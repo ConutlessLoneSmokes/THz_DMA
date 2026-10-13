@@ -1,0 +1,16 @@
+timestamp_utc: 2026-10-12T09:57:53.056187+00:00
+platform: Windows-10-10.0.26300-SP0
+python: 3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]
+python_executable: D:\Program Files\Miniconda\envs\ris_td3\python.exe
+conda_default_env: ris_td3
+conda_prefix: D:\Program Files\Miniconda\envs\ris_td3
+numpy: 1.26.4
+scipy: 1.15.3
+pandas: 2.3.3
+matplotlib: 3.10.8
+package_version: 0.4.0
+cwd: C:\Users\Milo\Documents\Obsidian_data\THz_phase_array\research_ai_edge_dma_rhs
+torch: 2.11.0+cu128
+cuda: 12.8
+device: cuda:0
+gpu: NVIDIA GeForce RTX 4050 Laptop GPU

@@ -1,0 +1,15 @@
+{
+  "training_power": {
+    "QPSK_Np64": 64.02728333677791,
+    "QPSK_Np38": 63.97704304614241
+  },
+  "scale_source": "clean training complex RMS",
+  "nominal_snr": "Nt*reference_training_scale^2/physical complex variance",
+  "snr_reference": "operator_output",
+  "noise_scale_reference": {
+    "run_id": "zhou_mimo_formal_20261009_data_v1",
+    "dataset_sha256": "84498b2d107ea504d68b36c76fe89f5f33d8abee9a3d84e77742d597aefe30f5",
+    "complex_scale": 4.324493061311514e-05
+  },
+  "matched_protocol_noise_is_diagnostic_only": false
+}

@@ -1,0 +1,9 @@
+noise,variant,estimator,scenes,nmse_db
+0.1,paper,noisy,256,-6.970098585873682
+0.1,paper,paper,256,-14.049925415947037
+0.1,corrected,noisy,256,-6.970098585873682
+0.1,corrected,corrected,256,-14.00925596017563
+1.0,paper,noisy,256,3.029901412914941
+1.0,paper,paper,256,-2.481912969537266
+1.0,corrected,noisy,256,3.029901412914941
+1.0,corrected,corrected,256,-5.392592665978777

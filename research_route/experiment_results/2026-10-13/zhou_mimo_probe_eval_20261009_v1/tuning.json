@@ -1,0 +1,354 @@
+{
+  "QPSK_Np64:0:zhou_mimo_probe_clean_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.7382524114928339,
+      0.6087368916271413
+    ]
+  },
+  "QPSK_Np64:0:zhou_mimo_probe_naive01_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.7481399515547096,
+      0.6271725530342148
+    ]
+  },
+  "QPSK_Np64:0:zhou_mimo_probe_suredm01_corrected_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.7492408369413588,
+      0.627830841901838
+    ]
+  },
+  "QPSK_Np64:0:zhou_mimo_probe_suredm01_paper_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.7484625358387981,
+      0.627190462812717
+    ]
+  },
+  "QPSK_Np64:0:zhou_mimo_probe_naive1_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.7584631004638528,
+      0.7424040667247402
+    ]
+  },
+  "QPSK_Np64:0:zhou_mimo_probe_suredm1_corrected_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.7542819408216441,
+      0.7362887629800395
+    ]
+  },
+  "QPSK_Np64:0:zhou_mimo_probe_suredm1_paper_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.7574163892539927,
+      0.739897718868029
+    ]
+  },
+  "QPSK_Np64:0:lasso": {
+    "selected": 61.18001661962914,
+    "candidates": [
+      6.118001661962914,
+      61.18001661962914
+    ],
+    "validation_nmse": [
+      1.5565017157015313,
+      0.1782639145082019
+    ]
+  },
+  "QPSK_Np64:20:zhou_mimo_probe_clean_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.12925054801794397,
+      0.07614895763501284
+    ]
+  },
+  "QPSK_Np64:20:zhou_mimo_probe_naive01_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.12956870822651,
+      0.07843017552233468
+    ]
+  },
+  "QPSK_Np64:20:zhou_mimo_probe_suredm01_corrected_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.13012663894336207,
+      0.07860338864868463
+    ]
+  },
+  "QPSK_Np64:20:zhou_mimo_probe_suredm01_paper_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.1298718661565073,
+      0.0784855197495787
+    ]
+  },
+  "QPSK_Np64:20:zhou_mimo_probe_naive1_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.10575488565331419,
+      0.0821446454893989
+    ]
+  },
+  "QPSK_Np64:20:zhou_mimo_probe_suredm1_corrected_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.10600225418583495,
+      0.081971585748638
+    ]
+  },
+  "QPSK_Np64:20:zhou_mimo_probe_suredm1_paper_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.10617510294733082,
+      0.08213952231005099
+    ]
+  },
+  "QPSK_Np64:20:lasso": {
+    "selected": 6.118001661962914,
+    "candidates": [
+      0.6118001661962915,
+      6.118001661962914
+    ],
+    "validation_nmse": [
+      0.022684435858884217,
+      0.018715236949654428
+    ]
+  },
+  "QPSK_Np38:0:zhou_mimo_probe_clean_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      1.2265840647566715,
+      1.0933502581609793
+    ]
+  },
+  "QPSK_Np38:0:zhou_mimo_probe_naive01_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      1.286921477568948,
+      1.1575463270183914
+    ]
+  },
+  "QPSK_Np38:0:zhou_mimo_probe_suredm01_corrected_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      1.2850069494795018,
+      1.1557920073835708
+    ]
+  },
+  "QPSK_Np38:0:zhou_mimo_probe_suredm01_paper_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      1.2844040882583336,
+      1.1551617389216053
+    ]
+  },
+  "QPSK_Np38:0:zhou_mimo_probe_naive1_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      2.010274141078698,
+      1.8730719446267552
+    ]
+  },
+  "QPSK_Np38:0:zhou_mimo_probe_suredm1_corrected_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      1.9892541867680555,
+      1.8523576684719967
+    ]
+  },
+  "QPSK_Np38:0:zhou_mimo_probe_suredm1_paper_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      2.0009353637835914,
+      1.8637848228713592
+    ]
+  },
+  "QPSK_Np38:0:lasso": {
+    "selected": 43.79753852998361,
+    "candidates": [
+      4.37975385299836,
+      43.79753852998361
+    ],
+    "validation_nmse": [
+      1.2820313108670942,
+      0.2602094222352713
+    ]
+  },
+  "QPSK_Np38:20:zhou_mimo_probe_clean_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.7596537004729698,
+      0.6537669703692265
+    ]
+  },
+  "QPSK_Np38:20:zhou_mimo_probe_naive01_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.822351281081731,
+      0.718881939190385
+    ]
+  },
+  "QPSK_Np38:20:zhou_mimo_probe_suredm01_corrected_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.8205503041639973,
+      0.7169637978113754
+    ]
+  },
+  "QPSK_Np38:20:zhou_mimo_probe_suredm01_paper_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      0.8200640380844622,
+      0.7164253992717793
+    ]
+  },
+  "QPSK_Np38:20:zhou_mimo_probe_naive1_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      1.5367374873330957,
+      1.4119388559855854
+    ]
+  },
+  "QPSK_Np38:20:zhou_mimo_probe_suredm1_corrected_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      1.517110752665605,
+      1.3935091196552922
+    ]
+  },
+  "QPSK_Np38:20:zhou_mimo_probe_suredm1_paper_20261009_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse": [
+      1.52789304976272,
+      1.4036814626759033
+    ]
+  },
+  "QPSK_Np38:20:lasso": {
+    "selected": 4.37975385299836,
+    "candidates": [
+      0.43797538529983604,
+      4.37975385299836
+    ],
+    "validation_nmse": [
+      0.05583232379479516,
+      0.05020251625576182
+    ]
+  }
+}

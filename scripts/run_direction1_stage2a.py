@@ -13,6 +13,7 @@ from _run_support import (
     RunArchive,
     hash_file,
     read_toml,
+    relative_path,
     require_unit_pilot_energy,
 )
 from thz_dma.analysis.stage2a import analyze_stage2a
@@ -63,7 +64,7 @@ def validate_resume(directory: Path, config: dict) -> None:
     if resolved["config"] != config:
         raise ValueError("resume configuration differs from archived configuration")
     for record in json.loads((directory / "code_manifest.json").read_text(encoding="utf-8")):
-        if hash_file(PROJECT_ROOT / record["path"]) != record["sha256"]:
+        if hash_file(PROJECT_ROOT / relative_path(record["path"])) != record["sha256"]:
             raise ValueError(f"resume source changed: {record['path']}")
 
 

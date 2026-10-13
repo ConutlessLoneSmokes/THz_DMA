@@ -1,0 +1,8 @@
+estimator,steps,increases,max_change_db
+zhou_mimo_formal_20261009_clean_v1,600,0,-0.3961628593390252
+zhou_mimo_formal_20261009_naive01_v1,600,0,-0.1119019801655643
+zhou_mimo_formal_20261009_naive1_v1,600,0,-0.03052492633093795
+zhou_mimo_formal_20261009_suredm01_corrected_v1,600,0,-0.20201670760030233
+zhou_mimo_formal_20261009_suredm01_paper_v1,600,0,-0.20324366828376306
+zhou_mimo_formal_20261009_suredm1_corrected_v1,600,0,-0.10640203469241172
+zhou_mimo_formal_20261009_suredm1_paper_v1,600,0,-0.055098589725183444

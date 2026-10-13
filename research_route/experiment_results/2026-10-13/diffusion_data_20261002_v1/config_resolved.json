@@ -1,0 +1,211 @@
+{
+  "config": {
+    "experiment": {
+      "name": "direction1_stage2a_sbl_snr",
+      "replicate_seeds": [
+        2026091101,
+        2026091102,
+        2026091103,
+        2026091104,
+        2026091105
+      ],
+      "samples_per_seed": 20,
+      "bootstrap_seed": 2026091199,
+      "bootstrap_resamples": 1000,
+      "randomization_seed": 2026091113,
+      "research_decision_enabled": false,
+      "diagnostic_only": true,
+      "diagnostic_scope": "conditional OMP-SBL paired multi-SNR baseline; known pre-observation coarse centers",
+      "estimators": [
+        "oracle_geometry_ls",
+        "grid_omp_3d",
+        "sbl_jointfreq_3d"
+      ]
+    },
+    "system": {
+      "carrier_frequency_hz": 300000000000.0,
+      "bandwidth_hz": 30000000000.0,
+      "num_subcarriers": 128,
+      "nfft": 128,
+      "cyclic_prefix_samples": 32
+    },
+    "channel": {
+      "num_paths": 3,
+      "range_min_m": 1.85,
+      "range_max_m": 2.15,
+      "azimuth_min_deg": 15.0,
+      "azimuth_max_deg": 25.0,
+      "elevation_min_deg": -8.0,
+      "elevation_max_deg": 8.0,
+      "los_complex_gain_magnitude": 1.0,
+      "reflection_excess_range_min_m": 0.08,
+      "reflection_excess_range_max_m": 0.25,
+      "reflection_azimuth_separation_min_deg": 4.0,
+      "reflection_azimuth_separation_max_deg": 12.0,
+      "reflection_elevation_separation_min_deg": 2.0,
+      "reflection_elevation_separation_max_deg": 8.0,
+      "reflection_gain_relative_min_db": -15.0,
+      "reflection_gain_relative_max_db": -6.0,
+      "include_absorption": true
+    },
+    "atmosphere": {
+      "table_path": "data/atmosphere/data_freq_abscoe.txt",
+      "interpolation": "linear",
+      "max_model_frequency_hz": 1000000000000.0
+    },
+    "dma": {
+      "num_microstrips": 8,
+      "elements_per_microstrip": 160,
+      "element_spacing_wavelengths": 0.2,
+      "microstrip_spacing_wavelengths": 0.5,
+      "quality_factor": 100.0,
+      "tuning_bandwidth_hz": 30000000000.0,
+      "waveguide_effective_index": 2.5,
+      "waveguide_end_power_fraction": 0.2
+    },
+    "acquisition": {
+      "num_rf_outputs": 8,
+      "total_pilot_resource_elements": 128,
+      "pilot_energy_per_re": 1.0,
+      "switch_guard_symbol_equivalents": 0.25,
+      "schedules": [
+        {
+          "name": "frequency_single_shot_C2_J1_K128",
+          "family": "frequency_single_shot",
+          "num_configurations": 1,
+          "pilots_per_configuration": 128,
+          "state_design": "cyclic_frequency_state",
+          "bank_size": 16,
+          "state_index": 2
+        },
+        {
+          "name": "tensor_structured_J8_K16_RE128",
+          "family": "tensor_structured",
+          "num_configurations": 8,
+          "pilots_per_configuration": 16,
+          "state_design": "cyclic_frequency_tiles"
+        }
+      ]
+    },
+    "noise": {
+      "array_reference_snr_db": [
+        45.0,
+        50.0,
+        55.0,
+        60.0,
+        65.0,
+        70.0
+      ],
+      "rf_noise_variance_fraction_of_element_noise": 0.0
+    },
+    "search": {
+      "mode": "beam_center_adaptive",
+      "range_min_m": 1.8,
+      "range_max_m": 2.45,
+      "range_step_m": 0.001,
+      "azimuth_min_deg": 0.0,
+      "azimuth_max_deg": 40.0,
+      "azimuth_step_deg": 0.5,
+      "elevation_min_deg": -18.0,
+      "elevation_max_deg": 18.0,
+      "elevation_step_deg": 3.0,
+      "dictionary_chunk_size": 256,
+      "dictionary_storage_dtype": "complex64",
+      "dictionary_compute_backend": "torch_cuda",
+      "dictionary_compute_device": "cuda:0"
+    },
+    "adaptive_search": {
+      "correlation_threshold": 0.5,
+      "window_fullwidth_multiplier": 2.0,
+      "grid_points_per_3db_width": 4.0,
+      "probe_range_step_m": 0.00025,
+      "probe_azimuth_step_deg": 0.05,
+      "probe_elevation_step_deg": 0.1,
+      "bisection_iterations": 10,
+      "probe_batch_size": 32,
+      "truth_offset_halfpower_fraction": 0.9,
+      "truth_offset_cap_range_m": 0.0045,
+      "truth_offset_cap_azimuth_deg": 0.9,
+      "truth_offset_cap_elevation_deg": 1.2,
+      "preserve_channel_relationships": true,
+      "maximum_candidates_per_scene": 50000
+    },
+    "estimator": {
+      "exclusion_range_m": 0.015,
+      "exclusion_azimuth_deg": 1.0,
+      "exclusion_elevation_deg": 1.5,
+      "sbl_jointfreq_3d": {
+        "max_iterations": 2000,
+        "evidence_tolerance": 0.0001
+      }
+    },
+    "evaluation": {
+      "channel_nmse_subcarrier_count": 16,
+      "path_match_range_scale_m": 0.03,
+      "path_match_azimuth_scale_deg": 2.0,
+      "path_match_elevation_scale_deg": 3.0,
+      "path_success_range_tolerance_m": 0.03,
+      "path_success_azimuth_tolerance_deg": 3.0,
+      "path_success_elevation_tolerance_deg": 4.0
+    },
+    "data_evaluation": {
+      "codebook_size": 64,
+      "codebook_seed_start": 2026093000,
+      "coherence_symbols": 100.0
+    },
+    "analysis": {
+      "primary_array_reference_snr_db": 55.0,
+      "reference_estimator": "grid_omp_3d",
+      "strong_estimator": "sbl_jointfreq_3d",
+      "oracle_estimator": "oracle_geometry_ls"
+    },
+    "diffusion": {
+      "base_config": "configs/direction1_stage2a_sbl_snr.toml",
+      "history_run": "stage2a_sbl_snr_20261002_v1",
+      "device": "cuda:0",
+      "data": {
+        "train_count": 2048,
+        "validation_count": 256,
+        "test_count": 100,
+        "train_seed": 2026100201,
+        "validation_seed": 2026100202,
+        "test_seed": 2026100203
+      },
+      "network": {
+        "width": 24
+      },
+      "training": {
+        "seed": 2026100291,
+        "batch_size": 4,
+        "steps": 10000,
+        "learning_rate": 0.0002,
+        "validation_every": 250,
+        "validation_scenes": 32,
+        "gradient_clip_norm": 1.0
+      },
+      "posterior": {
+        "seed": 2026100292,
+        "sigma_min": 0.01,
+        "sigma_max": 3.0,
+        "levels": 32,
+        "steps_per_level": 5,
+        "step_scale": 0.05,
+        "samples": 4,
+        "validation_scenes": 16,
+        "prior_draws": 128,
+        "prior_seed": 2026092901
+      }
+    },
+    "job": {
+      "stage": "prepare",
+      "data_run_id": null,
+      "train_run_id": null,
+      "split": "validation",
+      "scene_limit": 16,
+      "smoke": false
+    }
+  },
+  "config_path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\configs\\direction1_diffusion.toml",
+  "config_sha256": "c66808120e8e9d4d1ab140747a394a3e1dc2fff396188653dafb7367ffe2d6f0",
+  "absorption_table_sha256": "3aa52bf00e30831c82b98b06d48ea8fdd8ebe7cc2da6e233ad2ed3238dc4dca8"
+}

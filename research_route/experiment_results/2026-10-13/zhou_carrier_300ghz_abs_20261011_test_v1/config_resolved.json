@@ -1,0 +1,139 @@
+{
+  "config": {
+    "scenario": "mimo",
+    "device": "cuda:0",
+    "cpu_threads": 4,
+    "system": {
+      "carrier_frequency_hz": 300000000000.0
+    },
+    "mimo": {
+      "receive_antennas": 16,
+      "transmit_antennas": 64,
+      "spacing_m": 0.0004996540966666667,
+      "departure_min_deg": -60.0,
+      "departure_max_deg": 60.0
+    },
+    "channel": {
+      "num_paths": 3,
+      "range_min_m": 1.85,
+      "range_max_m": 2.15,
+      "azimuth_min_deg": 15.0,
+      "azimuth_max_deg": 25.0,
+      "elevation_min_deg": -8.0,
+      "elevation_max_deg": 8.0,
+      "los_complex_gain_magnitude": 1.0,
+      "reflection_excess_range_min_m": 0.08,
+      "reflection_excess_range_max_m": 0.25,
+      "reflection_azimuth_separation_min_deg": 4.0,
+      "reflection_azimuth_separation_max_deg": 12.0,
+      "reflection_elevation_separation_min_deg": 2.0,
+      "reflection_elevation_separation_max_deg": 8.0,
+      "reflection_gain_relative_min_db": -15.0,
+      "reflection_gain_relative_max_db": -6.0,
+      "include_absorption": true
+    },
+    "atmosphere": {
+      "table_path": "data/atmosphere/data_freq_abscoe.txt",
+      "interpolation": "linear",
+      "max_model_frequency_hz": 1000000000000.0
+    },
+    "data": {
+      "train_count": 4096,
+      "validation_count": 256,
+      "test_count": 100,
+      "train_seed": 2026100901,
+      "validation_seed": 2026100902,
+      "test_seed": 2026100903,
+      "noise_seed": 2026100904,
+      "batch_size": 16
+    },
+    "network": {
+      "width": 64,
+      "time_dim": 16
+    },
+    "diffusion": {
+      "steps": 100,
+      "beta_start": 0.0001,
+      "beta_end": 0.1
+    },
+    "training": {
+      "seed": 2026100911,
+      "validation_seed": 2026100912,
+      "batch_size": 128,
+      "epochs": 500,
+      "learning_rate": 0.0001,
+      "validation_every": 250,
+      "validation_scenes": 64
+    },
+    "sure": {
+      "epochs": 100,
+      "epsilon": 1e-05,
+      "precision": "float64"
+    },
+    "evaluation_run": {
+      "scene_limit": 100,
+      "validation_scenes": 100,
+      "baseline_count": 4096,
+      "pilot_counts": [
+        64,
+        38
+      ],
+      "pilot_seed": 2026100921,
+      "noise_seed": 2026100922,
+      "posterior_seed": 2026100923,
+      "bootstrap_seed": 2026100924,
+      "snr_db": [
+        -10.0,
+        -5.0,
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0
+      ],
+      "guidance": [
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "refinement": 1,
+      "lasso_factors": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0
+      ],
+      "lasso_steps": 1000,
+      "mimo_references": [
+        "angular_omp",
+        "oracle_geometry_ls"
+      ],
+      "omp_max_atoms": 3,
+      "noise_scale_run_id": "zhou_mimo_formal_20261009_data_v1"
+    },
+    "job": {
+      "command": "evaluate",
+      "run_id": "zhou_carrier_300ghz_abs_20261011_test_v1",
+      "data_run_id": "zhou_carrier_300ghz_abs_20261011_data_v1",
+      "train_run_id": [
+        "zhou_carrier_300ghz_abs_20261011_clean_v1"
+      ],
+      "noise_variance": null,
+      "sure_variant": "corrected",
+      "split": "test",
+      "tuning_run_id": "zhou_carrier_300ghz_abs_20261011_val_v1",
+      "seed": null,
+      "smoke": false,
+      "resume": false,
+      "config_path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\configs\\zhou2025_carrier_300ghz_abs.toml"
+    }
+  },
+  "config_path": "C:\\Users\\Milo\\Documents\\Obsidian_data\\THz_phase_array\\research_ai_edge_dma_rhs\\configs\\zhou2025_carrier_300ghz_abs.toml",
+  "config_sha256": "00dca97fbdc0bbfd88f9060afbe9ac28bc2454660c56b13e9bf1acfba1d3fa11",
+  "absorption_table_sha256": "3aa52bf00e30831c82b98b06d48ea8fdd8ebe7cc2da6e233ad2ed3238dc4dca8"
+}

@@ -1,0 +1,74 @@
+{
+  "scenario": "mimo",
+  "counts": {
+    "train": 4096,
+    "validation": 256,
+    "test": 100
+  },
+  "split_seeds": {
+    "train": 2026100901,
+    "validation": 2026100902,
+    "test": 2026100903
+  },
+  "channel_shape": [
+    16,
+    64
+  ],
+  "physics": {
+    "system": {
+      "carrier_frequency_hz": 300000000000.0
+    },
+    "channel": {
+      "num_paths": 3,
+      "range_min_m": 1.85,
+      "range_max_m": 2.15,
+      "azimuth_min_deg": 15.0,
+      "azimuth_max_deg": 25.0,
+      "elevation_min_deg": -8.0,
+      "elevation_max_deg": 8.0,
+      "los_complex_gain_magnitude": 1.0,
+      "reflection_excess_range_min_m": 0.08,
+      "reflection_excess_range_max_m": 0.25,
+      "reflection_azimuth_separation_min_deg": 4.0,
+      "reflection_azimuth_separation_max_deg": 12.0,
+      "reflection_elevation_separation_min_deg": 2.0,
+      "reflection_elevation_separation_max_deg": 8.0,
+      "reflection_gain_relative_min_db": -15.0,
+      "reflection_gain_relative_max_db": -6.0,
+      "include_absorption": true
+    },
+    "atmosphere": {
+      "table_path": "data/atmosphere/data_freq_abscoe.txt",
+      "interpolation": "linear",
+      "max_model_frequency_hz": 1000000000000.0
+    },
+    "mimo": {
+      "receive_antennas": 16,
+      "transmit_antennas": 64,
+      "spacing_wavelengths": 0.5,
+      "departure_min_deg": -60.0,
+      "departure_max_deg": 60.0
+    }
+  },
+  "kind": "noisy",
+  "storage": "npy",
+  "parent_run_id": "zhou_mimo_formal_20261009_data_v1",
+  "parent_dataset_sha256": "84498b2d107ea504d68b36c76fe89f5f33d8abee9a3d84e77742d597aefe30f5",
+  "files": {
+    "train": "channels_train.npy",
+    "validation": "channels_validation.npy",
+    "test": "channels_test.npy"
+  },
+  "known_noise_real_variance_phys": 1.8701240237331433e-09,
+  "requested_canonical_real_variance": 1.0,
+  "complex_scale": 4.327985643841728e-05,
+  "normalization_source": "noisy training second moment minus known complex noise power",
+  "noise_seed": 2026100904,
+  "full_csi_awgn_not_dma_lmmse_error": true,
+  "schema_version": 1,
+  "file_sha256": {
+    "channels_train.npy": "af4decc2d4a378dc1c45360cfa9b4ae45bcf808246f080fc25df419599effc90",
+    "channels_validation.npy": "b3366a1160c4ae34048258efc3972dd3eae183f2d2c680baa287a392a063bd9a",
+    "channels_test.npy": "c0503163b80eecb25fc54dd5f974387f2e9a93b9bbdb5f112a36417706c11aa5"
+  }
+}

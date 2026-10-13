@@ -1,0 +1,1054 @@
+{
+  "rows": 10800,
+  "smoke_only": false,
+  "split": "test",
+  "confidence_unit": "paired channel scenes; training seeds are separate models",
+  "summary": [
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -1.124319075042277,
+      "mean_batch1_seconds": 0.9043782089997694,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": 15.549451240468084,
+      "mean_batch1_seconds": 0.2219314990003477,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": 6.789477305908961,
+      "mean_batch1_seconds": 0.0489325839994126,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 17.194604472095733,
+      "mean_batch1_seconds": 0.8280797650001478,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.025030035405461865,
+      "mean_batch1_seconds": 0.5583910790000663,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0012828203104106803,
+      "mean_batch1_seconds": 0.23675635099978534,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -5.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -2.2491386528583894,
+      "mean_batch1_seconds": 0.9011139409994212,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -5.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": 10.774339370730468,
+      "mean_batch1_seconds": 0.21614532499937922,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -5.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": 1.7894771390939277,
+      "mean_batch1_seconds": 0.04875531699944986,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -5.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 12.490333030758629,
+      "mean_batch1_seconds": 0.8060464630001661,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -5.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.06923224521924572,
+      "mean_batch1_seconds": 0.5923954490000324,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -5.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0012129085971054163,
+      "mean_batch1_seconds": 0.21944984600064343,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 0.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -3.8415576171834784,
+      "mean_batch1_seconds": 0.9026654610005062,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 0.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": 6.608404947987189,
+      "mean_batch1_seconds": 0.21523995999981707,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 0.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -3.2105230246272978,
+      "mean_batch1_seconds": 0.048603166999891985,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 0.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 8.295178631319587,
+      "mean_batch1_seconds": 0.8341257080004288,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 0.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.1715382827611538,
+      "mean_batch1_seconds": 0.5676905489999626,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 0.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0011464142387546915,
+      "mean_batch1_seconds": 0.22912565499973425,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 5.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -5.864535081767857,
+      "mean_batch1_seconds": 0.898823688999837,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 5.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": 2.537117825390136,
+      "mean_batch1_seconds": 0.21608163799945032,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 5.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -8.210523236692763,
+      "mean_batch1_seconds": 0.048702630000261704,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 5.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 4.449318498973373,
+      "mean_batch1_seconds": 0.8395262569998886,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 5.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.35846157020977965,
+      "mean_batch1_seconds": 0.5672480940003152,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 5.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0009663653280327252,
+      "mean_batch1_seconds": 0.24860803399998985,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 10.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -8.137926638157102,
+      "mean_batch1_seconds": 0.8997077149996767,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 10.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -1.4871558387152688,
+      "mean_batch1_seconds": 0.2160135660006199,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 10.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -13.210523816489221,
+      "mean_batch1_seconds": 0.04840970499950345,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 10.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 0.8326846232261642,
+      "mean_batch1_seconds": 0.8908753440004511,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 10.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.6360366586986583,
+      "mean_batch1_seconds": 0.5661086140004773,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 10.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0009038420538196848,
+      "mean_batch1_seconds": 0.2195564490003744,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 15.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -10.321063054192017,
+      "mean_batch1_seconds": 0.9022050260000833,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 15.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -4.779641125522491,
+      "mean_batch1_seconds": 0.21624365199997556,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 15.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -18.2105246857726,
+      "mean_batch1_seconds": 0.04882915399990452,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 15.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": -3.2229887355540936,
+      "mean_batch1_seconds": 0.9206726580002578,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 15.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 1.0149575755223696,
+      "mean_batch1_seconds": 0.5674018019999494,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 15.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0008456150232333804,
+      "mean_batch1_seconds": 0.21798130899995158,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -12.385536558268873,
+      "mean_batch1_seconds": 0.9019918409999081,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -7.578668969752453,
+      "mean_batch1_seconds": 0.21641798299970105,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -23.210525870406418,
+      "mean_batch1_seconds": 0.04873003900007461,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": -6.883940084339817,
+      "mean_batch1_seconds": 0.9316753980000066,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 1.5570561437607442,
+      "mean_batch1_seconds": 0.5635585579994222,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0006901248439233975,
+      "mean_batch1_seconds": 0.24501385900010064,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 25.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -14.582711898134495,
+      "mean_batch1_seconds": 0.9032384459999594,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 25.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -9.585661468334933,
+      "mean_batch1_seconds": 0.21570085699997435,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 25.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -28.210528602989328,
+      "mean_batch1_seconds": 0.0487403980003728,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 25.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": -10.18767879531891,
+      "mean_batch1_seconds": 0.9960028799999417,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 25.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 2.3289154158287744,
+      "mean_batch1_seconds": 0.5743945140002324,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 25.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0005641078974899113,
+      "mean_batch1_seconds": 0.22123553200050083,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -17.00656565679591,
+      "mean_batch1_seconds": 0.9000143070006016,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -9.587681028195048,
+      "mean_batch1_seconds": 0.21584301599985337,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -33.21053370673003,
+      "mean_batch1_seconds": 0.04885082399989187,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": -13.173139981804772,
+      "mean_batch1_seconds": 1.0496394700001839,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 3.3361447615068536,
+      "mean_batch1_seconds": 0.571320208999823,
+      "scenes": 100
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.000523569982070239,
+      "mean_batch1_seconds": 0.2222258239997609,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -0.9373365667217386,
+      "mean_batch1_seconds": 0.9084942340000999,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": 14.83531307931759,
+      "mean_batch1_seconds": 0.2180441379997501,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": 6.291943581440947,
+      "mean_batch1_seconds": 0.029586094000333105,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 19.84275086839872,
+      "mean_batch1_seconds": 1.766317076000123,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.01904858605086011,
+      "mean_batch1_seconds": 0.5692858800001704,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0015316777065947208,
+      "mean_batch1_seconds": 0.22213543800011393,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -5.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -2.3322837046656235,
+      "mean_batch1_seconds": 0.9096516890000202,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -5.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": 10.171788878355043,
+      "mean_batch1_seconds": 0.216977034999436,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -5.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": 1.2919435273306803,
+      "mean_batch1_seconds": 0.02970386699984374,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -5.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 14.968699508579297,
+      "mean_batch1_seconds": 1.8089541059998737,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -5.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.05744670093388657,
+      "mean_batch1_seconds": 0.5728655239992076,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -5.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0015192196800526431,
+      "mean_batch1_seconds": 0.21983719100047894,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 0.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -4.421731953024722,
+      "mean_batch1_seconds": 0.9099463839999953,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 0.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": 5.1181296835020165,
+      "mean_batch1_seconds": 0.21621100899959855,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 0.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -3.7080565424810374,
+      "mean_batch1_seconds": 0.02975084000005154,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 0.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 10.15016705049997,
+      "mean_batch1_seconds": 1.8127733320002153,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 0.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.15528802479753434,
+      "mean_batch1_seconds": 0.5607588869995379,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 0.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0014945048561651633,
+      "mean_batch1_seconds": 0.25710178599998473,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 5.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -7.002738448519281,
+      "mean_batch1_seconds": 0.9101497419999941,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 5.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -0.5179658294773188,
+      "mean_batch1_seconds": 0.21638109900042765,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 5.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -8.708056447667749,
+      "mean_batch1_seconds": 0.029623878999627776,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 5.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 5.371558987314204,
+      "mean_batch1_seconds": 1.8201763380000922,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 5.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.34500194773084164,
+      "mean_batch1_seconds": 0.5790843729993503,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 5.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0014580882026802456,
+      "mean_batch1_seconds": 0.22735351000010268,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 10.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -9.961957229141507,
+      "mean_batch1_seconds": 0.9035427529994194,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 10.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -5.341382612818996,
+      "mean_batch1_seconds": 0.21739030900018405,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 10.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -13.708056631658764,
+      "mean_batch1_seconds": 0.02957156499978737,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 10.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": 0.6111155375969499,
+      "mean_batch1_seconds": 1.890178652999748,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 10.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.6190350494590035,
+      "mean_batch1_seconds": 0.5748649590004788,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 10.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.001391664180228154,
+      "mean_batch1_seconds": 0.2243789770000876,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 15.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -13.170980081400991,
+      "mean_batch1_seconds": 0.9114145780005493,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 15.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -9.90120873886234,
+      "mean_batch1_seconds": 0.21644206799988752,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 15.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -18.7080566862638,
+      "mean_batch1_seconds": 0.029883302999660372,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 15.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": -4.105822488755758,
+      "mean_batch1_seconds": 1.9775156229999267,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 15.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 0.9690440106531474,
+      "mean_batch1_seconds": 0.5631319169999915,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 15.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0013151713573083435,
+      "mean_batch1_seconds": 0.2370380050001404,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -16.533555750723416,
+      "mean_batch1_seconds": 0.9100476420002814,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -13.339088728521135,
+      "mean_batch1_seconds": 0.21606744099990466,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -23.70805651236713,
+      "mean_batch1_seconds": 0.029683787999892956,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": -8.862576648020017,
+      "mean_batch1_seconds": 2.0527604449995125,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 1.4157676048674928,
+      "mean_batch1_seconds": 0.565535691000332,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0012233867966926946,
+      "mean_batch1_seconds": 0.2255632079998759,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 25.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -19.99142653962903,
+      "mean_batch1_seconds": 0.9091966079999838,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 25.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -14.288557721166338,
+      "mean_batch1_seconds": 0.21681183300002885,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 25.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -28.708056815138132,
+      "mean_batch1_seconds": 0.029624207999804638,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 25.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": -13.776612043573884,
+      "mean_batch1_seconds": 2.048053710000313,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 25.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 1.9733334411551193,
+      "mean_batch1_seconds": 0.5782231450002291,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 25.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.0011353987259822395,
+      "mean_batch1_seconds": 0.23494742299975768,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "conditional_conditional_lmmse",
+      "nmse_db": -23.552213214978632,
+      "mean_batch1_seconds": 0.9089764600002672,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "conditional_grid_omp_3d",
+      "nmse_db": -14.961345503751172,
+      "mean_batch1_seconds": 0.2171385299997928,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "conditional_oracle_geometry_ls",
+      "nmse_db": -33.70805734689224,
+      "mean_batch1_seconds": 0.02970903199959139,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "conditional_sbl_jointfreq_3d",
+      "nmse_db": -18.39934064100863,
+      "mean_batch1_seconds": 2.2849093169999106,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "lmmse_zhou_wideband_formal_20261011_data_v1",
+      "nmse_db": 2.5668496879475495,
+      "mean_batch1_seconds": 0.5678949740004464,
+      "scenes": 100
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "estimator": "zhou_wideband_formal_20261011_clean_v1",
+      "nmse_db": 0.001061745684844289,
+      "mean_batch1_seconds": 0.2315618519999407,
+      "scenes": 100
+    }
+  ],
+  "paired_vs_clean_global_lmmse": [
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -10.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.023651643915838884,
+      "ci95": [
+        -0.029433511481694156,
+        -0.01775910266889269
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": -5.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.0676475795416239,
+      "ci95": [
+        -0.07901952938732291,
+        -0.05643275150713744
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 0.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.16880191421909138,
+      "ci95": [
+        -0.19095253708630994,
+        -0.14621665404362055
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 5.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.3518789618970753,
+      "ci95": [
+        -0.39267740258444445,
+        -0.3107194384771845
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 10.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.6197904811992796,
+      "ci95": [
+        -0.6927455008699406,
+        -0.5417695379507451
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 15.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.9802518570353987,
+      "ci95": [
+        -1.0882252860087258,
+        -0.8650304002058945
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 20.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -1.4964421262331422,
+      "ci95": [
+        -1.6358637658851294,
+        -1.351285182702491
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 25.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -2.2341481061023694,
+      "ci95": [
+        -2.4018800717145092,
+        -2.0291694431894762
+      ]
+    },
+    {
+      "schedule": "frequency_single_shot_C2_J1_K128",
+      "snr_db": 30.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -3.1898386767257474,
+      "ci95": [
+        -3.406727318369081,
+        -2.949274712213098
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -10.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.01744748063230589,
+      "ci95": [
+        -0.022729339140144016,
+        -0.01219912203152604
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": -5.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.055611424786248434,
+      "ci95": [
+        -0.06521120380048614,
+        -0.045470011501999495
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 0.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.15224570245992694,
+      "ci95": [
+        -0.1755707907143267,
+        -0.12794937719095015
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 5.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.337050422108066,
+      "ci95": [
+        -0.3804098772883335,
+        -0.29173151460186536
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 10.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.5986285933010703,
+      "ci95": [
+        -0.6842374915637316,
+        -0.5188235239271018
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 15.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -0.9279466301149255,
+      "ci95": [
+        -1.040916389347057,
+        -0.8067814192729312
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 20.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -1.3486737612533373,
+      "ci95": [
+        -1.494554693952864,
+        -1.1944926279072856
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 25.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -1.8800320539823345,
+      "ci95": [
+        -2.062738695410855,
+        -1.6767791578159827
+      ]
+    },
+    {
+      "schedule": "tensor_structured_J8_K16_RE128",
+      "snr_db": 30.0,
+      "model": "zhou_wideband_formal_20261011_clean_v1",
+      "mean_difference_db": -2.453303868260324,
+      "ci95": [
+        -2.6550378803752706,
+        -2.2478695459353086
+      ]
+    }
+  ]
+}

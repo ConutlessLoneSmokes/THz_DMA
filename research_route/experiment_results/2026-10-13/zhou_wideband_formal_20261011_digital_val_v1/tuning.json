@@ -1,0 +1,272 @@
+{
+  "digital_frequency_single_shot_C2_J1_K128:-10:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 2.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.4954767198698364,
+      0.18482250936680025,
+      0.09376393776872599,
+      0.09744333184044628
+    ]
+  },
+  "digital_frequency_single_shot_C2_J1_K128:-5:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 2.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.25069449810582284,
+      0.07941169684403093,
+      0.04401533308553616,
+      0.04992585016074025
+    ]
+  },
+  "digital_frequency_single_shot_C2_J1_K128:0:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 2.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.12184443785888778,
+      0.03229625153989292,
+      0.021888685944489207,
+      0.028959896760686034
+    ]
+  },
+  "digital_frequency_single_shot_C2_J1_K128:5:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 2.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.05372996473008529,
+      0.013875340608400732,
+      0.01299874975504547,
+      0.020131434793784493
+    ]
+  },
+  "digital_frequency_single_shot_C2_J1_K128:10:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.023095381313213315,
+      0.0073173028092725625,
+      0.00894272661207537,
+      0.014778471523188643
+    ]
+  },
+  "digital_frequency_single_shot_C2_J1_K128:15:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.010387719006466938,
+      0.004365939539029985,
+      0.006149996988036465,
+      0.00961553526362488
+    ]
+  },
+  "digital_frequency_single_shot_C2_J1_K128:20:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.0049599692632434685,
+      0.0025783140443350044,
+      0.003630699742138535,
+      0.005048962942388783
+    ]
+  },
+  "digital_frequency_single_shot_C2_J1_K128:25:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.0024561407659921372,
+      0.0013418990749241616,
+      0.0017542227151493095,
+      0.0021969095345022397
+    ]
+  },
+  "digital_frequency_single_shot_C2_J1_K128:30:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.0012623259186102338,
+      0.0006034387517681182,
+      0.0007194362191455862,
+      0.0008364721583540626
+    ]
+  },
+  "digital_tensor_structured_J8_K16_RE128:-10:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 4.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.946389125477395,
+      0.8307169474510359,
+      0.7728106279542531,
+      0.7422732841737667
+    ]
+  },
+  "digital_tensor_structured_J8_K16_RE128:-5:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 4.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.8730034071334687,
+      0.7934223364211157,
+      0.7492983761884049,
+      0.7275589490926886
+    ]
+  },
+  "digital_tensor_structured_J8_K16_RE128:0:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 4.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.834354659723932,
+      0.7714784171738569,
+      0.7370044150854032,
+      0.7206153946586477
+    ]
+  },
+  "digital_tensor_structured_J8_K16_RE128:5:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 4.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.8115338354068169,
+      0.7598580139509226,
+      0.7314597645022056,
+      0.7174285410094463
+    ]
+  },
+  "digital_tensor_structured_J8_K16_RE128:10:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 4.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.7984689193339474,
+      0.7545063311820315,
+      0.7291233958587242,
+      0.7158731807221628
+    ]
+  },
+  "digital_tensor_structured_J8_K16_RE128:15:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 4.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.791748772431041,
+      0.7522815645401805,
+      0.7281488869685895,
+      0.715141051387341
+    ]
+  },
+  "digital_tensor_structured_J8_K16_RE128:20:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 4.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.7885704531118038,
+      0.7514189295380154,
+      0.7277602976994326,
+      0.7148348245532095
+    ]
+  },
+  "digital_tensor_structured_J8_K16_RE128:25:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 4.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.7870888508288678,
+      0.7510941215140917,
+      0.7276151332321019,
+      0.7147161295137137
+    ]
+  },
+  "digital_tensor_structured_J8_K16_RE128:30:zhou_wideband_formal_20261011_clean_v1": {
+    "selected": 4.0,
+    "candidates": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "validation_nmse": [
+      0.7863305895913856,
+      0.7509698777401186,
+      0.7275633104905141,
+      0.7146779418328226
+    ]
+  }
+}

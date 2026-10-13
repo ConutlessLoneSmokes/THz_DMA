@@ -1,0 +1,22 @@
+{
+  "complete_runs": 35,
+  "verified_source_snapshots": 19,
+  "verified_snapshot_files": 1349,
+  "verified_datasets": 13,
+  "verified_trained_models": 19,
+  "evaluation_rows": {
+    "zhou_dma_smoke_eval_20261009_v1": 48,
+    "zhou_mimo_probe_eval_20261009_v1": 192,
+    "zhou_mimo_smoke_eval_20261009_v1": 56
+  },
+  "evaluation_metrics_sha256": {
+    "zhou_dma_smoke_eval_20261009_v1": "7477bb68ef829564a594bb18b97925889e3aff2bf24013935dfd98b8ae277f08",
+    "zhou_mimo_probe_eval_20261009_v1": "5054c266c49db2f21eadb999f0b887fe7c54cd2a5ff42558781d694edcce6bd8",
+    "zhou_mimo_smoke_eval_20261009_v1": "1cb660ca1f01b823bcbe081de3af714ebe019aedf53ee2c08586734fc6ca65ea"
+  },
+  "current_recovery_rechecks": 8,
+  "max_recovery_difference_db": 1.7763568394002505e-15,
+  "extracted_lasso_exact_matches": 3,
+  "denoising_profile_rows": 35,
+  "sure_denoising_rows": 8
+}

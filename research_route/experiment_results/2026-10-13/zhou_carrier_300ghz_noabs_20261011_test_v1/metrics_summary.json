@@ -1,0 +1,1054 @@
+{
+  "rows": 10800,
+  "smoke_only": false,
+  "split": "test",
+  "confidence_unit": "paired channel scenes; training seeds are separate models",
+  "summary": [
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -10.0,
+      "estimator": "angular_omp",
+      "nmse_db": 5.447517264539163,
+      "mean_batch1_seconds": 0.0031223840000166093,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -10.0,
+      "estimator": "lasso",
+      "nmse_db": -2.2294037325564906,
+      "mean_batch1_seconds": 0.02141626400010864,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -10.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -1.036143784290391,
+      "mean_batch1_seconds": 0.11728565600013098,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -10.0,
+      "estimator": "ls",
+      "nmse_db": 11.819997461063474,
+      "mean_batch1_seconds": 0.004244379000047047,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -10.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -12.992318956793117,
+      "mean_batch1_seconds": 0.0033625469998878545,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -10.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -4.547247111243141,
+      "mean_batch1_seconds": 0.1250670399998853,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -5.0,
+      "estimator": "angular_omp",
+      "nmse_db": 0.8184364449515222,
+      "mean_batch1_seconds": 0.0031301790000361506,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -5.0,
+      "estimator": "lasso",
+      "nmse_db": -3.9247530627919835,
+      "mean_batch1_seconds": 0.025270479999999224,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -5.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -1.8753202383959806,
+      "mean_batch1_seconds": 0.12079649200008134,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -5.0,
+      "estimator": "ls",
+      "nmse_db": 7.067193288597843,
+      "mean_batch1_seconds": 0.004292232999941917,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -5.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -17.992319259908903,
+      "mean_batch1_seconds": 0.0034006309999313087,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -5.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -7.008591419767912,
+      "mean_batch1_seconds": 0.12485632400021132,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 0.0,
+      "estimator": "angular_omp",
+      "nmse_db": -3.334662142263185,
+      "mean_batch1_seconds": 0.0032258189999629394,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 0.0,
+      "estimator": "lasso",
+      "nmse_db": -5.968846703926034,
+      "mean_batch1_seconds": 0.06625170500003151,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 0.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -2.7801000656037766,
+      "mean_batch1_seconds": 0.12164485400011472,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 0.0,
+      "estimator": "ls",
+      "nmse_db": 2.767450268535783,
+      "mean_batch1_seconds": 0.004350920999895607,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 0.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -22.992318805166402,
+      "mean_batch1_seconds": 0.0035008460000608465,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 0.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -9.708851425766742,
+      "mean_batch1_seconds": 0.12820224899969618,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 5.0,
+      "estimator": "angular_omp",
+      "nmse_db": -6.353731031496734,
+      "mean_batch1_seconds": 0.0032997050000994933,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 5.0,
+      "estimator": "lasso",
+      "nmse_db": -8.663709589602192,
+      "mean_batch1_seconds": 0.08113097700006619,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 5.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -3.5116237927988654,
+      "mean_batch1_seconds": 0.1192949569998018,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 5.0,
+      "estimator": "ls",
+      "nmse_db": -0.5567123737023653,
+      "mean_batch1_seconds": 0.004565051999998104,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 5.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -27.992319159502497,
+      "mean_batch1_seconds": 0.0032601909998993504,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 5.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -12.689889220204238,
+      "mean_batch1_seconds": 0.12489194100024179,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 10.0,
+      "estimator": "angular_omp",
+      "nmse_db": -8.07725691359961,
+      "mean_batch1_seconds": 0.0031622499998775313,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 10.0,
+      "estimator": "lasso",
+      "nmse_db": -10.737274635426031,
+      "mean_batch1_seconds": 0.10158686599981592,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 10.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -3.9617170905940386,
+      "mean_batch1_seconds": 0.1308559339999556,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 10.0,
+      "estimator": "ls",
+      "nmse_db": -2.5195956658905527,
+      "mean_batch1_seconds": 0.0046368550002080155,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 10.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -32.9923179769992,
+      "mean_batch1_seconds": 0.0029651620002186974,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 10.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -15.417174455499854,
+      "mean_batch1_seconds": 0.12632485199996155,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 15.0,
+      "estimator": "angular_omp",
+      "nmse_db": -8.810020175405022,
+      "mean_batch1_seconds": 0.0033398189999206806,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 15.0,
+      "estimator": "lasso",
+      "nmse_db": -12.211025875824618,
+      "mean_batch1_seconds": 0.13746237799998198,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 15.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -4.171332065517383,
+      "mean_batch1_seconds": 0.13264227800023945,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 15.0,
+      "estimator": "ls",
+      "nmse_db": -3.3851364848281262,
+      "mean_batch1_seconds": 0.004114274999992631,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 15.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -37.99231789488974,
+      "mean_batch1_seconds": 0.0035830200000782496,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 15.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -17.731396928819503,
+      "mean_batch1_seconds": 0.12321402900004613,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 20.0,
+      "estimator": "angular_omp",
+      "nmse_db": -9.034898597686801,
+      "mean_batch1_seconds": 0.003166105999771389,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 20.0,
+      "estimator": "lasso",
+      "nmse_db": -13.175140745045763,
+      "mean_batch1_seconds": 0.19231908999998268,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 20.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -4.238533073035608,
+      "mean_batch1_seconds": 0.1193819889999213,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 20.0,
+      "estimator": "ls",
+      "nmse_db": -3.6991056108155758,
+      "mean_batch1_seconds": 0.004038481000134197,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 20.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -42.99231430041851,
+      "mean_batch1_seconds": 0.0032932279998931337,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 20.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -19.540286177188783,
+      "mean_batch1_seconds": 0.1250265509997189,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 25.0,
+      "estimator": "angular_omp",
+      "nmse_db": -9.09177165143075,
+      "mean_batch1_seconds": 0.0031655789997967077,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 25.0,
+      "estimator": "lasso",
+      "nmse_db": -13.782749222731091,
+      "mean_batch1_seconds": 0.39187377199992623,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 25.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -4.239388489801033,
+      "mean_batch1_seconds": 0.11775748099982593,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 25.0,
+      "estimator": "ls",
+      "nmse_db": -3.8033084985211034,
+      "mean_batch1_seconds": 0.004403821999949287,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 25.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -47.992313520448135,
+      "mean_batch1_seconds": 0.00280959099993197,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 25.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -20.810799009735433,
+      "mean_batch1_seconds": 0.1251458709999497,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 30.0,
+      "estimator": "angular_omp",
+      "nmse_db": -9.105108488138498,
+      "mean_batch1_seconds": 0.003130252000009932,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 30.0,
+      "estimator": "lasso",
+      "nmse_db": -14.079191834825075,
+      "mean_batch1_seconds": 0.40279743100003546,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 30.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -4.21263317113114,
+      "mean_batch1_seconds": 0.11849474999977247,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 30.0,
+      "estimator": "ls",
+      "nmse_db": -3.8367876075754497,
+      "mean_batch1_seconds": 0.004358495000051334,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 30.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -52.99231406137942,
+      "mean_batch1_seconds": 0.002591965999745298,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 30.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -21.56787666291894,
+      "mean_batch1_seconds": 0.12173844500004634,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -10.0,
+      "estimator": "angular_omp",
+      "nmse_db": 3.2508586746003227,
+      "mean_batch1_seconds": 0.009461309999933292,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -10.0,
+      "estimator": "lasso",
+      "nmse_db": -2.754892886787377,
+      "mean_batch1_seconds": 0.018986716000072193,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -10.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -1.6571794211813349,
+      "mean_batch1_seconds": 0.11819543400000838,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -10.0,
+      "estimator": "ls",
+      "nmse_db": 28.814240338070043,
+      "mean_batch1_seconds": 0.0041222150000248805,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -10.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -15.104130489120092,
+      "mean_batch1_seconds": 0.00436161700024968,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -10.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -5.661475350024814,
+      "mean_batch1_seconds": 0.12904056399973343,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -5.0,
+      "estimator": "angular_omp",
+      "nmse_db": -1.312253788391715,
+      "mean_batch1_seconds": 0.009235241999922436,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -5.0,
+      "estimator": "lasso",
+      "nmse_db": -4.507455120465228,
+      "mean_batch1_seconds": 0.01906769700031873,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -5.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -3.0636962265888457,
+      "mean_batch1_seconds": 0.12050578300022607,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -5.0,
+      "estimator": "ls",
+      "nmse_db": 23.814239958827358,
+      "mean_batch1_seconds": 0.0035357289998137276,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -5.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -20.1041308187241,
+      "mean_batch1_seconds": 0.004118304000039643,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -5.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -9.165966721417114,
+      "mean_batch1_seconds": 0.11930057799992938,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 0.0,
+      "estimator": "angular_omp",
+      "nmse_db": -5.049016081797787,
+      "mean_batch1_seconds": 0.009760433999981616,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 0.0,
+      "estimator": "lasso",
+      "nmse_db": -7.726834220289447,
+      "mean_batch1_seconds": 0.042793786999973236,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 0.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -4.94909061644558,
+      "mean_batch1_seconds": 0.12633697600012966,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 0.0,
+      "estimator": "ls",
+      "nmse_db": 18.8142399916956,
+      "mean_batch1_seconds": 0.0036068820001673883,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 0.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -25.104130352521018,
+      "mean_batch1_seconds": 0.004797745999858307,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 0.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -12.643125254395791,
+      "mean_batch1_seconds": 0.12836834800004,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 5.0,
+      "estimator": "angular_omp",
+      "nmse_db": -7.56470101886509,
+      "mean_batch1_seconds": 0.009271190999897953,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 5.0,
+      "estimator": "lasso",
+      "nmse_db": -10.650042929608459,
+      "mean_batch1_seconds": 0.05133183000001736,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 5.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -7.305528294102011,
+      "mean_batch1_seconds": 0.15172082800010686,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 5.0,
+      "estimator": "ls",
+      "nmse_db": 13.814239536469842,
+      "mean_batch1_seconds": 0.0037247380002372664,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 5.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -30.104130539975948,
+      "mean_batch1_seconds": 0.004801273000302899,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 5.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -15.909000449185076,
+      "mean_batch1_seconds": 0.1479950410001402,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 10.0,
+      "estimator": "angular_omp",
+      "nmse_db": -8.749663709115339,
+      "mean_batch1_seconds": 0.0093571759999395,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 10.0,
+      "estimator": "lasso",
+      "nmse_db": -13.211150569711705,
+      "mean_batch1_seconds": 0.06171606500003691,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 10.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -10.126234233192086,
+      "mean_batch1_seconds": 0.12833293999967282,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 10.0,
+      "estimator": "ls",
+      "nmse_db": 8.814240322001687,
+      "mean_batch1_seconds": 0.004203369999777351,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 10.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -35.104130549872046,
+      "mean_batch1_seconds": 0.0050973629996951784,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 10.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -19.08872530394899,
+      "mean_batch1_seconds": 0.12317552000029536,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 15.0,
+      "estimator": "angular_omp",
+      "nmse_db": -9.167557582506964,
+      "mean_batch1_seconds": 0.008955162999991445,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 15.0,
+      "estimator": "lasso",
+      "nmse_db": -15.444844964130375,
+      "mean_batch1_seconds": 0.07905368199986697,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 15.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -13.371227198430827,
+      "mean_batch1_seconds": 0.1444960310000897,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 15.0,
+      "estimator": "ls",
+      "nmse_db": 3.8142397833531234,
+      "mean_batch1_seconds": 0.0037195120000251334,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 15.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -40.10413009346987,
+      "mean_batch1_seconds": 0.005179896999870834,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 15.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -22.36477108022518,
+      "mean_batch1_seconds": 0.12492586400003347,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 20.0,
+      "estimator": "angular_omp",
+      "nmse_db": -9.27770227293754,
+      "mean_batch1_seconds": 0.009156722000334412,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 20.0,
+      "estimator": "lasso",
+      "nmse_db": -17.9975247285157,
+      "mean_batch1_seconds": 0.17992821799984085,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 20.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -16.967011713339698,
+      "mean_batch1_seconds": 0.1238785130000906,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 20.0,
+      "estimator": "ls",
+      "nmse_db": -1.1857606043881557,
+      "mean_batch1_seconds": 0.0039043300000776073,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 20.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -45.1041279139404,
+      "mean_batch1_seconds": 0.004441003000029014,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 20.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -25.47597142407282,
+      "mean_batch1_seconds": 0.13002174000001104,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 25.0,
+      "estimator": "angular_omp",
+      "nmse_db": -9.301360901311096,
+      "mean_batch1_seconds": 0.009061476999995648,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 25.0,
+      "estimator": "lasso",
+      "nmse_db": -20.49071728993559,
+      "mean_batch1_seconds": 0.23013432199979433,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 25.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -20.836572966846276,
+      "mean_batch1_seconds": 0.12351510499982396,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 25.0,
+      "estimator": "ls",
+      "nmse_db": -6.1857609469531125,
+      "mean_batch1_seconds": 0.003829655000154162,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 25.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -50.10412317160093,
+      "mean_batch1_seconds": 0.004418997999964631,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 25.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -28.476790448486256,
+      "mean_batch1_seconds": 0.1264401480000015,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 30.0,
+      "estimator": "angular_omp",
+      "nmse_db": -9.312214826618735,
+      "mean_batch1_seconds": 0.009277866999982507,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 30.0,
+      "estimator": "lasso",
+      "nmse_db": -23.006761613176252,
+      "mean_batch1_seconds": 0.4085011359999771,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 30.0,
+      "estimator": "lmmse_zhou_carrier_300ghz_noabs_20261011_data_v1",
+      "nmse_db": -24.89360565646139,
+      "mean_batch1_seconds": 0.1281727619999947,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 30.0,
+      "estimator": "ls",
+      "nmse_db": -11.18576200850278,
+      "mean_batch1_seconds": 0.0038528309999310297,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 30.0,
+      "estimator": "oracle_geometry_ls",
+      "nmse_db": -55.10411843811279,
+      "mean_batch1_seconds": 0.003784774000123434,
+      "scenes": 100
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 30.0,
+      "estimator": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "nmse_db": -31.39447710453643,
+      "mean_batch1_seconds": 0.1322277529999701,
+      "scenes": 100
+    }
+  ],
+  "paired_vs_clean_global_lmmse": [
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -10.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -3.7061905244069155,
+      "ci95": [
+        -3.940166312402252,
+        -3.479755454697881
+      ]
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": -5.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -5.26393975086186,
+      "ci95": [
+        -5.5027328256444905,
+        -5.046141110507204
+      ]
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 0.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -7.0721934488265585,
+      "ci95": [
+        -7.32202245739401,
+        -6.805850747242808
+      ]
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 5.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -9.313228474485244,
+      "ci95": [
+        -9.612203269336916,
+        -9.0297059954068
+      ]
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 10.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -11.585219382986434,
+      "ci95": [
+        -11.907967476117333,
+        -11.274215135926376
+      ]
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 15.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -13.717616123784369,
+      "ci95": [
+        -14.063562761849859,
+        -13.386381508540058
+      ]
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 20.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -15.54476270863795,
+      "ci95": [
+        -15.952331929023188,
+        -15.178634427450367
+      ]
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 25.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -16.94226093891916,
+      "ci95": [
+        -17.359102982526228,
+        -16.541912505192776
+      ]
+    },
+    {
+      "schedule": "QPSK_Np38",
+      "snr_db": 30.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -17.84779785618092,
+      "ci95": [
+        -18.315062200351814,
+        -17.392340858471098
+      ]
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -10.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -4.131890250924062,
+      "ci95": [
+        -4.364295150535538,
+        -3.9076419564773004
+      ]
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": -5.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -6.1878532997835585,
+      "ci95": [
+        -6.441881392417526,
+        -5.963640091307621
+      ]
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 0.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -7.699665828861023,
+      "ci95": [
+        -7.9152826047007245,
+        -7.480006978183844
+      ]
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 5.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -8.559125250733697,
+      "ci95": [
+        -8.77176843486291,
+        -8.362607742938096
+      ]
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 10.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -8.929639776925917,
+      "ci95": [
+        -9.172163765747825,
+        -8.668955289115559
+      ]
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 15.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -8.919432877387651,
+      "ci95": [
+        -9.152300864307797,
+        -8.68784255305561
+      ]
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 20.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -8.406334785765575,
+      "ci95": [
+        -8.654879913792707,
+        -8.165039510133678
+      ]
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 25.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -7.519066949429632,
+      "ci95": [
+        -7.778902940395492,
+        -7.252435466552133
+      ]
+    },
+    {
+      "schedule": "QPSK_Np64",
+      "snr_db": 30.0,
+      "model": "zhou_carrier_300ghz_noabs_20261011_clean_v1",
+      "mean_difference_db": -6.35670157920872,
+      "ci95": [
+        -6.615003434641232,
+        -6.1199713850388395
+      ]
+    }
+  ]
+}

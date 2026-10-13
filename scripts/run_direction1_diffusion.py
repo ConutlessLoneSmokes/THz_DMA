@@ -21,7 +21,7 @@ import torch
 from torch.nn import functional as F
 
 from _run_support import (PROJECT_ROOT, RunArchive, create_run_archive, hash_file,
-                          read_toml, write_json)
+                          read_toml, relative_path, write_json)
 from run_direction1_stage2a import validate_resume
 from run_direction1_stage2a_linear import project_basis
 from thz_dma.channels.planar import (PlanarPath, sample_stage2_paths,
@@ -586,7 +586,7 @@ def main():
         manifest = json.loads((archive.directory / "code_manifest.json").read_text())
         with zipfile.ZipFile(archive.directory / "source_snapshot.zip", "w", zipfile.ZIP_DEFLATED) as bundle:
             for entry in manifest:
-                bundle.write(PROJECT_ROOT / entry["path"], entry["path"])
+                bundle.write(PROJECT_ROOT / relative_path(entry["path"]), relative_path(entry["path"]).as_posix())
         patch = subprocess.run(["git", "diff", "--binary"], cwd=PROJECT_ROOT, capture_output=True, check=True)
         (archive.directory / "code_diff.patch").write_bytes(patch.stdout)
     print(f"{args.stage}: {archive.directory}", flush=True)

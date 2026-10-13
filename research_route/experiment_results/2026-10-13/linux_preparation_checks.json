@@ -1,0 +1,34 @@
+{
+  "windows_unit_checks": 43,
+  "hdf_reference_checks_after_guard": 2,
+  "cpu_smoke_stages": 4,
+  "cpu_smoke_training_steps": 4,
+  "cpu_smoke_metric_rows": 64,
+  "existing_models_loaded_on_cpu": [
+    {
+      "run_id": "zhou_mimo_formal_20261009_clean_v1",
+      "channel_shape": [
+        16,
+        64
+      ],
+      "dataset_sha256": "84498b2d107ea504d68b36c76fe89f5f33d8abee9a3d84e77742d597aefe30f5",
+      "checkpoint_sha256": "4efc717003d64f6a1785ea0786ae4581c97a8295ce3ba0b74ff4c86739af393f"
+    },
+    {
+      "run_id": "zhou_wideband_formal_20261011_clean_v1",
+      "channel_shape": [
+        128,
+        8,
+        160
+      ],
+      "dataset_sha256": "f00dc95f37b4fdf5776b67959ce36a764465dacb14d1dbcc53efe95ec6fc4424",
+      "checkpoint_sha256": "c8ce1319ca26abdf03a165f8575ebbd611128828b08ceedf4a20289058528da8"
+    }
+  ],
+  "original_files_still_match": 561,
+  "original_checkpoints_unchanged": 15,
+  "document_links_redirected": 35,
+  "linux_gpu_benchmark_performed": false,
+  "historical_test_tuning_changed": false,
+  "new_formal_training_performed": false
+}

@@ -9,6 +9,7 @@ description = "Reproducible simulations for frequency-diverse THz DMA channel ac
 requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.26,<3",
+  "scipy>=1.11,<2",
   "pandas>=2.0,<3",
   "matplotlib>=3.8,<4",
   "tomli>=2.0; python_version<'3.11'",
@@ -16,6 +17,7 @@ dependencies = [
 
 [project.optional-dependencies]
 cuda = ["torch>=2.5,<3"]
+paper-data = ["h5py>=3.16,<4"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

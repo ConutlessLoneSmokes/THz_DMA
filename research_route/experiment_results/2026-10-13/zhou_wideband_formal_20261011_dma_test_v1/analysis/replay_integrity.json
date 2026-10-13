@@ -1,0 +1,14 @@
+{
+  "frozen_replays": 64,
+  "max_difference_db": 4.672237388092526e-07,
+  "diagnostic_cases": [
+    0,
+    99
+  ],
+  "diagnostic_snr_db": [
+    20,
+    30
+  ],
+  "test_tuning_performed": false,
+  "new_training_performed": false
+}

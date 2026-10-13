@@ -1,0 +1,20 @@
+{
+  "target": {
+    "run_id": "zhou_mimo_probe_data_20261009_v1",
+    "dataset_sha256": "e4f78cf9da98cc0f0f9d02b57ce7c2d1324b627cc02ec782667b4c3060154b06"
+  },
+  "models": {
+    "zhou_mimo_probe_clean_20261009_v1": "c17dd627bbef0802cd59947b5c5594ee6de0761f91d48b820132b76281128810",
+    "zhou_mimo_probe_naive01_20261009_v1": "d0a3bde29dbae9e4262c3f55e899bd9c3502a732a3800aaa452730fb68e8e6cf",
+    "zhou_mimo_probe_suredm01_corrected_20261009_v1": "dc8d48b9bf03d5cb0f1109387fe8d4f0a769e220f5134b08692bb2752f2580f1",
+    "zhou_mimo_probe_suredm01_paper_20261009_v1": "3a209de75de34f917bd070b66213f0ea0bb7b82ff5583977bbc4b1a4deecf544",
+    "zhou_mimo_probe_naive1_20261009_v1": "258422d09e318c3508922a7d2fbf9ae1b129ac06c6b9a088cf05e020b5364184",
+    "zhou_mimo_probe_suredm1_corrected_20261009_v1": "dae665773112c74d22dd7c47d823b32c75b72242a2481f1971df7dbf2422d207",
+    "zhou_mimo_probe_suredm1_paper_20261009_v1": "b0968cdb1ac6db0ac73884d3725efc499db0027a8e2d96729596675a0d3380b5"
+  },
+  "covariance_data": {
+    "zhou_mimo_probe_data_20261009_v1": "e4f78cf9da98cc0f0f9d02b57ce7c2d1324b627cc02ec782667b4c3060154b06",
+    "zhou_mimo_probe_noisy01_20261009_v1": "95f4f71cc041ab3908e01192c30d22ab3bdec8ebe1ac613a1e54bd5a4074621e",
+    "zhou_mimo_probe_noisy1_20261009_v1": "6935a022a84dec472ef358f3ae325479da3aaa03764e7c56f5cd2c818ac58e0a"
+  }
+}

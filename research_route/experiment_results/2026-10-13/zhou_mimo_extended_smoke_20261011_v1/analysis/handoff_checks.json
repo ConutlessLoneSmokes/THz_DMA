@@ -1,0 +1,10 @@
+{
+  "powershell_blocks_syntax_passed": 4,
+  "commands_argument_expansion_passed": 20,
+  "formal_runs_launched": 0,
+  "local_document_links_checked": 155,
+  "python_syntax_files_checked": 9,
+  "evidence_records": 50,
+  "bib_records": 50,
+  "unit_tests_passed": 40
+}

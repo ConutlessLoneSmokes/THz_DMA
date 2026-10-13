@@ -1,0 +1,9 @@
+# Direct scientific dependencies match the audited Windows environment.
+# Install the CUDA/CPU torch wheel from its official index before this file.
+numpy==1.26.4
+scipy==1.15.3
+pandas==2.3.3
+matplotlib==3.10.8
+h5py==3.16.0
+torch==2.11.0
+tomli==2.4.1; python_version < "3.11"

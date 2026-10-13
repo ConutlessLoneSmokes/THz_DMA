@@ -1,0 +1,11 @@
+run_id,method,rows,not_converged
+zhou_mimo_extended_20261011_val_v1,lasso,1800,209
+zhou_mimo_extended_20261011_test_v1,lasso,1800,227
+zhou_carrier_40ghz_noabs_20261011_val_v1,lasso,1800,874
+zhou_carrier_40ghz_noabs_20261011_test_v1,lasso,1800,861
+zhou_carrier_300ghz_noabs_20261011_val_v1,lasso,1800,208
+zhou_carrier_300ghz_noabs_20261011_test_v1,lasso,1800,227
+zhou_carrier_300ghz_abs_20261011_val_v1,lasso,1800,209
+zhou_carrier_300ghz_abs_20261011_test_v1,lasso,1800,227
+zhou_wideband_formal_20261011_dma_val_v1,conditional_sbl_jointfreq_3d,1800,0
+zhou_wideband_formal_20261011_dma_test_v1,conditional_sbl_jointfreq_3d,1800,0

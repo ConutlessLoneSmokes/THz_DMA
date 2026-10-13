@@ -1,0 +1,6 @@
+{
+  "status": "complete",
+  "timestamp_utc": "2026-10-10T04:42:03.640846+00:00",
+  "command": "denoise",
+  "smoke_only": false
+}

@@ -1,0 +1,19 @@
+family,relation,schedule,snr_db,mean_delta_db,ci95_low,ci95_high,improved_cases,cases
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_frequency_single_shot_C2_J1_K128,-10.0,-20.720250931811307,-20.921662644327377,-20.511569379106533,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_frequency_single_shot_C2_J1_K128,-5.0,-19.099401579036986,-19.303094533323712,-18.880106923389334,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_frequency_single_shot_C2_J1_K128,0.0,-17.103918128502585,-17.28648366311193,-16.902978728892393,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_frequency_single_shot_C2_J1_K128,5.0,-14.254702883248767,-14.392311140695618,-14.10408942544541,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_frequency_single_shot_C2_J1_K128,10.0,-12.095959577150547,-12.332970812327206,-11.840292514814744,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_frequency_single_shot_C2_J1_K128,15.0,-9.083895344607209,-9.251506162752378,-8.89915513695474,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_frequency_single_shot_C2_J1_K128,20.0,-6.20748667477995,-6.324648858607222,-6.07691321436493,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_frequency_single_shot_C2_J1_K128,25.0,-3.966841925106365,-4.059033556717265,-3.8609463651741693,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_frequency_single_shot_C2_J1_K128,30.0,-2.413838836646917,-2.4980577123543464,-2.317464505889988,99,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_tensor_structured_J8_K16_RE128,-10.0,-1.4731878100049294,-1.5203871178626847,-1.4245614555343076,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_tensor_structured_J8_K16_RE128,-5.0,-1.0721785066778677,-1.1132937110527936,-1.0282553714679763,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_tensor_structured_J8_K16_RE128,0.0,-0.9472352696333257,-0.9868833553204829,-0.9034480579269053,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_tensor_structured_J8_K16_RE128,5.0,-0.9125694663624442,-0.9517146793100298,-0.8702169217656363,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_tensor_structured_J8_K16_RE128,10.0,-0.9048568846722645,-0.9436954723065955,-0.8637775239089946,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_tensor_structured_J8_K16_RE128,15.0,-0.9038846475687049,-0.9432386723686835,-0.8631470400230705,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_tensor_structured_J8_K16_RE128,20.0,-0.9040438997446291,-0.9436434410520358,-0.8629434568779177,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_tensor_structured_J8_K16_RE128,25.0,-0.904229854103228,-0.9441091636596249,-0.8632891714243686,100,100
+zhou_wideband_formal_20261011_digital,Clean DDPM minus supplementary direct LS,digital_tensor_structured_J8_K16_RE128,30.0,-0.9042922280761762,-0.9447631519949238,-0.8620541576354867,100,100

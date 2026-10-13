@@ -1,0 +1,15 @@
+{
+  "data": {
+    "train_count": 256,
+    "validation_count": 32,
+    "test_count": 4,
+    "train_seed": 2026100901,
+    "validation_seed": 2026100902,
+    "test_seed": 2026100903,
+    "noise_seed": 2026100904,
+    "batch_size": 16
+  },
+  "training": 2026100911,
+  "noise": 2026100922,
+  "posterior": 2026100923
+}

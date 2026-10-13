@@ -1,0 +1,9 @@
+dataset,variant,noise_variance,estimator,scenes,nmse_db
+zhou_mimo_probe_denoised01_corrected_20261009_v1,corrected,0.1,raw_noisy,32,-7.095306683006398
+zhou_mimo_probe_denoised01_corrected_20261009_v1,corrected,0.1,sure_denoised,32,-7.169496083500057
+zhou_mimo_probe_denoised01_paper_20261009_v1,paper,0.1,raw_noisy,32,-7.095306683006398
+zhou_mimo_probe_denoised01_paper_20261009_v1,paper,0.1,sure_denoised,32,-7.146897192340655
+zhou_mimo_probe_denoised1_corrected_20261009_v1,corrected,1.0,raw_noisy,32,2.904693309441186
+zhou_mimo_probe_denoised1_corrected_20261009_v1,corrected,1.0,sure_denoised,32,2.824522542685841
+zhou_mimo_probe_denoised1_paper_20261009_v1,paper,1.0,raw_noisy,32,2.904693309441186
+zhou_mimo_probe_denoised1_paper_20261009_v1,paper,1.0,sure_denoised,32,2.844788041575212

@@ -29,6 +29,7 @@ if str(SRC_ROOT) not in sys.path:
     sys.path.insert(0, str(SRC_ROOT))
 
 from thz_dma import __version__  # noqa: E402
+from thz_dma.paths import relative_path  # noqa: E402
 
 
 def parse_run_arguments(
@@ -110,7 +111,7 @@ def write_code_manifest(path: Path, files: Iterable[Path]) -> None:
     for source in sorted({item.resolve() for item in files}):
         records.append(
             {
-                "path": str(source.relative_to(PROJECT_ROOT)),
+                "path": source.relative_to(PROJECT_ROOT).as_posix(),
                 "size_bytes": source.stat().st_size,
                 "sha256": hash_file(source),
             }

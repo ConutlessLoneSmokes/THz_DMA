@@ -86,7 +86,7 @@ $$
 
 18 个训练/验证诊断项中有 17 个改善；案例 0、F1、0 dB 从 −9.103 恶化到 −8.508 dB。全部六个验证组仍落后高斯控制。该结果支持保留修正候选、开展完整验证，不支持声称网络优于条件 LMMSE。
 
-![固定权重引导诊断](../runs/diffusion_moment_check_20261009_v1/analysis/diffusion_guidance_controls.png)
+![固定权重引导诊断](experiment_results/2026-10-09/diffusion_moment_check_20261009_v1/analysis/diffusion_guidance_controls.png)
 
 ## 6. 论文参考与 SNR 一致性
 
@@ -105,7 +105,7 @@ $$
 
 目前确认的是正确的噪声单位、观测算子、统计指标与参考曲线下降走向；高 SNR 数值尚有残余差距。作者仓库没有提供论文原 LMMSE/LASSO 基线实现及逐点曲线数据，尚不能确认差距来自哪项基线/数据定义。SNR 不作为待拟合参数。论文依据见 [Zhou@2025，TWC，第 II-A、IV-A 节](https://arxiv.org/html/2408.10501v2)。
 
-![固定导频敏感性](../runs/diffusion_moment_check_20261009_v1/analysis/zhou_pilot_sensitivity.png)
+![固定导频敏感性](experiment_results/2026-10-09/diffusion_moment_check_20261009_v1/analysis/zhou_pilot_sensitivity.png)
 
 ## 7. 下一轮完整验证入口
 
@@ -125,7 +125,7 @@ $py = 'D:/Program Files/Miniconda/envs/ris_td3/python.exe'
 - 消融入口：`scripts/diagnose_direction1_diffusion_components.py`。
 - 候选核验：同一入口加 `--moment-check`。
 - 固定导频检查：`scripts/diagnose_zhou_reference_pilots.py`。
-- 汇总入口：`scripts/analyze_direction1_diffusion_components.py`；[派生报告](../runs/diffusion_moment_check_20261009_v1/analysis/analysis_report.md) 保存配对 CSV、去噪汇总、源码副本、输入 SHA256 和完整性核对。
+- 汇总入口：`scripts/analyze_direction1_diffusion_components.py`；[派生报告](experiment_results/2026-10-09/diffusion_moment_check_20261009_v1/analysis/analysis_report.md) 保存配对 CSV、去噪汇总、源码副本、输入 SHA256 和完整性核对。
 - 初次诊断 v1 因 CSV 字段不一致中断；v2 因缓存信道精度与原双精度观测不一致触发严格配对核对。两者保留；v3 改为原始参数重构观测后通过，不将这两次入口失败当作性能结论。
 - 本轮未重训网络、未评价 DMA 独立测试集，完整 v5 验证由用户运行。
 
@@ -157,7 +157,7 @@ $py = 'D:/Program Files/Miniconda/envs/ris_td3/python.exe'
 
 F2 在 30 dB 的导频域、全带和未观测 112 点 NMSE 分别为 −27.167、−27.023、−27.003 dB，恢复误差贯穿全带。既有完整含噪 CSI 去噪诊断仍显示网络先验误差，条件矩近似的剩余贡献尚需分离。
 
-![v4/v5 与共同基线](../runs/diffusion_v5_observation_snr_20261009_v1/analysis/v4_v5_baselines.png)
+![v4/v5 与共同基线](experiment_results/2026-10-09/diffusion_v5_observation_snr_20261009_v1/analysis/v4_v5_baselines.png)
 
 ### 9.3 单调性与剩余边界
 
@@ -165,7 +165,7 @@ F2 在 30 dB 的导频域、全带和未观测 112 点 NMSE 分别为 −27.167�
 
 30 dB 下，v5 与完整 LMMSE 的线性均值曲线仍差约 13.96/13.27 dB，与截断高斯控制差约 11.85/9.85 dB。下一验证应继续分离去噪先验、条件信息表达及条件矩近似的误差。独立测试未使用；论文参考块未重跑，原高 SNR 数值差距保持待核对状态。
 
-核验入口为 `scripts/audit_direction1_diffusion_v5.py`；[完整报告](../runs/diffusion_v5_observation_snr_20261009_v1/analysis/audit_report.md) 同目录保存完整性 JSON、配对 CSV、逐场景 SNR 步骤、曲线 PNG/PDF 和脚本副本。原始运行结果、模型和数据未修改。
+核验入口为 `scripts/audit_direction1_diffusion_v5.py`；[完整报告](experiment_results/2026-10-09/diffusion_v5_observation_snr_20261009_v1/analysis/audit_report.md) 同目录保存完整性 JSON、配对 CSV、逐场景 SNR 步骤、曲线 PNG/PDF 和脚本副本。原始运行结果、模型和数据未修改。
 
 
 2026-10-09 D-036：固定权重先验诊断完成 144 条去噪和 96 条局部更新记录，240 次代数核对及 19 项轻量检查通过。训练案例也存在约 12–14 dB 的条件去噪差距；建议先验证条件高斯基准上的固定中心残差学习，尚未训练新模型。详见 [19e 号文档](19e_方向一学习先验差距与下一改进方案.md)。本次代码、配置、40 个运行的结果证据和测试记录保存于 [实验快照](experiment_results/2026-10-09/README.md)。

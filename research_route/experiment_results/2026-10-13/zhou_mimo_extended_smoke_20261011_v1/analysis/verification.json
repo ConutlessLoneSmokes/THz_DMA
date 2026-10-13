@@ -1,0 +1,79 @@
+{
+  "status": "implementation_connectivity_passed",
+  "formal_performance_tested": false,
+  "run_count": 15,
+  "evaluation_rows": 224,
+  "unit_tests_passed": 40,
+  "source_zip_members_verified": 1140,
+  "current_source_changes_after_initial_smoke": {
+    "zhou_mimo_extended_smoke_20261011_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_carrier_40ghz_noabs_smoke_20261011_data_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_carrier_40ghz_noabs_smoke_20261011_clean_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_carrier_40ghz_noabs_smoke_20261011_val_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_carrier_300ghz_noabs_smoke_20261011_data_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_carrier_300ghz_noabs_smoke_20261011_clean_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_carrier_300ghz_noabs_smoke_20261011_val_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_carrier_300ghz_abs_smoke_20261011_data_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_carrier_300ghz_abs_smoke_20261011_clean_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_carrier_300ghz_abs_smoke_20261011_val_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_wideband_smoke_20261011_data_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_wideband_smoke_20261011_clean_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_wideband_smoke_20261011_digital_val_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_wideband_smoke_20261011_dma_val_v1": [
+      "scripts/run_zhou2025_repro.py",
+      "tests/test_zhou2025_extensions.py"
+    ],
+    "zhou_wideband_smoke_20261011_data_v2": []
+  },
+  "source_change_reason": "additional absorption-table/cache provenance guard and its test; estimator equations unchanged",
+  "original_models_unchanged": 7,
+  "original_dataset_files_verified": 300,
+  "original_validation_and_test_metrics_unchanged": true,
+  "paired_carrier_path_records": 16,
+  "truth_parameter_reconstructions": 54,
+  "maximum_relative_truth_reconstruction_error": 2.6464934396815733e-08,
+  "carrier_physical_noise_equal": true,
+  "digital_dma_physical_noise_equal": true,
+  "digital_dma_same_element_noise_realization": false,
+  "digital_rf_outputs": 1280,
+  "dma_rf_outputs": 8
+}

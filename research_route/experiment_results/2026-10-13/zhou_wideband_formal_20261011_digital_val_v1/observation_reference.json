@@ -1,0 +1,11 @@
+{
+  "training_power": {
+    "digital_frequency_single_shot_C2_J1_K128": 0.999610382349831,
+    "digital_tensor_structured_J8_K16_RE128": 0.9998747010232625
+  },
+  "scale_source": "clean training complex RMS",
+  "nominal_snr": "training mean per-element power/physical complex variance",
+  "snr_reference": "training_element",
+  "noise_scale_reference": null,
+  "matched_protocol_noise_is_diagnostic_only": false
+}

@@ -1,0 +1,65 @@
+{
+  "status": "archive_and_frozen_test_checks_passed",
+  "stage_runs": 20,
+  "evaluation_rows": 144000,
+  "source_members": 1520,
+  "unique_datasets": 11,
+  "dataset_manifest_members": 3552,
+  "frozen_test_runs": 6,
+  "extended_common_rows_unchanged": 43200,
+  "paired_carrier_records": 4452,
+  "physical_noise_control_passed": true,
+  "original_files": {
+    "zhou_mimo_extended_20261011_val_v1": {
+      "metrics_raw.csv": "9566477316d1ea7b19bfa5b8a97d9c7c756fdd4f2c4fdf41b28016686b712b1d",
+      "tuning.json": "51b09c7d4e66ba8c0020ce9b8a538a9469b9b9a8abd9beb33759eafb0d76bbe0"
+    },
+    "zhou_mimo_extended_20261011_test_v1": {
+      "metrics_raw.csv": "2a21ec7ca54dba790d59929885c2d7c4aca569fa1b20a6bb640b51bb567885e7",
+      "tuning.json": "51b09c7d4e66ba8c0020ce9b8a538a9469b9b9a8abd9beb33759eafb0d76bbe0"
+    },
+    "zhou_carrier_40ghz_noabs_20261011_val_v1": {
+      "metrics_raw.csv": "e968c82ab7ae1d7bf0f69d42bb00d4a224bdb7e28a9fa47b7104a69150490428",
+      "tuning.json": "d37c919dfc17354f77edda3e7279d157dde939391f0ade36aa4bd0bdf806cc27"
+    },
+    "zhou_carrier_40ghz_noabs_20261011_test_v1": {
+      "metrics_raw.csv": "e25461cfee19ba6450d1aeafcae0e6b87b7acbb17b65c6c9212a9cb9f1581417",
+      "tuning.json": "d37c919dfc17354f77edda3e7279d157dde939391f0ade36aa4bd0bdf806cc27"
+    },
+    "zhou_carrier_300ghz_noabs_20261011_val_v1": {
+      "metrics_raw.csv": "be3781e5f48e449e782716367573686974139ac9dfe6903e44851fce24fecaab",
+      "tuning.json": "cb8d63f8db3920494dab37e2fe3fd4aa784c02c4ae7ccc65324e6fb127a70cb7"
+    },
+    "zhou_carrier_300ghz_noabs_20261011_test_v1": {
+      "metrics_raw.csv": "4996e387eca51f5189cffd5fb30936f273850a67e26cbff74d0368aefc3dc0a1",
+      "tuning.json": "cb8d63f8db3920494dab37e2fe3fd4aa784c02c4ae7ccc65324e6fb127a70cb7"
+    },
+    "zhou_carrier_300ghz_abs_20261011_val_v1": {
+      "metrics_raw.csv": "24df035d8f6f7d9c728b2b7715fe2c626c0393715df80db858b847c4a1b5dfa6",
+      "tuning.json": "f95dc456bfac67845d41276a375b33c94c28ec0a0ecfe71c01f92678a43d342d"
+    },
+    "zhou_carrier_300ghz_abs_20261011_test_v1": {
+      "metrics_raw.csv": "ab484689a59f1108d1b66acceef9ddb4b14f5d01bdd1f7e11618d03598bf0e37",
+      "tuning.json": "f95dc456bfac67845d41276a375b33c94c28ec0a0ecfe71c01f92678a43d342d"
+    },
+    "zhou_wideband_formal_20261011_digital_val_v1": {
+      "metrics_raw.csv": "3c59fe85f42d9f1da7f2176628beb0660198d8097770068554db933171329d37",
+      "tuning.json": "b3a42f3e2c9a0ba0be6771dfc2a2845bec224215bc4d9e2352393fc96f8bb283"
+    },
+    "zhou_wideband_formal_20261011_digital_test_v1": {
+      "metrics_raw.csv": "121a6c79662eb14f5d8a47e73c2c42f3af8df8918c3613a9a5d9bced6d254669",
+      "tuning.json": "b3a42f3e2c9a0ba0be6771dfc2a2845bec224215bc4d9e2352393fc96f8bb283"
+    },
+    "zhou_wideband_formal_20261011_dma_val_v1": {
+      "metrics_raw.csv": "a005001e23f3b752bd56d09eee4edd76a43db36d0f2c5541aa845d009d19fb5a",
+      "tuning.json": "d969c1369828b074a738ee92e3ee70c6050f26cf7f6908298981a46ade98ede2"
+    },
+    "zhou_wideband_formal_20261011_dma_test_v1": {
+      "metrics_raw.csv": "82cb6c14e06cabf8cd2f2bd32c3c0da127afe8db8a0496bd373899aff5fe7308",
+      "tuning.json": "d969c1369828b074a738ee92e3ee70c6050f26cf7f6908298981a46ade98ede2"
+    }
+  },
+  "paired_comparison_groups": 450,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 2026101301
+}

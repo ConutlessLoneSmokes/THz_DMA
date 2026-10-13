@@ -1,0 +1,10 @@
+{
+  "target": {
+    "run_id": "zhou_mimo_formal_20261009_data_v1",
+    "dataset_sha256": "84498b2d107ea504d68b36c76fe89f5f33d8abee9a3d84e77742d597aefe30f5"
+  },
+  "models": {},
+  "covariance_data": {
+    "zhou_mimo_formal_20261009_data_v1": "84498b2d107ea504d68b36c76fe89f5f33d8abee9a3d84e77742d597aefe30f5"
+  }
+}

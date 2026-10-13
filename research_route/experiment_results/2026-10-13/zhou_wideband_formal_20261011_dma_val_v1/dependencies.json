@@ -1,0 +1,12 @@
+{
+  "target": {
+    "run_id": "zhou_wideband_formal_20261011_data_v1",
+    "dataset_sha256": "f00dc95f37b4fdf5776b67959ce36a764465dacb14d1dbcc53efe95ec6fc4424"
+  },
+  "models": {
+    "zhou_wideband_formal_20261011_clean_v1": "c8ce1319ca26abdf03a165f8575ebbd611128828b08ceedf4a20289058528da8"
+  },
+  "covariance_data": {
+    "zhou_wideband_formal_20261011_data_v1": "f00dc95f37b4fdf5776b67959ce36a764465dacb14d1dbcc53efe95ec6fc4424"
+  }
+}

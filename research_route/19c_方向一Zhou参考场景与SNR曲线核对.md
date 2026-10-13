@@ -15,7 +15,7 @@
 
 以上是旧 16 场景的原始线性 NMSE 均值转 dB，与后面的新两场景短检查分开。当前 LMMSE 使用已知逐径粗中心的条件统计，信息条件比论文的全局经验协方差不同；不能据此称为超过论文。
 
-重新标注图：[PNG](../runs/diffusion_v4_val_20261004_v1/analysis/snr_bridge_existing_points.png)、[PDF](../runs/diffusion_v4_val_20261004_v1/analysis/snr_bridge_existing_points.pdf)、[逐组数据](../runs/diffusion_v4_val_20261004_v1/analysis/snr_bridge_existing_points.csv)。
+重新标注图：[PNG](experiment_results/2026-10-09/diffusion_v4_val_20261004_v1/analysis/snr_bridge_existing_points.png)、[PDF](experiment_results/2026-10-09/diffusion_v4_val_20261004_v1/analysis/snr_bridge_existing_points.pdf)、[逐组数据](experiment_results/2026-10-09/diffusion_v4_val_20261004_v1/analysis/snr_bridge_existing_points.csv)。
 
 ## 2. 论文原文与代码核对
 
@@ -137,6 +137,6 @@ $py = 'D:/Program Files/Miniconda/envs/ris_td3/python.exe'
 
 ## 7. 完整运行与归一化检查结果
 
-三轮完整运行已完成并核验：参考块各3600行、DMA块1728行。20 dB下，64导频LMMSE逐样本/全局口径为−17.672/−13.348 dB；DMA的F1/F2 LMMSE为−24.162/−32.464，扩散为−6.401/−8.872。已验证单位噪声下放大干净信号与当前改变噪声方差的数值等价，并重新统计同一训练集接收功率SNR横轴。3个30 dB的LASSO批次未达到停止线；论文逐点数值一致性尚未确认。完整报告见 [归一化与完整曲线核验](../runs/diffusion_observation_snr_20261008_v1/analysis/audit_report.md)。
+三轮完整运行已完成并核验：参考块各3600行、DMA块1728行。20 dB下，64导频LMMSE逐样本/全局口径为−17.672/−13.348 dB；DMA的F1/F2 LMMSE为−24.162/−32.464，扩散为−6.401/−8.872。已验证单位噪声下放大干净信号与当前改变噪声方差的数值等价，并重新统计同一训练集接收功率SNR横轴。3个30 dB的LASSO批次未达到停止线；论文逐点数值一致性尚未确认。完整报告见 [归一化与完整曲线核验](experiment_results/2026-10-09/diffusion_observation_snr_20261008_v1/analysis/audit_report.md)。
 
 2026-10-09 D-035：固定权重诊断定位到网络去噪误差与高 SNR 雅可比引导损失。v5 条件均值引导复用原模型，在两个所选验证案例的 30 dB 下，F1/F2 从 −10.959/−7.627 改善至 −17.876/−28.653 dB，仍落后高斯控制；19 项检查和 24 行标准入口通过。参考固定导频种子不足以解释论文高 SNR 约 4 dB 的差距；SNR 单位与物理模型保留。完整 v5 曲线由用户运行，见 [19d 号文档](19d_方向一扩散引导消融与SNR一致性核查.md)。

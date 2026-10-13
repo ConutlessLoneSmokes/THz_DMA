@@ -6,11 +6,14 @@ import sys
 import zipfile
 
 from _run_support import PROJECT_ROOT, create_run_archive, hash_file
-sys.path.insert(0,str(PROJECT_ROOT/'sources/code/zhou2025_python'))
+if sys.platform == "win32":
+    sys.path.insert(0,str(PROJECT_ROOT/'sources/code/zhou2025_python'))
 import h5py
 import numpy as np
 import pandas as pd
 import torch
+from zhou2025_repro.data import angular
+from zhou2025_repro.baselines import real_operator, lasso
 
 
 def read_channels(path, start, stop):
@@ -31,33 +34,6 @@ def normalize(h, mode, scale):
     if np.any(np.asarray(scale)<=0):
         raise ValueError('positive normalization scale required')
     return torch.as_tensor(h/scale,device='cuda:0')
-
-
-def angular(h):
-    return torch.fft.fft(torch.fft.ifft(h,dim=-2,norm='ortho'),dim=-1,norm='ortho')
-
-
-def real_operator(a):
-    return torch.cat((torch.cat((a.real,-a.imag),dim=1),torch.cat((a.imag,a.real),dim=1)),dim=0)
-
-
-def lasso(y,b,penalty,*,steps=1000,tolerance=1e-5):
-    """Complex FISTA for .5 ||Z B-Y||² + lambda ||Z||_1, shared across receive rows."""
-    if not np.isfinite(penalty) or penalty<0:
-        raise ValueError('finite nonnegative LASSO penalty required')
-    lipschitz=torch.linalg.matrix_norm(b,ord=2).square()
-    x=torch.zeros((*y.shape[:-1],b.shape[0]),device=y.device,dtype=y.dtype)
-    z=x.clone();momentum=1.;converged=False
-    for iteration in range(steps):
-        proposal=z-(z@b-y)@b.H/lipschitz
-        updated=proposal*(1-penalty/lipschitz/proposal.abs().clamp_min(1e-20)).clamp_min(0)
-        error=torch.linalg.vector_norm(updated-x)/(1+torch.linalg.vector_norm(x))
-        next_momentum=(1+np.sqrt(1+4*momentum**2))/2
-        z=updated+(momentum-1)/next_momentum*(updated-x)
-        x=updated;momentum=next_momentum
-        if iteration>=5 and error<tolerance:
-            converged=True;break
-    return x,iteration+1,converged
 
 
 def main():
