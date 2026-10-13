@@ -48,7 +48,7 @@ class ExtensionTest(unittest.TestCase):
 
     def test_digital_smoke_retains_no_conditional_references(self):
         config = runner.settings_from_args(SimpleNamespace(
-            config=ROOT/"configs/zhou2025_wideband_digital.toml", smoke=True, seed=None))
+            config=ROOT/"configs/zhou2025_wideband_digital.toml", smoke=True, seed=None, device="cpu"))
         self.assertEqual(config["evaluation_run"]["conditional_references"], [])
         operators, platform = runner.build_operators(config, SimpleNamespace(scenario="dma", shape=(128,8,160)))
         self.assertIsNone(platform)
@@ -161,7 +161,9 @@ class ExtensionTest(unittest.TestCase):
             self.assertTrue(all(row["receiver_rf_outputs"]==6 and row["num_switches"]==0 for row in rows))
             self.assertTrue(all(row["pilot_resource_elements"]==32 and row["training_symbols"]==2 for row in rows))
             self.assertTrue(all("net_rate_bps_hz" not in row for row in rows))
-            self.assertTrue(all(row["actual_rf_output_snr_db"]==row["actual_whitened_snr_db"] for row in rows))
+            for row in rows:
+                # Independent float32 sum/mean reductions differ in their final bits.
+                self.assertAlmostEqual(row["actual_rf_output_snr_db"], row["actual_whitened_snr_db"], delta=1e-5)
             self.assertEqual(runner.read_json(test_archive.directory/"tuning.json"),{})
             data.close()
 
