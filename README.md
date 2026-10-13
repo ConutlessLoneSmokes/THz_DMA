@@ -20,7 +20,13 @@ New carrier LASSO curves retain their iteration-budget limitation.
 Read [START_HERE.md](START_HERE.md) for the current task and
 [19i](research_route/19i_方向一传统参照与分步场景迁移.md) for the results,
 digital/DMA observation difference and purposes of the proposed diagnostics.
-The proposals have not been adopted or run.
+On 2026-10-13 the user adopted D-041: disable molecular absorption and isolate
+DMA combining, wideband structure and their interaction with a matched-array
+narrowband/wideband × digital/DMA control. The matched-array narrowband DMA
+case comes first. Begin without observation noise, then align received SNR.
+The new control has not been implemented or run. Nonuniform pilot scans,
+covariance-sample sweeps, SURE migration and new seeds are deferred.
+Read [CODEX_START_PROMPT.md](CODEX_START_PROMPT.md) for the continuation prompt.
 
 ## Layout
 

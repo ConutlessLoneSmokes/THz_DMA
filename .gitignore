@@ -23,7 +23,6 @@ data/direction1_stage*/
 # Local workflow and retrieval helpers
 .codex_diffusion_checkpoint.md
 ASTRA_INSTRUCTIONS_AUDIT.md
-CODEX_START_PROMPT.md
 MIGRATION_GUIDE.md
 download_*.mjs
 metadata_lookup.mjs

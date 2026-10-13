@@ -71,3 +71,22 @@ GitHub 包含代码、物理表、配置、运行清单、逐场景 CSV、选参
 历史 audit_zhou2025_* 脚本绑定既有运行、原平台路径和源码一致性条件；它们的已保存报告属于历史证据，不是新环境的通用自检入口。完整历史审计需归档版本及对应环境。Linux新增任务使用第2节与当前prepare/train/evaluate链路，不修改旧记录来绕过来源校验。
 
 较大的验证集诊断、基线扫描及正式训练仍由用户启动。本次代码归档没有采纳新的研究方案或重新选择测试参数。
+
+## 5. 现有服务器与 SSH 代理隧道
+
+2026-10-13已按用户授权完成服务器克隆：
+
+- 预留SSH：`lsy@10.112.129.125`。
+- 项目路径：`/home/lsy/THz_DMA`，初次克隆为 `ae86129`（标签 `linux-ready-2026-10-13`）；D-042按用户要求随 `main` 快进更新。当前提交用 `git rev-parse HEAD` 核对。
+- 用户提供的硬件：Xeon Gold 6248R、2×RTX 3090；系统为Ubuntu 26.04.1。同步前服务器实测Python3.14.4；`nvidia-smi` 报驱动/库版本不匹配，内核驱动595.91.07、NVML库595.99。
+- GitHub Ubuntu 26.04 CI的43项检查及四阶段CPU最小运行已通过 [记录](https://github.com/ConutlessLoneSmokes/THz_DMA/actions/runs/38345102265)。这不是服务器GPU实验。
+
+SSH反向代理将服务器 `127.0.0.1:28090` 转发到Windows已有代理 `127.0.0.1:7897`。当时HTTP/SOCKS连通性及TLS验证通过；新会话先检查本地代理、SSH进程和服务器监听，避免重复绑定端口。已确认的纯命令启动方式为：
+
+```powershell
+ssh -N -T -o BatchMode=yes -o StrictHostKeyChecking=yes -o ExitOnForwardFailure=yes -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -R 127.0.0.1:28090:127.0.0.1:7897 lsy@10.112.129.125
+```
+
+服务器新终端执行 `proxy_on 28090`，仅设置该终端的代理环境。`proxy_on` 已定义在 `~/.codex-proxy.sh`，由zsh配置引用。本地已有 `codex-proxy-dorm` 辅助命令，但其脚本会写日志和环境文件；本次为满足用户“只执行命令、不修改文件或配置”的约束，仅执行SSH转发。继续开启/重建隧道也遵循该约束。连接依赖本地代理与SSH会话持续运行。
+
+服务器目前只有Git中的代码和紧凑证据；环境安装、原大型数据与权重传输、正式训练和GPU性能检查尚未进行。D-041关闭吸收的对照已由用户另行采纳，见 [19i第13节](../research_route/19i_方向一传统参照与分步场景迁移.md#13-d-041关闭吸收的最小对照与接管状态)。D-042将最新文档与 [CODEX_START_PROMPT.md](../CODEX_START_PROMPT.md) 纳入Git，并同步服务器。可以在该目录续接设计、代码和文档工作。正式实验使用Python3.10项目环境；服务器已有Miniconda和 `EIT_test` 环境，沿用项目环境创建命令，保留其他项目环境。GPU实验前处理驱动/库版本不匹配并验证CUDA，旧数据和权重按传输清单补齐。
