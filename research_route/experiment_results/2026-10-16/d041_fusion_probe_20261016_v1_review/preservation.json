@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "historical_inventories": {
+    "d041_budget_sweep_20261015_v1_review": 21607,
+    "d041_config_sweep_20261014_v1_review": 35681
+  },
+  "protected_implementation_files": 182,
+  "new_run_files": 5541,
+  "previous_delivery_manifest_retained": true,
+  "original_log_retained": true
+}

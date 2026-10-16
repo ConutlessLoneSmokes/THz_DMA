@@ -1,0 +1,105 @@
+D-041 device: cpu torch: 2.11.0+cu128
+saved train 4/8
+saved train 8/8
+saved validation 4/4
+saved test 4/4
+checked digital: rank=1280, condition=1, passed=True
+checked dma_J192: rank=1280, condition=62.8, passed=True
+checked dma_J32: rank=256, condition=4.57, passed=True
+checked dma_J8: rank=64, condition=1.85, passed=True
+checked dma_J1: rank=8, condition=1, passed=True
+dm step 2/4: validation_loss=0.991633
+dm step 4/4: validation_loss=0.991614
+saved narrow digital noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow digital noiseless_v1e-10: 2 scenes; guidance=1.0
+saved narrow dma_J192 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow dma_J192 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved narrow digital noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow digital noiseless_v1e-10: 2 scenes; guidance=1.0
+saved narrow dma_J192 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow dma_J192 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved narrow dma_J32 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow dma_J32 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved narrow dma_J8 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow dma_J8 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved narrow dma_J1 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow dma_J1 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved narrow dma_J32 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow dma_J32 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved narrow dma_J8 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow dma_J8 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved narrow dma_J1 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved narrow dma_J1 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved train 4/8
+saved train 8/8
+saved validation 4/4
+saved test 4/4
+checked digital: rank=163840, condition=1, passed=True
+checked dma_J192: rank=163840, condition=108, passed=True
+checked dma_J32: rank=32768, condition=8.57, passed=True
+checked dma_J8: rank=8192, condition=2.89, passed=True
+checked dma_J1: rank=1024, condition=1, passed=True
+dm step 2/4: validation_loss=1.00382
+dm step 4/4: validation_loss=1.00343
+saved wide digital noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide digital noiseless_v1e-10: 2 scenes; guidance=1.0
+saved wide dma_J192 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide dma_J192 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved wide digital noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide digital noiseless_v1e-10: 2 scenes; guidance=1.0
+saved wide dma_J192 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide dma_J192 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved wide dma_J32 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide dma_J32 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved wide dma_J8 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide dma_J8 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved wide dma_J1 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide dma_J1 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved wide dma_J32 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide dma_J32 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved wide dma_J8 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide dma_J8 noiseless_v1e-10: 2 scenes; guidance=1.0
+saved wide dma_J1 noiseless_v1e-08: 2 scenes; guidance=1.0
+saved wide dma_J1 noiseless_v1e-10: 2 scenes; guidance=1.0
+audit passed: 240 metric rows, 720 trajectory rows; /home/lsy/THz_DMA/results/d041_noabs_staged_smoke_20261013_v1_noiseless
+saved narrow digital snr_0: 2 scenes; guidance=1.0
+saved narrow digital snr_20: 2 scenes; guidance=1.0
+saved narrow dma_J192 snr_0: 2 scenes; guidance=1.0
+saved narrow dma_J192 snr_20: 2 scenes; guidance=1.0
+saved narrow dma_J32 snr_0: 2 scenes; guidance=1.0
+saved narrow dma_J32 snr_20: 2 scenes; guidance=1.0
+saved narrow dma_J8 snr_0: 2 scenes; guidance=1.0
+saved narrow dma_J8 snr_20: 2 scenes; guidance=1.0
+saved narrow dma_J1 snr_0: 2 scenes; guidance=1.0
+saved narrow dma_J1 snr_20: 2 scenes; guidance=1.0
+saved narrow digital snr_0: 2 scenes; guidance=1.0
+saved narrow digital snr_20: 2 scenes; guidance=1.0
+saved narrow dma_J192 snr_0: 2 scenes; guidance=1.0
+saved narrow dma_J192 snr_20: 2 scenes; guidance=1.0
+saved narrow dma_J32 snr_0: 2 scenes; guidance=1.0
+saved narrow dma_J32 snr_20: 2 scenes; guidance=1.0
+saved narrow dma_J8 snr_0: 2 scenes; guidance=1.0
+saved narrow dma_J8 snr_20: 2 scenes; guidance=1.0
+saved narrow dma_J1 snr_0: 2 scenes; guidance=1.0
+saved narrow dma_J1 snr_20: 2 scenes; guidance=1.0
+saved wide digital snr_0: 2 scenes; guidance=1.0
+saved wide digital snr_20: 2 scenes; guidance=1.0
+saved wide dma_J192 snr_0: 2 scenes; guidance=1.0
+saved wide dma_J192 snr_20: 2 scenes; guidance=1.0
+saved wide dma_J32 snr_0: 2 scenes; guidance=1.0
+saved wide dma_J32 snr_20: 2 scenes; guidance=1.0
+saved wide dma_J8 snr_0: 2 scenes; guidance=1.0
+saved wide dma_J8 snr_20: 2 scenes; guidance=1.0
+saved wide dma_J1 snr_0: 2 scenes; guidance=1.0
+saved wide dma_J1 snr_20: 2 scenes; guidance=1.0
+saved wide digital snr_0: 2 scenes; guidance=1.0
+saved wide digital snr_20: 2 scenes; guidance=1.0
+saved wide dma_J192 snr_0: 2 scenes; guidance=1.0
+saved wide dma_J192 snr_20: 2 scenes; guidance=1.0
+saved wide dma_J32 snr_0: 2 scenes; guidance=1.0
+saved wide dma_J32 snr_20: 2 scenes; guidance=1.0
+saved wide dma_J8 snr_0: 2 scenes; guidance=1.0
+saved wide dma_J8 snr_20: 2 scenes; guidance=1.0
+saved wide dma_J1 snr_0: 2 scenes; guidance=1.0
+saved wide dma_J1 snr_20: 2 scenes; guidance=1.0
+audit passed: 480 metric rows, 1440 trajectory rows; /home/lsy/THz_DMA/results/d041_noabs_staged_smoke_20261013_v1

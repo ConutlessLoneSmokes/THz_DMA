@@ -1,0 +1,6 @@
+{
+  "data_run_id": "d041_noabs_20261013_v2_wb_data",
+  "dataset_sha256": "4376d5a99b4a657fff89f537ac4e9a021c60e447e034ea352c74b69c35e53e45",
+  "train_run_id": "d041_noabs_20261013_v2_wb_clean",
+  "checkpoint_sha256": "07a6e5656fa13c536074fc6d6e6b95e4883e738d9f0be7392d3888fdc0789860"
+}

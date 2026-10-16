@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "counts": {
+    "tune": {
+      "endpoints": 3072,
+      "cases": 3072,
+      "trajectories": 271488,
+      "denoiser_predictions": 18816
+    },
+    "screen": {
+      "endpoints": 2304,
+      "cases": 2304,
+      "trajectories": 155136,
+      "denoiser_predictions": 10752
+    }
+  },
+  "calibration_rows": 28800,
+  "calibration_decomposition_rows": 1120,
+  "source_members": 273,
+  "old_baseline_endpoints_matched": 320,
+  "summaries_recomputed": 102,
+  "data_files_hashed": 605,
+  "train_validation_disjoint": true,
+  "tuning_screening_disjoint": true,
+  "independent_test": false,
+  "failed_cases": 0
+}

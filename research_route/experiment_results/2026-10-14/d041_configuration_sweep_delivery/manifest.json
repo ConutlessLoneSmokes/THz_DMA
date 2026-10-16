@@ -1,0 +1,49 @@
+{
+  "files": {
+    "README.md": {
+      "size_bytes": 2723,
+      "sha256": "e15c5413f8b7fb33519fd09aabb1bda2fc5063f935c2071183eddf7b00bd9003"
+    },
+    "gpu_probe.json": {
+      "size_bytes": 4535,
+      "sha256": "162eead1e768a3bdae55d2bd5a19747f189a0df9db18753ae1c43c6e286ccfe9"
+    },
+    "gpu_probe.log": {
+      "size_bytes": 272,
+      "sha256": "7cc55335d70afd18fdf250a7832962d86b9119414acb87507c4371066251f83a"
+    },
+    "gpu_probe_attempt1.log": {
+      "size_bytes": 505,
+      "sha256": "bed01dcad1249fa90cff352a9327006909fae0a6fb43aafdb54f66a477db2be6"
+    },
+    "resume.log": {
+      "size_bytes": 438,
+      "sha256": "7510c8db28c8b7eb99682e05acf17c49cf4caddd59cf595bcf2eb00e256090fd"
+    },
+    "run_records.zip": {
+      "size_bytes": 9388765,
+      "sha256": "68456a53690143bb21c70e833d97dd65e5aaf4cc6941e5c24030f882eaf42eb6"
+    },
+    "smoke.log": {
+      "size_bytes": 6812,
+      "sha256": "ac7954a9a59aca48bb1939d30fb7f94a15a4a2bc7be8a02cfdcbd3328f695219"
+    },
+    "tests.log": {
+      "size_bytes": 8848,
+      "sha256": "4fcc8be7aa504c4047338da49df922930d312ea94ad2a66b4ed6ba6f195f8673"
+    },
+    "verification.json": {
+      "size_bytes": 1201,
+      "sha256": "13f8c71a34e2406c58b63800d022ba114cce6ca81eb451046a88b340958476b9"
+    },
+    "verification_source.py": {
+      "size_bytes": 8590,
+      "sha256": "806fc91d91e4ddd454b11e08093f07b2ae4ce3707265c5c776b0bfc27aa5e0a6"
+    },
+    "verification_source_attempt1.py": {
+      "size_bytes": 8290,
+      "sha256": "90044f82568ca06c2eeaae83247106d2c908d2bad74578ff58f4f42921507c94"
+    }
+  },
+  "archived_run_files": 284
+}

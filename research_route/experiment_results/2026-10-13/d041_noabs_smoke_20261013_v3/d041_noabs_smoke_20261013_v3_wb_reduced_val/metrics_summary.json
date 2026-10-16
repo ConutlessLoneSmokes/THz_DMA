@@ -1,0 +1,249 @@
+{
+  "rows": 36,
+  "expected_rows": 36,
+  "band": "wide",
+  "stage": "reduced-noiseless",
+  "split": "validation",
+  "summary": [
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-08",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": 9.776347256651325,
+      "observation_residual_relative": 2.0825443277390103e-06,
+      "prediction_energy_ratio": 8.514117667489614,
+      "normalized_correlation": 0.003273730442820957,
+      "row_space_nmse_linear": 8.033945826983122e-09,
+      "null_space_nmse_linear": 9.498055996411711
+    },
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-08",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -144.55487143141943,
+      "observation_residual_relative": 1.1286621106998492e-13,
+      "prediction_energy_ratio": 1.0,
+      "normalized_correlation": 1.0,
+      "row_space_nmse_linear": 1.8426964129634833e-17,
+      "null_space_nmse_linear": 3.4851597829808206e-15
+    },
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-08",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -0.01688764617315911,
+      "observation_residual_relative": 5.507724618188844e-14,
+      "prediction_energy_ratio": 0.003880926180834757,
+      "normalized_correlation": 0.062170360285214915,
+      "row_space_nmse_linear": 5.300141510108141e-16,
+      "null_space_nmse_linear": 0.9961190262869851
+    },
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-10",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": 9.776347256651325,
+      "observation_residual_relative": 2.078227900546332e-06,
+      "prediction_energy_ratio": 8.514117667489614,
+      "normalized_correlation": 0.0032737305689854086,
+      "row_space_nmse_linear": 8.01739059149127e-09,
+      "null_space_nmse_linear": 9.498055996411711
+    },
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-10",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -144.55487143141943,
+      "observation_residual_relative": 1.1286621106998492e-13,
+      "prediction_energy_ratio": 1.0,
+      "normalized_correlation": 1.0,
+      "row_space_nmse_linear": 1.8426964129634833e-17,
+      "null_space_nmse_linear": 3.4851597829808206e-15
+    },
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-10",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -0.01688764617315911,
+      "observation_residual_relative": 5.507724618188844e-14,
+      "prediction_energy_ratio": 0.003880926180834757,
+      "normalized_correlation": 0.062170360285214915,
+      "row_space_nmse_linear": 5.300141510108141e-16,
+      "null_space_nmse_linear": 0.9961190262869851
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-08",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": 8.83320882194458,
+      "observation_residual_relative": 1.612838130744656e-06,
+      "prediction_energy_ratio": 7.032964712453485,
+      "normalized_correlation": 0.07341772845773731,
+      "row_space_nmse_linear": 2.3476187962362648e-07,
+      "null_space_nmse_linear": 7.644003196882516
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-08",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.31710201941715,
+      "observation_residual_relative": 7.173366632030009e-14,
+      "prediction_energy_ratio": 0.9999999438716232,
+      "normalized_correlation": 1.0000000207353328,
+      "row_space_nmse_linear": 3.710487651621017e-16,
+      "null_space_nmse_linear": 1.483720104277319e-15
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-08",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -0.93747577968549,
+      "observation_residual_relative": 6.153321911590638e-14,
+      "prediction_energy_ratio": 0.19415329338511395,
+      "normalized_correlation": 0.44055071590007844,
+      "row_space_nmse_linear": 3.1528644851837215e-14,
+      "null_space_nmse_linear": 0.8058467063020783
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-10",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": 8.83320882194458,
+      "observation_residual_relative": 1.6098644524778768e-06,
+      "prediction_energy_ratio": 7.032964263426471,
+      "normalized_correlation": 0.07341772314765355,
+      "row_space_nmse_linear": 2.3411117130772846e-07,
+      "null_space_nmse_linear": 7.644003196882516
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-10",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.31710201941715,
+      "observation_residual_relative": 7.173366632030009e-14,
+      "prediction_energy_ratio": 0.9999999438716232,
+      "normalized_correlation": 1.0000000207353328,
+      "row_space_nmse_linear": 3.710487651621017e-16,
+      "null_space_nmse_linear": 1.483720104277319e-15
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-10",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -0.93747577968549,
+      "observation_residual_relative": 6.153321911590638e-14,
+      "prediction_energy_ratio": 0.19415329338511395,
+      "normalized_correlation": 0.44055071590007844,
+      "row_space_nmse_linear": 3.1528644851837215e-14,
+      "null_space_nmse_linear": 0.8058467063020783
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-08",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": 9.583303435941048,
+      "observation_residual_relative": 1.918287362702801e-06,
+      "prediction_energy_ratio": 8.175681614566644,
+      "normalized_correlation": 0.015938734293187498,
+      "row_space_nmse_linear": 6.858466791492503e-08,
+      "null_space_nmse_linear": 9.085113213210436
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-08",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.0940535188486,
+      "observation_residual_relative": 7.756835915286682e-14,
+      "prediction_energy_ratio": 0.9999999438716232,
+      "normalized_correlation": 1.0000000207353328,
+      "row_space_nmse_linear": 9.745409897463802e-17,
+      "null_space_nmse_linear": 1.8550620299764677e-15
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-08",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -0.1870827785502746,
+      "observation_residual_relative": 3.9503445882579424e-14,
+      "prediction_energy_ratio": 0.042162755607409286,
+      "normalized_correlation": 0.20527496600949008,
+      "row_space_nmse_linear": 6.2768733601705714e-15,
+      "null_space_nmse_linear": 0.9578372489619669
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-10",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": 9.583303435941048,
+      "observation_residual_relative": 1.9143409972593886e-06,
+      "prediction_energy_ratio": 8.17568200496282,
+      "normalized_correlation": 0.015938733869442844,
+      "row_space_nmse_linear": 6.841483805598177e-08,
+      "null_space_nmse_linear": 9.085113213210436
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-10",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.0940535188486,
+      "observation_residual_relative": 7.756835915286682e-14,
+      "prediction_energy_ratio": 0.9999999438716232,
+      "normalized_correlation": 1.0000000207353328,
+      "row_space_nmse_linear": 9.745409897463802e-17,
+      "null_space_nmse_linear": 1.8550620299764677e-15
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-10",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -0.1870827785502746,
+      "observation_residual_relative": 3.9503445882579424e-14,
+      "prediction_energy_ratio": 0.042162755607409286,
+      "normalized_correlation": 0.20527496600949008,
+      "row_space_nmse_linear": 6.2768733601705714e-15,
+      "null_space_nmse_linear": 0.9578372489619669
+    }
+  ],
+  "numerical_variance_sensitivity": [
+    {
+      "operator": "dma_J1",
+      "max_per_scene_spread_db": 0.0,
+      "stable_within_declared_tolerance": true,
+      "same_pass_fail_at_all_variances": true
+    },
+    {
+      "operator": "dma_J32",
+      "max_per_scene_spread_db": 0.0,
+      "stable_within_declared_tolerance": true,
+      "same_pass_fail_at_all_variances": true
+    },
+    {
+      "operator": "dma_J8",
+      "max_per_scene_spread_db": 0.0,
+      "stable_within_declared_tolerance": true,
+      "same_pass_fail_at_all_variances": true
+    }
+  ],
+  "smoke_only": true,
+  "diagnostic_only": true,
+  "trajectory_endpoint": "all stages saved; final t=0 selected by protocol, never by truth",
+  "online_seconds_include_trace_metrics": true
+}

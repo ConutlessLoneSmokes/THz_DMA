@@ -1,0 +1,16 @@
+operator,method,scenes,failed_scenes,worst_variance_mean_nmse_db,fraction_below_minus10db,maximum_numerical_variance_gap_db,numerical_variance_stable
+re128_J16_K8_distinct,pinv_ls,1,0,-0.024437578729621406,0.0,0.0,True
+re128_J16_K8_distinct,scalar_fusion,1,0,-0.04678764275367158,0.0,0.0,True
+re128_J16_K8_distinct,zhou,1,0,-0.04080748450854657,0.0,0.0,True
+re4096_J128_K32_distinct,pinv_ls,1,0,-0.9611716063813341,0.0,0.0,True
+re4096_J128_K32_distinct,scalar_fusion,1,0,-3.8448646594626226,0.0,3.672487389305701e-06,True
+re4096_J128_K32_distinct,zhou,1,0,-3.4915662965708405,0.0,9.67302471455156e-07,True
+re4096_J128_K32_interleaved,pinv_ls,1,0,-0.9363327340732301,0.0,0.0,True
+re4096_J128_K32_interleaved,scalar_fusion,1,0,-6.990402130720089,0.0,8.389149978249577e-06,True
+re4096_J128_K32_interleaved,zhou,1,0,-5.798446033735032,0.0,8.226597865146346e-07,True
+re4096_J64_K64_distinct,pinv_ls,1,0,-0.9477738974482746,0.0,0.0,True
+re4096_J64_K64_distinct,scalar_fusion,1,0,-7.0196417841095275,0.0,9.808052951143509e-06,True
+re4096_J64_K64_distinct,zhou,1,0,-5.807330791306717,0.0,8.243444993283333e-07,True
+re8192_J64_K128_distinct,pinv_ls,1,0,-2.1642664391897295,0.0,0.0,True
+re8192_J64_K128_distinct,scalar_fusion,1,0,-14.022773438926128,1.0,1.571417560874977e-05,True
+re8192_J64_K128_distinct,zhou,1,0,-12.368599684524359,1.0,5.601793962028978e-06,True

@@ -1,0 +1,80 @@
+{
+  "dma_J32:noiseless_v1e-08": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      7.5996503829956055,
+      7.5953590869903564
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J32:noiseless_v1e-10": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      7.599650144577026,
+      7.5953590869903564
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J8:noiseless_v1e-08": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      9.137999057769775,
+      9.136932849884033
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J8:noiseless_v1e-10": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      9.137998580932617,
+      9.136932373046875
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J1:noiseless_v1e-08": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      9.596943855285645,
+      9.59686279296875
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J1:noiseless_v1e-10": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      9.596944332122803,
+      9.59686279296875
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  }
+}

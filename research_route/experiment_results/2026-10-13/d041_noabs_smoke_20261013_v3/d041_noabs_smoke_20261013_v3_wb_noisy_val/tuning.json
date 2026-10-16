@@ -1,0 +1,132 @@
+{
+  "digital:snr_0": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      2.03525310754776,
+      1.018964409828186
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "digital:snr_20": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      0.1135869026184082,
+      0.011369713116437197
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J192:snr_0": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      3.2821505069732666,
+      2.311527371406555
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J192:snr_20": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      0.2363867163658142,
+      0.06483771279454231
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J32:snr_0": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      8.101966857910156,
+      7.890994310379028
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J32:snr_20": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      7.669680833816528,
+      7.646983623504639
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J8:snr_0": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      9.178782939910889,
+      9.131906986236572
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J8:snr_20": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      9.090952396392822,
+      9.085664749145508
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J1:snr_0": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      9.50734567642212,
+      9.502445220947266
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J1:snr_20": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      9.498686790466309,
+      9.49810791015625
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  }
+}

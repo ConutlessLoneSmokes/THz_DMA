@@ -1,0 +1,254 @@
+{
+  "physics": [
+    {
+      "split": "train",
+      "index": 0,
+      "storage_dtype": "complex64",
+      "exact_path_and_stored_channel_match": true
+    },
+    {
+      "split": "train",
+      "index": 2047,
+      "storage_dtype": "complex64",
+      "exact_path_and_stored_channel_match": true
+    },
+    {
+      "split": "validation",
+      "index": 0,
+      "storage_dtype": "complex64",
+      "exact_path_and_stored_channel_match": true
+    },
+    {
+      "split": "validation",
+      "index": 255,
+      "storage_dtype": "complex64",
+      "exact_path_and_stored_channel_match": true
+    },
+    {
+      "split": "test",
+      "index": 0,
+      "storage_dtype": "complex64",
+      "exact_path_and_stored_channel_match": true
+    },
+    {
+      "split": "test",
+      "index": 99,
+      "storage_dtype": "complex64",
+      "exact_path_and_stored_channel_match": true
+    }
+  ],
+  "frozen_gpu_endpoints": [
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 0,
+      "frozen_guidance": 2.0,
+      "nmse_db": -69.92640933314804,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 0,
+      "frozen_guidance": 2.0,
+      "nmse_db": -69.92387331504997,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 99,
+      "frozen_guidance": 2.0,
+      "nmse_db": -71.16362634317633,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 99,
+      "frozen_guidance": 2.0,
+      "nmse_db": -71.16116563575622,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 0,
+      "frozen_guidance": 2.0,
+      "nmse_db": -69.94425021612254,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 0,
+      "frozen_guidance": 2.0,
+      "nmse_db": -69.92351446767138,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 99,
+      "frozen_guidance": 2.0,
+      "nmse_db": -71.17885584359091,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 99,
+      "frozen_guidance": 2.0,
+      "nmse_db": -71.16064587887065,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 0,
+      "frozen_guidance": 4.0,
+      "nmse_db": -4.535000392660324,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 0,
+      "frozen_guidance": 4.0,
+      "nmse_db": -4.534999828914933,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 99,
+      "frozen_guidance": 4.0,
+      "nmse_db": -4.997095709826043,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J32",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 99,
+      "frozen_guidance": 4.0,
+      "nmse_db": -4.997095102307699,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 0,
+      "frozen_guidance": 4.0,
+      "nmse_db": -0.18499265690931216,
+      "nmse_db_gap_from_saved": 5.551115123125783e-17,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 0,
+      "frozen_guidance": 4.0,
+      "nmse_db": -0.18499224280263393,
+      "nmse_db_gap_from_saved": 2.7755575615628914e-17,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 99,
+      "frozen_guidance": 4.0,
+      "nmse_db": -0.1703840530793457,
+      "nmse_db_gap_from_saved": 0.0,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J8",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 99,
+      "frozen_guidance": 4.0,
+      "nmse_db": -0.17038365320988513,
+      "nmse_db_gap_from_saved": 2.7755575615628914e-17,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 0,
+      "frozen_guidance": 0.5,
+      "nmse_db": -0.014051318207091771,
+      "nmse_db_gap_from_saved": 7.112366251504909e-17,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 0,
+      "frozen_guidance": 0.5,
+      "nmse_db": -0.014051318207091771,
+      "nmse_db_gap_from_saved": 7.112366251504909e-17,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-08",
+      "scene_index": 99,
+      "frozen_guidance": 0.5,
+      "nmse_db": -0.017326362512197997,
+      "nmse_db_gap_from_saved": 9.71445146547012e-17,
+      "all_metrics_match": true
+    },
+    {
+      "operator": "dma_J1",
+      "condition": "noiseless_v1e-10",
+      "scene_index": 99,
+      "frozen_guidance": 0.5,
+      "nmse_db": -0.017326362512197997,
+      "nmse_db_gap_from_saved": 9.71445146547012e-17,
+      "all_metrics_match": true
+    }
+  ],
+  "snr_training_references": [
+    {
+      "operator": "digital",
+      "training_scenes": 2048,
+      "recomputed_whitened_power": 0.9999998374776903,
+      "matches_saved": true
+    },
+    {
+      "operator": "dma_J192",
+      "training_scenes": 2048,
+      "recomputed_whitened_power": 0.8057046793556562,
+      "matches_saved": true
+    },
+    {
+      "operator": "dma_J32",
+      "training_scenes": 2048,
+      "recomputed_whitened_power": 0.8315111893191606,
+      "matches_saved": true
+    },
+    {
+      "operator": "dma_J8",
+      "training_scenes": 2048,
+      "recomputed_whitened_power": 0.7699891972873559,
+      "matches_saved": true
+    },
+    {
+      "operator": "dma_J1",
+      "training_scenes": 2048,
+      "recomputed_whitened_power": 0.7165037367710808,
+      "matches_saved": true
+    }
+  ]
+}

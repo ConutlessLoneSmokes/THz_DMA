@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "torch": "2.11.0+cu128",
+  "cases": [
+    {
+      "band": "narrow",
+      "operator": "dma_J160",
+      "metrics": {
+        "nmse_linear": 5.340775851070497e-06,
+        "nmse_db": -52.72395648708632,
+        "observation_residual_relative": 5.052808246760602e-06,
+        "clean_observation_residual_relative": 5.052808246760602e-06,
+        "prediction_energy_ratio": 0.9992672526943484,
+        "normalized_correlation": 0.999997317372298,
+        "coherent_correlation_real": 0.999997317372298,
+        "row_space_nmse_linear": 5.340775851070497e-06,
+        "null_space_nmse_linear": 1.0417478775541172e-18,
+        "error_decomposition_relative_gap": 0.0,
+        "truth_energy_normalized": 1243.447509765625,
+        "prediction_energy_normalized": 1242.536376953125
+      },
+      "network_calls": 100,
+      "returned_trace_t": 1,
+      "endpoint_callback_t": 0
+    },
+    {
+      "band": "wide",
+      "operator": "dma_J160",
+      "metrics": {
+        "nmse_linear": 3.0917955323696135e-06,
+        "nmse_db": -55.09789234708366,
+        "observation_residual_relative": 3.1018639513012978e-06,
+        "clean_observation_residual_relative": 3.1018639513012978e-06,
+        "prediction_energy_ratio": 0.9997371358030008,
+        "normalized_correlation": 0.9999984633491145,
+        "coherent_correlation_real": 0.9999984633491145,
+        "row_space_nmse_linear": 3.0917955323696135e-06,
+        "null_space_nmse_linear": 5.795544187609459e-19,
+        "error_decomposition_relative_gap": 0.0,
+        "truth_energy_normalized": 156746.8125,
+        "prediction_energy_normalized": 156705.609375
+      },
+      "network_calls": 100,
+      "returned_trace_t": 1,
+      "endpoint_callback_t": 0
+    },
+    {
+      "band": "wide",
+      "operator": "re128_J8_K16_distinct",
+      "metrics": {
+        "nmse_linear": 1.0001475309107162,
+        "nmse_db": 0.0006406713460903378,
+        "observation_residual_relative": 0.0020029211082516697,
+        "clean_observation_residual_relative": 0.0020029211082516697,
+        "prediction_energy_ratio": 0.00038774544489590895,
+        "normalized_correlation": 0.008795065587254026,
+        "coherent_correlation_real": 0.006103057313501605,
+        "row_space_nmse_linear": 1.8478336107190093e-07,
+        "null_space_nmse_linear": 1.0001473315446208,
+        "error_decomposition_relative_gap": 0.0,
+        "truth_energy_normalized": 156746.8125,
+        "prediction_energy_normalized": 60.777862548828125
+      },
+      "network_calls": 100,
+      "returned_trace_t": 1,
+      "endpoint_callback_t": 0
+    },
+    {
+      "band": "wide",
+      "operator": "re128_J16_K8_distinct",
+      "metrics": {
+        "nmse_linear": 1.0000508383543685,
+        "nmse_db": 0.0002207825556493635,
+        "observation_residual_relative": 0.0015271718526537945,
+        "clean_observation_residual_relative": 0.0015271718526537945,
+        "prediction_energy_ratio": 0.0004737888534615337,
+        "normalized_correlation": 0.011217701125569525,
+        "coherent_correlation_real": 0.009718059737483345,
+        "row_space_nmse_linear": 4.4897289363286394e-07,
+        "null_space_nmse_linear": 1.0000503399391296,
+        "error_decomposition_relative_gap": 0.0,
+        "truth_energy_normalized": 156746.8125,
+        "prediction_energy_normalized": 74.264892578125
+      },
+      "network_calls": 100,
+      "returned_trace_t": 1,
+      "endpoint_callback_t": 0
+    },
+    {
+      "band": "wide",
+      "operator": "re128_J16_K8_interleaved",
+      "metrics": {
+        "nmse_linear": 1.0002164118967332,
+        "nmse_db": 0.0009397632413888524,
+        "observation_residual_relative": 0.0031029315835944854,
+        "clean_observation_residual_relative": 0.0031029315835944854,
+        "prediction_energy_ratio": 0.0003410888625245918,
+        "normalized_correlation": 0.007727064784122963,
+        "coherent_correlation_real": 0.0033766430369916237,
+        "row_space_nmse_linear": 9.238067674339687e-08,
+        "null_space_nmse_linear": 1.0002163122136853,
+        "error_decomposition_relative_gap": 0.0,
+        "truth_energy_normalized": 156746.8125,
+        "prediction_energy_normalized": 53.46459197998047
+      },
+      "network_calls": 100,
+      "returned_trace_t": 1,
+      "endpoint_callback_t": 0
+    }
+  ],
+  "selection_split": "validation scene 0 only, fixed guidance=1 and variance=1e-8",
+  "scope": "five finite 100-step formal-model interface checks; not a performance estimate or parameter selection"
+}

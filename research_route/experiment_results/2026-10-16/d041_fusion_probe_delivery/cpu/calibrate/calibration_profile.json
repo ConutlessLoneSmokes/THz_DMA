@@ -1,0 +1,17 @@
+{
+  "variances_real": [
+    0.00010030000456319246,
+    0.045117070458959505,
+    0.14364386985410613,
+    0.3127663692383297,
+    0.5851014887396784,
+    1.0163742144424317,
+    1.7143883032972673,
+    2.8739140645606702
+  ],
+  "training_scenes": 2,
+  "representation": "training RMS + unitary spatial DFT",
+  "target": "training-average squared error around frozen denoiser; not exact conditional covariance",
+  "validation_not_used_for_variance": true,
+  "variance_floor_real": 1e-08
+}

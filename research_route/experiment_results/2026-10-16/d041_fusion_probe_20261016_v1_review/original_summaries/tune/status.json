@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "timestamp_utc": "2026-10-16T01:19:06.427344+00:00",
+  "stage": "tune",
+  "smoke_only": false,
+  "data_split": "train/validation only"
+}

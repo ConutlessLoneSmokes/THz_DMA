@@ -1,0 +1,30 @@
+                   operator condition        method  mean_nmse_db  pass_minus10db_count
+      re128_J16_K8_distinct noiseless       pinv_ls     -0.024912                     0
+      re128_J16_K8_distinct noiseless scalar_fusion     -0.049696                     0
+      re128_J16_K8_distinct noiseless          zhou     -0.043239                     0
+   re4096_J128_K32_distinct noiseless       pinv_ls     -0.960843                     0
+   re4096_J128_K32_distinct noiseless scalar_fusion     -3.663881                     0
+   re4096_J128_K32_distinct noiseless          zhou     -3.378696                     0
+re4096_J128_K32_interleaved noiseless       pinv_ls     -0.943178                     0
+re4096_J128_K32_interleaved noiseless scalar_fusion     -7.322542                     0
+re4096_J128_K32_interleaved noiseless          zhou     -6.051770                     0
+    re4096_J64_K64_distinct noiseless       pinv_ls     -0.940299                     0
+    re4096_J64_K64_distinct noiseless scalar_fusion     -7.153819                     0
+    re4096_J64_K64_distinct noiseless          zhou     -5.920600                     0
+    re4096_J64_K64_distinct    snr_20       pinv_ls     -0.920894                     0
+    re4096_J64_K64_distinct    snr_20 scalar_fusion     -4.060970                     0
+    re4096_J64_K64_distinct    snr_20          zhou     -6.254033                     0
+   re8192_J64_K128_distinct noiseless       pinv_ls     -2.142740                     0
+   re8192_J64_K128_distinct noiseless scalar_fusion    -14.824020                    64
+   re8192_J64_K128_distinct noiseless          zhou    -13.104945                    64
+   re8192_J64_K128_distinct    snr_20       pinv_ls     -2.091814                     0
+   re8192_J64_K128_distinct    snr_20 scalar_fusion     -9.785110                    32
+   re8192_J64_K128_distinct    snr_20          zhou    -12.715882                    64
+                   operator condition  scenes  aggregate_delta_db  mean_paired_delta_db  ci95_low  ci95_high  fusion_better_scenes  maximum_scene_delta_db  minimum_scene_delta_db
+      re128_J16_K8_distinct noiseless      64           -0.006457             -0.006466 -0.007381  -0.005594                    64               -0.002055               -0.016316
+   re4096_J128_K32_distinct noiseless      64           -0.285185             -0.298302 -0.327639  -0.268592                    64               -0.045608               -0.476332
+re4096_J128_K32_interleaved noiseless      64           -1.270772             -1.276372 -1.301160  -1.250162                    64               -0.953038               -1.445008
+    re4096_J64_K64_distinct noiseless      64           -1.233219             -1.252788 -1.288892  -1.214494                    64               -0.824486               -1.483322
+    re4096_J64_K64_distinct    snr_20      64            2.193063              2.206566  2.143969   2.265735                     0                2.727477                1.605716
+   re8192_J64_K128_distinct noiseless      64           -1.719075             -1.728478 -1.757014  -1.700032                    64               -1.482179               -1.953180
+   re8192_J64_K128_distinct    snr_20      64            2.930772              2.897070  2.820915   2.972112                     0                3.586001                2.302132

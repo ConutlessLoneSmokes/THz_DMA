@@ -1,0 +1,9 @@
+run_id,band,stage,split,rows,trajectory_rows,frozen_tuning
+d041_noabs_staged_smoke_20261013_v1_nb_full_val,narrow,full-noiseless,validation,24,72,False
+d041_noabs_staged_smoke_20261013_v1_nb_full_test,narrow,full-noiseless,test,24,72,True
+d041_noabs_staged_smoke_20261013_v1_nb_reduced_val,narrow,reduced-noiseless,validation,36,108,False
+d041_noabs_staged_smoke_20261013_v1_nb_reduced_test,narrow,reduced-noiseless,test,36,108,True
+d041_noabs_staged_smoke_20261013_v1_wb_full_val,wide,full-noiseless,validation,24,72,False
+d041_noabs_staged_smoke_20261013_v1_wb_full_test,wide,full-noiseless,test,24,72,True
+d041_noabs_staged_smoke_20261013_v1_wb_reduced_val,wide,reduced-noiseless,validation,36,108,False
+d041_noabs_staged_smoke_20261013_v1_wb_reduced_test,wide,reduced-noiseless,test,36,108,True

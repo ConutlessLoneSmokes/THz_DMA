@@ -1,0 +1,1595 @@
+{
+  "prefix": "d041_noabs_smoke_20261013_v3",
+  "runs": [
+    "d041_noabs_smoke_20261013_v3_nb_data",
+    "d041_noabs_smoke_20261013_v3_nb_check",
+    "d041_noabs_smoke_20261013_v3_nb_clean",
+    "d041_noabs_smoke_20261013_v3_nb_full_val",
+    "d041_noabs_smoke_20261013_v3_nb_full_test",
+    "d041_noabs_smoke_20261013_v3_nb_reduced_val",
+    "d041_noabs_smoke_20261013_v3_nb_reduced_test",
+    "d041_noabs_smoke_20261013_v3_nb_noisy_val",
+    "d041_noabs_smoke_20261013_v3_nb_noisy_test",
+    "d041_noabs_smoke_20261013_v3_wb_data",
+    "d041_noabs_smoke_20261013_v3_wb_check",
+    "d041_noabs_smoke_20261013_v3_wb_clean",
+    "d041_noabs_smoke_20261013_v3_wb_full_val",
+    "d041_noabs_smoke_20261013_v3_wb_full_test",
+    "d041_noabs_smoke_20261013_v3_wb_reduced_val",
+    "d041_noabs_smoke_20261013_v3_wb_reduced_test",
+    "d041_noabs_smoke_20261013_v3_wb_noisy_val",
+    "d041_noabs_smoke_20261013_v3_wb_noisy_test"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 1756,
+      "sha256": "3ff9d1faedad58ed67fc4bc5910ec0ddbedaf571aebcee84609bdb71f521cd1f"
+    },
+    {
+      "path": "audit.json",
+      "size_bytes": 27730,
+      "sha256": "66df5e8ae4aaad1637c760032ece9d87427237f6846779f4d417b1d71edf3a1c"
+    },
+    {
+      "path": "completed_run_verify.log",
+      "size_bytes": 1283,
+      "sha256": "c927a1d6d2373e516a51bd67601a7e0b27bccbf42039f93783c7b5141961887c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/checks.json",
+      "size_bytes": 5842,
+      "sha256": "c06a558f6a6e6f8755ee90e8ee9937b314b71e6b0cceb4f5fa3f0527b0c51679"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/config_resolved.json",
+      "size_bytes": 4539,
+      "sha256": "d6566cf01e67fbc8f5febcdd560e7303f7748f04f8f4668ce3b1dec6a50d618f"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/environment.txt",
+      "size_bytes": 462,
+      "sha256": "d51b4fe8e3922703aca2b7273d35c62111c93ec83b6722705aca2bac7ea1f16a"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/hardware.npz",
+      "size_bytes": 278842,
+      "sha256": "d653857284b254329299725a88ce0ba317ad8e16409148b5cde1fd42e2334e03"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/metrics_raw.csv",
+      "size_bytes": 2932,
+      "sha256": "ee8ec97f768ed81d5ed4a0cc777a612d75ee4d9c0dceadac28596072b533b4a6"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/operators.json",
+      "size_bytes": 3084,
+      "sha256": "f636c0071f8b46f83c7fed32519448c581c4da90e3d44c3ec0e923e8ea6cc2f5"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/spectrum_dma_J1.npz",
+      "size_bytes": 1152,
+      "sha256": "2fa7b65ff78adbd4a796d3b1097a02bdba77cbff886ce33bfb6bc21ee7663491"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/spectrum_dma_J192.npz",
+      "size_bytes": 16176,
+      "sha256": "d103235a7619fc22e8278b1ab9770aa964adca066b49be54f29be47650be1395"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/spectrum_dma_J32.npz",
+      "size_bytes": 3632,
+      "sha256": "9364eebfad46f1d982cd19ca31c8e53a23fa5964370585ca022741f17b82b15c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/spectrum_dma_J8.npz",
+      "size_bytes": 1712,
+      "sha256": "b2a5ce79cbebf9ab2f166329ff00eaf2c0191d176b6ea3e9217fa4c571620854"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_check/status.json",
+      "size_bytes": 145,
+      "sha256": "da8f3e79cff8c6420d017f7c44f4aba2b0cb855979448b81220cffb5eb0c87f1"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/config_resolved.json",
+      "size_bytes": 4539,
+      "sha256": "2e5fe297dc5c40328ac252ea899fecb37fcd57dd485b19f7211c26495759da38"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/denoising_profile.json",
+      "size_bytes": 1036,
+      "sha256": "aacef3b15ac3cd95439117ebca5d737fadb14b5a1e0aef4dd3383e9a7fbc0dd5"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/environment.txt",
+      "size_bytes": 462,
+      "sha256": "128d831ccb6814b15dbfb976ea15b77180cc7815e3ec842ccf99660d5519ea86"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/status.json",
+      "size_bytes": 145,
+      "sha256": "43ff565641e82f10ae0c100abcfcd20e14ce91e25a25a19682fd6205ffb51f6a"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/training_history.json",
+      "size_bytes": 332,
+      "sha256": "7395c4e2278a8d9969b0730d1d76ff2a5fefe1e4a0df21ddb49b92e3442998d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_clean/training_summary.json",
+      "size_bytes": 515,
+      "sha256": "6611cde4871c20474182100260a49a911e081997d8c9f5c34f935bc03960286d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/array.npz",
+      "size_bytes": 32824,
+      "sha256": "148338a2e91e0def2171e67eafbc1194b4214fad2f9bf359feb7fabc925cf12d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/config_resolved.json",
+      "size_bytes": 4506,
+      "sha256": "1e55d3cef3ee724dd616eb125d516d3d348e17a2383e678a8d8e7742b74bdbb8"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/dataset.json",
+      "size_bytes": 4315,
+      "sha256": "8ecaabb18eb937cfe41658a3622bfd20212ec090201133c653ad022e24092ad4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/environment.txt",
+      "size_bytes": 462,
+      "sha256": "8d7f4c00572dddafa9d685d6c991839e5a2c408c2c12c55afa8915c23446a194"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/parameters/test_000000.json",
+      "size_bytes": 2331,
+      "sha256": "fc28bd882f6333f3ba8c91208ca552dbe04ccd94577bfa80ca6fee28eec5e8a3"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/parameters/train_000000.json",
+      "size_bytes": 2322,
+      "sha256": "178bb68cd5649686605b3533b51157ba5f47a0a29e5c8c9127e3956151a9c53b"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/parameters/train_000004.json",
+      "size_bytes": 2343,
+      "sha256": "c465c02fe0d1de2277d38d2fbd6b02ea53c177c9c0d7e26b4481741d0c11ba7c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/parameters/validation_000000.json",
+      "size_bytes": 2341,
+      "sha256": "a7a37b7407d1840fd017673538f4df4f13e5c73d36eb5b2e3bd501d3c3ecfd50"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_data/status.json",
+      "size_bytes": 147,
+      "sha256": "c90a488c87baebe177e65462c066b08daca04dd3f2a268d426f6ba1633d4f625"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/comparison.csv",
+      "size_bytes": 1996,
+      "sha256": "507eacf9531d8ff757bfa3edf3ad5fb19672ee9de086e235a78c7adfc72e43d6"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/config_resolved.json",
+      "size_bytes": 4613,
+      "sha256": "0522a465a125ae596f2e85ffe180b7ddbfb08cb21d0e449219f249a11495196b"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "36d00be096f47e4f771e8bd761125801bfcf44b38bb2a95d451f1a6f0c6719a4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/environment.txt",
+      "size_bytes": 462,
+      "sha256": "eb8b168c85c68c4dad7c8fbd80ba41f90d086db079e94b7ba2acbc62a6ad4818"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/hardware.npz",
+      "size_bytes": 278842,
+      "sha256": "d653857284b254329299725a88ce0ba317ad8e16409148b5cde1fd42e2334e03"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/metrics_raw.csv",
+      "size_bytes": 11882,
+      "sha256": "786f8e45c8a7b0f209071b9bfec0cb6f786d94a0ca3cbee2f20f11d28bca1e28"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/metrics_summary.json",
+      "size_bytes": 5978,
+      "sha256": "4585f04d5a14da3af7fcfb7804afefc6be95ca3b55fe38c68f5b6316e6c7fd9c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/observation_reference.json",
+      "size_bytes": 653,
+      "sha256": "c2bd069e754505996d9658a5ace6d01ae1adacf280207eab954db5effb456ae4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/operators.json",
+      "size_bytes": 1012,
+      "sha256": "bc537ba7afdf392bc1bc64bf13b8ab889a96ff8ded24d199a011e7ce494a96d5"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/spectrum_dma_J192.npz",
+      "size_bytes": 10032,
+      "sha256": "e5c45648045f0764ba07c72182bddc7a652f9a4a2a5c958f034ff7355c9a942c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/status.json",
+      "size_bytes": 148,
+      "sha256": "576ea415705dfccd6ae711238061105e4aaf7f3a67bdc481326d4a679bcb9a5d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/trajectories.csv",
+      "size_bytes": 36511,
+      "sha256": "334155c5cde856d8b5e0fa1f75a11820e8f7401e821549fe42203ba050852cc6"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/tuning.json",
+      "size_bytes": 1076,
+      "sha256": "e8e809069104bae73337d7736a6933467cf9e5d25676d23c0ddcec85970bda64"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_test/tuning_source.json",
+      "size_bytes": 138,
+      "sha256": "98eaa4be9c398fee9e93468a751126fe0a1d75e4db167d3d51cb1b487957fc12"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/comparison.csv",
+      "size_bytes": 2020,
+      "sha256": "6c192b5f28f0b6498cf21b981543131789de5b61a1f78817eb6ac306c76e45b3"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/config_resolved.json",
+      "size_bytes": 4580,
+      "sha256": "374ffe9754c2a86725a53050c33487f2dc1c8d0f5d629caaead9a6b48364c4aa"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "36d00be096f47e4f771e8bd761125801bfcf44b38bb2a95d451f1a6f0c6719a4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/environment.txt",
+      "size_bytes": 462,
+      "sha256": "927a97bf8d3971d43d91bb48b24c15888efde185ef7a66b96585d9aa3f967f73"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/hardware.npz",
+      "size_bytes": 278842,
+      "sha256": "d653857284b254329299725a88ce0ba317ad8e16409148b5cde1fd42e2334e03"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/metrics_raw.csv",
+      "size_bytes": 11755,
+      "sha256": "4802b1740cb4a11223627536624473f0057d2454a1feef0c48bd6b17bec38a5b"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/metrics_summary.json",
+      "size_bytes": 6008,
+      "sha256": "a2891c7a058d0988fd813883b8f97c61f5929724916a7992b4d2dacefe683132"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/observation_reference.json",
+      "size_bytes": 653,
+      "sha256": "c2bd069e754505996d9658a5ace6d01ae1adacf280207eab954db5effb456ae4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/operators.json",
+      "size_bytes": 1012,
+      "sha256": "bc537ba7afdf392bc1bc64bf13b8ab889a96ff8ded24d199a011e7ce494a96d5"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/spectrum_dma_J192.npz",
+      "size_bytes": 10032,
+      "sha256": "e5c45648045f0764ba07c72182bddc7a652f9a4a2a5c958f034ff7355c9a942c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/status.json",
+      "size_bytes": 148,
+      "sha256": "b714543231054557d0f9c37b0d70a477fa9ba87f5812bd817856cd3e4c0091bc"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/trajectories.csv",
+      "size_bytes": 36976,
+      "sha256": "b41a90f914f105845435fce3d009b0f9fcb946742ecaf8f42324b3777e09f60c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_full_val/tuning.json",
+      "size_bytes": 1076,
+      "sha256": "e8e809069104bae73337d7736a6933467cf9e5d25676d23c0ddcec85970bda64"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/comparison.csv",
+      "size_bytes": 4518,
+      "sha256": "6ffb2c6ed826479f729f286f32d10e830279bd901fac7eafa8936bc49b957f42"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/config_resolved.json",
+      "size_bytes": 4606,
+      "sha256": "4b74156ab474cd29a794b38f34485ec93cef4340a8a25eb8fdc5ed000bd8a77d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "36d00be096f47e4f771e8bd761125801bfcf44b38bb2a95d451f1a6f0c6719a4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/environment.txt",
+      "size_bytes": 462,
+      "sha256": "4b12f4810de232cfceba42befab8d45c09fe8393c52d45480ac3dbc3090cff7d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/hardware.npz",
+      "size_bytes": 278842,
+      "sha256": "d653857284b254329299725a88ce0ba317ad8e16409148b5cde1fd42e2334e03"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/metrics_raw.csv",
+      "size_bytes": 34874,
+      "sha256": "e5de1d1f919111a9ea2a7ca0b9c477e7e6f8f697b01e77ac83a922c916c287e9"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/metrics_summary.json",
+      "size_bytes": 13219,
+      "sha256": "9dc8f0ed95b3ca34ee215c67196212af2501a973bc1a680438b1048331d49acb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/observation_reference.json",
+      "size_bytes": 1136,
+      "sha256": "00c0c248708ecac34bd99741ff5cdc502465c5641cc3fa0a02d92753ef8e8b44"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/operators.json",
+      "size_bytes": 3084,
+      "sha256": "f636c0071f8b46f83c7fed32519448c581c4da90e3d44c3ec0e923e8ea6cc2f5"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/spectrum_dma_J1.npz",
+      "size_bytes": 1120,
+      "sha256": "81476960d63bb1f165133114299ddf38745772249835e0eecac1918a15f96fa6"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/spectrum_dma_J192.npz",
+      "size_bytes": 10032,
+      "sha256": "e5c45648045f0764ba07c72182bddc7a652f9a4a2a5c958f034ff7355c9a942c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/spectrum_dma_J32.npz",
+      "size_bytes": 2608,
+      "sha256": "9e51f37e1746f56e87f59447a0ff4b6b3e8da9976027feed8af8139ae3886104"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/spectrum_dma_J8.npz",
+      "size_bytes": 1456,
+      "sha256": "e7c99ca2c52ccef6ac94da9be6f12662c0bc0d0187f9435d2e50923306c88b37"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/status.json",
+      "size_bytes": 148,
+      "sha256": "f6a795d6fbfa3c75bbaed7e8c53f91cf8f609d0fcd166005edfcca51f0d81822"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/trajectories.csv",
+      "size_bytes": 108574,
+      "sha256": "71c27fda1a1a80ccf71b28e497729bbacdee365daf99932a2ef4380015a56277"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/tuning.json",
+      "size_bytes": 2514,
+      "sha256": "b67d6336ced35e6159c097fdb0a706da191acadd5e5baf7493ed13252fb7abfc"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_test/tuning_source.json",
+      "size_bytes": 139,
+      "sha256": "15447429086ed3294c405e8ff75865d3eb23d75462c3a1d8b89e826ba70fe642"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/comparison.csv",
+      "size_bytes": 4522,
+      "sha256": "731dcf49955ef53ba9a6f51529769e9060bf0ed54dd47a1b756edb832b13a389"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/config_resolved.json",
+      "size_bytes": 4572,
+      "sha256": "86170d7bba1d06cf7a3f55703ec9a0bcbebb802a8224d6a6b8358077be87b2d2"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "36d00be096f47e4f771e8bd761125801bfcf44b38bb2a95d451f1a6f0c6719a4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/environment.txt",
+      "size_bytes": 462,
+      "sha256": "3f4f22ca52aff112430404d19c9899e1b7b55dbd3595843b1248cdf696960fe7"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/hardware.npz",
+      "size_bytes": 278842,
+      "sha256": "d653857284b254329299725a88ce0ba317ad8e16409148b5cde1fd42e2334e03"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/metrics_raw.csv",
+      "size_bytes": 35120,
+      "sha256": "829dac58328f47a6a6349d0c2c135690a5f7295138a88de13c27fa905c3dae60"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/metrics_summary.json",
+      "size_bytes": 13229,
+      "sha256": "0515732c5182716bdc1012a1ede2db6b88a0ad987f316353ce89f7e0aa9f6a13"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/observation_reference.json",
+      "size_bytes": 1136,
+      "sha256": "00c0c248708ecac34bd99741ff5cdc502465c5641cc3fa0a02d92753ef8e8b44"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/operators.json",
+      "size_bytes": 3084,
+      "sha256": "f636c0071f8b46f83c7fed32519448c581c4da90e3d44c3ec0e923e8ea6cc2f5"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/spectrum_dma_J1.npz",
+      "size_bytes": 1120,
+      "sha256": "81476960d63bb1f165133114299ddf38745772249835e0eecac1918a15f96fa6"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/spectrum_dma_J192.npz",
+      "size_bytes": 10032,
+      "sha256": "e5c45648045f0764ba07c72182bddc7a652f9a4a2a5c958f034ff7355c9a942c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/spectrum_dma_J32.npz",
+      "size_bytes": 2608,
+      "sha256": "9e51f37e1746f56e87f59447a0ff4b6b3e8da9976027feed8af8139ae3886104"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/spectrum_dma_J8.npz",
+      "size_bytes": 1456,
+      "sha256": "e7c99ca2c52ccef6ac94da9be6f12662c0bc0d0187f9435d2e50923306c88b37"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/status.json",
+      "size_bytes": 148,
+      "sha256": "8ba3d9a9ea4f5fa67650aab2d48640c297a33828d2c1d16a7b3c9cff7057c2a2"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/trajectories.csv",
+      "size_bytes": 109766,
+      "sha256": "cfa08e7402e2f8401ae5d57e2ccea5d0b566f728a81d6eecfcafa87211861fc0"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_noisy_val/tuning.json",
+      "size_bytes": 2514,
+      "sha256": "b67d6336ced35e6159c097fdb0a706da191acadd5e5baf7493ed13252fb7abfc"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/comparison.csv",
+      "size_bytes": 3065,
+      "sha256": "68b3eb81c0b16d864104cbdf1aee17995eaf7e42e460d066b8afd828156f64da"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/config_resolved.json",
+      "size_bytes": 4622,
+      "sha256": "3bdef28128c0f7f0a070c8a7cc3ab82f7e56a488d5d7de582894139e4b596883"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "36d00be096f47e4f771e8bd761125801bfcf44b38bb2a95d451f1a6f0c6719a4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/environment.txt",
+      "size_bytes": 462,
+      "sha256": "47fa714e4bf0b87dd52d719a5ec47714c71fc8fd5b0e3b220f18d1993641ce32"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/hardware.npz",
+      "size_bytes": 278842,
+      "sha256": "d653857284b254329299725a88ce0ba317ad8e16409148b5cde1fd42e2334e03"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/metrics_raw.csv",
+      "size_bytes": 17769,
+      "sha256": "b7acb2167077423d957c14ee4e4875c2d11616062b8a6e980f0d3a1ddc247fe3"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/metrics_summary.json",
+      "size_bytes": 8911,
+      "sha256": "bf9a6b2dd0f30080e52784b42b92fea934bf9d12fbcc358e705ac32e9c895e47"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/observation_reference.json",
+      "size_bytes": 809,
+      "sha256": "fb5444b3f8ef2127aa4d57f3de418e0e784cde6a0273d31fda19f50a74aceb3a"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/operators.json",
+      "size_bytes": 2074,
+      "sha256": "338b3dbbdc310b4d28a67ece8a7c55b39c3f1abad66abd0363e0f7274d6d8cea"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/spectrum_dma_J1.npz",
+      "size_bytes": 1120,
+      "sha256": "81476960d63bb1f165133114299ddf38745772249835e0eecac1918a15f96fa6"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/spectrum_dma_J32.npz",
+      "size_bytes": 2608,
+      "sha256": "9e51f37e1746f56e87f59447a0ff4b6b3e8da9976027feed8af8139ae3886104"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/spectrum_dma_J8.npz",
+      "size_bytes": 1456,
+      "sha256": "e7c99ca2c52ccef6ac94da9be6f12662c0bc0d0187f9435d2e50923306c88b37"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/status.json",
+      "size_bytes": 148,
+      "sha256": "74e3d932371fed8e6e701ad86079ad854f5a2afa0708f59da9ecb7aab584a01a"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/trajectories.csv",
+      "size_bytes": 54631,
+      "sha256": "60bcdce72bea08eb7ae057f9e7bea9d979a7e2d8f03ca832d2974cfe7dec6c84"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/tuning.json",
+      "size_bytes": 1565,
+      "sha256": "c2f72742d0d8264bd886ac1ab85d109a9993239b0b5237b199cb3aa2d22b7c88"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_test/tuning_source.json",
+      "size_bytes": 141,
+      "sha256": "1b869e7f03beba29ba73a59b4efe0605f450cfc6df7e80fd58089a320dd6573c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/comparison.csv",
+      "size_bytes": 3067,
+      "sha256": "f3054b3ff33621ad826bbd16367afe5597813b2e0ac1218654a196f46b66b25f"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/config_resolved.json",
+      "size_bytes": 4586,
+      "sha256": "9448e690a59859f924f957d3541c478212ebb89cc4a5c58fa38339982fb798c8"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "36d00be096f47e4f771e8bd761125801bfcf44b38bb2a95d451f1a6f0c6719a4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/environment.txt",
+      "size_bytes": 462,
+      "sha256": "e7b70a6b8331568895019958dfce8560f557aa733693998b1a0bd9f2ed9f66d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/hardware.npz",
+      "size_bytes": 278842,
+      "sha256": "d653857284b254329299725a88ce0ba317ad8e16409148b5cde1fd42e2334e03"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/metrics_raw.csv",
+      "size_bytes": 17689,
+      "sha256": "cfbf527a46358761673dd0089f93db6b316c7fb52026013b117d59d9198407ea"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/metrics_summary.json",
+      "size_bytes": 8919,
+      "sha256": "a7dddb8e632004dff96cd092978af4d502434504794002ca79df3c9778ebfa0f"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/observation_reference.json",
+      "size_bytes": 809,
+      "sha256": "fb5444b3f8ef2127aa4d57f3de418e0e784cde6a0273d31fda19f50a74aceb3a"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/operators.json",
+      "size_bytes": 2074,
+      "sha256": "338b3dbbdc310b4d28a67ece8a7c55b39c3f1abad66abd0363e0f7274d6d8cea"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/spectrum_dma_J1.npz",
+      "size_bytes": 1120,
+      "sha256": "81476960d63bb1f165133114299ddf38745772249835e0eecac1918a15f96fa6"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/spectrum_dma_J32.npz",
+      "size_bytes": 2608,
+      "sha256": "9e51f37e1746f56e87f59447a0ff4b6b3e8da9976027feed8af8139ae3886104"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/spectrum_dma_J8.npz",
+      "size_bytes": 1456,
+      "sha256": "e7c99ca2c52ccef6ac94da9be6f12662c0bc0d0187f9435d2e50923306c88b37"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/status.json",
+      "size_bytes": 148,
+      "sha256": "ab2940ea1f67f775970bf3ac9cb4e28dabcdda4d352194e85e72935162f054d2"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/trajectories.csv",
+      "size_bytes": 55777,
+      "sha256": "311cf4fd00076fa758ddfef7c4eaf3e6fcf0176000aa9add9e54311fdcd6cd40"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_nb_reduced_val/tuning.json",
+      "size_bytes": 1565,
+      "sha256": "c2f72742d0d8264bd886ac1ab85d109a9993239b0b5237b199cb3aa2d22b7c88"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/checks.json",
+      "size_bytes": 5729,
+      "sha256": "fb1c7c6069a4440c6c78ed229dccf8f59a5b26196530f28f4e3c37fb2f1ac739"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/config_resolved.json",
+      "size_bytes": 4550,
+      "sha256": "78a1a7645731c808c81e89b98a67f700762431668026effed4a8b027809460d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/environment.txt",
+      "size_bytes": 462,
+      "sha256": "af32de453df4e943bfb68b7cce1fa77131932602f6901c8e0eea5dafe00eb989"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/hardware.npz",
+      "size_bytes": 279858,
+      "sha256": "d715fd21a4ea76c0ba014e48a1519f03e899130097f999153b00a3cdd82d1f91"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/metrics_raw.csv",
+      "size_bytes": 2821,
+      "sha256": "eabe04a0b585e58a9611535ab7fd68d49dc218c759b4f614180035e84b6c9518"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/operators.json",
+      "size_bytes": 3167,
+      "sha256": "51589dd8d416430eb5f5252ee6dc2ccfb8ef69e1a0a8f81e0a46c9f81b2033aa"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/spectrum_dma_J1.npz",
+      "size_bytes": 12328,
+      "sha256": "15ef7bc054f3e5a20509366b9b7bbcfd4581582451babd9468a3bd8787fbb075"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/spectrum_dma_J192.npz",
+      "size_bytes": 1935400,
+      "sha256": "face4a1187fe6ab74c94d3442507f4ab288e04e4b9ed20fc008ba1d389817717"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/spectrum_dma_J32.npz",
+      "size_bytes": 329768,
+      "sha256": "c69e1c9f5dea7eed794d8f8ca6b891f75a775703e1eeabd4bf45fb469d4fc738"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/spectrum_dma_J8.npz",
+      "size_bytes": 84008,
+      "sha256": "d1888f9a56deb68b5e1c4663d912b9814aa4b81e9f7d3f90d000b54334b0857f"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_check/status.json",
+      "size_bytes": 143,
+      "sha256": "035aa39a994cb2bbb39dbdbdc6a65d628ebdf031e3f56afbbd70fac3cbe625cc"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/config_resolved.json",
+      "size_bytes": 4550,
+      "sha256": "c7a1c06a46d911faae2f4ac99a3d07b9ca846fd4c66a774237111363ea3b3d82"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/denoising_profile.json",
+      "size_bytes": 1032,
+      "sha256": "1a55bc24bb4946b7063aaa85dd9d514d2c871af5b331aaf508ccf31b22f3458d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/environment.txt",
+      "size_bytes": 462,
+      "sha256": "e9c9a3624bce1b75ff1f9f9a2b4578739a75497d2e1c2917c9d09a94a4dabadd"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/status.json",
+      "size_bytes": 143,
+      "sha256": "79d7219504d0e47bfbd0beb673e8bc1e9a4bc1fbd5d4d6ac3ffc5c7b27b02e60"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/training_history.json",
+      "size_bytes": 331,
+      "sha256": "0f5b1ba2ce21738bdc539b12e92c3b21794d5d1cb4fe10c9a708d89e40e9d272"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_clean/training_summary.json",
+      "size_bytes": 515,
+      "sha256": "57d0323c859a709bfa74926c72aca905d767d3c27a22c21b29bc4f7d04d4f8b0"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/array.npz",
+      "size_bytes": 33840,
+      "sha256": "cd5eecb4efd165c0c122fa9d59a33eb02497a082b3274c44b990f58c1156fe32"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/config_resolved.json",
+      "size_bytes": 4517,
+      "sha256": "5e47445437ff3b763ab14cc9e4d96affb4fcea46cf3088bb4b10b027236ff760"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/dataset.json",
+      "size_bytes": 4331,
+      "sha256": "8a5f6d1fe09ef112e246ec017fdf46b5243b0e2f08bb4f9cf712511a66c558aa"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/environment.txt",
+      "size_bytes": 462,
+      "sha256": "ad8e4a9a914a715d6199174b004369da25cd0369e4b3f59c8d7eac4f10093d55"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/parameters/test_000000.json",
+      "size_bytes": 2331,
+      "sha256": "fc28bd882f6333f3ba8c91208ca552dbe04ccd94577bfa80ca6fee28eec5e8a3"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/parameters/train_000000.json",
+      "size_bytes": 2322,
+      "sha256": "178bb68cd5649686605b3533b51157ba5f47a0a29e5c8c9127e3956151a9c53b"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/parameters/train_000004.json",
+      "size_bytes": 2343,
+      "sha256": "c465c02fe0d1de2277d38d2fbd6b02ea53c177c9c0d7e26b4481741d0c11ba7c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/parameters/validation_000000.json",
+      "size_bytes": 2341,
+      "sha256": "a7a37b7407d1840fd017673538f4df4f13e5c73d36eb5b2e3bd501d3c3ecfd50"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_data/status.json",
+      "size_bytes": 145,
+      "sha256": "096b6f2b159e52106252fb8f4553b88da2129749dee80d58a894da6f6e555109"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/comparison.csv",
+      "size_bytes": 1961,
+      "sha256": "d8a432a8af90f131c917bcf3e76239c208b8a8f512a82fe57b38b6170127e420"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/config_resolved.json",
+      "size_bytes": 4624,
+      "sha256": "d8a3bc6b8cd745e345e16fda0620961145e544cd5ec0a890493e7d32eaf258b5"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "098c3c14050acf7fc004f43cd09881cea5168c8940d72e79ffedf85e8e8d57cd"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/environment.txt",
+      "size_bytes": 462,
+      "sha256": "cb1001386e89da7af599d2ec8b98764d7549a05473bb2719dd63fdceb0c14e6c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/hardware.npz",
+      "size_bytes": 279858,
+      "sha256": "d715fd21a4ea76c0ba014e48a1519f03e899130097f999153b00a3cdd82d1f91"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/metrics_raw.csv",
+      "size_bytes": 11630,
+      "sha256": "9834daa7929d5a9244959c5677b6a69490c6b6ac615049076b0fd29a03e0079d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/metrics_summary.json",
+      "size_bytes": 5942,
+      "sha256": "6ff197b4695e866cf34bda9daae4f8a821230cab8634f41c7cc47238455d2b5c"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/observation_reference.json",
+      "size_bytes": 653,
+      "sha256": "078ed5e0ef25d4886f1e53cf71e6681e4e9986f4d59428446a93181de4b179ec"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/operators.json",
+      "size_bytes": 1033,
+      "sha256": "3d8c68c353e092ebe5c5b7f79874a115765963f4262bb0ba31792b621713e3f2"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/spectrum_dma_J192.npz",
+      "size_bytes": 1148968,
+      "sha256": "225fdee02e6230e931ffb8614d86ecc2f40cd410be8b14bc86513b7931b973b0"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/status.json",
+      "size_bytes": 146,
+      "sha256": "8695e9fe6f506a6049d00a05bc36129e8d5c9ef7f076fe189a970921f4556507"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/trajectories.csv",
+      "size_bytes": 36333,
+      "sha256": "0fefd07bf665d998735b9b11f786d5225dd709b3ab2b07f43139b24d2d85de54"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/tuning.json",
+      "size_bytes": 1074,
+      "sha256": "e4dc896ecc45525d2ee52cd852e6316a928504245e11e605d9797bdf2dbd3420"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_test/tuning_source.json",
+      "size_bytes": 138,
+      "sha256": "a7d4dbc373322f5c2e90eaa8edafb7bbaeb317a4de4e88323d3230a849c64856"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/comparison.csv",
+      "size_bytes": 2025,
+      "sha256": "bea267624c3b94d68465b6fb575f9eb43ceb7add450763126d5114f600eba992"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/config_resolved.json",
+      "size_bytes": 4591,
+      "sha256": "9bf57dfa7a35eff5d5a3ea77f88ea6089b7a6c64ac90b454e65417435b354833"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "098c3c14050acf7fc004f43cd09881cea5168c8940d72e79ffedf85e8e8d57cd"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/environment.txt",
+      "size_bytes": 462,
+      "sha256": "5c557bbf1ccfd842ab6ba52d1901f939b443236f1807785ef15b215f8aed393e"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/hardware.npz",
+      "size_bytes": 279858,
+      "sha256": "d715fd21a4ea76c0ba014e48a1519f03e899130097f999153b00a3cdd82d1f91"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/metrics_raw.csv",
+      "size_bytes": 11769,
+      "sha256": "737f16060f5945329faef2a8f9175118120a36a4796e4741e726c4fc633015d7"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/metrics_summary.json",
+      "size_bytes": 6010,
+      "sha256": "3a008fdb60a8faf90c8ff8e3871edc5bb43d2eb92b2e05ecf5e1755b775e3224"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/observation_reference.json",
+      "size_bytes": 653,
+      "sha256": "078ed5e0ef25d4886f1e53cf71e6681e4e9986f4d59428446a93181de4b179ec"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/operators.json",
+      "size_bytes": 1033,
+      "sha256": "3d8c68c353e092ebe5c5b7f79874a115765963f4262bb0ba31792b621713e3f2"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/spectrum_dma_J192.npz",
+      "size_bytes": 1148968,
+      "sha256": "225fdee02e6230e931ffb8614d86ecc2f40cd410be8b14bc86513b7931b973b0"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/status.json",
+      "size_bytes": 146,
+      "sha256": "3420e1a717c5d928d27cf94e6081079c942b5173312c793cca379c2f37823ba1"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/trajectories.csv",
+      "size_bytes": 36726,
+      "sha256": "39f3ca6218e7593a8f69503c4f4e10e09f50a2b58aa656bcf422e73e8445fe7d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_full_val/tuning.json",
+      "size_bytes": 1074,
+      "sha256": "e4dc896ecc45525d2ee52cd852e6316a928504245e11e605d9797bdf2dbd3420"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/comparison.csv",
+      "size_bytes": 4531,
+      "sha256": "ce21cbec71f9231c24f0e0afa9160552fa01d64fede4ee7bc57943db31cc93e2"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/config_resolved.json",
+      "size_bytes": 4617,
+      "sha256": "11ff8b46ccfc1b606f42d8a1a0f0a46444370ce1e5db82134a50b3e5a1d65729"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "098c3c14050acf7fc004f43cd09881cea5168c8940d72e79ffedf85e8e8d57cd"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/environment.txt",
+      "size_bytes": 462,
+      "sha256": "3221a247d65d8b803ea03e8990ecfcac65466e66109642dc44524a2987ec53e9"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/hardware.npz",
+      "size_bytes": 279858,
+      "sha256": "d715fd21a4ea76c0ba014e48a1519f03e899130097f999153b00a3cdd82d1f91"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/metrics_raw.csv",
+      "size_bytes": 34717,
+      "sha256": "18a14b6500d13ad4059f829ac3c1005266fe39d150a8644e498cc350e4334b6d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/metrics_summary.json",
+      "size_bytes": 13230,
+      "sha256": "7b0ed24a733e3ba18cbd1e68e75e109da6b1d35acb9c9117a1fd84aa521f939b"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/observation_reference.json",
+      "size_bytes": 1140,
+      "sha256": "7ffa50fef9540ec69261437a98dc1de0a3ccfc0705190cda71ec52ab5e32b933"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/operators.json",
+      "size_bytes": 3167,
+      "sha256": "51589dd8d416430eb5f5252ee6dc2ccfb8ef69e1a0a8f81e0a46c9f81b2033aa"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/spectrum_dma_J1.npz",
+      "size_bytes": 8232,
+      "sha256": "7e7918ef954e7f58fb636c5e481a778f05407ef94a093b3da66a508b28a2e479"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/spectrum_dma_J192.npz",
+      "size_bytes": 1148968,
+      "sha256": "225fdee02e6230e931ffb8614d86ecc2f40cd410be8b14bc86513b7931b973b0"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/spectrum_dma_J32.npz",
+      "size_bytes": 198696,
+      "sha256": "2de2afdb8a26bc1fd0f0614c6ca6f4b245922cd82d1138ae6df6296302961db1"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/spectrum_dma_J8.npz",
+      "size_bytes": 51240,
+      "sha256": "edabb72fa08d3d5abd79697f3382b2ab9cf5835a9259a354ad12d1cc55eadec9"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/status.json",
+      "size_bytes": 146,
+      "sha256": "8044492521d41dee0638bace7d95439e7bccb51d4f1e7426fde6d2fce360b0d3"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/trajectories.csv",
+      "size_bytes": 108245,
+      "sha256": "1cb620cde270feb6300a7ad1e9f193dfca4ac032d94e7d7c8d1d7d3b079c1838"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/tuning.json",
+      "size_bytes": 2510,
+      "sha256": "04a79e0b9d49df6bd3ec699e777eeaa31e5001dfd65f4755b98f5127522f63d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_test/tuning_source.json",
+      "size_bytes": 139,
+      "sha256": "b94cc08ad74ae1618605e54d162752d090d4158ce04dae70ede0627286792581"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/comparison.csv",
+      "size_bytes": 4530,
+      "sha256": "c249a36b259ca93edfe34da2ddd530fe1f4d46dfd688453609c6e1e429cbc32b"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/config_resolved.json",
+      "size_bytes": 4583,
+      "sha256": "7414895f1bff84dbfe0e15e0ed85e6880872d2213c4f9139cd4fa64e050df0d2"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "098c3c14050acf7fc004f43cd09881cea5168c8940d72e79ffedf85e8e8d57cd"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/environment.txt",
+      "size_bytes": 462,
+      "sha256": "1f2c05efc85be6586229dbde96e1264eb11f68cde2ab5018eb1d5b57194ff115"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/hardware.npz",
+      "size_bytes": 279858,
+      "sha256": "d715fd21a4ea76c0ba014e48a1519f03e899130097f999153b00a3cdd82d1f91"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/metrics_raw.csv",
+      "size_bytes": 35157,
+      "sha256": "483c197456b26883eee15561f5921b5f1053b17ce04d51da449adfb6151e3a2a"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/metrics_summary.json",
+      "size_bytes": 13235,
+      "sha256": "9e653d8a4b72a5b59278e7f8f7f54a07fef5dbd091da65615b4056bd73b182f4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/observation_reference.json",
+      "size_bytes": 1140,
+      "sha256": "7ffa50fef9540ec69261437a98dc1de0a3ccfc0705190cda71ec52ab5e32b933"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/operators.json",
+      "size_bytes": 3167,
+      "sha256": "51589dd8d416430eb5f5252ee6dc2ccfb8ef69e1a0a8f81e0a46c9f81b2033aa"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/spectrum_dma_J1.npz",
+      "size_bytes": 8232,
+      "sha256": "7e7918ef954e7f58fb636c5e481a778f05407ef94a093b3da66a508b28a2e479"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/spectrum_dma_J192.npz",
+      "size_bytes": 1148968,
+      "sha256": "225fdee02e6230e931ffb8614d86ecc2f40cd410be8b14bc86513b7931b973b0"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/spectrum_dma_J32.npz",
+      "size_bytes": 198696,
+      "sha256": "2de2afdb8a26bc1fd0f0614c6ca6f4b245922cd82d1138ae6df6296302961db1"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/spectrum_dma_J8.npz",
+      "size_bytes": 51240,
+      "sha256": "edabb72fa08d3d5abd79697f3382b2ab9cf5835a9259a354ad12d1cc55eadec9"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/status.json",
+      "size_bytes": 146,
+      "sha256": "413d4470b1b19234527f5bafdc553aac13fd997f6e4815c88126e2b36f1741db"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/trajectories.csv",
+      "size_bytes": 109464,
+      "sha256": "8c2668ff37630d6921967cfe998edcbc734ad07b1ace5bbf29e768f69c5fe51d"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_noisy_val/tuning.json",
+      "size_bytes": 2510,
+      "sha256": "04a79e0b9d49df6bd3ec699e777eeaa31e5001dfd65f4755b98f5127522f63d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/comparison.csv",
+      "size_bytes": 2924,
+      "sha256": "9d3f2a27944edc1df98e362fe9285e88b040273fc9aa2ac1839ddf3fc526b0ff"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/config_resolved.json",
+      "size_bytes": 4633,
+      "sha256": "6a372760051f398c4229d07e2f21bc058accdac434142fc6868b531df7706fe2"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "098c3c14050acf7fc004f43cd09881cea5168c8940d72e79ffedf85e8e8d57cd"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/environment.txt",
+      "size_bytes": 462,
+      "sha256": "828ffc5cd7f39fe2ebb2513b9c908a52652538308706fc14791df81bb905833a"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/hardware.npz",
+      "size_bytes": 279858,
+      "sha256": "d715fd21a4ea76c0ba014e48a1519f03e899130097f999153b00a3cdd82d1f91"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/metrics_raw.csv",
+      "size_bytes": 17163,
+      "sha256": "fd9a06717f0a0ab2bde591624f805f54c27ef30acbc4028fce3803bc0524dd5b"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/metrics_summary.json",
+      "size_bytes": 8749,
+      "sha256": "d8dd778ce1682ce40a5959544d3d3f5e0cb7061296f2847399e4d312f774dcf7"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/observation_reference.json",
+      "size_bytes": 813,
+      "sha256": "b69b786b58fe30a51023e9d30684c2341183409bb70cc1aca2e3430b409fbb76"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/operators.json",
+      "size_bytes": 2136,
+      "sha256": "104be9dc792cf5dc7415203365791be7b22adae81d4b2bda5f256a19e48a3d0a"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/spectrum_dma_J1.npz",
+      "size_bytes": 8232,
+      "sha256": "7e7918ef954e7f58fb636c5e481a778f05407ef94a093b3da66a508b28a2e479"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/spectrum_dma_J32.npz",
+      "size_bytes": 198696,
+      "sha256": "2de2afdb8a26bc1fd0f0614c6ca6f4b245922cd82d1138ae6df6296302961db1"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/spectrum_dma_J8.npz",
+      "size_bytes": 51240,
+      "sha256": "edabb72fa08d3d5abd79697f3382b2ab9cf5835a9259a354ad12d1cc55eadec9"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/status.json",
+      "size_bytes": 146,
+      "sha256": "b74d20c25c7d349ba39bac5e9af99803f5d597b26f0e6ad7b6cece682d9c2447"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/trajectories.csv",
+      "size_bytes": 54631,
+      "sha256": "7eeeed5ed919089b7a4e6a8efdcd6af8d17a4fadedf8996ec548245d9dfa2c02"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/tuning.json",
+      "size_bytes": 1564,
+      "sha256": "f9e79ee50ea0110e76de4ffd66a92e50d50c061195630f149b9c6db56bd7aacf"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_test/tuning_source.json",
+      "size_bytes": 141,
+      "sha256": "248b67198616d6dc34ae9d92bd5efbe7987d1d84a7d5fa84271ae09ab0289e67"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/code_manifest.json",
+      "size_bytes": 13362,
+      "sha256": "4a7d9014a1bd24414e98cd3554d1f41321c54b90624cb12393dbf1972b744982"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/comparison.csv",
+      "size_bytes": 3020,
+      "sha256": "1c6c1442361e87469abb25fa81cc3cd552ab57ea2a48f2b3af7381679c3b7187"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/config_resolved.json",
+      "size_bytes": 4597,
+      "sha256": "204e2ec00184419dfecef2e2054c3d2db1294656ff67ae86a6c2844919842252"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/dependencies.json",
+      "size_bytes": 297,
+      "sha256": "098c3c14050acf7fc004f43cd09881cea5168c8940d72e79ffedf85e8e8d57cd"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/environment.txt",
+      "size_bytes": 462,
+      "sha256": "7928a90363f26482c94ca1b2fa454d293803b8012bfaa7bcd3b53db652e85246"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/git_commit.txt",
+      "size_bytes": 61,
+      "sha256": "bc693af71596fccdd6f85e553c872b86a7b5cd36e37d70eb708602feecd1b5ce"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/hardware.npz",
+      "size_bytes": 279858,
+      "sha256": "d715fd21a4ea76c0ba014e48a1519f03e899130097f999153b00a3cdd82d1f91"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/metrics_raw.csv",
+      "size_bytes": 17580,
+      "sha256": "2b3f98390dbf1187abe9b76d4ecbd6c6e91cd72c2853fd6677840eebc56fdec1"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/metrics_summary.json",
+      "size_bytes": 8851,
+      "sha256": "cd42be038b7e350f30e56b6cf25e04c5c4730140341979ddba7b426f63199a72"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/observation_reference.json",
+      "size_bytes": 813,
+      "sha256": "b69b786b58fe30a51023e9d30684c2341183409bb70cc1aca2e3430b409fbb76"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/operators.json",
+      "size_bytes": 2136,
+      "sha256": "104be9dc792cf5dc7415203365791be7b22adae81d4b2bda5f256a19e48a3d0a"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/seeds.json",
+      "size_bytes": 302,
+      "sha256": "a851c35f3c8bac6b1de2b8d78c547b58ecaaf43a5fe1dfd19a4683cd348213eb"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/source_snapshot.zip",
+      "size_bytes": 518166,
+      "sha256": "e91507362741d74f2808db16272df1682826b0507f84d0307cbf77b4ea6671d4"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/spectrum_dma_J1.npz",
+      "size_bytes": 8232,
+      "sha256": "7e7918ef954e7f58fb636c5e481a778f05407ef94a093b3da66a508b28a2e479"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/spectrum_dma_J32.npz",
+      "size_bytes": 198696,
+      "sha256": "2de2afdb8a26bc1fd0f0614c6ca6f4b245922cd82d1138ae6df6296302961db1"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/spectrum_dma_J8.npz",
+      "size_bytes": 51240,
+      "sha256": "edabb72fa08d3d5abd79697f3382b2ab9cf5835a9259a354ad12d1cc55eadec9"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/status.json",
+      "size_bytes": 146,
+      "sha256": "8a84784693bb4a7456c31f150c2f76159a4dd11f99d77cae11aa3deb6c69040e"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/trajectories.csv",
+      "size_bytes": 55076,
+      "sha256": "ab2e9ac089e55d4d80a4c1353d3361f08161acd9c0d5fd7e1d0e6f87f3f6bad1"
+    },
+    {
+      "path": "d041_noabs_smoke_20261013_v3_wb_reduced_val/tuning.json",
+      "size_bytes": 1564,
+      "sha256": "f9e79ee50ea0110e76de4ffd66a92e50d50c061195630f149b9c6db56bd7aacf"
+    },
+    {
+      "path": "group_summary.csv",
+      "size_bytes": 46473,
+      "sha256": "cb02e03e19cbbc51d39aaa121a872ecd4b2c860d3ba3cafc4d1fdb950c2e4517"
+    },
+    {
+      "path": "run_inventory.csv",
+      "size_bytes": 1043,
+      "sha256": "beed4d383c4db7d743847766a00566d98a5777f00a3714c1fe25c1ce29e66a01"
+    },
+    {
+      "path": "smoke_pipeline.log",
+      "size_bytes": 5420,
+      "sha256": "a46f9ae07453cf5c5cddd017b1220f2ebc69db2feb81e993877b9e5d1fc0b00e"
+    },
+    {
+      "path": "unit_checks.log",
+      "size_bytes": 9591,
+      "sha256": "de508cae0fe5e60b2aa3961b2611519acaac0aa66da4dea5c199b8dc98b5bd58"
+    },
+    {
+      "path": "verification.json",
+      "size_bytes": 1083,
+      "sha256": "bb6be511f08d3a349ef268d1b578d822c133ba7f4c20d4aaaf98873a36761a96"
+    }
+  ]
+}

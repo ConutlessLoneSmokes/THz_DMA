@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "relative_errors": [
+    3.891409472335891e-15,
+    5.339870957190321e-15,
+    2.366664954170207e-13
+  ],
+  "tolerance": 1e-08,
+  "scope": "local means/covariances; no finite-trajectory MMSE assertion"
+}

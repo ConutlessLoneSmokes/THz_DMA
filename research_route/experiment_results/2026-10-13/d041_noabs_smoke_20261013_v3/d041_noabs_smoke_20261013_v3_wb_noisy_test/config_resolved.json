@@ -1,0 +1,159 @@
+{
+  "config": {
+    "scenario": "dma",
+    "base_config": "configs/direction1_stage2a_sbl_snr.toml",
+    "device": "cpu",
+    "cpu_threads": 4,
+    "data": {
+      "train_count": 8,
+      "validation_count": 4,
+      "test_count": 4,
+      "train_seed": 2026101341,
+      "validation_seed": 2026101342,
+      "test_seed": 2026101343,
+      "batch_size": 4
+    },
+    "network": {
+      "width": 16,
+      "time_dim": 16
+    },
+    "diffusion": {
+      "steps": 8,
+      "beta_start": 0.0001,
+      "beta_end": 0.3
+    },
+    "training": {
+      "seed": 2026100911,
+      "validation_seed": 2026100912,
+      "batch_size": 4,
+      "epochs": 2,
+      "learning_rate": 0.0001,
+      "validation_every": 2,
+      "validation_scenes": 2
+    },
+    "sure": {
+      "precision": "float64"
+    },
+    "diagnostic": {
+      "element_spacing_m": 0.0001998616386666667,
+      "microstrip_spacing_m": 0.0004996540966666667,
+      "state_seed": 2026101344,
+      "configuration_counts": [
+        192,
+        32,
+        8,
+        1
+      ],
+      "svd_relative_tolerance": 1e-10,
+      "maximum_full_condition": 10000.0,
+      "linear_nmse_tolerance": 1e-09,
+      "linear_residual_tolerance": 1e-10,
+      "adjoint_relative_tolerance": 1e-10,
+      "whitening_power_tolerance": 0.06,
+      "noiseless_likelihood_variances": [
+        1e-08,
+        1e-10
+      ],
+      "variance_sensitivity_db": 0.1,
+      "recovery_nmse_gate_db": -10.0
+    },
+    "evaluation_run": {
+      "validation_scenes": 2,
+      "test_scenes": 2,
+      "noise_seed": 2026101345,
+      "posterior_seed": 2026100923,
+      "bootstrap_seed": 2026101346,
+      "snr_db": [
+        0.0,
+        20.0
+      ],
+      "guidance": [
+        0.5,
+        1.0
+      ],
+      "refinement": 1
+    },
+    "system": {
+      "carrier_frequency_hz": 300000000000.0,
+      "bandwidth_hz": 30000000000.0,
+      "num_subcarriers": 128,
+      "nfft": 128,
+      "cyclic_prefix_samples": 32
+    },
+    "channel": {
+      "num_paths": 3,
+      "range_min_m": 1.85,
+      "range_max_m": 2.15,
+      "azimuth_min_deg": 15.0,
+      "azimuth_max_deg": 25.0,
+      "elevation_min_deg": -8.0,
+      "elevation_max_deg": 8.0,
+      "los_complex_gain_magnitude": 1.0,
+      "reflection_excess_range_min_m": 0.08,
+      "reflection_excess_range_max_m": 0.25,
+      "reflection_azimuth_separation_min_deg": 4.0,
+      "reflection_azimuth_separation_max_deg": 12.0,
+      "reflection_elevation_separation_min_deg": 2.0,
+      "reflection_elevation_separation_max_deg": 8.0,
+      "reflection_gain_relative_min_db": -15.0,
+      "reflection_gain_relative_max_db": -6.0,
+      "include_absorption": false
+    },
+    "atmosphere": {
+      "table_path": "data/atmosphere/data_freq_abscoe.txt",
+      "interpolation": "linear",
+      "max_model_frequency_hz": 1000000000000.0
+    },
+    "dma": {
+      "num_microstrips": 8,
+      "elements_per_microstrip": 160,
+      "element_spacing_wavelengths": 0.2,
+      "microstrip_spacing_wavelengths": 0.5,
+      "quality_factor": 100.0,
+      "tuning_bandwidth_hz": 30000000000.0,
+      "waveguide_effective_index": 2.5,
+      "waveguide_end_power_fraction": 0.2,
+      "element_spacing_m": 0.0001998616386666667,
+      "microstrip_spacing_m": 0.0004996540966666667
+    },
+    "noise": {
+      "array_reference_snr_db": [
+        45.0,
+        50.0,
+        55.0,
+        60.0,
+        65.0,
+        70.0
+      ],
+      "rf_noise_variance_fraction_of_element_noise": 0.0
+    },
+    "base_config_sha256": "6d07864852aa61ebc4adf619e1b362d2d248562d0cd4162de61818da2e9f2b10",
+    "band": "wide",
+    "acquisition": {
+      "pilot_energy_per_re": 1.0,
+      "full_frequency_coverage": true,
+      "num_rf_outputs": 8,
+      "digital_receive_channels": 1280,
+      "state_design": "fixed_uniform_resonance_bank_prefix",
+      "switch_guard_symbol_equivalents": 0.25
+    },
+    "job": {
+      "command": "evaluate",
+      "band": "wide",
+      "device": "cpu",
+      "run_id": "d041_noabs_smoke_20261013_v3_wb_noisy_test",
+      "data_run_id": "d041_noabs_smoke_20261013_v3_wb_data",
+      "train_run_id": "d041_noabs_smoke_20261013_v3_wb_clean",
+      "stage": "noisy",
+      "split": "test",
+      "tuning_run_id": "d041_noabs_smoke_20261013_v3_wb_noisy_val",
+      "smoke": true,
+      "resume": false,
+      "config_path": "configs/zhou2025_d041.toml",
+      "sure_variant": "corrected"
+    }
+  },
+  "config_path": "/home/lsy/THz_DMA/configs/zhou2025_d041.toml",
+  "config_sha256": "e3935ec7a3097f38294f6cfc7d9a209a705f49e3a3c84095c05dc9af7fa4e8a7",
+  "absorption_table_sha256": "3aa52bf00e30831c82b98b06d48ea8fdd8ebe7cc2da6e233ad2ed3238dc4dca8"
+}

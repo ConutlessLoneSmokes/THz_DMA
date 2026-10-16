@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "prefix": "d041_fusion_smoke_20261016_v1",
+      "steps": 8,
+      "endpoints": 84,
+      "trajectories": 540,
+      "denoiser_predictions": 180,
+      "source_members": 273,
+      "failed_cases": 0
+    },
+    {
+      "prefix": "d041_fusion_gpu_check_20261016_v1",
+      "steps": 100,
+      "endpoints": 84,
+      "trajectories": 6060,
+      "denoiser_predictions": 420,
+      "source_members": 273,
+      "failed_cases": 0
+    }
+  ],
+  "frozen_baseline_replays": [
+    {
+      "operator": "re128_J16_K8_distinct",
+      "condition": "noiseless_v1e-08",
+      "nmse_absolute_difference": 0.0
+    },
+    {
+      "operator": "re128_J16_K8_distinct",
+      "condition": "noiseless_v1e-10",
+      "nmse_absolute_difference": 0.0
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "condition": "noiseless_v1e-08",
+      "nmse_absolute_difference": 0.0
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "condition": "noiseless_v1e-10",
+      "nmse_absolute_difference": 0.0
+    },
+    {
+      "operator": "re4096_J128_K32_distinct",
+      "condition": "noiseless_v1e-08",
+      "nmse_absolute_difference": 0.0
+    },
+    {
+      "operator": "re4096_J128_K32_distinct",
+      "condition": "noiseless_v1e-10",
+      "nmse_absolute_difference": 0.0
+    },
+    {
+      "operator": "re4096_J128_K32_interleaved",
+      "condition": "noiseless_v1e-08",
+      "nmse_absolute_difference": 0.0
+    },
+    {
+      "operator": "re4096_J128_K32_interleaved",
+      "condition": "noiseless_v1e-10",
+      "nmse_absolute_difference": 0.0
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "noiseless_v1e-08",
+      "nmse_absolute_difference": 0.0
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "noiseless_v1e-10",
+      "nmse_absolute_difference": 0.0
+    }
+  ],
+  "protected_files": 182,
+  "rejection_controls": {
+    "missing_parent_rejected_without_run_creation": true,
+    "changed_profile_rejected": true,
+    "changed_source_rejected": true
+  },
+  "historical_inventories": {
+    "d041_budget_sweep_20261015_v1_review": 21607,
+    "d041_config_sweep_20261014_v1_review": 35681
+  },
+  "unique_historical_files": 57288,
+  "scope": "small train/validation checks; no performance acceptance"
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "matched_operators": 5,
+  "matched_training_power_calibrations": 5,
+  "training_scenes_per_operator": 2048,
+  "tuning_screening_hardware_and_power_identical": true
+}

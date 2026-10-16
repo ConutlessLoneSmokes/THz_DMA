@@ -1,0 +1,24 @@
+{
+  "reference": {
+    "dma_J32": {
+      "training_scenes": 8,
+      "normalized_whitened_power": 0.8236411776929717,
+      "physical_whitened_power": 1.7490712163509228e-09
+    },
+    "dma_J8": {
+      "training_scenes": 8,
+      "normalized_whitened_power": 0.7562362977734587,
+      "physical_whitened_power": 1.6059312926780456e-09
+    },
+    "dma_J1": {
+      "training_scenes": 8,
+      "normalized_whitened_power": 0.6796400575645194,
+      "physical_whitened_power": 1.4432727434716852e-09
+    }
+  },
+  "source": "all clean training scenes only",
+  "noise_convention": "complex E|n|^2; real component variance = half",
+  "dma_standard_noise_paired_over_configuration_prefixes": true,
+  "posterior_initialization_paired_within_band": true,
+  "independent_matched_frontend_noise_is_diagnostic_only": true
+}

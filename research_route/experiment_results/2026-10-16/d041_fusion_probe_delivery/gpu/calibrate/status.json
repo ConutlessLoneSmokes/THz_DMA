@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "timestamp_utc": "2026-10-15T17:16:36.800823+00:00",
+  "stage": "calibrate",
+  "smoke_only": true,
+  "data_split": "train/validation only"
+}

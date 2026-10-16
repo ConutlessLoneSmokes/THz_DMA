@@ -1,0 +1,15 @@
+timestamp_utc: 2026-10-16T01:19:17.478003+00:00
+platform: Linux-7.0.0-38-generic-x86_64-with-glibc2.43
+python: 3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]
+python_executable: /home/lsy/miniconda3/envs/thz_dma/bin/python
+conda_default_env: thz_dma
+conda_prefix: /home/lsy/miniconda3/envs/thz_dma
+numpy: 1.26.4
+scipy: 1.15.3
+pandas: 2.3.3
+matplotlib: 3.10.8
+package_version: 0.4.0
+cwd: /home/lsy/THz_DMA
+torch: 2.11.0+cu128
+cuda: 12.8
+device: cuda:0

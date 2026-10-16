@@ -1,0 +1,16 @@
+[
+  {
+    "step": 2,
+    "epoch": 1,
+    "training_loss": 1.000421166419983,
+    "validation_loss": 1.0038161277770996,
+    "gradient_norm": 0.0606689490377903
+  },
+  {
+    "step": 4,
+    "epoch": 2,
+    "training_loss": 1.0020724534988403,
+    "validation_loss": 1.0034277439117432,
+    "gradient_norm": 0.056526776403188705
+  }
+]

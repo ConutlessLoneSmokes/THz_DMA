@@ -1,0 +1,21 @@
+{
+  "integrity_passed": true,
+  "training_updates": 256000,
+  "training_history_records": 1024,
+  "run_count": 7,
+  "source_snapshot_members_verified": 588,
+  "reanalyzed_report_byte_identical": true,
+  "metric_rows": 3960,
+  "trajectory_rows": 133320,
+  "physics_replays": 6,
+  "frozen_gpu_replays": 20,
+  "maximum_replay_nmse_db_gap": 5.551115123125783e-17,
+  "all_training_snr_references_recomputed": true,
+  "all_original_inputs_byte_unchanged": true,
+  "original_files_verified": 2047,
+  "run_record_zip_members": 2037,
+  "predeclared_numerical_variance_gate_passed": false,
+  "unique_causal_attribution": false,
+  "new_training_or_tuning_performed": false,
+  "driver_or_ssh_configuration_changed": false
+}

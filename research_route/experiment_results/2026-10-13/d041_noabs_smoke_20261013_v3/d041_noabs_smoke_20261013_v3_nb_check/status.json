@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "timestamp_utc": "2026-10-13T08:57:06.789088+00:00",
+  "command": "check",
+  "band": "narrow",
+  "smoke_only": true
+}

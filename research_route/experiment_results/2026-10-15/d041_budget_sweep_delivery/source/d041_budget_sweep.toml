@@ -1,0 +1,8 @@
+# Independent no-absorption, zero-physical-noise acquisition evaluations.
+pilot_re_budgets = [128, 512, 1024, 2048, 4096, 8192]
+pilot_frequency_counts = [128, 64, 32, 16, 8]
+maximum_configurations = 192
+recovery_nmse_db = -10.0
+near_reference_loss_db = 0.5
+required_scene_fraction = 0.95
+

@@ -1,0 +1,171 @@
+{
+  "rows": 24,
+  "expected_rows": 24,
+  "band": "wide",
+  "stage": "full-noiseless",
+  "split": "validation",
+  "summary": [
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-08",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": -62.70795317702735,
+      "observation_residual_relative": 5.360492781129113e-07,
+      "prediction_energy_ratio": 1.0000118241389986,
+      "normalized_correlation": 0.9999997133449495,
+      "row_space_nmse_linear": 5.360492371397384e-07,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-08",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.454498797425,
+      "observation_residual_relative": 2.6586064504223222e-14,
+      "prediction_energy_ratio": 0.9999999438716232,
+      "normalized_correlation": 1.0000000207353328,
+      "row_space_nmse_linear": 1.7970084540483287e-15,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-08",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -135.9627799418402,
+      "observation_residual_relative": 2.032614173106324e-14,
+      "prediction_energy_ratio": 0.9999998877432463,
+      "normalized_correlation": 1.000000000000003,
+      "row_space_nmse_linear": 2.533506400570793e-14,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-10",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": -62.7166272587082,
+      "observation_residual_relative": 5.34979876506005e-07,
+      "prediction_energy_ratio": 1.0000118241389986,
+      "normalized_correlation": 0.9999997621446477,
+      "row_space_nmse_linear": 5.349796645944961e-07,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-10",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.454498797425,
+      "observation_residual_relative": 2.6586064504223222e-14,
+      "prediction_energy_ratio": 0.9999999438716232,
+      "normalized_correlation": 1.0000000207353328,
+      "row_space_nmse_linear": 1.7970084540483287e-15,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-10",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -135.9627799418402,
+      "observation_residual_relative": 2.032614173106324e-14,
+      "prediction_energy_ratio": 0.9999998877432463,
+      "normalized_correlation": 1.000000000000003,
+      "row_space_nmse_linear": 2.533506400570793e-14,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-08",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": -62.683422097695654,
+      "observation_residual_relative": 1.249994245677862e-06,
+      "prediction_energy_ratio": 1.0000118802673754,
+      "normalized_correlation": 0.9999996852816377,
+      "row_space_nmse_linear": 5.390856768265375e-07,
+      "null_space_nmse_linear": 9.107291184011908e-20
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-08",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.42910339539077,
+      "observation_residual_relative": 7.085735225982585e-14,
+      "prediction_energy_ratio": 0.9999999438716232,
+      "normalized_correlation": 1.0000000207353328,
+      "row_space_nmse_linear": 1.8075472571439185e-15,
+      "null_space_nmse_linear": 1.2880073508047264e-28
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-08",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -121.25294171015344,
+      "observation_residual_relative": 2.2995739742529864e-13,
+      "prediction_energy_ratio": 0.9999998877432463,
+      "normalized_correlation": 1.000000000000003,
+      "row_space_nmse_linear": 7.493864376340804e-13,
+      "null_space_nmse_linear": 4.559675396458503e-26
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-10",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": -62.716360242157464,
+      "observation_residual_relative": 1.2488870884551034e-06,
+      "prediction_energy_ratio": 1.0000118729385206,
+      "normalized_correlation": 0.9999996816172065,
+      "row_space_nmse_linear": 5.350125076374834e-07,
+      "null_space_nmse_linear": 9.086975936093919e-20
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-10",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.42910339539077,
+      "observation_residual_relative": 7.085735225982585e-14,
+      "prediction_energy_ratio": 0.9999999438716232,
+      "normalized_correlation": 1.0000000207353328,
+      "row_space_nmse_linear": 1.8075472571439185e-15,
+      "null_space_nmse_linear": 1.2880073508047264e-28
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-10",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -121.25294171015344,
+      "observation_residual_relative": 2.2995739742529864e-13,
+      "prediction_energy_ratio": 0.9999998877432463,
+      "normalized_correlation": 1.000000000000003,
+      "row_space_nmse_linear": 7.493864376340804e-13,
+      "null_space_nmse_linear": 4.559675396458503e-26
+    }
+  ],
+  "numerical_variance_sensitivity": [
+    {
+      "operator": "digital",
+      "max_per_scene_spread_db": 0.008694718776858679,
+      "stable_within_declared_tolerance": true,
+      "same_pass_fail_at_all_variances": true
+    },
+    {
+      "operator": "dma_J192",
+      "max_per_scene_spread_db": 0.0333435332795915,
+      "stable_within_declared_tolerance": true,
+      "same_pass_fail_at_all_variances": true
+    }
+  ],
+  "smoke_only": true,
+  "diagnostic_only": true,
+  "trajectory_endpoint": "all stages saved; final t=0 selected by protocol, never by truth",
+  "online_seconds_include_trace_metrics": true
+}

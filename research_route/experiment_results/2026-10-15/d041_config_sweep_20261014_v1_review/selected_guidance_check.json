@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "selected_validation_means_checked": 834,
+  "max_relative_difference": 1.548632525047462e-08,
+  "scope": "candidate objective uses float32 division; saved diagnostics use Python division of component sums"
+}

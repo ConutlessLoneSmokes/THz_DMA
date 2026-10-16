@@ -1,0 +1,1 @@
+{"passed": true, "gpu": "NVIDIA GeForce RTX 3090", "torch": "2.11.0+cu128", "selection_split": "validation scene 0 only, fixed guidance=1 and variance=1e-8", "scope": "five finite 100-step formal-model interface checks; not a performance estimate or parameter selection"}

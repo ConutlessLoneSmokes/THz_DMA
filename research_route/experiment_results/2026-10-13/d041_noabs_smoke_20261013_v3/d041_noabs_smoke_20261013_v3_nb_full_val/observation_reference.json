@@ -1,0 +1,19 @@
+{
+  "reference": {
+    "digital": {
+      "training_scenes": 8,
+      "normalized_whitened_power": 0.9999999760656464,
+      "physical_whitened_power": 2.1295314096809544e-09
+    },
+    "dma_J192": {
+      "training_scenes": 8,
+      "normalized_whitened_power": 0.8037542740046295,
+      "physical_whitened_power": 1.7116200131246894e-09
+    }
+  },
+  "source": "all clean training scenes only",
+  "noise_convention": "complex E|n|^2; real component variance = half",
+  "dma_standard_noise_paired_over_configuration_prefixes": true,
+  "posterior_initialization_paired_within_band": true,
+  "independent_matched_frontend_noise_is_diagnostic_only": true
+}

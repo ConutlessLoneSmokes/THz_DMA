@@ -1,0 +1,9 @@
+ budget_re                 operator  test_nmse_db  test_pass_fraction
+       128    re128_J16_K8_distinct     -0.044870                0.00
+       512    re512_J64_K8_distinct     -0.393774                0.00
+      1024  re1024_J64_K16_distinct     -0.867346                0.00
+      2048  re2048_J32_K64_distinct     -2.040048                0.00
+      4096  re4096_J64_K64_distinct     -5.979960                0.00
+      8192 re8192_J128_K64_distinct    -14.609356                0.98
+8192 main 128x64 failures: [{"scene_index":16,"nmse_db":-9.7258409981,"prediction_energy_ratio":0.6615919346,"normalized_correlation":0.9559402582},{"scene_index":41,"nmse_db":-9.7554472801,"prediction_energy_ratio":0.6609787465,"normalized_correlation":0.9564424182}]
+Validated 480 estimator summaries and 9 numerically consistent full-frequency anchors.

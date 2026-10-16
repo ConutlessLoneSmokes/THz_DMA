@@ -1,0 +1,194 @@
+{
+  "re8192_J64_K128_distinct:noiseless_v1e-08": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.057961480676042454
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 2310628506.8913155
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re8192_J64_K128_distinct:noiseless_v1e-10": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.05796155543832829
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 2311728814.946894
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re8192_J64_K128_distinct:snr_20": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.06537459743001153
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 359643.90030578774
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re4096_J64_K64_distinct:noiseless_v1e-08": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.26258314064600197
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 1861765542.055817
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re4096_J64_K64_distinct:noiseless_v1e-10": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.2625831904875259
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 1862068876.0081038
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re4096_J64_K64_distinct:snr_20": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.2775951085927186
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 389834.55585101614
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re4096_J128_K32_distinct:noiseless_v1e-08": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.4475517644098823
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 1403837772.7908437
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re4096_J128_K32_distinct:noiseless_v1e-10": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.44755186409293013
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 1404915924.8379102
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re4096_J128_K32_interleaved:noiseless_v1e-08": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.26312088084725804
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 1641071146.774305
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re4096_J128_K32_interleaved:noiseless_v1e-10": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.26312093068878195
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 1641573135.5661986
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re128_J16_K8_distinct:noiseless_v1e-08": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.9906477364571609
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 124065018.06319028
+      }
+    ],
+    "at_upper_boundary": false
+  },
+  "re128_J16_K8_distinct:noiseless_v1e-10": {
+    "selected": 4.0,
+    "candidates": [
+      {
+        "guidance": 4.0,
+        "valid": true,
+        "mean_nmse_linear": 0.9906477364571609
+      },
+      {
+        "guidance": 16.0,
+        "valid": true,
+        "mean_nmse_linear": 124098238.69672629
+      }
+    ],
+    "at_upper_boundary": false
+  }
+}

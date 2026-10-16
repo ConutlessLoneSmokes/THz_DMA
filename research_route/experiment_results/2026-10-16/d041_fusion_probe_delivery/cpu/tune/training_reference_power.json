@@ -1,0 +1,27 @@
+{
+  "re8192_J64_K128_distinct": {
+    "training_scenes": 8,
+    "normalized_whitened_power": 0.7933650083350483,
+    "physical_whitened_power": 1.6847772279011979e-09
+  },
+  "re4096_J64_K64_distinct": {
+    "training_scenes": 8,
+    "normalized_whitened_power": 0.792179483982691,
+    "physical_whitened_power": 1.6822596673698032e-09
+  },
+  "re4096_J128_K32_distinct": {
+    "training_scenes": 8,
+    "normalized_whitened_power": 0.8037236241244089,
+    "physical_whitened_power": 1.7067746185236015e-09
+  },
+  "re4096_J128_K32_interleaved": {
+    "training_scenes": 8,
+    "normalized_whitened_power": 0.80636894589955,
+    "physical_whitened_power": 1.7123921814869365e-09
+  },
+  "re128_J16_K8_distinct": {
+    "training_scenes": 8,
+    "normalized_whitened_power": 0.741486381014507,
+    "physical_whitened_power": 1.5746086056325573e-09
+  }
+}

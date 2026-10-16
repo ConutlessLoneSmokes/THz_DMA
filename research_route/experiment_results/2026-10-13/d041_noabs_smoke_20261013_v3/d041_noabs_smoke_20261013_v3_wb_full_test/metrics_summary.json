@@ -1,0 +1,171 @@
+{
+  "rows": 24,
+  "expected_rows": 24,
+  "band": "wide",
+  "stage": "full-noiseless",
+  "split": "test",
+  "summary": [
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-08",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": -62.87632718673002,
+      "observation_residual_relative": 5.156650598341036e-07,
+      "prediction_energy_ratio": 0.99999790828955,
+      "normalized_correlation": 0.9999997075813342,
+      "row_space_nmse_linear": 5.156645559459273e-07,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-08",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.33267005414814,
+      "observation_residual_relative": 2.6103388522911587e-14,
+      "prediction_energy_ratio": 1.0,
+      "normalized_correlation": 0.9999999447710013,
+      "row_space_nmse_linear": 1.8481320330843143e-15,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-08",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -136.2875418844485,
+      "observation_residual_relative": 1.8222627335799272e-14,
+      "prediction_energy_ratio": 0.9999998933204666,
+      "normalized_correlation": 0.9999999466602318,
+      "row_space_nmse_linear": 2.350963094210401e-14,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-10",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": -62.88501147861919,
+      "observation_residual_relative": 5.14634926052108e-07,
+      "prediction_energy_ratio": 0.9999979635185489,
+      "normalized_correlation": 0.9999996799666098,
+      "row_space_nmse_linear": 5.146344468074866e-07,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-10",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.33267005414814,
+      "observation_residual_relative": 2.6103388522911587e-14,
+      "prediction_energy_ratio": 1.0,
+      "normalized_correlation": 0.9999999447710013,
+      "row_space_nmse_linear": 1.8481320330843143e-15,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "digital",
+      "condition": "noiseless_v1e-10",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -136.2875418844485,
+      "observation_residual_relative": 1.8222627335799272e-14,
+      "prediction_energy_ratio": 0.9999998933204666,
+      "normalized_correlation": 0.9999999466602318,
+      "row_space_nmse_linear": 2.350963094210401e-14,
+      "null_space_nmse_linear": 0.0
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-08",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": -62.853439342539026,
+      "observation_residual_relative": 1.2286021659247079e-06,
+      "prediction_energy_ratio": 0.99999790828955,
+      "normalized_correlation": 0.9999997075813342,
+      "row_space_nmse_linear": 5.18389317831468e-07,
+      "null_space_nmse_linear": 9.039339322206898e-20
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-08",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.3409996578768,
+      "observation_residual_relative": 7.019901861295041e-14,
+      "prediction_energy_ratio": 1.0,
+      "normalized_correlation": 0.9999999447710013,
+      "row_space_nmse_linear": 1.844590782896994e-15,
+      "null_space_nmse_linear": 1.300095474722769e-28
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-08",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -121.22864828612542,
+      "observation_residual_relative": 2.285431526817811e-13,
+      "prediction_energy_ratio": 0.999999841869932,
+      "normalized_correlation": 1.0000000238360425,
+      "row_space_nmse_linear": 7.535900773413862e-13,
+      "null_space_nmse_linear": 4.5524123789258394e-26
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-10",
+      "estimator": "clean_ddpm",
+      "scenes": 2,
+      "nmse_db": -62.8847795389065,
+      "observation_residual_relative": 1.2275414042030066e-06,
+      "prediction_energy_ratio": 0.9999979635185489,
+      "normalized_correlation": 0.9999997351958404,
+      "row_space_nmse_linear": 5.146618812875222e-07,
+      "null_space_nmse_linear": 9.08535772149813e-20
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-10",
+      "estimator": "oracle_geometry_ls",
+      "scenes": 2,
+      "nmse_db": -147.3409996578768,
+      "observation_residual_relative": 7.019901861295041e-14,
+      "prediction_energy_ratio": 1.0,
+      "normalized_correlation": 0.9999999447710013,
+      "row_space_nmse_linear": 1.844590782896994e-15,
+      "null_space_nmse_linear": 1.300095474722769e-28
+    },
+    {
+      "operator": "dma_J192",
+      "condition": "noiseless_v1e-10",
+      "estimator": "pinv_ls",
+      "scenes": 2,
+      "nmse_db": -121.22864828612542,
+      "observation_residual_relative": 2.285431526817811e-13,
+      "prediction_energy_ratio": 0.999999841869932,
+      "normalized_correlation": 1.0000000238360425,
+      "row_space_nmse_linear": 7.535900773413862e-13,
+      "null_space_nmse_linear": 4.5524123789258394e-26
+    }
+  ],
+  "numerical_variance_sensitivity": [
+    {
+      "operator": "digital",
+      "max_per_scene_spread_db": 0.008685349054758262,
+      "stable_within_declared_tolerance": true,
+      "same_pass_fail_at_all_variances": true
+    },
+    {
+      "operator": "dma_J192",
+      "max_per_scene_spread_db": 0.031373506208304036,
+      "stable_within_declared_tolerance": true,
+      "same_pass_fail_at_all_variances": true
+    }
+  ],
+  "smoke_only": true,
+  "diagnostic_only": true,
+  "trajectory_endpoint": "all stages saved; final t=0 selected by protocol, never by truth",
+  "online_seconds_include_trace_metrics": true
+}

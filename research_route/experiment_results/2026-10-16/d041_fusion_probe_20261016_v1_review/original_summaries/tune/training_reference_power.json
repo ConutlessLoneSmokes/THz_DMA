@@ -1,0 +1,27 @@
+{
+  "re8192_J64_K128_distinct": {
+    "training_scenes": 2048,
+    "normalized_whitened_power": 0.8031451804894891,
+    "physical_whitened_power": 1.5145104467768026e-09
+  },
+  "re4096_J64_K64_distinct": {
+    "training_scenes": 2048,
+    "normalized_whitened_power": 0.8015854851017178,
+    "physical_whitened_power": 1.5115692911601683e-09
+  },
+  "re4096_J128_K32_distinct": {
+    "training_scenes": 2048,
+    "normalized_whitened_power": 0.8064687416571807,
+    "physical_whitened_power": 1.520777767096029e-09
+  },
+  "re4096_J128_K32_interleaved": {
+    "training_scenes": 2048,
+    "normalized_whitened_power": 0.8117980074540827,
+    "physical_whitened_power": 1.530827293531759e-09
+  },
+  "re128_J16_K8_distinct": {
+    "training_scenes": 2048,
+    "normalized_whitened_power": 0.7599218124126551,
+    "physical_whitened_power": 1.4330030878490591e-09
+  }
+}

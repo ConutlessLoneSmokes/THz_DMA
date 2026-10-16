@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/lsy/THz_DMA/research_route/experiment_results/2026-10-16/d041_fusion_probe_20261016_v1_review/audit.py", line 218, in <module>
+    audit()
+  File "/home/lsy/THz_DMA/research_route/experiment_results/2026-10-16/d041_fusion_probe_20261016_v1_review/audit.py", line 78, in audit
+    assert read(folder(stage)/"environment.txt")["timestamp_utc"] > read(folder("calibrate")/"status.json")["timestamp_utc"]
+  File "/home/lsy/THz_DMA/research_route/experiment_results/2026-10-16/d041_fusion_probe_20261016_v1_review/audit.py", line 30, in read
+    return json.loads(path.read_text())
+  File "/home/lsy/miniconda3/envs/thz_dma/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/home/lsy/miniconda3/envs/thz_dma/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/lsy/miniconda3/envs/thz_dma/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

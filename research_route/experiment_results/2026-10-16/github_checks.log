@@ -1,0 +1,147 @@
+test_128_interleaving_and_legacy_controls_are_preserved (test_d041_budget_sweep.BudgetTest) ... ok
+test_all_budgets_and_controls_conserve_resources_and_state_prefixes (test_d041_budget_sweep.BudgetTest) ... ok
+test_full_tones_skip_identical_coverage_control_but_keep_repeat (test_d041_budget_sweep.BudgetTest) ... ok
+test_references_and_smoke_counts_are_explicit (test_d041_budget_sweep.BudgetTest) ... ok
+test_validation_workpoint_uses_gate_then_re_and_symbols (test_d041_budget_sweep.BudgetTest) ... ok
+test_all_re_mask_matches_original_operator (test_d041_configuration_sweep.ScheduleTest) ... ok
+test_compact_forward_adjoint_and_gaussian_gradient (test_d041_configuration_sweep.ScheduleTest) ... ok
+test_f1_c2_and_f2_state_set_and_matched_repeat (test_d041_configuration_sweep.ScheduleTest) ... ok
+test_repeated_state_does_not_add_noiseless_rank (test_d041_configuration_sweep.ScheduleTest) ... ok
+test_resource_budget_and_frequency_coverage (test_d041_configuration_sweep.ScheduleTest) ... ok
+test_unobserved_frequencies_are_null_space (test_d041_configuration_sweep.ScheduleTest) ... ok
+test_minima_selected_from_validation_with_both_near_reference_gates (test_d041_configuration_sweep.SelectionTest) ... ok
+test_smoke_never_declares_performance_threshold (test_d041_configuration_sweep.SelectionTest) ... ok
+test_worst_variance_uses_linear_means_and_paired_scenes (test_d041_configuration_sweep.SelectionTest) ... ok
+test_configuration_curve_pairs_initialization_and_standard_noise (test_d041_diagnostic.DiagnosticTest) ... ok
+test_full_array_fft_layout_roundtrip_and_energy (test_d041_diagnostic.DiagnosticTest) ... ok
+test_paired_physical_paths_and_true_single_frequency (test_d041_diagnostic.DiagnosticTest) ... ok
+test_pseudoinverse_row_null_decomposition_and_genie_gains (test_d041_diagnostic.DiagnosticTest) ... ok
+test_spectral_adjoint_and_real_likelihood_gradient (test_d041_diagnostic.DiagnosticTest) ... ok
+test_state_bank_independent_of_band_and_channel_seeds (test_d041_diagnostic.DiagnosticTest) ... ok
+test_trace_observer_does_not_change_frozen_endpoint (test_d041_diagnostic.DiagnosticTest) ... ok
+test_training_only_snr_calibration_and_noiseless_variance (test_d041_diagnostic.DiagnosticTest) ... ok
+test_compact_noise_gathers_common_grid_including_more_than192_re (test_d041_fusion_probe.FusionTest) ... ok
+test_dense_covariance_validation (test_d041_fusion_probe.FusionTest) ... ok
+test_exact_noise_prediction_recovers_clean (test_d041_fusion_probe.FusionTest) ... ok
+test_fusion_input_validation (test_d041_fusion_probe.FusionTest) ... ok
+test_general_gaussian_local_mean_and_covariance (test_d041_fusion_probe.FusionTest) ... ok
+test_no_fusion_reduces_to_original_unguided_recursion (test_d041_fusion_probe.FusionTest) ... ok
+test_paired_initial_state_and_final_fused_mean (test_d041_fusion_probe.FusionTest) ... ok
+test_predeclared_protocol_and_disjoint_validation (test_d041_fusion_probe.FusionTest) ... ok
+test_scalar_fusion_changes_only_row_space (test_d041_fusion_probe.FusionTest) ... ok
+test_scalar_svd_matches_dense_real_conditional_including_factor_two (test_d041_fusion_probe.FusionTest) ... ok
+test_selection_excludes_nonfinite_and_reports_boundary (test_d041_fusion_probe.FusionTest) ... ok
+test_variance_calibration_uses_training_only_and_never_reads_test (test_d041_fusion_probe.FusionTest) ... calibrated VP step 1/2
+calibrated VP step 2/2
+ok
+test_worst_variance_pairs_scenes_then_averages_linear_errors (test_d041_fusion_probe.FusionTest) ... ok
+test_joint_pattern_requires_narrow_dma_and_wide_digital (test_d041_staging.InterpretationTest) ... ok
+test_numerical_variance_blocks_structural_interpretation (test_d041_staging.InterpretationTest) ... ok
+test_smoke_never_attributes_formal_learning_failure (test_d041_staging.InterpretationTest) ... ok
+test_all_completes_both_noiseless_bands_before_noise (test_d041_staging.PhaseOrderTest) ... ok
+test_narrow_alias_only_runs_first_noiseless_round (test_d041_staging.PhaseOrderTest) ... ok
+test_noisy_phase_rejects_missing_noiseless_controls (test_d041_staging.PhaseOrderTest) ... ok
+test_diagnostic_value_and_jacobian_are_separated (test_diffusion.DiffusionTest) ... ok
+test_gaussian_guidance_and_fourier_preconditioning (test_diffusion.DiffusionTest) ... ok
+test_physical_operator_gradient_and_sampler (test_diffusion.DiffusionTest) ... ok
+test_structured_conditional_gaussian (test_diffusion.DiffusionTest) ... ok
+test_training_reference_observation_power (test_diffusion.DiffusionTest) ... ok
+test_training_resume (test_diffusion.DiffusionTest) ... /home/lsy/miniconda3/envs/thz_dma/lib/python3.10/site-packages/torch/cuda/__init__.py:1061: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+step 1/3, validation_noise_mse=0.500000
+step 2/3, validation_noise_mse=0.500000
+step 3/3, validation_noise_mse=0.500000
+step 2/3, validation_noise_mse=0.500000
+step 3/3, validation_noise_mse=0.500000
+ok
+test_dense_covariance_and_tikhonov (test_linear_channel.LinearChannelTest) ... ok
+test_common_support_uses_per_tone_score (test_planar_somp.SompTest) ... ok
+test_frozen_c2_state_matches_cyclic_bank (test_planar_somp.SompTest) ... ok
+test_new_manifests_and_job_paths_use_forward_slashes (test_portable_paths.PortablePathsTest) ... ok
+test_relative_windows_paths_and_escapes (test_portable_paths.PortablePathsTest) ... ok
+test_relocated_windows_cache_keeps_checksums (test_portable_paths.PortablePathsTest) ... ok
+test_archive_writes_valid_json_and_csv (test_run_support.RunSupportTest) ... ok
+test_reference_archive_without_atmosphere (test_run_support.RunSupportTest) ... ok
+test_resume_rejects_changed_config_and_sources (test_run_support.RunSupportTest) ... ok
+test_unit_pilot_energy_guard (test_run_support.RunSupportTest) ... ok
+test_evidence_and_posterior (test_sbl.SblTest) ... ok
+test_retired_estimators_are_not_scheduled (test_sbl.SblTest) ... ok
+test_channel_domains_keep_empty_heldout_as_missing (test_shared_helpers.SharedHelpersTest) ... ok
+test_grid_pilots_and_path_matching (test_shared_helpers.SharedHelpersTest) ... ok
+test_changed_absorption_table_rejects_existing_cache (test_zhou2025_extensions.ExtensionTest) ... ok
+test_digital_lmmse_frozen_test_and_resource_metadata (test_zhou2025_extensions.ExtensionTest) ... prepared global LMMSE: digital, reference, training scenes=3
+saved digital, 0 dB, lmmse_reference: NMSE=0.045 dB
+saved digital, 20 dB, lmmse_reference: NMSE=0.058 dB
+prepared global LMMSE: digital, reference, training scenes=3
+saved digital, 0 dB, lmmse_reference: NMSE=0.085 dB
+saved digital, 20 dB, lmmse_reference: NMSE=0.040 dB
+ok
+test_digital_smoke_retains_no_conditional_references (test_zhou2025_extensions.ExtensionTest) ... ok
+test_fixed_physical_noise_and_carrier_geometry (test_zhou2025_extensions.ExtensionTest) ... ok
+test_mimo_parameters_and_all_reference_rows (test_zhou2025_extensions.ExtensionTest) ... prepared global LMMSE: QPSK_Np8, reference, training scenes=3
+saved QPSK_Np8, 0 dB, lmmse_reference: NMSE=-0.737 dB
+saved QPSK_Np8, 0 dB, ls: NMSE=4.934 dB
+saved QPSK_Np8, 0 dB, lasso: NMSE=-1.967 dB
+saved QPSK_Np8, 0 dB, angular_omp: NMSE=-0.173 dB
+saved QPSK_Np8, 0 dB, oracle_geometry_ls: NMSE=-8.161 dB
+saved QPSK_Np8, 20 dB, lmmse_reference: NMSE=-1.159 dB
+saved QPSK_Np8, 20 dB, ls: NMSE=-10.376 dB
+saved QPSK_Np8, 20 dB, lasso: NMSE=-16.363 dB
+saved QPSK_Np8, 20 dB, angular_omp: NMSE=-8.824 dB
+saved QPSK_Np8, 20 dB, oracle_geometry_ls: NMSE=-28.161 dB
+prepared global LMMSE: QPSK_Np4, reference, training scenes=3
+saved QPSK_Np4, 0 dB, lmmse_reference: NMSE=-0.177 dB
+saved QPSK_Np4, 0 dB, ls: NMSE=3.273 dB
+saved QPSK_Np4, 0 dB, lasso: NMSE=1.634 dB
+saved QPSK_Np4, 0 dB, angular_omp: NMSE=5.394 dB
+saved QPSK_Np4, 0 dB, oracle_geometry_ls: NMSE=-0.899 dB
+saved QPSK_Np4, 20 dB, lmmse_reference: NMSE=-0.433 dB
+saved QPSK_Np4, 20 dB, ls: NMSE=-1.989 dB
+saved QPSK_Np4, 20 dB, lasso: NMSE=-2.298 dB
+saved QPSK_Np4, 20 dB, angular_omp: NMSE=0.189 dB
+saved QPSK_Np4, 20 dB, oracle_geometry_ls: NMSE=-20.899 dB
+ok
+test_angular_omp_sparse_recovery_and_zero (test_zhou2025_parametric_baselines.ParametricBaselineTest) ... ok
+test_invalid_inputs (test_zhou2025_parametric_baselines.ParametricBaselineTest) ... ok
+test_spacing_priority_and_absorption (test_zhou2025_parametric_baselines.ParametricBaselineTest) ... ok
+test_unit_gain_templates_and_oracle_gain_fitting (test_zhou2025_parametric_baselines.ParametricBaselineTest) ... ok
+test_empirical_lmmse_both_gram_sizes (test_zhou2025_repro.ReproductionTest) ... ok
+test_evaluation_resume_keeps_frozen_tuning (test_zhou2025_repro.ReproductionTest) ... prepared global LMMSE: tiny, reference, training scenes=5
+saved tiny, 0 dB, lmmse_reference: NMSE=-4.685 dB
+prepared global LMMSE: tiny, reference, training scenes=5
+saved tiny, 0 dB, ls: NMSE=3.947 dB
+saved tiny, 0 dB, lasso: NMSE=3.065 dB
+prepared global LMMSE: tiny, reference, training scenes=5
+saved tiny, 0 dB, lmmse_reference: NMSE=-26.524 dB
+saved tiny, 0 dB, weights: NMSE=2.472 dB
+saved tiny, 0 dB, ls: NMSE=1.628 dB
+saved tiny, 0 dB, lasso: NMSE=-0.009 dB
+ok
+test_independent_test_requires_matching_frozen_validation (test_zhou2025_repro.ReproductionTest) ... ok
+test_linear_likelihood_gradients (test_zhou2025_repro.ReproductionTest) ... ok
+test_new_training_resume_and_noise_prefix (test_zhou2025_repro.ReproductionTest) ... dm step 1/6: validation_loss=1.85915
+dm step 2/6: validation_loss=1.86246
+dm step 3/6: validation_loss=1.86254
+dm step 4/6: validation_loss=1.86294
+dm step 5/6: validation_loss=1.86454
+dm step 6/6: validation_loss=1.86575
+dm step 2/6: validation_loss=1.86246
+dm step 3/6: validation_loss=1.86254
+dm step 4/6: validation_loss=1.86294
+dm step 5/6: validation_loss=1.86454
+dm step 6/6: validation_loss=1.86575
+ok
+test_sure_scaled_risk_and_network_gradient (test_zhou2025_repro.ReproductionTest) ... ok
+test_unitary_geometry_and_data_order (test_zhou2025_repro.ReproductionTest) ... ok
+test_vp_noise_variance_and_frozen_endpoint (test_zhou2025_repro.ReproductionTest) ... ok
+test_forward_selected_full_elements_and_adjoint (test_zhou2025_wideband.DigitalArrayTest) ... ok
+test_invalid_acquisitions_and_noise (test_zhou2025_wideband.DigitalArrayTest) ... ok
+test_likelihood_matches_explicit_real_covariance (test_zhou2025_wideband.DigitalArrayTest) ... ok
+test_repetitions_use_independent_complex_noise_scale (test_zhou2025_wideband.DigitalArrayTest) ... ok
+test_complex_lasso_and_orthogonal_snr (test_zhou_reference.ReferenceTest) ... ok
+test_public_fixed_pilot_random_state (test_zhou_reference.ReferenceTest) ... ok
+
+----------------------------------------------------------------------
+Ran 84 tests in 6.267s
+
+OK

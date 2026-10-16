@@ -1,0 +1,10 @@
+{
+  "calibrate": {
+    "run_id": "d041_fusion_probe_20261016_v1_calibrate",
+    "manifest_sha256": "bd82f693803aa465a583783dc89cf48c76a323eb9df1ea19d2ae804601ead184"
+  },
+  "tune": {
+    "run_id": "d041_fusion_probe_20261016_v1_tune",
+    "manifest_sha256": "fd9cd33be59cf4b6a4b3e22688cc562f31c0ae7262f8da7a0a60cc78a6dff9f7"
+  }
+}

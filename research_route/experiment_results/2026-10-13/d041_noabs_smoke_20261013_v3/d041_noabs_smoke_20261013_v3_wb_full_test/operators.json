@@ -1,0 +1,37 @@
+[
+  {
+    "label": "digital",
+    "frontend": "digital",
+    "configurations": 1,
+    "complex_observations": 163840,
+    "complex_unknowns": 163840,
+    "rank": 163840,
+    "condition_max": 1.0,
+    "pilot_re": 128,
+    "total_pilot_energy": 128,
+    "training_symbols": 1,
+    "switches": 0
+  },
+  {
+    "label": "dma_J192",
+    "frontend": "dma",
+    "configurations": 192,
+    "complex_observations": 196608,
+    "complex_unknowns": 163840,
+    "rank": 163840,
+    "rank_per_frequency_min": 160,
+    "rank_per_frequency_max": 160,
+    "condition_max": 108.32659682140299,
+    "singular_value_min": 0.07633709001258474,
+    "singular_value_max": 8.539773045921498,
+    "pilot_re": 24576,
+    "total_pilot_energy": 24576,
+    "training_symbols": 192,
+    "switches": 191,
+    "weights_sha256": "d14ccc92b32c25d2e42deafb6818213ea35260ba80b6accf4d74190650a24b2f",
+    "spectrum_file": "spectrum_dma_J192.npz",
+    "svd_precision": "complex128 CPU",
+    "same_weights_on_all_strips": true,
+    "raw_weights_not_normalized": true
+  }
+]

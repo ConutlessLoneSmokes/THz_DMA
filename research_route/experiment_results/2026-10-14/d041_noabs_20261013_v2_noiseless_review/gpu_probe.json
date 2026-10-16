@@ -1,0 +1,23 @@
+{
+  "python_executable": "/home/lsy/miniconda3/envs/thz_dma/bin/python",
+  "torch": "2.11.0+cu128",
+  "cuda_build": "12.8",
+  "nvml_return": 0,
+  "nvml_error": "Success",
+  "nvml_library": "/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.595.99.02",
+  "kernel_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  595.99.02  Release Build  (dvs-builder@U22-I3-AF05-06-2)  Wed Aug 26 05:20:50 UTC 2026",
+  "cuda_available": true,
+  "tensor_device": "cuda:0",
+  "computed_sum": 357389824.0,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "device_count": 1,
+  "probe_warning_messages": [],
+  "nvidia_smi": {
+    "returncode": 0,
+    "output": "Wed Oct 14 10:50:19 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 595.99.02              Driver Version: 595.99.02      CUDA Version: 13.2     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3090        Off |   00000000:1A:00.0 Off |                  N/A |\n| 73%   71C    P2            290W /  350W |    2722MiB /  24576MiB |     66%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   1  NVIDIA GeForce RTX 3090        Off |   00000000:88:00.0 Off |                  N/A |\n| 68%   68C    P2            306W /  350W |    3220MiB /  24576MiB |     99%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            4670      G   /usr/bin/gnome-shell                     20MiB |\n|    0   N/A  N/A           30107      C   ...onda3/envs/llm-env/bin/python       2682MiB |\n|    1   N/A  N/A            4670      G   /usr/bin/gnome-shell                      4MiB |\n|    1   N/A  N/A           30318      C   ...onda3/envs/llm-env/bin/python       2688MiB |\n|    1   N/A  N/A           31709      C   ...onda3/envs/thz_dma/bin/python        504MiB |\n+-----------------------------------------------------------------------------------------+"
+  },
+  "installed_module": {
+    "returncode": 0,
+    "output": "595.99.02"
+  }
+}

@@ -24,7 +24,10 @@ def angular(h, *, inverse=False):
 
 def dma_spatial(image, *, inverse=False):
     transform = torch.fft.ifft2 if inverse else torch.fft.fft2
-    return pack_channel(transform(unpack_channel(image), dim=(-2, -1), norm="ortho"))
+    # The packed frequency-last layout has strided spatial axes. Materialize the
+    # usual (B,K,S,E) layout before FFT; large strided complex128 CPU transforms
+    # can abort in the current MKL backend. The unitary transform is unchanged.
+    return pack_channel(transform(unpack_channel(image).contiguous(), dim=(-2, -1), norm="ortho"))
 
 
 def encode(channel, scenario):

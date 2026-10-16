@@ -1,0 +1,18 @@
+{
+  "runs/d041_fusion_probe_20261016_v1_calibrate/manifest.json": {
+    "size_bytes": 11881,
+    "sha256": "bd82f693803aa465a583783dc89cf48c76a323eb9df1ea19d2ae804601ead184"
+  },
+  "runs/d041_fusion_probe_20261016_v1_tune/manifest.json": {
+    "size_bytes": 456805,
+    "sha256": "fd9cd33be59cf4b6a4b3e22688cc562f31c0ae7262f8da7a0a60cc78a6dff9f7"
+  },
+  "runs/d041_fusion_probe_20261016_v1_screen/manifest.json": {
+    "size_bytes": 348069,
+    "sha256": "3fe67135396746db4f58f658bdf1587b3b6d78c4872c7a1148d70f58276c7fad"
+  },
+  "logs/d041_fusion_probe_20261016_v1.log": {
+    "size_bytes": 3938,
+    "sha256": "a1b107807415146a47cf3f4be19953d3f50acf7925209d48b709afe1ca097e2b"
+  }
+}

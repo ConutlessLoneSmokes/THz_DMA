@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "estimator_summaries": 480,
+  "main_test_designs": 24,
+  "fixed_gpu_cases": 22,
+  "current_report_local_links_checked": 2,
+  "original_reports_unchanged": true,
+  "figure_dimensions_pixels": [
+    2596,
+    990
+  ],
+  "figure_visually_inspected": true,
+  "formal_log_has_no_nvml_or_python_warning": true,
+  "document_check_scope": "new result links; unrelated older citation template and historical archive links excluded",
+  "skipped": "new training, noisy evaluation, tuning expansion, multiseed, nonregular tones, SURE and global LMMSE scans"
+}

@@ -1,0 +1,25 @@
+{
+  "python_executable": "/home/lsy/miniconda3/envs/thz_dma/bin/python",
+  "torch": "2.11.0+cu128",
+  "cuda_build": "12.8",
+  "nvml_return": 18,
+  "nvml_error": "Driver/library version mismatch",
+  "nvml_library": "/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.595.99.02",
+  "kernel_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  595.91.07  Release Build  (dvs-builder@U22-I3-B08-02-2)  Wed Jul 29 03:01:16 UTC 2026",
+  "cuda_available": true,
+  "tensor_device": "cuda:0",
+  "computed_sum": 357389824.0,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "device_count": 2,
+  "probe_warning_messages": [
+    "Can't initialize NVML"
+  ],
+  "nvidia_smi": {
+    "returncode": 18,
+    "output": "Failed to initialize NVML: Driver/library version mismatch\nNVML library version: 595.99"
+  },
+  "installed_module": {
+    "returncode": 0,
+    "output": "595.99.02"
+  }
+}

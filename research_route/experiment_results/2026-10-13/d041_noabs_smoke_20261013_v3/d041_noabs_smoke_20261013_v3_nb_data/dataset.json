@@ -1,0 +1,131 @@
+{
+  "kind": "clean",
+  "scenario": "dma",
+  "storage": "npy",
+  "band": "narrow",
+  "counts": {
+    "train": 8,
+    "validation": 4,
+    "test": 4
+  },
+  "split_seeds": {
+    "train": 2026101341,
+    "validation": 2026101342,
+    "test": 2026101343
+  },
+  "channel_shape": [
+    1,
+    8,
+    160
+  ],
+  "known_noise_real_variance_phys": 0.0,
+  "include_absorption": false,
+  "complex_scale": 4.614684670321379e-05,
+  "normalization_source": "all training samples; global complex RMS; never per scene",
+  "files": {
+    "train": "channels_train.npy",
+    "validation": "channels_validation.npy",
+    "test": "channels_test.npy"
+  },
+  "physics": {
+    "system": {
+      "carrier_frequency_hz": 300000000000.0,
+      "bandwidth_hz": 0.0,
+      "num_subcarriers": 1,
+      "nfft": 1,
+      "cyclic_prefix_samples": 0
+    },
+    "channel": {
+      "num_paths": 3,
+      "range_min_m": 1.85,
+      "range_max_m": 2.15,
+      "azimuth_min_deg": 15.0,
+      "azimuth_max_deg": 25.0,
+      "elevation_min_deg": -8.0,
+      "elevation_max_deg": 8.0,
+      "los_complex_gain_magnitude": 1.0,
+      "reflection_excess_range_min_m": 0.08,
+      "reflection_excess_range_max_m": 0.25,
+      "reflection_azimuth_separation_min_deg": 4.0,
+      "reflection_azimuth_separation_max_deg": 12.0,
+      "reflection_elevation_separation_min_deg": 2.0,
+      "reflection_elevation_separation_max_deg": 8.0,
+      "reflection_gain_relative_min_db": -15.0,
+      "reflection_gain_relative_max_db": -6.0,
+      "include_absorption": false
+    },
+    "atmosphere": {
+      "table_path": "data/atmosphere/data_freq_abscoe.txt",
+      "interpolation": "linear",
+      "max_model_frequency_hz": 1000000000000.0
+    },
+    "dma": {
+      "num_microstrips": 8,
+      "elements_per_microstrip": 160,
+      "element_spacing_wavelengths": 0.2,
+      "microstrip_spacing_wavelengths": 0.5,
+      "quality_factor": 100.0,
+      "tuning_bandwidth_hz": 30000000000.0,
+      "waveguide_effective_index": 2.5,
+      "waveguide_end_power_fraction": 0.2,
+      "element_spacing_m": 0.0001998616386666667,
+      "microstrip_spacing_m": 0.0004996540966666667
+    },
+    "noise": {
+      "array_reference_snr_db": [
+        45.0,
+        50.0,
+        55.0,
+        60.0,
+        65.0,
+        70.0
+      ],
+      "rf_noise_variance_fraction_of_element_noise": 0.0
+    },
+    "acquisition": {
+      "pilot_energy_per_re": 1.0,
+      "full_frequency_coverage": true,
+      "num_rf_outputs": 8,
+      "digital_receive_channels": 1280,
+      "state_design": "fixed_uniform_resonance_bank_prefix",
+      "switch_guard_symbol_equivalents": 0.25
+    },
+    "diagnostic": {
+      "element_spacing_m": 0.0001998616386666667,
+      "microstrip_spacing_m": 0.0004996540966666667,
+      "state_seed": 2026101344,
+      "configuration_counts": [
+        192,
+        32,
+        8,
+        1
+      ],
+      "svd_relative_tolerance": 1e-10,
+      "maximum_full_condition": 10000.0,
+      "linear_nmse_tolerance": 1e-09,
+      "linear_residual_tolerance": 1e-10,
+      "adjoint_relative_tolerance": 1e-10,
+      "whitening_power_tolerance": 0.06,
+      "noiseless_likelihood_variances": [
+        1e-08,
+        1e-10
+      ],
+      "variance_sensitivity_db": 0.1,
+      "recovery_nmse_gate_db": -10.0
+    }
+  },
+  "generator": "sample_stage2_paths + exact spherical_planar_path_channel; no coarse-center offsets",
+  "pairing": "same split seed and scene index give byte-identical path records across bands",
+  "diagnostic_only": true,
+  "schema_version": 1,
+  "file_sha256": {
+    "channels_train.npy": "3ee427a8ea878759144f3d1989bf6ec4cc3cfe03ca5c4746f50475a845e924aa",
+    "channels_validation.npy": "38862fb4a5ef3fa8b8129b6d90b31e183085c2b10fa891f880939befe12292da",
+    "channels_test.npy": "4a3fb3dc19e180cefdd732ae52dc88aff985c850c6e3d13fdcc5b4ee6af3f110",
+    "parameters/test_000000.json": "fc28bd882f6333f3ba8c91208ca552dbe04ccd94577bfa80ca6fee28eec5e8a3",
+    "parameters/train_000000.json": "178bb68cd5649686605b3533b51157ba5f47a0a29e5c8c9127e3956151a9c53b",
+    "parameters/train_000004.json": "c465c02fe0d1de2277d38d2fbd6b02ea53c177c9c0d7e26b4481741d0c11ba7c",
+    "parameters/validation_000000.json": "a7a37b7407d1840fd017673538f4df4f13e5c73d36eb5b2e3bd501d3c3ecfd50",
+    "array.npz": "148338a2e91e0def2171e67eafbc1194b4214fad2f9bf359feb7fabc925cf12d"
+  }
+}

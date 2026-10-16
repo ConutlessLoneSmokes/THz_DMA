@@ -1,0 +1,32 @@
+calibrated VP step 1/8
+calibrated VP step 2/8
+calibrated VP step 3/8
+calibrated VP step 4/8
+calibrated VP step 5/8
+calibrated VP step 6/8
+calibrated VP step 7/8
+calibrated VP step 8/8
+evaluated tune re8192_J64_K128_distinct:noiseless_v1e-08
+evaluated tune re8192_J64_K128_distinct:noiseless_v1e-10
+evaluated tune re8192_J64_K128_distinct:snr_20
+evaluated tune re4096_J64_K64_distinct:noiseless_v1e-08
+evaluated tune re4096_J64_K64_distinct:noiseless_v1e-10
+evaluated tune re4096_J64_K64_distinct:snr_20
+evaluated tune re4096_J128_K32_distinct:noiseless_v1e-08
+evaluated tune re4096_J128_K32_distinct:noiseless_v1e-10
+evaluated tune re4096_J128_K32_interleaved:noiseless_v1e-08
+evaluated tune re4096_J128_K32_interleaved:noiseless_v1e-10
+evaluated tune re128_J16_K8_distinct:noiseless_v1e-08
+evaluated tune re128_J16_K8_distinct:noiseless_v1e-10
+evaluated screen re8192_J64_K128_distinct:noiseless_v1e-08
+evaluated screen re8192_J64_K128_distinct:noiseless_v1e-10
+evaluated screen re8192_J64_K128_distinct:snr_20
+evaluated screen re4096_J64_K64_distinct:noiseless_v1e-08
+evaluated screen re4096_J64_K64_distinct:noiseless_v1e-10
+evaluated screen re4096_J64_K64_distinct:snr_20
+evaluated screen re4096_J128_K32_distinct:noiseless_v1e-08
+evaluated screen re4096_J128_K32_distinct:noiseless_v1e-10
+evaluated screen re4096_J128_K32_interleaved:noiseless_v1e-08
+evaluated screen re4096_J128_K32_interleaved:noiseless_v1e-10
+evaluated screen re128_J16_K8_distinct:noiseless_v1e-08
+evaluated screen re128_J16_K8_distinct:noiseless_v1e-10

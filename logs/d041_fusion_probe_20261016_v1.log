@@ -1,0 +1,124 @@
+calibrated VP step 1/100
+calibrated VP step 2/100
+calibrated VP step 3/100
+calibrated VP step 4/100
+calibrated VP step 5/100
+calibrated VP step 6/100
+calibrated VP step 7/100
+calibrated VP step 8/100
+calibrated VP step 9/100
+calibrated VP step 10/100
+calibrated VP step 11/100
+calibrated VP step 12/100
+calibrated VP step 13/100
+calibrated VP step 14/100
+calibrated VP step 15/100
+calibrated VP step 16/100
+calibrated VP step 17/100
+calibrated VP step 18/100
+calibrated VP step 19/100
+calibrated VP step 20/100
+calibrated VP step 21/100
+calibrated VP step 22/100
+calibrated VP step 23/100
+calibrated VP step 24/100
+calibrated VP step 25/100
+calibrated VP step 26/100
+calibrated VP step 27/100
+calibrated VP step 28/100
+calibrated VP step 29/100
+calibrated VP step 30/100
+calibrated VP step 31/100
+calibrated VP step 32/100
+calibrated VP step 33/100
+calibrated VP step 34/100
+calibrated VP step 35/100
+calibrated VP step 36/100
+calibrated VP step 37/100
+calibrated VP step 38/100
+calibrated VP step 39/100
+calibrated VP step 40/100
+calibrated VP step 41/100
+calibrated VP step 42/100
+calibrated VP step 43/100
+calibrated VP step 44/100
+calibrated VP step 45/100
+calibrated VP step 46/100
+calibrated VP step 47/100
+calibrated VP step 48/100
+calibrated VP step 49/100
+calibrated VP step 50/100
+calibrated VP step 51/100
+calibrated VP step 52/100
+calibrated VP step 53/100
+calibrated VP step 54/100
+calibrated VP step 55/100
+calibrated VP step 56/100
+calibrated VP step 57/100
+calibrated VP step 58/100
+calibrated VP step 59/100
+calibrated VP step 60/100
+calibrated VP step 61/100
+calibrated VP step 62/100
+calibrated VP step 63/100
+calibrated VP step 64/100
+calibrated VP step 65/100
+calibrated VP step 66/100
+calibrated VP step 67/100
+calibrated VP step 68/100
+calibrated VP step 69/100
+calibrated VP step 70/100
+calibrated VP step 71/100
+calibrated VP step 72/100
+calibrated VP step 73/100
+calibrated VP step 74/100
+calibrated VP step 75/100
+calibrated VP step 76/100
+calibrated VP step 77/100
+calibrated VP step 78/100
+calibrated VP step 79/100
+calibrated VP step 80/100
+calibrated VP step 81/100
+calibrated VP step 82/100
+calibrated VP step 83/100
+calibrated VP step 84/100
+calibrated VP step 85/100
+calibrated VP step 86/100
+calibrated VP step 87/100
+calibrated VP step 88/100
+calibrated VP step 89/100
+calibrated VP step 90/100
+calibrated VP step 91/100
+calibrated VP step 92/100
+calibrated VP step 93/100
+calibrated VP step 94/100
+calibrated VP step 95/100
+calibrated VP step 96/100
+calibrated VP step 97/100
+calibrated VP step 98/100
+calibrated VP step 99/100
+calibrated VP step 100/100
+evaluated tune re8192_J64_K128_distinct:noiseless_v1e-08
+evaluated tune re8192_J64_K128_distinct:noiseless_v1e-10
+evaluated tune re8192_J64_K128_distinct:snr_20
+evaluated tune re4096_J64_K64_distinct:noiseless_v1e-08
+evaluated tune re4096_J64_K64_distinct:noiseless_v1e-10
+evaluated tune re4096_J64_K64_distinct:snr_20
+evaluated tune re4096_J128_K32_distinct:noiseless_v1e-08
+evaluated tune re4096_J128_K32_distinct:noiseless_v1e-10
+evaluated tune re4096_J128_K32_interleaved:noiseless_v1e-08
+evaluated tune re4096_J128_K32_interleaved:noiseless_v1e-10
+evaluated tune re128_J16_K8_distinct:noiseless_v1e-08
+evaluated tune re128_J16_K8_distinct:noiseless_v1e-10
+evaluated screen re8192_J64_K128_distinct:noiseless_v1e-08
+evaluated screen re8192_J64_K128_distinct:noiseless_v1e-10
+evaluated screen re8192_J64_K128_distinct:snr_20
+evaluated screen re4096_J64_K64_distinct:noiseless_v1e-08
+evaluated screen re4096_J64_K64_distinct:noiseless_v1e-10
+evaluated screen re4096_J64_K64_distinct:snr_20
+evaluated screen re4096_J128_K32_distinct:noiseless_v1e-08
+evaluated screen re4096_J128_K32_distinct:noiseless_v1e-10
+evaluated screen re4096_J128_K32_interleaved:noiseless_v1e-08
+evaluated screen re4096_J128_K32_interleaved:noiseless_v1e-10
+evaluated screen re128_J16_K8_distinct:noiseless_v1e-08
+evaluated screen re128_J16_K8_distinct:noiseless_v1e-10

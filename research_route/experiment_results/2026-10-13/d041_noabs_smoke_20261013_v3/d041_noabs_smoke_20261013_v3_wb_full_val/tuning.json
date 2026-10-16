@@ -1,0 +1,54 @@
+{
+  "digital:noiseless_v1e-08": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      0.02093679830431938,
+      5.360492139061535e-07
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "digital:noiseless_v1e-10": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      0.020934714935719967,
+      5.349796481368685e-07
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J192:noiseless_v1e-08": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      0.020950174890458584,
+      5.390856756548601e-07
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  },
+  "dma_J192:noiseless_v1e-10": {
+    "selected": 1.0,
+    "candidates": [
+      0.5,
+      1.0
+    ],
+    "validation_nmse_linear": [
+      0.02093485277146101,
+      5.350125604763889e-07
+    ],
+    "validation_scenes": 2,
+    "select_final_endpoint_only": true
+  }
+}

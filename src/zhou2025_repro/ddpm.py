@@ -53,7 +53,8 @@ def noise_loss(model, schedule, clean, *, generator=None):
 
 
 @torch.no_grad()
-def recover(model, schedule, operator, observation, variance, *, scale=1., seed=0, refinement=1):
+def recover(model, schedule, operator, observation, variance, *, scale=1., seed=0, refinement=1,
+            trace_observer=None):
     """Frozen final endpoint; no truth-based choice of an intermediate iterate."""
     if (not np.isfinite(scale) or scale < 0 or not isinstance(refinement, int) or refinement < 1
             or not np.isfinite(variance) or variance <= 0 or not torch.isfinite(observation).all()):
@@ -63,6 +64,9 @@ def recover(model, schedule, operator, observation, variance, *, scale=1., seed=
     state = torch.randn((len(observation), *operator.image_shape),
                         device=observation.device, generator=rng, dtype=observation.real.dtype)
     trace, calls = [], 0
+    if trace_observer is not None:
+        trace_observer(state, {"phase": "initial", "t": len(schedule.beta),
+            "state_alpha_bar": float(schedule.alpha_bar[-1]), "network_calls": 0})
     for index in reversed(range(len(schedule.beta))):
         alpha, bar = float(schedule.alpha[index]), float(schedule.alpha_bar[index])
         repeats = refinement if index < len(schedule.beta) // 2 else 1
@@ -76,4 +80,8 @@ def recover(model, schedule, operator, observation, variance, *, scale=1., seed=
                 raise ArithmeticError("nonfinite DDPM reverse iterate")
         trace.append({"t": index + 1, "real_rms": float(state.square().mean().sqrt()),
                       "network_calls": calls})
+        if trace_observer is not None:
+            trace_observer(state, {"phase": "updated", "t": index,
+                "state_alpha_bar": float(schedule.alpha_bar[index-1]) if index else 1.,
+                "network_calls": calls})
     return state, trace

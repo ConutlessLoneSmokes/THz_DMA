@@ -1,0 +1,20 @@
+test_compact_noise_gathers_common_grid_including_more_than192_re (test_d041_fusion_probe.FusionTest) ... ok
+test_dense_covariance_validation (test_d041_fusion_probe.FusionTest) ... ok
+test_exact_noise_prediction_recovers_clean (test_d041_fusion_probe.FusionTest) ... ok
+test_fusion_input_validation (test_d041_fusion_probe.FusionTest) ... ok
+test_general_gaussian_local_mean_and_covariance (test_d041_fusion_probe.FusionTest) ... ok
+test_no_fusion_reduces_to_original_unguided_recursion (test_d041_fusion_probe.FusionTest) ... ok
+test_paired_initial_state_and_final_fused_mean (test_d041_fusion_probe.FusionTest) ... ok
+test_predeclared_protocol_and_disjoint_validation (test_d041_fusion_probe.FusionTest) ... ok
+test_scalar_fusion_changes_only_row_space (test_d041_fusion_probe.FusionTest) ... ok
+test_scalar_svd_matches_dense_real_conditional_including_factor_two (test_d041_fusion_probe.FusionTest) ... ok
+test_selection_excludes_nonfinite_and_reports_boundary (test_d041_fusion_probe.FusionTest) ... ok
+test_variance_calibration_uses_training_only_and_never_reads_test (test_d041_fusion_probe.FusionTest) ... calibrated VP step 1/2
+calibrated VP step 2/2
+ok
+test_worst_variance_pairs_scenes_then_averages_linear_errors (test_d041_fusion_probe.FusionTest) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.082s
+
+OK

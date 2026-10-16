@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "scope": "CPU smoke connectivity/archive/freeze checks; not formal performance",
+  "protected_preexisting_files": 169,
+  "formal_operators_per_split": 80,
+  "formal_main_settings": 24,
+  "runs": [
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_references_validation",
+      "operators": 2,
+      "metric_rows": 12,
+      "trajectory_rows": 36
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re128_validation",
+      "operators": 8,
+      "metric_rows": 48,
+      "trajectory_rows": 144
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re512_validation",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re1024_validation",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re2048_validation",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re4096_validation",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re8192_validation",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_references_test",
+      "operators": 2,
+      "metric_rows": 12,
+      "trajectory_rows": 36
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re128_test",
+      "operators": 8,
+      "metric_rows": 48,
+      "trajectory_rows": 144
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re512_test",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re1024_test",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re2048_test",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re4096_test",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    },
+    {
+      "run_id": "d041_budget_smoke_20261015_v1_re8192_test",
+      "operators": 5,
+      "metric_rows": 30,
+      "trajectory_rows": 90
+    }
+  ],
+  "metric_rows": 420,
+  "trajectory_rows": 1260,
+  "cases": 140,
+  "snapshot_members": 1232,
+  "maximum_metric_csv_case_absolute_gap": 0.0,
+  "validation_frozen_before_test": true
+}

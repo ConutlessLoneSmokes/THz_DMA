@@ -1,0 +1,168 @@
+{
+  "passed": true,
+  "fixed_cases": 20,
+  "max_nmse_db_difference": 1.7763568394002505e-15,
+  "results": [
+    {
+      "run_id": "d041_config_sweep_20261014_v1_nb_curve_test",
+      "operator": "dma_J161",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_nb_curve_test",
+      "operator": "dma_J161",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_nb_curve_test",
+      "operator": "dma_J160",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_nb_curve_test",
+      "operator": "dma_J160",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_nb_curve_test",
+      "operator": "dma_J67",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": -1.7763568394002505e-15
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_nb_curve_test",
+      "operator": "dma_J67",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_curve_test",
+      "operator": "dma_J163",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_curve_test",
+      "operator": "dma_J163",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_curve_test",
+      "operator": "dma_J162",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_curve_test",
+      "operator": "dma_J162",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_curve_test",
+      "operator": "dma_J56",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": -1.7763568394002505e-15
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_curve_test",
+      "operator": "dma_J56",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_re128_test",
+      "operator": "re128_J1_K128_distinct",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": -6.776263578034403e-21
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_re128_test",
+      "operator": "re128_J1_K128_distinct",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": 3.686287386450715e-17
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_re128_test",
+      "operator": "re128_J8_K16_distinct",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_re128_test",
+      "operator": "re128_J8_K16_distinct",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": 4.2934406030425976e-17
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_re128_test",
+      "operator": "re128_J16_K8_distinct",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": -6.505213034913027e-19
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_re128_test",
+      "operator": "re128_J16_K8_distinct",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 2.0,
+      "nmse_db_difference": 4.4885969940899884e-17
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_re128_test",
+      "operator": "re128_J16_K8_interleaved",
+      "scene_index": 0,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": -1.3552527156068805e-20
+    },
+    {
+      "run_id": "d041_config_sweep_20261014_v1_wb_re128_test",
+      "operator": "re128_J16_K8_interleaved",
+      "scene_index": 99,
+      "variance": 1e-08,
+      "guidance": 4.0,
+      "nmse_db_difference": 6.028164079019405e-17
+    }
+  ],
+  "scope": "fixed frozen endpoints; no test-time tuning or selection"
+}

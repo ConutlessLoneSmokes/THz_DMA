@@ -1,0 +1,29 @@
+{
+  "unit_checks": 51,
+  "cpu_smoke_runs": 18,
+  "evaluation_rows": 480,
+  "trajectory_rows": 1440,
+  "algebra_reference_rows": 20,
+  "historical_original_files_byte_verified": 561,
+  "wrong_tuning_rejected": {
+    "status": "failed",
+    "timestamp_utc": "2026-10-13T09:10:14.792575+00:00",
+    "command": "evaluate",
+    "error_type": "ValueError",
+    "error": "test requires completed validation with identical stage/settings/dependencies"
+  },
+  "wrong_band_prior_rejected": {
+    "status": "failed",
+    "timestamp_utc": "2026-10-13T09:10:15.895660+00:00",
+    "command": "evaluate",
+    "error_type": "ValueError",
+    "error": "digital/DMA require the same matched Clean DDPM and dataset"
+  },
+  "completed_runs_verified_without_rerun": 18,
+  "numerical_variance_sensitivity_all_passed": true,
+  "cuda_available": false,
+  "larger_training_and_evaluation_started": false,
+  "early_native_abort_run": "d041_noabs_smoke_20261013_wb_check_v1",
+  "existing_conda_environment_modified": false,
+  "temporary_reference_dependency": "h5py==3.16.0 under /tmp/thz_dma_d041_testdeps"
+}

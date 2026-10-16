@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "original_runs": 3,
+  "endpoints": 5376,
+  "trajectories": 426624,
+  "frozen_screening_scenes": 64,
+  "gpu_endpoint_replays": 20,
+  "offline_replays": 6,
+  "math_checks": 13,
+  "independent_test": false,
+  "new_training": false,
+  "original_recovery_source_changed": false
+}

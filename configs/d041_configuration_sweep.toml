@@ -1,0 +1,9 @@
+# New acquisition runs reuse the completed D-041 data and matched Clean models.
+configuration_min = 1
+configuration_max = 192
+repeat_configuration_counts = [192, 160, 128, 64, 32, 16, 8, 4, 2]
+re128_configuration_counts = [1, 2, 4, 8, 16]
+recovery_nmse_db = -10.0
+near_reference_loss_db = 0.5
+required_scene_fraction = 0.95
+

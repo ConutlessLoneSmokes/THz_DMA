@@ -1,0 +1,41 @@
+replayed 1/20 re8192_J64_K128_distinct noiseless_v1e-08 zhou
+replayed 2/20 re8192_J64_K128_distinct noiseless_v1e-08 scalar_fusion
+replayed 3/20 re8192_J64_K128_distinct snr_20 zhou
+replayed 4/20 re8192_J64_K128_distinct snr_20 scalar_fusion
+replayed 5/20 re8192_J64_K128_distinct snr_20 zhou
+replayed 6/20 re8192_J64_K128_distinct snr_20 scalar_fusion
+replayed 7/20 re8192_J64_K128_distinct noiseless_v1e-08 zhou
+replayed 8/20 re8192_J64_K128_distinct noiseless_v1e-08 zhou
+replayed 9/20 re4096_J64_K64_distinct noiseless_v1e-08 zhou
+replayed 10/20 re4096_J64_K64_distinct noiseless_v1e-08 scalar_fusion
+replayed 11/20 re4096_J64_K64_distinct snr_20 zhou
+replayed 12/20 re4096_J64_K64_distinct snr_20 scalar_fusion
+replayed 13/20 re4096_J64_K64_distinct snr_20 zhou
+replayed 14/20 re4096_J64_K64_distinct snr_20 scalar_fusion
+replayed 15/20 re4096_J128_K32_distinct noiseless_v1e-08 zhou
+replayed 16/20 re4096_J128_K32_distinct noiseless_v1e-08 scalar_fusion
+replayed 17/20 re4096_J128_K32_interleaved noiseless_v1e-08 zhou
+replayed 18/20 re4096_J128_K32_interleaved noiseless_v1e-08 scalar_fusion
+replayed 19/20 re128_J16_K8_distinct noiseless_v1e-08 zhou
+replayed 20/20 re128_J16_K8_distinct noiseless_v1e-08 scalar_fusion
+Traceback (most recent call last):
+  File "/home/lsy/THz_DMA/research_route/experiment_results/2026-10-16/d041_fusion_probe_20261016_v1_review/replay.py", line 82, in <module>
+    main()
+  File "/home/lsy/miniconda3/envs/thz_dma/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/lsy/THz_DMA/research_route/experiment_results/2026-10-16/d041_fusion_probe_20261016_v1_review/replay.py", line 74, in main
+    np.testing.assert_allclose(mse, saved.real_coordinate_mse, rtol=2e-5, atol=1e-9)
+  File "/home/lsy/miniconda3/envs/thz_dma/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 1504, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/home/lsy/miniconda3/envs/thz_dma/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/lsy/miniconda3/envs/thz_dma/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 797, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=2e-05, atol=1e-09
+
+Mismatched elements: 1 / 1 (100%)
+Max absolute difference: 7.04172406e-06
+Max relative difference: 0.00021646
+ x: array(0.032524)
+ y: array(0.032531)

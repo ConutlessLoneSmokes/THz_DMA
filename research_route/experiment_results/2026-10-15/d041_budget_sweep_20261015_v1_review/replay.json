@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "fixed_cases": 22,
+  "max_nmse_db_difference": 8.881784197001252e-16,
+  "scope": "fixed frozen endpoints at scenes 0/99; no selection or tuning",
+  "results": [
+    {
+      "operator": "digital",
+      "scene_index": 0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "digital",
+      "scene_index": 99,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "dma_J192",
+      "scene_index": 0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "dma_J192",
+      "scene_index": 99,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re128_J16_K8_distinct",
+      "scene_index": 0,
+      "nmse_db_difference": -3.469446951953614e-17
+    },
+    {
+      "operator": "re128_J16_K8_distinct",
+      "scene_index": 99,
+      "nmse_db_difference": -8.326672684688674e-17
+    },
+    {
+      "operator": "legacy_re128_J16_K8_distinct",
+      "scene_index": 0,
+      "nmse_db_difference": -6.505213034913027e-19
+    },
+    {
+      "operator": "legacy_re128_J16_K8_distinct",
+      "scene_index": 99,
+      "nmse_db_difference": 4.4885969940899884e-17
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "scene_index": 0,
+      "nmse_db_difference": 8.881784197001252e-16
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "scene_index": 99,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re4096_J128_K32_distinct",
+      "scene_index": 0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re4096_J128_K32_distinct",
+      "scene_index": 99,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re4096_J128_K32_interleaved",
+      "scene_index": 0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re4096_J128_K32_interleaved",
+      "scene_index": 99,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "scene_index": 0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "scene_index": 99,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re8192_J64_K128_repeat",
+      "scene_index": 0,
+      "nmse_db_difference": -7.112366251504909e-17
+    },
+    {
+      "operator": "re8192_J64_K128_repeat",
+      "scene_index": 99,
+      "nmse_db_difference": -9.71445146547012e-17
+    },
+    {
+      "operator": "re8192_J128_K64_distinct",
+      "scene_index": 0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re8192_J128_K64_distinct",
+      "scene_index": 99,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re8192_J128_K64_interleaved",
+      "scene_index": 0,
+      "nmse_db_difference": 0.0
+    },
+    {
+      "operator": "re8192_J128_K64_interleaved",
+      "scene_index": 99,
+      "nmse_db_difference": 0.0
+    }
+  ]
+}

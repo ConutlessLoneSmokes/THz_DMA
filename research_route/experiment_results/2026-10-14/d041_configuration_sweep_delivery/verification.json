@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "run_id": "d041_config_smoke_20261014_v2_nb_curve_test",
+      "rows": 36,
+      "trajectories": 108,
+      "operators": 6
+    },
+    {
+      "run_id": "d041_config_smoke_20261014_v2_nb_curve_validation",
+      "rows": 36,
+      "trajectories": 108,
+      "operators": 6
+    },
+    {
+      "run_id": "d041_config_smoke_20261014_v2_wb_curve_test",
+      "rows": 36,
+      "trajectories": 108,
+      "operators": 6
+    },
+    {
+      "run_id": "d041_config_smoke_20261014_v2_wb_curve_validation",
+      "rows": 36,
+      "trajectories": 108,
+      "operators": 6
+    },
+    {
+      "run_id": "d041_config_smoke_20261014_v2_wb_re128_test",
+      "rows": 78,
+      "trajectories": 234,
+      "operators": 13
+    },
+    {
+      "run_id": "d041_config_smoke_20261014_v2_wb_re128_validation",
+      "rows": 78,
+      "trajectories": 234,
+      "operators": 13
+    }
+  ],
+  "rows": 300,
+  "trajectories": 900,
+  "training_reference_recomputations": 25,
+  "original_files_unchanged": 4088,
+  "original_source_files_unchanged": 84,
+  "unit_tests_passed": 66,
+  "scope": "smoke algebra/acquisition/freezing/output; no formal threshold or protocol-performance claim"
+}

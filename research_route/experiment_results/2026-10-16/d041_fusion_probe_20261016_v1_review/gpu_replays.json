@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "torch": "2.11.0+cu128",
+  "endpoint_rtol": 2e-05,
+  "endpoint_atol": 1e-07,
+  "endpoints": [
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "zhou",
+      "scene_index": 32,
+      "guidance": 4.0,
+      "absolute_nmse_difference": 2.0816681711721685e-17,
+      "seconds": 0.5123042589984834
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "scalar_fusion",
+      "scene_index": 32,
+      "guidance": null,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.1741032009886112
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "snr_20",
+      "method": "zhou",
+      "scene_index": 32,
+      "guidance": 8.0,
+      "absolute_nmse_difference": 4.85722573273506e-17,
+      "seconds": 0.1487480170035269
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "snr_20",
+      "method": "scalar_fusion",
+      "scene_index": 32,
+      "guidance": null,
+      "absolute_nmse_difference": 4.163336342344337e-17,
+      "seconds": 0.17235268699005246
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "snr_20",
+      "method": "zhou",
+      "scene_index": 95,
+      "guidance": 8.0,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.14892813601181842
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "snr_20",
+      "method": "scalar_fusion",
+      "scene_index": 95,
+      "guidance": null,
+      "absolute_nmse_difference": 0.0,
+      "seconds": 0.17165776799083687
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "zhou",
+      "scene_index": 0,
+      "guidance": 8.0,
+      "absolute_nmse_difference": 0.0,
+      "seconds": 0.1496267119946424
+    },
+    {
+      "operator": "re8192_J64_K128_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "zhou",
+      "scene_index": 0,
+      "guidance": 16.0,
+      "absolute_nmse_difference": 0.0,
+      "seconds": 0.15097115401295014
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "zhou",
+      "scene_index": 32,
+      "guidance": 4.0,
+      "absolute_nmse_difference": 0.0,
+      "seconds": 0.15134393100743182
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "scalar_fusion",
+      "scene_index": 32,
+      "guidance": null,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.1716350400238298
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "condition": "snr_20",
+      "method": "zhou",
+      "scene_index": 32,
+      "guidance": 8.0,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.1492880959995091
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "condition": "snr_20",
+      "method": "scalar_fusion",
+      "scene_index": 32,
+      "guidance": null,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.1726175409858115
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "condition": "snr_20",
+      "method": "zhou",
+      "scene_index": 95,
+      "guidance": 8.0,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.14832064000074752
+    },
+    {
+      "operator": "re4096_J64_K64_distinct",
+      "condition": "snr_20",
+      "method": "scalar_fusion",
+      "scene_index": 95,
+      "guidance": null,
+      "absolute_nmse_difference": 0.0,
+      "seconds": 0.172353016998386
+    },
+    {
+      "operator": "re4096_J128_K32_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "zhou",
+      "scene_index": 32,
+      "guidance": 4.0,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.15145042099175043
+    },
+    {
+      "operator": "re4096_J128_K32_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "scalar_fusion",
+      "scene_index": 32,
+      "guidance": null,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.17540993000147864
+    },
+    {
+      "operator": "re4096_J128_K32_interleaved",
+      "condition": "noiseless_v1e-08",
+      "method": "zhou",
+      "scene_index": 32,
+      "guidance": 4.0,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.15229846199508756
+    },
+    {
+      "operator": "re4096_J128_K32_interleaved",
+      "condition": "noiseless_v1e-08",
+      "method": "scalar_fusion",
+      "scene_index": 32,
+      "guidance": null,
+      "absolute_nmse_difference": 5.551115123125783e-17,
+      "seconds": 0.17181164099019952
+    },
+    {
+      "operator": "re128_J16_K8_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "zhou",
+      "scene_index": 32,
+      "guidance": 4.0,
+      "absolute_nmse_difference": 0.0,
+      "seconds": 0.14978316298220307
+    },
+    {
+      "operator": "re128_J16_K8_distinct",
+      "condition": "noiseless_v1e-08",
+      "method": "scalar_fusion",
+      "scene_index": 32,
+      "guidance": null,
+      "absolute_nmse_difference": 0.0,
+      "seconds": 0.1724272569990717
+    }
+  ],
+  "offline_denoising": [
+    {
+      "split": "train",
+      "index": 0,
+      "t": 1,
+      "relative_mse_difference": 0.0
+    },
+    {
+      "split": "train",
+      "index": 0,
+      "t": 50,
+      "relative_mse_difference": 1.919704240863058e-15
+    },
+    {
+      "split": "train",
+      "index": 0,
+      "t": 100,
+      "relative_mse_difference": 0.0
+    },
+    {
+      "split": "validation",
+      "index": 31,
+      "t": 1,
+      "relative_mse_difference": 0.0
+    },
+    {
+      "split": "validation",
+      "index": 31,
+      "t": 50,
+      "relative_mse_difference": 2.617282658207489e-15
+    },
+    {
+      "split": "validation",
+      "index": 31,
+      "t": 100,
+      "relative_mse_difference": 0.0
+    }
+  ]
+}

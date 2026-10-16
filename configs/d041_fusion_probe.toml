@@ -1,0 +1,37 @@
+# Validation-only steps 1/2: frozen means, no covariance network or new CSI training.
+calibration_train_scenes = 256
+prior_validation_scenes = 32
+tuning_scenes = 32
+screening_start = 32
+screening_scenes = 64
+guidance = [0.5, 1.0, 2.0, 4.0, 8.0, 16.0]
+variance_floor_real = 1.0e-8
+calibration_seed = 2026101601
+trace_times = [100, 75, 50, 25, 10, 5, 1]
+noiseless_variances_complex = [1.0e-8, 1.0e-10]
+noisy_snr_db = 20.0
+
+[[operators]]
+budget_re = 8192
+label = "re8192_J64_K128_distinct"
+noisy = true
+
+[[operators]]
+budget_re = 4096
+label = "re4096_J64_K64_distinct"
+noisy = true
+
+[[operators]]
+budget_re = 4096
+label = "re4096_J128_K32_distinct"
+noisy = false
+
+[[operators]]
+budget_re = 4096
+label = "re4096_J128_K32_interleaved"
+noisy = false
+
+[[operators]]
+budget_re = 128
+label = "re128_J16_K8_distinct"
+noisy = false
